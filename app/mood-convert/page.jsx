@@ -1,3 +1,3 @@
 export default function Home() {
-  return <div>MoodConvert</div>;
+  return <div>MoodConvert Page</div>;
 }
