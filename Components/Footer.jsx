@@ -37,6 +37,7 @@ const Footer = () => {
                         <h5>KVK: 85502081</h5>
                         <h5>info@moodglobalservices.com</h5>
                         <h5>+31-6-19565119</h5>
+                        
                     </div>
                 </div>
             </div>
