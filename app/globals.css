@@ -1,3 +1,21 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.HeaderContainer {
+  margin-top: 30px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Navbar {
+  display: flex;
+  gap: 40px;
+}
+
+.HeaderIcons {
+  display: flex;
+  gap: 20px;
+}
