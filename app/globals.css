@@ -19,3 +19,68 @@
   display: flex;
   gap: 20px;
 }
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+.footerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.footerMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 98%;
+  margin: 1rem 0rem;
+  font-family: "Inter", sans-serif;
+}
+
+.leftFooter {
+  padding-left: 4rem;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+.leftFooter h6 {
+  font-size: 0.7rem;
+}
+.leftFooter h2 {
+  font-size: 1.8rem;
+}
+.footerSocialIcons {
+  width: 26%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+.footerSocialIcons img {
+  width: 18%;
+}
+
+.rightFooter {
+  margin: 0rem 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.ecoFooter,
+.hqFooter {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  height: 95%;
+  flex-direction: column;
+  align-items: start;
+}
+
+.ecoFooter {
+  height: 125%;
+}
