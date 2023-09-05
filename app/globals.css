@@ -2,6 +2,21 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@font-face {
+    font-family: 'MonumentExtended';
+    src: url(../public/Fonts/PPNeueMontreal-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MonumentExtended';
+    src: url(../public/Fonts/PPNeueMontreal-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
 .HeaderContainer {
   margin-top: 30px;
   align-items: center;
@@ -28,15 +43,34 @@
 }
 
 .footerMain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 98%;
-  margin: 1rem 0rem;
-  font-family: "Inter", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    margin: 1rem 0rem;
+    font-family: MonumentExtended;
 }
 
 .leftFooter {
+    padding-left: 4rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+.leftFooter h6 {font-size: 0.7rem;}
+.leftFooter h2 {font-size: 1.8rem;}
+.footerSocialIcons {
+    width: 26%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+.footerSocialIcons img {
+    width: 18%;
   padding-left: 4rem;
   margin-top: 4rem;
   display: flex;
@@ -80,6 +114,125 @@
   flex-direction: column;
   align-items: start;
 }
+
+.ecoFooter, .hqFooter {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    height: 95%;
+    flex-direction: column;
+    align-items: start;
+}
+
+.ecoFooter {
+    height: 125%;
+}
+
+
+/*OurServıces CSS Below*/
+
+.mainServiceContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: MonumentExtended;
+}
+
+.blueServiceContainer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(43, 177, 232);
+    border-radius: 1.2rem;
+}
+
+.blueContentContainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    height: 80%;
+}
+
+.headServiceText {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 20%;
+    width: 100%;
+    text-align: center;
+}
+
+.headServiceText h1{font-size: 5.5rem; font-weight: bold;}
+.headServiceText h6{font-size: 1.5rem; font-weight: lighter;}
+.serviceBoxContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.serviceBoxContainer h4{font-size: 2.5rem; margin: 0.7rem 0rem;}
+
+.serviceTContainer, .serviceBContainer {
+    display: flex;
+    flex-direction: row;
+    height: 50%;
+}
+
+.tLeftService, .bLeftService, .tRightService, .bRightService {
+    display: flex;
+    text-align: start;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    margin: 2rem 3rem;
+}
+
+.tLeftService button, .bLeftService button, .tRightService button, .bRightService button {
+    color: rgba(240, 248, 255, 0);
+    height: 0.35rem;
+    width: 35rem;
+    border-radius: 6rem;
+    transition: 1s ease;
+    background-size: 300% 100%;
+}
+.tLeftService button{background-image: linear-gradient(to right, black, rgb(155, 255, 28));}
+
+.tLeftService button:hover {
+    background-position: right;
+    transition: 0.5s ease;
+    cursor:default;
+}
+
+.tRightService button{background-image: linear-gradient(to right, black, rgb(255, 199, 0));}
+
+.tRightService button:hover {
+    background-position: right;
+    transition: 0.5s ease;
+    cursor:default;
+}
+
+.bLeftService button{background-image: linear-gradient(to right, black, rgb(90, 192, 157));}
+
+.bLeftService button:hover {
+    background-position: right;
+    transition: 0.5s ease;
+    cursor:default;
+}
+
+.bRightService button{background-image: linear-gradient(to right, black, rgb(0, 240, 255));}
+
+.bRightService button:hover {
+    background-position: right;
+    transition: 0.5s ease;
+    cursor:default;
+}
+
+
 
 .ecoFooter {
   height: 125%;
