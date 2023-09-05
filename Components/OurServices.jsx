@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
+import styles from "../public/style/OurServiceStyle.css"
 
 const OurServices = () => {
     return(
@@ -16,14 +17,14 @@ const OurServices = () => {
                     <div className="serviceBoxContainer">
                         <div className="serviceTContainer">
                             <div className="tLeftService">
-                                <h4>Consulting</h4>
+                                <h3>Consulting</h3>
                                 <button>.</button>
                                 <h4>MicaR Compliance</h4>
                                 <h4>Blockchain advisory</h4>
                                 <h4>Tokenomics Advisory</h4>
                             </div>
                             <div className="tRightService">
-                                <h4>Smart Contracts Solution</h4>
+                                <h3>Smart Contracts Solution</h3>
                                 <button>.</button>
                                 <h4>ERC-Model Components</h4>
                                 <h4>Dapps Architecture</h4>
@@ -31,14 +32,14 @@ const OurServices = () => {
                         </div>
                         <div className="serviceBContainer">
                             <div className="bLeftService">
-                                <h4>Audit Smart Contracts</h4>
+                                <h3>Audit Smart Contracts</h3>
                                 <button>.</button>
                                 <h4>Security Audit</h4>
                                 <h4>Logic Audit</h4>
                                 <h4>Analytics & Performance Tools</h4>
                             </div>
                             <div className="bRightService">
-                                <h4>Development</h4>
+                                <h3>Development</h3>
                                 <button>.</button>
                                 <h4>Cloud & Database Management</h4>
                                 <h4>Web & Apps Development</h4>
