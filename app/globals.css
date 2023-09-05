@@ -1,7 +1,10 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+/* 0 - Header */
 .HeaderContainer {
   margin-top: 30px;
   align-items: center;
@@ -20,7 +23,60 @@
   gap: 20px;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+/* 1 - Shapping Future */
+
+.frame {
+  width: 1729px;
+  height: 851px;
+  background-image: url(/public/materials/Mask.png);
+}
+
+.text-shaping {
+  font-family: "Neue Montreal-Regular", Helvetica;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 90px;
+  text-align: center;
+}
+
+.text-creativity {
+  font-family: "Neue Montreal-Regular", Helvetica;
+  text-transform: uppercase;
+  font-size: 150px;
+  font-weight: 700;
+  line-height: 180px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  color: #1da7d9;
+}
+
+.at-mood-global {
+  font-family: "Neue Montreal-Regular", Helvetica;
+  text-align: center;
+  font-size: 28px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.shapping-btn {
+  border: 1px solid #1da7d9;
+  border-radius: 40px;
+  width: 236px;
+  height: 70px;
+  color: black;
+}
+
+.shapping-btn.black {
+  background-color: black;
+  color: white;
+}
 
 .footerContainer {
   display: flex;
@@ -78,7 +134,7 @@
   justify-content: space-between;
   height: 95%;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
 }
 
 .ecoFooter {
