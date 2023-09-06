@@ -1,0 +1,56 @@
+.wwdContainer {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-right: 0;
+}
+.wwdContainer > div:first-child{
+    display: flex;
+    align-items: center;
+
+}
+
+.wwdContainer .blueTitle {
+    font-size: 60px;
+    font-weight: 500;
+    margin-bottom: 40px;
+}
+
+.wwdContainer .WeDoText {
+    margin-bottom: 30px;
+}
+
+.wwdContainer .blueTitle span {
+    color: #17a3d3;
+}
+
+.blueTitle + .line{
+    flex-grow: 1;
+    height: 2px;
+    margin-left: 10px;
+    border-radius: 5px;
+    background: linear-gradient(
+        to right,
+        rgb(109, 9, 121),
+        rgba(230, 88, 223, 0.5),
+        magenta,
+        rgba(197, 27, 197, 0.5),
+        #17a3d3
+    );
+    background-size: 1200% 100%;
+    animation: animate 30s linear infinite;
+    transform: translateY(-1000%);
+}
+
+@keyframes animate {
+    0% {
+        background-position: 200%;
+    }
+    95% {
+        background-position: -200%;
+    }
+    100% {
+        background-position: -200%;
+        background: #17a3d3;
+    }
+}
