@@ -1,11 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 /* 0 - Header */
-
 .HeaderContainer {
   margin-top: 30px;
   align-items: center;
@@ -40,7 +37,7 @@
 }
 
 .text-shaping {
-  font-family: "Neue Montreal-Regular", Helvetica;
+  font-family: MonumentExtended;
   font-size: 60px;
   font-weight: 600;
   line-height: 90px;
@@ -48,7 +45,7 @@
 }
 
 .text-creativity {
-  font-family: "Neue Montreal-Regular", Helvetica;
+  font-family: MonumentExtended;
   text-transform: uppercase;
   font-size: 150px;
   font-weight: 700;
@@ -64,8 +61,7 @@
   height: 100px;
   top: 520px;
   left: 216.3828125px;
-  border: 1px solid #1da7d9;
-  font-family: "Neue Montreal-Regular", Helvetica;
+  font-family: MonumentExtended;
   text-align: center;
   font-size: 28px;
   font-weight: 400;
