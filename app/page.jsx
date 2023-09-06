@@ -1,19 +1,11 @@
-// pages/YourPage.js
+import OurServices from "@/Components/OurServices";
+import HomeShapingFuture from "../Components/HomeShapingFuture";
 
-import React from 'react';
-import Footer from '../components/Footer';
-import OurServices from '../components/OurServices';
-import techPartners from '../Components/techPartners';
-import ServiceHeader from '../Components/ServiceHeader';
-const YourPage = () => {
+export default function Home() {
   return (
     <div>
-      {/* Your page content */}
-      <ServiceHeader />
+      <HomeShapingFuture />
       <OurServices />
-      <techPartners />
     </div>
   );
-};
-
-export default YourPage;
+}

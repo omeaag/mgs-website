@@ -9,7 +9,7 @@ import mgsLogo from "../public/materials/logo.svg";
 export default function Header() {
   return (
     <div className="HeaderContainer">
-      <Image src={mgsLogo} />
+      <Image src={mgsLogo} alt="mgs-icon" />
       <div className="Navbar">
         <Link href="/">Home</Link>
         <Link href="/services">Services</Link>
@@ -17,10 +17,10 @@ export default function Header() {
         <Link href="/careers">Careers</Link>
       </div>
       <div className="HeaderIcons">
-        <Image src={notionIcon} />
-        <Image src={githubIcon} />
-        <Image src={twitterIcon} />
-        <Image src={linkedinIcon} />
+        <Image src={notionIcon} alt="notion-icon" />
+        <Image src={githubIcon} alt="github-icon" />
+        <Image src={twitterIcon} alt="twitter-icon" />
+        <Image src={linkedinIcon} alt="linkedin-icon" />
       </div>
     </div>
   );
