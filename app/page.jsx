@@ -1,4 +1,7 @@
 import OurServices from "../Components/OurServices";
+
+import OurServices from "@/Components/OurServices";
+
 import HomeShapingFuture from "../Components/HomeShapingFuture";
 
 export default function Home() {

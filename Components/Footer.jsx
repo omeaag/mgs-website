@@ -6,6 +6,7 @@ import linkedinIcon from "../public/materials/entypo-social_linkedin-with-circle
 import githubIcon from "../public/materials/mdi_github.svg";
 import notionIcon from "../public/materials/mingcute_notion-fill.svg";
 const Footer = () => {
+
   return (
     <footer>
       <div className="footerContainer">
