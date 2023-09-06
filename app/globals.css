@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: "MonumentExtended";
+  src: url(../public/Fonts/PPNeueMontreal-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "MonumentExtended";
+  src: url(../public/Fonts/PPNeueMontreal-Bold.ttf) format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
 /* 0 - Header */
 .HeaderContainer {
   margin-top: 30px;
