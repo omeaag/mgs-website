@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../public/style/ServiceHeader.css"
 import serviceBackgroundElementOne from "../public/materials/serviceBackgroundElementOne.svg"
 import serviceBackgroundElementTwo from "../public/materials/serviceBackgroundElementTwo.svg"
+import eparrowdown from "../public/materials/ep_arrow-down.svg"
 
 const ServiceHeader = () => {
     return (
@@ -25,6 +26,7 @@ const ServiceHeader = () => {
                 <Image src={serviceBackgroundElementOne}></Image>
                 <Image src={serviceBackgroundElementTwo}></Image>
             </div>
+            <Image id="epArrow" src={eparrowdown}></Image>
         </div>
     );
 };
