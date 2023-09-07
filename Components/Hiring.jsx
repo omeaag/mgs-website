@@ -2,8 +2,6 @@
 import React, {useState} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import {GrLocation} from 'react-icons/gr';
-import {IoMdTime} from 'react-icons/io';
 import amsterdam from '../public/materials/amsterdam.svg';
 import '../public/style/Hiring.css';
 
