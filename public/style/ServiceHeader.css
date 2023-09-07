@@ -37,6 +37,15 @@
     position: absolute;
     width: 120%;
     display: flex;
-    justify-content: end;
-    overflow: hidden;
-}
+    justify-content: flex-end; /* Use 'flex-end' instead of 'end' */
+    position: absolute;
+    margin-right: 23.7rem;
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+
+  #epArrow {
+    position: absolute;
+    justify-content: center;
+    
+    align-self:flex-end;
+  }
