@@ -4,17 +4,8 @@ import { Inter } from "next/font/google";
 import Footer from "@/Components/Footer";
 import WhatWeDo from "@/Components/WhatWeDo";
 import OurSolution from "@/Components/OurSolution";
-
-import Hiring from "@/Components/Hiring";
-
 import OurPortfolio from "@/Components/OurPortfolio";
-<<<<<<< HEAD
-import HomeShapingFuture from "../Components/HomeShapingFuture";
-import ServiceHeader from "../Components/ServiceHeader";
-=======
 
-
->>>>>>> 7f6a9fe1b5b94a95cbe448e4766723eb87f163d4
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -27,16 +18,11 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-<<<<<<< HEAD
-        <ServiceHeader />
-=======
         <WhatWeDo />
         <OurSolution/>
         <OurPortfolio/>
         {children}
-        <Hiring/>
         <Footer />
->>>>>>> 7f6a9fe1b5b94a95cbe448e4766723eb87f163d4
       </body>
     </html>
   );
