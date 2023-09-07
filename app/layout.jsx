@@ -4,7 +4,11 @@ import { Inter } from "next/font/google";
 import Footer from "@/Components/Footer";
 import WhatWeDo from "@/Components/WhatWeDo";
 import OurSolution from "@/Components/OurSolution";
+
+import Hiring from "@/Components/Hiring";
+
 import OurPortfolio from "@/Components/OurPortfolio";
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,6 +26,7 @@ export default function RootLayout({ children }) {
         <OurSolution/>
         <OurPortfolio/>
         {children}
+        <Hiring/>
         <Footer />
       </body>
     </html>
