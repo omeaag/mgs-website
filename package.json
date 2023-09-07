@@ -12,9 +12,18 @@
     "autoprefixer": "10.4.15",
     "next": "^13.4.19",
     "postcss": "8.4.29",
+<<<<<<< HEAD
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+=======
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+
+    "react-icons": "^4.11.0"
+
+>>>>>>> 7f6a9fe1b5b94a95cbe448e4766723eb87f163d4
     "swiper": "^10.2.0"
+
   },
   "devDependencies": {
     "tailwindcss": "^3.3.3"
