@@ -17,6 +17,7 @@ import Block2 from "../public/materials/ourPortfolioImages/Block-2.svg";
 import Block3 from "../public/materials/ourPortfolioImages/Block-3.svg";
 import Block4 from "../public/materials/ourPortfolioImages/Block-4.svg";
 import Profile from "../public/materials/ourPortfolioImages/Group 1000000908.svg";
+import WhatPeople from "../public/materials/ourPortfolioImages/Group 1000000913.svg";
 import Info from "../public/materials/ourPortfolioImages/Group 1000000915.svg";
 import LeftArrow from "../public/materials/ourPortfolioImages/Vector 14.svg";
 import RightArrow from "../public/materials/ourPortfolioImages/Vector 17.svg";
@@ -76,15 +77,15 @@ function OurPortfolio() {
 
     return (
         <div className='allContainer-5'>
-            <Image id="iconoir_design" src={iconoir_design} />
-            <Image id="iconoir_dev_laptop" src={iconoir_dev_laptop} />
-            <Image id="iconoir_dev_phone" src={iconoir_dev_phone} />
-            <Image id="iconamoon_settings" src={iconamoon_settings} />
-            <Image id="streamline_interface" src={streamline_interface} />
-            <Image id="heart" src={Heart} />
+            <Image alt='iconoir_design' id="iconoir_design" src={iconoir_design} />
+            <Image alt='iconoir_dev_laptop' id="iconoir_dev_laptop" src={iconoir_dev_laptop} />
+            <Image alt='iconoir_dev_phone' id="iconoir_dev_phone" src={iconoir_dev_phone} />
+            <Image alt='iconamoon_settings' id="iconamoon_settings" src={iconamoon_settings} />
+            <Image alt='streamline_interface' id="streamline_interface" src={streamline_interface} />
+            <Image alt='Heart' id="heart" src={Heart} />
             <div className="headerContainer-5">
                 <h1>Our <span>Portfolio</span></h1>
-                <Image id="" src={Line} />
+                <Image alt="Line" id="" src={Line} />
             </div>
             <p className="headerContainerp">An analysis of the Blockchain marketplace in 2021 by Markets and Markets found the industry is expected to grow from a value of $4.9 billion (as of 2021) to $67.4 billion by 2026. This represents a Compound Annual Growth Rate of 68.4% during the forecast period.</p>
             <div className='galleryContainer'>
@@ -125,11 +126,11 @@ function OurPortfolio() {
             </div>
 
             <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                <Image id="" src={Profile} />
+                <Image alt="Profile" id="" src={Profile} />
                 <div className="infoContainer">
-                    <Image id="" src={LeftArrow} />
-                    <Image id="" src={Info} />
-                    <Image id="" src={RightArrow} />
+                    <Image alt="LeftArrow" id="" src={LeftArrow} />
+                    <Image alt="Info" id="" src={Info} />
+                    <Image alt="RightArrow" id="" src={RightArrow} />
                 </div>
             </div>
         </div>

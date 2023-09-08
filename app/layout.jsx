@@ -6,6 +6,7 @@ import WhatWeDo from "@/Components/WhatWeDo";
 import OurSolution from "@/Components/OurSolution";
 import OurPortfolio from "@/Components/OurPortfolio";
 import Partnership from "@/Components/Partnership";
+import GetInTouch from "@/Components/GetInTouch";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,10 +20,6 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <WhatWeDo />
-        <OurSolution/>
-        <OurPortfolio/>
-        <Partnership />
         {children}
         <Footer />
       </body>

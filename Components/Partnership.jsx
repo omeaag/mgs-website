@@ -24,127 +24,127 @@ import { useState, useEffect } from 'react';
 const Partnership = () => {
     const logos1 = [
         {
-            id: 1,
+            id: "hex",
             url: logos11
         },
         {
-            id: 2,
+            id: "infinite",
             url: logos12
         },
         {
-            id: 3,
+            id: "beta",
             url: logos13
         },
         {
-            id: 4,
+            id: "rımo",
             url: logos14
         }
     ]
     const logos2 = [
         {
-            id: 1,
+            id: "star",
             url: logos21
         },
         {
-            id: 2,
+            id: "erbis",
             url: logos22
         },
         {
-            id: 3,
+            id: "tree",
             url: logos23
         },
         {
-            id: 4,
+            id: "ko",
             url: logos24
         }
     ]
     const logos3 = [
         {
-            id: 1,
+            id: "github",
             url: logos31
         },
         {
-            id: 2,
+            id: "xlogo",
             url: logos32
         },
         {
-            id: 3,
+            id: "pyramid",
             url: logos33
         },
         {
-            id: 4,
+            id: "react",
             url: logos34
         }
     ]
     const logos4 = [
         {
-            id: 1,
+            id: "pyramit",
             url: logos33
         },
         {
-            id: 2,
+            id: "beta",
             url: logos13
         },
         {
-            id: 3,
+            id: "universe",
             url: logos43
         },
         {
-            id: 4,
+            id: "veztek",
             url: logos44
         }
     ]
     const logos5 = [
         {
-            id: 1,
+            id: "eye",
             url: logos51
         },
         {
-            id: 2,
+            id: "react",
             url: logos34
         },
         {
-            id: 3,
+            id: "star",
             url: logos21
         },
         {
-            id: 4,
+            id: "tree",
             url: logos33
         }
     ]
     const logos6 = [
         {
-            id: 1,
+            id: "xlogo",
             url: logos32
         },
         {
-            id: 2,
+            id: "hex",
             url: logos11
         },
         {
-            id: 3,
+            id: "eye",
             url: logos51
         },
         {
-            id: 4,
+            id: "erbis",
             url: logos22
         }
     ]
     const logos7 = [
         {
-            id: 1,
+            id: "aws",
             url: logos71
         },
         {
-            id: 2,
+            id: "github",
             url: logos31
         },
         {
-            id: 3,
+            id: "infinite",
             url: logos12
         },
         {
-            id: 4,
+            id: "veztek",
             url: logos44
         }
     ]
@@ -155,7 +155,7 @@ const Partnership = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCount((prevCount) => (prevCount + 1) % logos1.length);
-        }, 1000);
+        }, 2000);
         return () => clearInterval(interval);
     });
 
@@ -170,32 +170,32 @@ const Partnership = () => {
                         <Image alt={logos1[count].id} src={logos1[count].url}></Image>
                     </div>
                     <div className='hexagonContainer'>
-                        <Image alt={logos1[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logos1[count].id} src={logos2[count].url}></Image>
+                        <Image alt={logos2[count].id} id='hexagon' src={hexagon}></Image>
+                        <Image alt={logos2[count].id} src={logos2[count].url}></Image>
                     </div>
                 </div>
                 <div style={{ display: 'flex', gap: "7px", marginTop: "-70px", marginLeft: "-146px", }}>
                     <div className='hexagonContainer'>
-                        <Image alt={logos1[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logos1[count].id} src={logos3[count].url}></Image>
+                        <Image alt={logos3[count].id} id='hexagon' src={hexagon}></Image>
+                        <Image alt={logos3[count].id} src={logos3[count].url}></Image>
                     </div>
                     <div className='hexagonContainer'>
-                        <Image alt={logos1[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logos1[count].id} src={logos4[count].url}></Image>
+                        <Image alt={logos4[count].id} id='hexagon' src={hexagon}></Image>
+                        <Image alt={logos4[count].id} src={logos4[count].url}></Image>
                     </div>
                     <div className='hexagonContainer'>
-                        <Image alt={logos1[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logos1[count].id} src={logos5[count].url}></Image>
+                        <Image alt={logos5[count].id} id='hexagon' src={hexagon}></Image>
+                        <Image alt={logos5[count].id} src={logos5[count].url}></Image>
                     </div>
                 </div>
                 <div style={{ display: 'flex', gap: "7px", marginTop: "-70px" }}>
                     <div className='hexagonContainer'>
-                        <Image alt={logos1[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logos1[count].id} src={logos6[count].url}></Image>
+                        <Image alt={logos6[count].id} id='hexagon' src={hexagon}></Image>
+                        <Image alt={logos6[count].id} src={logos6[count].url}></Image>
                     </div>
                     <div className='hexagonContainer'>
-                        <Image alt={logos1[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logos1[count].id} src={logos7[count].url}></Image>
+                        <Image alt={logos7[count].id} id='hexagon' src={hexagon}></Image>
+                        <Image alt={logos7[count].id} src={logos7[count].url}></Image>
                     </div>
                 </div>
             </div>
