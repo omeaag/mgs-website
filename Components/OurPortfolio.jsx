@@ -17,12 +17,11 @@ import Block2 from "../public/materials/ourPortfolioImages/Block-2.svg";
 import Block3 from "../public/materials/ourPortfolioImages/Block-3.svg";
 import Block4 from "../public/materials/ourPortfolioImages/Block-4.svg";
 import Profile from "../public/materials/ourPortfolioImages/Group 1000000908.svg";
-import WhatPeople from "../public/materials/ourPortfolioImages/Group 1000000913.svg";
 import Info from "../public/materials/ourPortfolioImages/Group 1000000915.svg";
 import LeftArrow from "../public/materials/ourPortfolioImages/Vector 14.svg";
 import RightArrow from "../public/materials/ourPortfolioImages/Vector 17.svg";
 import Heart from "../public/materials/ourPortfolioImages/Vector.svg";
-import { useState } from "react";
+
 
 
 function OurPortfolio() {
