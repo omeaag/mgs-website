@@ -38,6 +38,7 @@
 }
 
 .serviceHeaderImageContainer {
+<<<<<<< HEAD
   height: 60%;
   position: absolute;
   width: 120%;
@@ -45,3 +46,21 @@
   justify-content: flex-end;
   overflow: hidden;
 }
+=======
+    height: 60%;
+    position: absolute;
+    width: 120%;
+    display: flex;
+    justify-content: flex-end; /* Use 'flex-end' instead of 'end' */
+    position: absolute;
+    margin-right: 23.7rem;
+    overflow-x: hidden; /* Hide horizontal overflow */
+  }
+
+  #epArrow {
+    position: absolute;
+    justify-content: center;
+    
+    align-self:flex-end;
+  }
+>>>>>>> 26dd58797bac1faeab399e1bc84439f932cca34c

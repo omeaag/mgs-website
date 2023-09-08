@@ -1,0 +1,96 @@
+.hiringContainer .imageContainer {
+    position: relative;
+}
+
+.hiringContainer .imageContainer .imageText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: 70px;
+    font-weight: 500;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.hiringContainer .headerSection {
+    width: 100%;
+    text-align: center;
+    padding: 120px 120px 60px 120px;
+}
+
+.hiringContainer .headerSection > span {
+    border: 1px solid #17a3d3;
+    border-radius: 30px;
+    font-size: 25px;
+    padding: 20px 35px;
+}
+
+.hiringContainer .headerSection h1 {
+    margin-top: 30px;
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.hiringContainer .headerSection h1 span {
+    color: #17a3d3;
+}
+
+.hiringContainer .hiring{
+padding-left: 60px;
+padding-right: 60px;
+border-bottom: 1px solid #b8b4b4fa;
+}
+
+
+
+.hiringContainer .headerSection {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hiringContainer .hiringSection {
+    border-top: 1px solid #b8b4b4fa;
+    display: flex;
+    padding: 20px 0px;
+}
+
+.hiringSection .hiringTitle {
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.hiringSection #hiringDescription {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.hiringSection .hiringFeatures{
+    border: 1px solid #b8b4b4fa;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-right: 20px;
+}
+
+.hiringSection .apply{
+    font-size: 25px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    width: auto;
+}
+
+.hiringSection .apply a{
+    float: right !important;
+}
+
+button{
+    color: #17a3d3 !important;
+    font-size: 25px !important;
+    margin-top: 20px !important;
+    margin-left: 60px !important;
+}
