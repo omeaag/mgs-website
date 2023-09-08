@@ -1,42 +1,47 @@
 .mainServiceBackgroundContainer {
-    overflow-x: hidden;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    background: url(../materials/bluePinkBackground.svg);
-    background-repeat: no-repeat;
-    background-position: 100%;
-    background-size: cover;
-    justify-content: center;
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: url(../materials/bluePinkBackground.svg);
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-size: cover;
+  justify-content: center;
 }
 .serviceTextHeaderContainer {
-    height: 50%;
-    display: flex;
-    width: 75%;
-    justify-content: center;
-    flex-direction: column;
+  height: 50%;
+  display: flex;
+  width: 75%;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .ourServicesTextContainer {
-    line-height: 10rem;
+  line-height: 10rem;
 }
 
-.ourServicesTextContainer h1{color:rgb(71, 183, 224); font-size: 4.3rem; font-weight: bold;}
-.servicesHeaderSmallTextContainer p{font-size: 1.7rem;}
-
-.servicesHeaderSmallTextContainer {
-    line-height: 3.2rem;
+.ourServicesTextContainer h1 {
+  color: rgb(71, 183, 224);
+  font-size: 4.3rem;
+  font-weight: bold;
+}
+.servicesHeaderSmallTextContainer p {
+  font-size: 1.7rem;
 }
 
 .servicesHeaderSmallTextContainer {
-    
+  line-height: 3.2rem;
+}
+
+.servicesHeaderSmallTextContainer {
 }
 
 .serviceHeaderImageContainer {
-    height: 60%;
-    position: absolute;
-    width: 120%;
-    display: flex;
-    justify-content: end;
-    overflow: hidden;
+  height: 60%;
+  position: absolute;
+  width: 120%;
+  display: flex;
+  justify-content: flex-end;
+  overflow: hidden;
 }
