@@ -48,13 +48,6 @@
   display: none;
 }
 
-.left-section .accordion-par {
-  text-align: left;
-}
-.right-section .accordion-par {
-  text-align: right;
-}
-
 .accordion-title {
   font-family: MonumentExtended;
   font-size: 45px;
@@ -66,6 +59,7 @@
 
 .accordion-par {
   font-family: MonumentExtended;
+  text-align: left;
   font-size: 31px;
   font-weight: 400;
   line-height: 63px;
