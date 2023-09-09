@@ -1,13 +1,31 @@
 import Link from "next/link";
 import Image from "next/image";
+import '../public/style/TechPartnersStyle.css';
+import techPartnersButton from '../public/materials/TechPartnersImages/techpartnersbuttonunclicked.svg'
+import NextLabsComponent from "./TechPartnersComponents/NexLabsComponent";
 
-const techPartners = () => {
+const TechPartners = () => {
     return (
         <div className="techParentContainer">
-            <h2>hey</h2>
-            <h3>sss</h3>
+            <div className="techTextParentContainer">
+            <h1>Technology <span>Partners</span> </h1>
+            <p>Mood Global Services Hub gives startups and third parties a place to conceptualize and build their ideas. The hub <br />
+            is the space where ideas become reality, by providing the necessary infrastructure and services that supports <br />
+            entrepreneurs and established.</p>
+            </div>
+            <div className="techSliderParentContainer">
+                <div className="techPartnersLeftButtonContainer">
+                    <Image src={techPartnersButton}></Image>
+                </div>
+                <div className="techPartnerComponentContainer">
+                    <NextLabsComponent />
+                </div>
+                <div className="techPartnersRightButtonContainer">
+                    <Image id="techRightButtonID" src={techPartnersButton}></Image>
+                </div>
+            </div>
         </div>
     );
 };
 
-export default techPartners;
+export default TechPartners;

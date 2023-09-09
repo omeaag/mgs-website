@@ -1,13 +1,17 @@
+import TechPartners from "@/Components/TechPartners";
 import AccordionComponent from "../../Components/Accordion/AccordionComponent";
-import OurServices from "../../Components/OurServices";
 import ServiceHeader from "../../Components/ServiceHeader";
+import GetInTouch from "@/Components/GetInTouch";
+import Partnership from "@/Components/Partnership";
 
 export default function Services() {
   return (
     <div>
       <ServiceHeader />
       <AccordionComponent />
-      <OurServices />
+      <TechPartners />
+      <Partnership />
+      <GetInTouch />
     </div>
   );
 }
