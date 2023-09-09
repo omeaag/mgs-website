@@ -21,6 +21,9 @@ import Info from "../public/materials/ourPortfolioImages/Group 1000000915.svg";
 import LeftArrow from "../public/materials/ourPortfolioImages/Vector 14.svg";
 import RightArrow from "../public/materials/ourPortfolioImages/Vector 17.svg";
 import Heart from "../public/materials/ourPortfolioImages/Vector.svg";
+import pp1 from "../public/materials/ourPortfolioImages/pp1.svg";
+import pp2 from "../public/materials/ourPortfolioImages/pp2.svg";
+import pp3 from "../public/materials/ourPortfolioImages/pp3.svg";
 
 
 
@@ -47,15 +50,47 @@ function OurPortfolio() {
             url: Block4
         },
     ];
-    const swiper1 = useRef(null);
-    const swiper2 = useRef(null);
 
+
+    const people = [
+        {
+            id: 1,
+            name: "Jessica Muller",
+            description: "Research published by the Statista Research Department found global spending on blockchain solutions accelerated from 4.5 billion to 6.6 billion in 2021.By 2024...",
+            image: pp1
+        },
+        {
+            id: 2,
+            name: "Millan Jovanovi",
+            description: "Research published by the Statista Research Department found global spending on blockchain solutions accelerated from 4.5 billion to 6.6 billion in 2021.By 2024...",
+            image: pp2
+        },
+        {
+            id: 3,
+            name: "Elinor Denney",
+            description: "Research published by the Statista Research Department found global spending on blockchain solutions accelerated from 4.5 billion to 6.6 billion in 2021.By 2024...",
+            image: pp3
+        }
+    ];
+
+    const swiper = useRef(null);
+    const goNext = () => {
+        if (swiper.current && swiper.current.swiper) {
+            swiper.current.swiper.slideNext();
+        }
+    };
+    const goPrev = () => {
+        if (swiper.current && swiper.current.swiper) {
+            swiper.current.swiper.slidePrev();
+        }
+    };
+
+    const swiper1 = useRef(null);
     const goNext1 = () => {
         if (swiper1.current && swiper1.current.swiper) {
             swiper1.current.swiper.slideNext();
         }
     };
-
     const goPrev1 = () => {
         if (swiper1.current && swiper1.current.swiper) {
             swiper1.current.swiper.slidePrev();
@@ -69,7 +104,7 @@ function OurPortfolio() {
             <Image alt='iconoir_dev_phone' id="iconoir_dev_phone" src={iconoir_dev_phone} />
             <Image alt='iconamoon_settings' id="iconamoon_settings" src={iconamoon_settings} />
             <Image alt='streamline_interface' id="streamline_interface" src={streamline_interface} />
-            <Image alt='Heart' id="heart" src={Heart} />
+
             <div className="headerContainer-5">
                 <h1>Our <span>Portfolio</span></h1>
                 <Image alt="Line" id="" src={Line} />
@@ -102,24 +137,42 @@ function OurPortfolio() {
                 </button>
             </div>
 
-
-{/* THİS PART WİLL BE UPDATED WİTH SWİPER SLİDE */}
             <div className="build30">
                 <h2 className="build">Builders and Projects Helped</h2>
                 <h2 className="plus30">30+</h2>
             </div>
             <div className="whatPeopleContainer">
-                <h1>What People &nbsp;&nbsp;&nbsp;&nbsp; to say about us!</h1>
+                <h1>What People&nbsp;<Image alt='Heart' id="heart" src={Heart} />&nbsp;to say about us!                </h1>
             </div>
 
-            <div style={{ display: "flex", flexDirection: "column", alignItems: "center" }}>
-                <Image alt="Profile" id="" src={Profile} />
-                <div className="infoContainer">
-                    <Image alt="LeftArrow" id="" src={LeftArrow} />
-                    <Image alt="Info" id="" src={Info} />
-                    <Image alt="RightArrow" id="" src={RightArrow} />
-                </div>
+            <div className="personContainer">
+                <button onClick={goPrev} className="prev-button">
+                    <Image src={LeftArrow} alt="Sol Ok" width={150} height={150} />
+                </button>
+                <Swiper className='personSwiper'
+                    ref={swiper}
+                    spaceBetween={20}
+                    slidesPerView={1}
+                    navigation={{
+                        prevEl: '.prev-button',
+                        nextEl: '.next-button',
+                    }}
+                >
+                    {people.map(person => (
+                        <SwiperSlide key={person.id}>
+                            <div className="personSlider">
+                                <img src={person.image.src} alt={person.name} />
+                                <h2>{person.name}</h2>
+                                <p>{person.description}</p>
+                            </div>
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
+                <button onClick={goNext} className="next-button">
+                    <Image src={RightArrow} alt="Sağ Ok" width={150} height={150} />
+                </button>
             </div>
+
         </div>
     );
 };
