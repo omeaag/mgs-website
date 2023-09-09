@@ -1,12 +1,23 @@
-import OurServices from "../Components/OurServices";
+"use client";
 
+import OurServices from "../Components/OurServices";
 import HomeShapingFuture from "../Components/HomeShapingFuture";
-import techPartners from "../Components/techPartners";
+import WhatWeDo from "@/Components/WhatWeDo";
+import OurSolution from "@/Components/OurSolution";
+import OurPortfolio from "@/Components/OurPortfolio";
+import Partnership from "@/Components/Partnership";
+import GetInTouch from "@/Components/GetInTouch";
+
 export default function Home() {
   return (
     <div>
+      <HomeShapingFuture />
+      <WhatWeDo />
+      <OurSolution />
       <OurServices />
-      <techPartners />
+      <OurPortfolio />
+      <Partnership />
+      <GetInTouch />
     </div>
   );
 }

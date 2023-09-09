@@ -1,13 +1,12 @@
 .headerContainer-5 {
     display: flex;
-    margin: 50px 250px;
+    margin: 50px auto;
 }
 
 .headerContainer-5 h1{
     min-width: 498px;
     height: 90px;
-    top: 4552px;
-    left: 192px;
+
     font-family: MonumentExtended;
     font-size: 90px;
     font-weight: 300;
@@ -118,6 +117,10 @@ margin-right: 45px;
 
 .allContainer-5{
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #iconamoon_settings {
