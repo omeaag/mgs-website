@@ -18,91 +18,24 @@
 
 /* 0 - Header */
 .HeaderContainer {
-  margin-top: 30px;
+  margin-top: 2.5rem;
   align-items: center;
   justify-content: center;
   display: flex;
-  justify-content: space-around;
 }
 
 .Navbar {
   display: flex;
-  gap: 40px;
+  gap: 2.5rem;
+  margin: 0 15rem 0 20rem;
 }
 
 .HeaderIcons {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
-/* 1 - Shapping Future */
-
-.frame {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-}
-.bottomLine {
-  border: 1px solid #848484;
-  width: 250px;
-}
-
-.text-shaping {
-  font-family: MonumentExtended;
-  font-size: 60px;
-  font-weight: 600;
-  line-height: 90px;
-  text-align: center;
-}
-
-.text-creativity {
-  font-family: MonumentExtended;
-  text-transform: uppercase;
-  font-size: 150px;
-  font-weight: 700;
-  line-height: 180px;
-  letter-spacing: 0.05em;
-  text-align: center;
-  color: #1da7d9;
-}
-
-.at-mood-global {
-  margin-top: 30px;
-  width: 1296px;
-  height: 100px;
-  top: 520px;
-  left: 216.3828125px;
-  font-family: MonumentExtended;
-  text-align: center;
-  font-size: 28px;
-  font-weight: 400;
-  line-height: 50px;
-  letter-spacing: 0px;
-}
-
-.buttons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 30px;
-}
-
-.shapping-btn {
-  border: 2px solid #1da7d9;
-  border-radius: 40px;
-  width: 236px;
-  height: 70px;
-  color: black;
-}
-
-.shapping-btn.black {
-  background-color: black;
-  color: white;
-}
-
+/* 1 - Footer */
 .footerContainer {
   display: flex;
   justify-content: center;

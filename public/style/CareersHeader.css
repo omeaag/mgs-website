@@ -1,0 +1,71 @@
+.careersHeaderContainer {
+  overflow-x: hidden;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background: url(../materials/bluePinkBackground.svg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-size: cover;
+  justify-content: center;
+}
+
+.careersBiggestHeader p {
+  font-family: MonumentExtended;
+  color: #1da7d9;
+  font-size: 3.4rem;
+  font-weight: 700;
+  line-height: 4.5rem;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.careersSmallHeader p {
+  font-family: MonumentExtended;
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: 4rem;
+  letter-spacing: 0px;
+  text-align: left;
+  width: 90%;
+}
+
+.careersHeaderPar {
+  font-family: MonumentExtended;
+  font-size: 2.3rem;
+  font-weight: 400;
+  line-height: 3rem;
+  letter-spacing: 1px;
+  text-align: left;
+  letter-spacing: -1px;
+}
+
+.careersHeaderAllContent {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: flex-end;
+}
+
+.careersHeaderAllText {
+  display: flex;
+  position: absolute;
+  margin-top: 11.2rem;
+  width: 50%;
+  flex-direction: column;
+  left: 11rem;
+}
+
+.careersSmallHeader {
+  margin: 1.563rem 0 2.5rem 0;
+}
+
+.careersHeaderImageContainer {
+  display: flex;
+  justify-content: flex-end;
+  height: 100%;
+}
+.careersHeaderImageContainer img {
+  width: 68%;
+}

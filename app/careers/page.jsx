@@ -1,3 +1,9 @@
+import CareersHeader from "@/Components/CareersHeader";
+
 export default function Home() {
-  return <div>Careers Page</div>;
+  return (
+    <div>
+      <CareersHeader />
+    </div>
+  );
 }

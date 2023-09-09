@@ -1,0 +1,120 @@
+.moodConvertAllContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-image: url("../materials/moodConverAIImages/background.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+
+.smallBackground {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("../materials/moodConverAIImages/Frame\ 1261152487.svg");
+    width: 100%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+
+.moodConvertAIContainer {
+    margin: 120px 0;
+    gap: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.moodConvertAIContainer h3 {
+    color: #1A1A1A;
+    font-size: 28px;
+    font-family: MonumentExtended;
+    font-weight: 100;
+    text-align: center;
+}
+
+.AIformContainer {
+    margin: auto;
+    background-color: #FFFFFF;
+    border-radius: 1.2rem;
+    padding: 3% 7%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    gap: 650px;
+    border: 1px solid #1DA7D9;
+    width: 75%;
+    height: 1100px;
+}
+
+.underForm {
+    gap: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.AIformContainer h4 {
+    font-size: 30px;
+    font-family: MonumentExtended;
+}
+
+.groupCont,
+.cardContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.groupCont {
+    gap: 20px
+}
+
+.cardContainer {
+    padding: 16px 28px 16px 28px;
+    border: 1px solid #B9B9B9;
+    border-radius: 12px;
+    gap: 20px;
+}
+
+.cardContainer h6 {
+    color: #B9B9B9;
+    font-size: 18px;
+    font-family: MonumentExtended;
+}
+
+.cardContainer h5 {
+    color: #999999;
+    font-size: 20px;
+    font-family: MonumentExtended;
+    color: black;
+}
+
+.textContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 6px
+}
+
+#details {
+    border: 1px solid #BDBDBD;
+    color: #BDBDBD;
+    border-radius: 20px;
+    padding: 10px;
+    height: 80px;
+    width: 100%;
+    padding-left: 30px;
+}
+
+.checkbox {
+    width: 24px;
+    height: 24px;
+}

@@ -1,0 +1,184 @@
+.headerContainer-5 {
+    display: flex;
+    margin: 50px auto;
+}
+
+.headerContainer-5 h1{
+    min-width: 498px;
+    height: 90px;
+    font-family: MonumentExtended;
+    font-size: 90px;
+    font-weight: 300;
+    line-height: 90px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+.whatPeopleContainer h1 {
+    font-family: MonumentExtended;
+    font-size: 90px;
+    display: flex;
+}
+
+.headerContainer-5 h1 span {
+    color: #1DA7D9;
+}
+
+.headerContainerp {
+    width: 1344px;
+    height: 150px;
+    top: 4683px;
+    left: 192px;
+    font-family: MonumentExtended;
+    font-size: 28px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+
+
+.whatPeopleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    background-image: url("../materials/ourPortfolioImages/Polygon\ 7.png");
+    background-position-x: center;
+    background-repeat: no-repeat;
+    padding-top: 250px;
+    gap: 60px;
+}
+
+.infoContainer {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+
+.galleryContainer{
+    display: flex; 
+    align-items: center;
+    margin: auto;
+    width: 1500px;
+}
+
+
+
+
+
+
+
+
+.personContainer{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    width: 1500px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 100px;
+    margin-bottom: 200px;
+}
+.personSwiper{
+
+}
+
+.personSlider{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+
+}
+
+.personSlider h2 {
+    font-size: 40px;
+    font-family: MonumentExtended;
+}
+
+.personSlider p {
+    font-size: 28px;
+    font-family: MonumentExtended;
+    text-align: center;
+    width: 80%;
+}
+
+.prev-button{
+margin-right: 45px;
+}
+
+.build30 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding-top: 200px;
+}
+
+.build {
+    width: 555px;
+    height: 180px;
+    top: 5693px;
+    left: 308px;
+    font-family: MonumentExtended;
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 90px;
+    letter-spacing: 0px;
+    text-align: left;
+
+}
+
+.plus30 {
+    font-size: 150px;
+    font-weight: 900;
+    width: 370.43017578125px;
+    height: 151.8300018310547px;
+    top: 5700px;
+    left: 1055.94140625px;
+    color: #1DA7D9;
+    font-family: MonumentExtended;
+}
+
+.allContainer-5{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#iconamoon_settings {
+    position: absolute;
+    top: 1200px;
+    left: 200px;
+}
+
+#iconoir_design {
+    position: absolute;
+    top: 1600px;
+    left: 350px;
+}
+
+#iconoir_dev_laptop {
+    position: absolute;
+    top: 1250px;
+    right: 150px;
+}
+
+#iconoir_dev_phone {
+    position: absolute;
+    top: 1100px;
+    left: 900px;
+}
+
+#streamline_interface {
+    position: absolute;
+    top: 1500px;
+    right: 400px;
+}

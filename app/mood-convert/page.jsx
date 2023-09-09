@@ -1,3 +1,10 @@
+import MoodConvertAI from "@/Components/MoodConvert/MoodConvertAI";
+
 export default function Home() {
-  return <div>MoodConvert Page</div>;
+
+  return (
+    <div>
+      <MoodConvertAI />
+    </div>
+  );
 }

@@ -1,0 +1,100 @@
+.partnershipAllContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1DA7D9;
+    border-radius: 1.2rem;
+    justify-content: start;
+    padding-left: 200px;
+    margin-bottom: 200px;
+    max-height: 500px;
+}
+
+.getInTouchContainer {
+    width: 50%;
+    margin: 100px 30px 120px -50px;
+}
+
+.getInTouchContainer h1 {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: MonumentExtended;
+    font-weight: 700;
+}
+
+.getInTouchContainer h3 {
+    color: #FFFFFF;
+    font-size: 24px;
+    font-family: MonumentExtended;
+    font-weight: 100;
+}
+
+.formContainer {
+    margin-top: 150px;
+    background-color: #FFFFFF;
+    border-radius: 1.2rem;
+    padding: 44px 32px 44px 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    gap: 20px;
+    box-shadow: 0px 0px 50px 1px #515458;
+}
+
+.formContainer input {
+    border: 1px solid #BDBDBD;
+    color: #BDBDBD;
+    border-radius: 5px;
+    width: 247px;
+    height: 48px;
+    padding: 10px;
+
+}
+
+.formContainer label {
+    font-size: 12px;
+    color: #515458;
+}
+
+.formContainer button {
+    font-size: 16px;
+    color: #fff;
+    background-color: black;
+    border-radius: 42px;
+    width: 218px;
+    height: 64px;
+    border: 2px solid #1DA7D9;
+    padding: 20px 40px 20px 40px;
+    font-family: MonumentExtended;
+}
+
+.namesContainer {
+    gap: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.groupContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.comphoneContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+
+
+#details {
+    height: 162px;
+    width: 100%;
+}
+
+#email {
+    width: 100%;
+}

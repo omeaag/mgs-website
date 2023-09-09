@@ -1,0 +1,8 @@
+.hexagonContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#hexagon {
+    margin-right: -240px;
+}
