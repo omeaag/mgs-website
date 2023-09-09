@@ -1,4 +1,4 @@
-import TechPartners from "@/Components/TechPartners";
+import TechPartners from "@/Components/techPartners";
 import AccordionComponent from "../../Components/Accordion/AccordionComponent";
 import ServiceHeader from "../../Components/ServiceHeader";
 import GetInTouch from "@/Components/GetInTouch";
