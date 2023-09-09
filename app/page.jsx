@@ -5,6 +5,8 @@ import HomeShapingFuture from "../Components/HomeShapingFuture";
 import WhatWeDo from "@/Components/WhatWeDo";
 import OurSolution from "@/Components/OurSolution";
 import OurPortfolio from "@/Components/OurPortfolio";
+import Partnership from "@/Components/Partnership";
+import GetInTouch from "@/Components/GetInTouch";
 
 export default function Home() {
   return (
@@ -14,6 +16,8 @@ export default function Home() {
       <OurSolution />
       <OurServices />
       <OurPortfolio />
+      <Partnership />
+      <GetInTouch />
     </div>
   );
 }
