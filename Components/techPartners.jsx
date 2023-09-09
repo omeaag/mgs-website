@@ -7,7 +7,7 @@ import NextLabsComponent from "./TechPartnersComponents/NexLabsComponent";
 import MirrorTrackerComponent from "./TechPartnersComponents/MirrorTrackerComponent";
 import GoalStarComponent from "./TechPartnersComponents/GoalStarComponent";
 
-const TechPartners = () => {
+const techPartners = () => {
     return (
         <div className="techParentContainer">
             <div className="techTextParentContainer">
