@@ -8,6 +8,8 @@ import OurPortfolio from "@/Components/OurPortfolio";
 import Partnership from "@/Components/Partnership";
 import GetInTouch from "@/Components/GetInTouch";
 
+import techPartners from "@/Components/techPartners";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
