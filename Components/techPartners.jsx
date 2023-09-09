@@ -1,8 +1,11 @@
 import Link from "next/link";
+
 import Image from "next/image";
 import '../public/style/TechPartnersStyle.css';
 import techPartnersButton from '../public/materials/TechPartnersImages/techpartnersbuttonunclicked.svg'
 import NextLabsComponent from "./TechPartnersComponents/NexLabsComponent";
+import MirrorTrackerComponent from "./TechPartnersComponents/MirrorTrackerComponent";
+import GoalStarComponent from "./TechPartnersComponents/GoalStarComponent";
 
 const TechPartners = () => {
     return (
