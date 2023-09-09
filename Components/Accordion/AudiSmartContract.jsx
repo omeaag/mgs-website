@@ -44,9 +44,9 @@ function AudiSmartContract() {
           Audi Smart <span>Contract</span>
         </p>
         {display === true ? (
-          <Image src={accordionUp} />
+          <Image alt="accordion-up" src={accordionUp} />
         ) : (
-          <Image src={accordionDown} />
+          <Image alt="accordion-down" src={accordionDown} />
         )}
       </div>
 

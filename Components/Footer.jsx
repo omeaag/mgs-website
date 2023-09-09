@@ -6,7 +6,6 @@ import linkedinIcon from "../public/materials/entypo-social_linkedin-with-circle
 import githubIcon from "../public/materials/mdi_github.svg";
 import notionIcon from "../public/materials/mingcute_notion-fill.svg";
 const Footer = () => {
-
   return (
     <footer>
       <div className="footerContainer">
@@ -27,10 +26,10 @@ const Footer = () => {
           <div className="rightFooter">
             <div className="ecoFooter">
               <strong>MGS ECOSYSTEM</strong>
-              <button>Home</button>
-              <button>Services</button>
-              <button>MoodConvert </button>
-              <button>Careers</button>
+              <Link href="/">Home</Link>
+              <Link href="/services">Services</Link>
+              <Link href="/mood-convert">MoodConvert</Link>
+              <Link href="/careers">Careers</Link>
               <button>FAQ</button>
               <button>Terms and Conditions</button>
               <button>Privacy Policy</button>
