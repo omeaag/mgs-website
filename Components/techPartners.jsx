@@ -31,4 +31,4 @@ const techPartners = () => {
     );
 };
 
-export default TechPartners;
+export default techPartners;
