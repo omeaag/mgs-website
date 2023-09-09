@@ -1,12 +1,37 @@
-import "@/public/style/HomeShaping.css";
+import { useEffect, useState } from "react";
+import "../public/style/HomeShaping.css";
 
 export default function HomeShapingFuture() {
+  let texts = [
+    "Creativity",
+    "Technology",
+    "Imagination",
+    "Innovation",
+    "Simplicity",
+  ];
+  const [index, setIndex] = useState(0);
+  const [currentText, setCurrentText] = useState(texts[index]);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prevIndex) => (prevIndex + 1) % texts.length);
+    }, 3000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, []);
+
+  useEffect(() => {
+    setCurrentText(texts[index]);
+  }, [index]);
+
   return (
     <div className="HomeShapingContainer">
       <div className="HomeShapingHeaders">
         <p className="text-shaping">Shaping the Future with Blockchain</p>
 
-        <p className="text-creativity">Creativity</p>
+        <p className="text-creativity">{currentText}</p>
       </div>
 
       <div className="HomeShapingBottomLine"></div>

@@ -26,6 +26,7 @@ function SmartContractSolutions() {
       image: dappsArchitecture,
     },
   ];
+
   const [display, setDisplay] = useState(false);
 
   return (
@@ -35,9 +36,9 @@ function SmartContractSolutions() {
           Smart Contract <span>Solutions</span>
         </p>
         {display === true ? (
-          <Image alt="accordion-up" src={accordionUp} />
+          <Image alt="accordion up" src={accordionUp} />
         ) : (
-          <Image alt="accordion-down" src={accordionDown} />
+          <Image alt="accordion down" src={accordionDown} />
         )}
       </div>
 
