@@ -1,0 +1,59 @@
+.techParentContainer {
+    height: 75rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+.techTextParentContainer {
+    flex-direction: column;
+    height: 25%;
+    display: flex;
+    width: 80%;
+    text-align: left;
+}
+
+.techTextParentContainer h1 {font-size: 6.5rem;color:black; font-weight: bold;}
+.techTextParentContainer span {color: rgb(52, 175, 216);}
+.techTextParentContainer p {font-size: 2.2rem;line-height: 4rem;}
+
+.techSliderParentContainer {
+    height: 55%;
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+}
+
+.techSliderParentContainer .techPartnersLeftButtonContainer,
+.techSliderParentContainer .techPartnersRightButtonContainer {
+    height: 100%;
+    width: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.techPartnersLeftButtonContainer img,
+.techPartnersRightButtonContainer img{
+    transition: 0.5s ease;
+}
+
+.techPartnersRightButtonContainer img {
+    transform: scaleX(-1);
+}
+
+.techPartnersLeftButtonContainer img:hover,
+.techPartnersRightButtonContainer img:hover{
+    cursor: pointer;
+    transition: 0.5s ease;
+    width: 3.5rem;
+    filter: saturate(9000%) hue-rotate(30deg); /* Adjust values to make it more blue */
+
+}
+
+.techSliderParentContainer .techPartnerComponentContainer {
+    width: 90%;
+}
