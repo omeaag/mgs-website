@@ -3,7 +3,10 @@ import Image from "next/image";
 
 const techPartners = () => {
     return (
-        <h1>3333</h1>
+        <div className="techParentContainer">
+            <h2>hey</h2>
+            <h3>sss</h3>
+        </div>
     );
 };
 

@@ -6,6 +6,8 @@ import WhatWeDo from "@/Components/WhatWeDo";
 import OurSolution from "@/Components/OurSolution";
 import OurPortfolio from "@/Components/OurPortfolio";
 
+import techPartners from "@/Components/techPartners";
+
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
@@ -18,11 +20,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <Header />
-        <WhatWeDo />
-        <OurSolution/>
-        <OurPortfolio/>
-        {children}
-        <Footer />
+        
+        <techPartners />
+
       </body>
     </html>
   );
