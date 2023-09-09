@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import "../public/style/CareersHeader.css";
 import worldMap from "../public/materials/world-map-background.svg";
