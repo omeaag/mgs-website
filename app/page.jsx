@@ -7,6 +7,7 @@ import OurSolution from "@/Components/OurSolution";
 import OurPortfolio from "@/Components/OurPortfolio";
 import Partnership from "@/Components/Partnership";
 import GetInTouch from "@/Components/GetInTouch";
+import Header from "@/Components/Header";
 
 export default function Home() {
   return (

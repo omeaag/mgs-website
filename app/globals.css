@@ -18,21 +18,21 @@
 
 /* 0 - Header */
 .HeaderContainer {
-  margin-top: 30px;
+  margin-top: 2.5rem;
   align-items: center;
   justify-content: center;
   display: flex;
-  justify-content: space-around;
 }
 
 .Navbar {
   display: flex;
-  gap: 40px;
+  gap: 2.5rem;
+  margin: 0 15rem 0 20rem;
 }
 
 .HeaderIcons {
   display: flex;
-  gap: 20px;
+  gap: 1.25rem;
 }
 
 /* 1 - Footer */
