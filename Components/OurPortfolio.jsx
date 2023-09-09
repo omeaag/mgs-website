@@ -17,7 +17,6 @@ import Block2 from "../public/materials/ourPortfolioImages/Block-2.svg";
 import Block3 from "../public/materials/ourPortfolioImages/Block-3.svg";
 import Block4 from "../public/materials/ourPortfolioImages/Block-4.svg";
 import Profile from "../public/materials/ourPortfolioImages/Group 1000000908.svg";
-import WhatPeople from "../public/materials/ourPortfolioImages/Group 1000000913.svg";
 import Info from "../public/materials/ourPortfolioImages/Group 1000000915.svg";
 import LeftArrow from "../public/materials/ourPortfolioImages/Vector 14.svg";
 import RightArrow from "../public/materials/ourPortfolioImages/Vector 17.svg";
@@ -60,18 +59,6 @@ function OurPortfolio() {
     const goPrev1 = () => {
         if (swiper1.current && swiper1.current.swiper) {
             swiper1.current.swiper.slidePrev();
-        }
-    };
-
-    const goNext2 = () => {
-        if (swiper2.current && swiper2.current.swiper) {
-            swiper2.current.swiper.slideNext();
-        }
-    };
-
-    const goPrev2 = () => {
-        if (swiper2.current && swiper2.current.swiper) {
-            swiper2.current.swiper.slidePrev();
         }
     };
 
