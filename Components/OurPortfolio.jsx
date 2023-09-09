@@ -40,6 +40,46 @@ function OurPortfolio() {
       url: Block3,
     },
 
+
+    return (
+        <div className='allContainer-5'>
+            <Image alt='iconoir_design' id="iconoir_design" src={iconoir_design} />
+            <Image alt='iconoir_dev_laptop' id="iconoir_dev_laptop" src={iconoir_dev_laptop} />
+            <Image alt='iconoir_dev_phone' id="iconoir_dev_phone" src={iconoir_dev_phone} />
+            <Image alt='iconamoon_settings' id="iconamoon_settings" src={iconamoon_settings} />
+            <Image alt='streamline_interface' id="streamline_interface" src={streamline_interface} />
+            <Image alt='Heart' id="heart" src={Heart} />
+            <div className="headerContainer-5">
+                <h1>Our <span>Portfolio</span></h1>
+                <Image alt="Line" id="" src={Line} />
+            </div>
+            <p className="headerContainerp">An analysis of the Blockchain marketplace in 2021 by Markets and Markets found the industry is expected to grow from a value of $4.9 billion (as of 2021) to $67.4 billion by 2026. This represents a Compound Annual Growth Rate of 68.4% during the forecast period.</p>
+            <div className='galleryContainer'>
+                <button onClick={goPrev1} className="prev-button">
+                    <Image src={LeftArrow} alt="Sol Ok" width={50} height={50} />
+                </button>
+                <Swiper
+                    ref={swiper1}
+                    spaceBetween={10}
+                    slidesPerView={2}
+                >
+                    <SwiperSlide>
+                        <Image src={photos[0].url} alt="Image 1" width={660} height={600} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Image src={photos[1].url} alt="Image 2" width={660} height={600} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Image src={photos[2].url} alt="Image 3" width={660} height={600} />
+                    </SwiperSlide>
+                    <SwiperSlide>
+                        <Image src={photos[3].url} alt="Image 4" width={660} height={600} />
+                    </SwiperSlide>
+                </Swiper>
+                <button onClick={goNext1} className="next-button">
+                    <Image src={RightArrow} alt="Sağ Ok" width={50} height={50} />
+                </button>
+            </div>
     {
       id: 4,
       url: Block4,
