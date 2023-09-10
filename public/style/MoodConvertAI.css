@@ -29,7 +29,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
 }
 
 .moodConvertAIContainer h3 {
@@ -47,7 +46,6 @@
     padding: 3% 7%;
     display: flex;
     flex-direction: column;
-    justify-content: end;
     align-items: center;
     gap: 650px;
     border: 1px solid #1DA7D9;
@@ -104,7 +102,7 @@
     gap: 6px
 }
 
-#details {
+.inputArea {
     border: 1px solid #BDBDBD;
     color: #BDBDBD;
     border-radius: 20px;
@@ -112,6 +110,19 @@
     height: 80px;
     width: 100%;
     padding-left: 30px;
+}
+
+.bottomCont{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+
+.sendButton{
+position: absolute;
+right: 20px;
+bottom: 27px;
 }
 
 .checkbox {
