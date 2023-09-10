@@ -6,3 +6,48 @@
 #hexagon {
     margin-right: -240px;
 }
+
+.allContainer{
+    display:flex;
+    gap: 100px; 
+    align-items: center
+}
+
+.allRows{
+    display: flex;
+    flex-direction: column;
+}
+
+.firstRow {
+    display: flex;
+    gap: 7px,
+}
+
+.secondRow {
+    display: flex; 
+    gap: 7px; 
+    margin-top: -70px; 
+    margin-left: -146px
+}
+
+.thirdRow {
+    display: flex; 
+    gap: 7px;
+    margin-top:-70px
+}
+
+.textContainer{
+    margin: auto
+}
+
+.textContainer h1{
+    font-size: 100px;
+    color: #3C3C3C; 
+    font-family: MonumentExtended
+}
+
+.textContainer h2{
+    font-size: 60px;
+    color: #1DA7D9; 
+    font-family: MonumentExtended
+}
