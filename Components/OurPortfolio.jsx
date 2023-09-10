@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 import Image from "next/image";
 import { useRef } from "react";
-import SwiperCore, { Navigation } from "swiper";
+import * as swiper from 'swiper';
 import styles from "../public/style/OurPortfolioStyle.css";
 import Script from "next/script";
 import iconoir_design from "../public/materials/ourPortfolioImages/iconoir_design-nib.svg";
@@ -26,7 +26,7 @@ import pp2 from "../public/materials/ourPortfolioImages/pp2.svg";
 import pp3 from "../public/materials/ourPortfolioImages/pp3.svg";
 
 function OurPortfolio() {
-  SwiperCore.use([Navigation]);
+  swiper.SwiperCore.use([swiper.Navigation]);
   const photos = [
     {
       id: 1,

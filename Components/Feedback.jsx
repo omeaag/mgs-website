@@ -16,9 +16,6 @@ const Feedback = () => {
         initialValues: {
             message: '',
         },
-        onSubmit: (values) => {
-            console.log(values);
-        },
         validationSchema: schema,
     });
     return (
@@ -31,7 +28,7 @@ const Feedback = () => {
             <form
                 onSubmit={formik.handleSubmit}
                 className='form'>
-                <div class='rate'>
+                <div className='rate'>
                     <span>Extremely Poor</span>
                     <button>1</button>
                     <button>2</button>
