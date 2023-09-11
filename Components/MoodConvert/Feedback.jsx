@@ -2,7 +2,7 @@
 import React from 'react';
 import {useFormik} from 'formik';
 import * as yup from 'yup';
-import '../public/style/Feedback.css';
+import '../../public/style/Feedback.css';
 
 const Feedback = () => {
     let schema = yup.object().shape({

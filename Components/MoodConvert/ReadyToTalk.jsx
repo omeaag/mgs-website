@@ -3,10 +3,10 @@ import React from 'react';
 import Image from 'next/image';
 import {useFormik} from 'formik';
 import * as yup from 'yup';
-import '../public/style/readyToTalk.css';
-import office from '../public/materials/moodConverAIImages/office.svg';
-import global from '../public/materials/moodConverAIImages/global.svg';
-import openAI from '../public/materials/moodConverAIImages/openAI.svg';
+import '../../public/style/readyToTalk.css';
+import office from '../../public/materials/moodConverAIImages/office.svg';
+import global from '../../public/materials/moodConverAIImages/global.svg';
+import openAI from '../../public/materials/moodConverAIImages/openAI.svg';
 
 const ReadyToTalk = () => {
     const modal = window.document.getElementById('myModal');
