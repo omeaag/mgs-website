@@ -22,186 +22,192 @@ import hexagon from "../public/materials/partnershipImages/hexagon.svg";
 import { useState, useEffect } from 'react';
 
 const Partnership = () => {
-    const logos1 = [
+
+    const logosData = [
         {
-            id: "hex",
-            url: logos11
+            id: 'first',
+            url: [
+                logos11,
+                logos12,
+                logos13,
+                logos14,
+            ],
         },
         {
-            id: "infinite",
-            url: logos12
+            id: 'second',
+            url: [
+                logos21,
+                logos22,
+                logos23,
+                logos24,
+            ],
         },
         {
-            id: "beta",
-            url: logos13
+            id: 'third',
+            url: [
+                logos31,
+                logos32,
+                logos33,
+                logos34,
+            ],
+            interval: 2200,
         },
         {
-            id: "rımo",
-            url: logos14
-        }
-    ]
-    const logos2 = [
-        {
-            id: "star",
-            url: logos21
+            id: 'fourth',
+            url: [
+                logos33,
+                logos13,
+                logos43,
+                logos44,
+            ],
         },
         {
-            id: "erbis",
-            url: logos22
+            id: 'fiveth',
+            url: [
+                logos51,
+                logos34,
+                logos21,
+                logos33,
+            ],
         },
         {
-            id: "tree",
-            url: logos23
+            id: 'sixth',
+            url: [
+                logos32,
+                logos11,
+                logos51,
+                logos22,
+            ],
         },
         {
-            id: "ko",
-            url: logos24
-        }
-    ]
-    const logos3 = [
-        {
-            id: "github",
-            url: logos31
+            id: 'seventh',
+            url: [
+                logos71,
+                logos31,
+                logos12,
+                logos44,
+            ],
         },
-        {
-            id: "xlogo",
-            url: logos32
-        },
-        {
-            id: "pyramid",
-            url: logos33
-        },
-        {
-            id: "react",
-            url: logos34
-        }
-    ]
-    const logos4 = [
-        {
-            id: "pyramit",
-            url: logos33
-        },
-        {
-            id: "beta",
-            url: logos13
-        },
-        {
-            id: "universe",
-            url: logos43
-        },
-        {
-            id: "veztek",
-            url: logos44
-        }
-    ]
-    const logos5 = [
-        {
-            id: "eye",
-            url: logos51
-        },
-        {
-            id: "react",
-            url: logos34
-        },
-        {
-            id: "star",
-            url: logos21
-        },
-        {
-            id: "tree",
-            url: logos33
-        }
-    ]
-    const logos6 = [
-        {
-            id: "xlogo",
-            url: logos32
-        },
-        {
-            id: "hex",
-            url: logos11
-        },
-        {
-            id: "eye",
-            url: logos51
-        },
-        {
-            id: "erbis",
-            url: logos22
-        }
-    ]
-    const logos7 = [
-        {
-            id: "aws",
-            url: logos71
-        },
-        {
-            id: "github",
-            url: logos31
-        },
-        {
-            id: "infinite",
-            url: logos12
-        },
-        {
-            id: "veztek",
-            url: logos44
-        }
-    ]
+    ];
+
 
     const [count, setCount] = useState(0);
+    const [count1, setCount1] = useState(0);
+    const [count2, setCount2] = useState(0);
+    const [count3, setCount3] = useState(0);
+    const [count4, setCount4] = useState(0);
+    const [count5, setCount5] = useState(0);
+    const [count6, setCount6] = useState(0);
 
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setCount((prevCount) => (prevCount + 1) % logos1.length);
-        }, 2000);
+            setCount((prevCount) => (prevCount + 1) % 4);
+        }, 3000);
         return () => clearInterval(interval);
-    });
-
-
+    }, [count]);
+    useEffect(() => {
+        const initialDelay = setTimeout(() => {
+            const interval = setInterval(() => {
+                setCount1((prevCount) => (prevCount + 1) % 4);
+            }, 3000);
+        }, 100);
+        return () => {
+            clearTimeout(initialDelay);
+        };
+    }, []);
+    useEffect(() => {
+        const initialDelay = setTimeout(() => {
+            const interval = setInterval(() => {
+                setCount2((prevCount) => (prevCount + 1) % 4);
+            }, 3000);
+        }, 200);
+        return () => {
+            clearTimeout(initialDelay);
+        };
+    }, []);
+    useEffect(() => {
+        const initialDelay = setTimeout(() => {
+            const interval = setInterval(() => {
+                setCount3((prevCount) => (prevCount + 1) % 4);
+            }, 3000);
+        }, 300);
+        return () => {
+            clearTimeout(initialDelay);
+        };
+    }, []);
+    useEffect(() => {
+        const initialDelay = setTimeout(() => {
+            const interval = setInterval(() => {
+                setCount4((prevCount) => (prevCount + 1) % 4);
+            }, 3000);
+        }, 400);
+        return () => {
+            clearTimeout(initialDelay);
+        };
+    }, []);
+    useEffect(() => {
+        const initialDelay = setTimeout(() => {
+            const interval = setInterval(() => {
+                setCount5((prevCount) => (prevCount + 1) % 4);
+            }, 3000);
+        }, 500);
+        return () => {
+            clearTimeout(initialDelay);
+        };
+    }, []);
+    useEffect(() => {
+        const initialDelay = setTimeout(() => {
+            const interval = setInterval(() => {
+                setCount6((prevCount) => (prevCount + 1) % 4);
+            }, 3000);
+        }, 600);
+        return () => {
+            clearTimeout(initialDelay);
+        };
+    }, []);
 
     return (
-        <div style={{ display: 'flex', gap: "100px", alignItems: "center", }}>
-            <div style={{ display: 'flex', flexDirection: "column" }}>
-                <div style={{ display: 'flex', gap: "7px", }}>
+        <div className="allContainer" >
+            <div className='allRows'>
+                <div className='firstRow'>
                     <div className='hexagonContainer'>
-                        <Image alt={logos1[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logos1[count].id} src={logos1[count].url}></Image>
+                        <Image alt={logosData[count].id} id='hexagon' src={hexagon} ></Image>
+                        <Image alt={logosData[count].id} src={logosData[0].url[count]}></Image>
                     </div>
                     <div className='hexagonContainer'>
-                        <Image alt={logos2[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logos2[count].id} src={logos2[count].url}></Image>
-                    </div>
-                </div>
-                <div style={{ display: 'flex', gap: "7px", marginTop: "-70px", marginLeft: "-146px", }}>
-                    <div className='hexagonContainer'>
-                        <Image alt={logos3[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logos3[count].id} src={logos3[count].url}></Image>
-                    </div>
-                    <div className='hexagonContainer'>
-                        <Image alt={logos4[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logos4[count].id} src={logos4[count].url}></Image>
-                    </div>
-                    <div className='hexagonContainer'>
-                        <Image alt={logos5[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logos5[count].id} src={logos5[count].url}></Image>
+                        <Image alt={logosData[count].id} id='hexagon' src={hexagon}></Image>
+                        <Image alt={logosData[count].id} src={logosData[1].url[count4]}></Image>
                     </div>
                 </div>
-                <div style={{ display: 'flex', gap: "7px", marginTop: "-70px" }}>
+                <div className='secondRow'>
                     <div className='hexagonContainer'>
-                        <Image alt={logos6[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logos6[count].id} src={logos6[count].url}></Image>
+                        <Image alt={logosData[count].id} id='hexagon' src={hexagon}></Image>
+                        <Image alt={logosData[count].id} src={logosData[2].url[count2]}></Image>
                     </div>
                     <div className='hexagonContainer'>
-                        <Image alt={logos7[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logos7[count].id} src={logos7[count].url}></Image>
+                        <Image alt={logosData[count].id} id='hexagon' src={hexagon}></Image>
+                        <Image alt={logosData[count].id} src={logosData[3].url[count3]}></Image>
+                    </div>
+                    <div className='hexagonContainer'>
+                        <Image alt={logosData[count].id} id='hexagon' src={hexagon}></Image>
+                        <Image alt={logosData[count].id} src={logosData[4].url[count1]}></Image>
+                    </div>
+                </div>
+                <div className='thirdRow'>
+                    <div className='hexagonContainer'>
+                        <Image alt={logosData[count].id} id='hexagon' src={hexagon}></Image>
+                        <Image alt={logosData[count].id} src={logosData[5].url[count6]}></Image>
+                    </div>
+                    <div className='hexagonContainer'>
+                        <Image alt={logosData[count].id} id='hexagon' src={hexagon}></Image>
+                        <Image alt={logosData[count].id} src={logosData[6].url[count5]}></Image>
                     </div>
                 </div>
             </div>
-            <div style={{ margin: "auto" }}>
-                <h2 style={{ fontSize: "60px", color: "#1DA7D9", fontFamily: "MonumentExtended" }}>Partnership</h2>
-                <h1 style={{ fontSize: "100px", color: "#3C3C3C", fontFamily: "MonumentExtended" }}>Developing <br /> With The Best</h1>
+            <div className='textContainer' style={{ margin: "auto" }}>
+                <h2>Partnership</h2>
+                <h1>Developing <br /> With The Best</h1>
             </div>
         </div>
     );
