@@ -9,10 +9,10 @@ export default function Home() {
   });
 
   return (
-    <div>
-      <MoodConvertAI />
-      <Feedback />
-      <ReadyToTalk/>
-    </div>
+      <div>
+          <MoodConvertAI />
+          <ReadyToTalk />
+          <Feedback />
+      </div>
   );
 }
