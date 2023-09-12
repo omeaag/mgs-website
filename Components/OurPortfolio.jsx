@@ -1,9 +1,13 @@
 "use client";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { EffectFade, Pagination } from 'swiper/modules';
+import SwiperCore, { Navigation } from "swiper";
 import "swiper/swiper-bundle.css";
+import 'swiper/css/pagination';
+import 'swiper/css';
+import 'swiper/css/effect-fade';
 import Image from "next/image";
 import { useRef } from "react";
-import SwiperCore, { Navigation } from "swiper";
 import styles from "../public/style/OurPortfolioStyle.css";
 import Script from "next/script";
 import iconoir_design from "../public/materials/ourPortfolioImages/iconoir_design-nib.svg";
@@ -16,8 +20,6 @@ import Block1 from "../public/materials/ourPortfolioImages/Block-1.svg";
 import Block2 from "../public/materials/ourPortfolioImages/Block-2.svg";
 import Block3 from "../public/materials/ourPortfolioImages/Block-3.svg";
 import Block4 from "../public/materials/ourPortfolioImages/Block-4.svg";
-import Profile from "../public/materials/ourPortfolioImages/Group 1000000908.svg";
-import Info from "../public/materials/ourPortfolioImages/Group 1000000915.svg";
 import LeftArrow from "../public/materials/ourPortfolioImages/Vector 14.svg";
 import RightArrow from "../public/materials/ourPortfolioImages/Vector 17.svg";
 import Heart from "../public/materials/ourPortfolioImages/Vector.svg";
@@ -137,18 +139,25 @@ function OurPortfolio() {
         <button onClick={goPrev1} className="prev-button">
           <Image src={LeftArrow} alt="Sol Ok" width={50} height={50} />
         </button>
-        <Swiper ref={swiper1} spaceBetween={10} slidesPerView={2}>
+        <Swiper
+          pagination={true}
+          modules={[Pagination]}
+          ref={swiper1}
+          spaceBetween={150}
+          slidesPerView={2}
+
+        >
           <SwiperSlide>
-            <Image src={photos[0].url} alt="Image 1" width={660} height={600} />
+            <Image src={photos[0].url} alt="Image 1" height={600} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={photos[1].url} alt="Image 2" width={660} height={600} />
+            <Image src={photos[1].url} alt="Image 2" height={600} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={photos[2].url} alt="Image 3" width={660} height={600} />
+            <Image src={photos[2].url} alt="Image 3" height={600} />
           </SwiperSlide>
           <SwiperSlide>
-            <Image src={photos[3].url} alt="Image 4" width={660} height={600} />
+            <Image src={photos[3].url} alt="Image 4" height={600} />
           </SwiperSlide>
         </Swiper>
         <button onClick={goNext1} className="next-button">
@@ -173,7 +182,7 @@ function OurPortfolio() {
           <Image src={LeftArrow} alt="Sol Ok" width={150} height={150} />
         </button>
         <Swiper
-          className="personSwiper"
+          className="mySwiper"
           ref={swiper}
           spaceBetween={20}
           slidesPerView={1}
