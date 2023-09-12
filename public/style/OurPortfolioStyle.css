@@ -63,15 +63,24 @@
 .galleryContainer{
     display: flex; 
     align-items: center;
-    margin: auto;
+    justify-content: center;
     width: 1500px;
+    gap:20px
 }
 
+.swiper-wrapper{
+    height:650px
+}
 
+.swiper-pagination {
+    position: absolute;
+    right: 10px !important;
+}
 
-
-
-
+.swiper-pagination-bullet, .swiper-pagination-bullet-active{
+    height: 15px;
+    width: 15px;
+}
 
 
 .personContainer{
@@ -84,9 +93,7 @@
     margin-top: 100px;
     margin-bottom: 200px;
 }
-.personSwiper{
 
-}
 
 .personSlider{
     display:flex;
@@ -109,9 +116,9 @@
     width: 80%;
 }
 
-.prev-button{
+/* .prev-button{
 margin-right: 45px;
-}
+} */
 
 .build30 {
     display: flex;
