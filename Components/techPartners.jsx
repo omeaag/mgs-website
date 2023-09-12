@@ -8,6 +8,10 @@ import MirrorTrackerComponent from "./TechPartnersComponents/MirrorTrackerCompon
 import GoalStarComponent from "./TechPartnersComponents/GoalStarComponent";
 
 const techPartners = () => {
+    const sliderChanger = () =>{
+        sliderArrayList = [NextLabsComponent, MirrorTrackerComponent, GoalStarComponent];
+        //This func will be given to an image, and on click to that image, i want techPartnerComponentContainer's inside component to change from NexLabsComponent to next one the list like an gallery 
+    }
     return (
         <div className="techParentContainer">
             <div className="techTextParentContainer">
