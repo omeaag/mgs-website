@@ -1,12 +1,21 @@
 import Link from "next/link";
 import Image from "next/image";
+import '../../public/style/techPartnersSliderStyle.css'
+import goalStarImage from "../../public/materials/TechPartnersImages/goalStarImage.svg"
 
-const GoalStarComponent = () => {
+const NextLabsComponent = () => {
     return (
         <div className="TechComponentContainer">
-            <h2>NextLABSS</h2>
+            <div className="TechComponentContainerText">
+                <h1>Goal Star</h1>
+                <h3>Introducing Goal Star, the sports betting platform that<br />uses NFTs to let users participate in their favourite<br />sports events. By purchasing an NFT on the platform,<br />users can bet on the outcomes of sports events and<br />
+                compete for tournament prize pools. Goal Star allows<br />users to engage with sports in a fun and exciting way,<br />and potentially earn rewards through tournament<br />
+                competition.</h3>
+                <a href="">Go To Website →</a>
+            </div>
+            <div className="TechComponentContainerImage"><Image src={goalStarImage}></Image></div>
         </div>
     )
 }
 
-export default GoalStarComponent;
+export default NextLabsComponent;
