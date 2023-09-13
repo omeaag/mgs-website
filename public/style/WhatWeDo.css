@@ -1,8 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: MonumentExtended;
+}
 .wwdContainer {
     display: flex;
     flex-direction: column;
     padding: 20px;
     padding-right: 0;
+    margin-top: 200px;
 }
 .wwdContainer > div:first-child{
     display: flex;
@@ -11,13 +18,14 @@
 }
 
 .wwdContainer .blueTitle {
-    font-size: 60px;
+    font-size: 90px;
     font-weight: 500;
     margin-bottom: 40px;
 }
 
 .wwdContainer .WeDoText {
     margin-bottom: 30px;
+    font-size: 28px;
 }
 
 .wwdContainer .blueTitle span {

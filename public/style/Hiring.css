@@ -1,3 +1,16 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: MonumentExtended;
+}
+
+.hiringContainer{
+    margin-top: 400px;
+    margin-bottom: 50px;
+}
+
+
 .hiringContainer .imageContainer {
     position: relative;
 }
@@ -21,15 +34,15 @@
 }
 
 .hiringContainer .headerSection > span {
-    border: 1px solid #17a3d3;
-    border-radius: 30px;
-    font-size: 25px;
-    padding: 20px 35px;
+    border: 2px solid #17a3d3;
+    border-radius: 100px;
+    font-size: 37px;
+    padding: 20px 50px;
 }
 
 .hiringContainer .headerSection h1 {
     margin-top: 30px;
-    font-size: 50px;
+    font-size: 60px;
     font-weight: 500;
 }
 
@@ -40,14 +53,12 @@
 .hiringContainer .hiring{
 padding-left: 60px;
 padding-right: 60px;
-border-bottom: 1px solid #b8b4b4fa;
+
 }
 
 
-
-.hiringContainer .headerSection {
-    font-weight: 500;
-    font-size: 20px;
+.hiringContainer .headerSection  p{
+    font-size: 28px;
     margin-bottom: 20px;
 }
 
@@ -57,8 +68,9 @@ border-bottom: 1px solid #b8b4b4fa;
     padding: 20px 0px;
 }
 
+
 .hiringSection .hiringTitle {
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
     margin-bottom: 10px;
 }
@@ -69,19 +81,32 @@ border-bottom: 1px solid #b8b4b4fa;
     margin-bottom: 20px;
 }
 
+
 .hiringSection .hiringFeatures{
-    border: 1px solid #b8b4b4fa;
-    border-radius: 20px;
+    border: 2px solid #b3b3b3;
+    border-radius: 100px;
     padding: 10px 20px;
-    font-size: 18px;
+    font-size: 28px;
     margin-right: 20px;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.hiringFeatures img{
+    align-items:flex-end;
+    height: 10% !important;
 }
 
 .hiringSection .apply{
-    font-size: 25px;
+    font-size: 30px;
     font-weight: 500;
     margin-bottom: 10px;
-    width: auto;
+    width: 100%;
+}
+.hiringSection .apply a img{
+    display: inline;
+
 }
 
 .hiringSection .apply a{
@@ -90,7 +115,10 @@ border-bottom: 1px solid #b8b4b4fa;
 
 button{
     color: #17a3d3 !important;
-    font-size: 25px !important;
+    font-size: 35px !important;
     margin-top: 20px !important;
     margin-left: 60px !important;
+    display: flex;
+    gap: 12px;
+    align-items: center;
 }
