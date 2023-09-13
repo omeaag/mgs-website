@@ -1,0 +1,35 @@
+.MemberCardContainer {
+  font-family: MonumentExtended;
+  display: flex;
+  width: 80%;
+  gap: 3.5rem;
+  margin: 5.5rem auto 7rem auto;
+  flex-wrap: wrap;
+}
+
+.MemberCardComponent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.icons {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1.8rem;
+}
+.icons img {
+  width: 25px;
+  height: 25px;
+}
+
+.memberName {
+  color: #51c3f6;
+
+  margin-top: 1rem;
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0px;
+  text-align: left;
+}
