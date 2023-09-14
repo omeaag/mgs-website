@@ -59,7 +59,9 @@
         background-position: -150%;
     }
 }
-
+.OurSolutionText {
+    padding: 0 20px 0 20px;
+}
 .OurSolutionText .cardContainer{
     display: flex;
     align-items: center;
