@@ -17,7 +17,7 @@
 
 .text-shaping {
   font-family: MonumentExtended;
-  font-size: 60px;
+  font-size: 40px;
   font-weight: 600;
   line-height: 90px;
   text-align: center;
@@ -26,7 +26,7 @@
 .text-creativity {
   font-family: MonumentExtended;
   text-transform: uppercase;
-  font-size: 150px;
+  font-size: 100px;
   font-weight: 700;
   line-height: 180px;
   letter-spacing: 0.05em;
@@ -58,7 +58,7 @@
 .homeshapping-btn {
   border: 2px solid #1da7d9;
   border-radius: 40px;
-  width: 236px;
+  width: 200px;
   height: 70px;
   color: black;
 }

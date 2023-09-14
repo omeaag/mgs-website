@@ -105,6 +105,7 @@ const OurSolution = () => {
                             <h2
                                 dangerouslySetInnerHTML={{__html: headerList[index].header}}
                                 className={imageSource.src === Bluecube ? 'blackHeader' : ''}
+                                onClick={() => handleImageClick(index)}
                             />
                         </div>
                     ))}

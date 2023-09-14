@@ -31,7 +31,7 @@
     text-align: center;
 }
 
-.headServiceText h1{font-size: 5.5rem; font-weight: bold;}
+.headServiceText h1{font-size: 5rem; font-weight: bold;}
 .headServiceText h6{font-size: 1.5rem; font-weight: lighter;}
 .serviceBoxContainer {
     display: flex;
@@ -41,7 +41,7 @@
     color: white;
 }
 
-.serviceBoxContainer h4, .serviceBoxContainer h3{font-size: 2.5rem; margin: 0.7rem 0rem; transition: 0.7s ease;}
+.serviceBoxContainer h4, .serviceBoxContainer h3{font-size: 1.8rem; margin: 0.7rem 0rem; transition: 0.7s ease;}
 
 .serviceTContainer, .serviceBContainer {
     display: flex;

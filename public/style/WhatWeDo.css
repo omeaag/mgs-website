@@ -9,7 +9,7 @@
     flex-direction: column;
     padding: 20px;
     padding-right: 0;
-    margin-top: 200px;
+    margin-top: 10px;
 }
 .wwdContainer > div:first-child{
     display: flex;
@@ -18,14 +18,15 @@
 }
 
 .wwdContainer .blueTitle {
-    font-size: 90px;
+    font-size: 80px;
     font-weight: 500;
     margin-bottom: 40px;
+    margin-left: 40px;
 }
 
 .wwdContainer .WeDoText {
     margin-bottom: 30px;
-    font-size: 28px;
+    font-size: 25px;
 }
 
 .wwdContainer .blueTitle span {
@@ -36,6 +37,7 @@
     flex-grow: 1;
     height: 2px;
     margin-left: 10px;
+    margin-right: 20px;
     border-radius: 5px;
     background: linear-gradient(
         to right,

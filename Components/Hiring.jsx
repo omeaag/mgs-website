@@ -103,7 +103,7 @@ const Hiring = () => {
                 ))}
             </div>
             {visibleJobs < advertisement.length && (
-                <button onClick={viewMoreJobs}>
+                <button id='viewmore' onClick={viewMoreJobs}>
                     View More
                     <span>
                         <Image
