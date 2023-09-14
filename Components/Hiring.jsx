@@ -79,7 +79,7 @@ const Hiring = () => {
                                 <span
                                     className='hiringFeatures'
                                     key={index}>
-                                    {feat !== 'Remote' ||'Hybrid'||'On site' ? (
+                                    {feat !== ('Remote' ||'Hybrid'||'On site') ? (
                                         <Image src={freeIcon} />
                                     ) : (
                                         <Image src={remIcon} />
