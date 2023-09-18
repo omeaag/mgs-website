@@ -3,9 +3,12 @@
     padding: 0;
     box-sizing: border-box;
     font-family: MonumentExtended;
+    
 }
 .wwdContainer {
+    margin: 30px 230px;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     padding: 20px;
     padding-right: 0;
@@ -17,7 +20,7 @@
 }
 
 .wwdContainer .blueTitle {
-    font-size: 80px;
+    font-size: 4.375rem;
     font-weight: 500;
     margin-bottom: 20px;
     margin-left: 40px;

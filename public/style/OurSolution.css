@@ -6,6 +6,7 @@
 }
 
 .OurSolitionContainer {
+    margin: 30px 230px;
     display: flex;
     flex-direction: column;
     padding: 20px;
@@ -19,7 +20,7 @@
 }
 
 .titleContainer .OurSolutionTitle {
-    font-size: 80px;
+    font-size: 4.375rem;
     font-weight: 500;
     margin-bottom: 40px;
     margin-left: 40px;

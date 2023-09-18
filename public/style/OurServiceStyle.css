@@ -31,7 +31,7 @@
     text-align: center;
 }
 
-.headServiceText h1{font-size: 5rem; font-weight: bold;}
+.headServiceText h1{font-size: 4.375rem; font-weight: bold;}
 .headServiceText h6{font-size: 1.5rem; font-weight: lighter;}
 .serviceBoxContainer {
     display: flex;
