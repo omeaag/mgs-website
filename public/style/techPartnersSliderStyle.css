@@ -13,8 +13,8 @@
     height: 90%;
     width: 49%;
 }
-.TechComponentContainerText h1{font-size: 4rem;}
-.TechComponentContainerText h3{font-size: 1.5rem; line-height: 3rem;}
+.TechComponentContainerText h1{font-size: 4.375rem;}
+.TechComponentContainerText h3{font-size: 1.5625rem; line-height: 3rem;}
 .TechComponentContainerText a{font-size: 2rem; margin-top: 3rem; color:rgb(52, 175, 216);;}
 
 

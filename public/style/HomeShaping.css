@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 65vh;
   background: url(../materials/HomeShapingBackground.svg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -42,7 +42,7 @@
   left: 216.3828125px;
   font-family: MonumentExtended;
   text-align: center;
-  font-size: 1.8rem;
+  font-size: 1.625rem;
   font-weight: 400;
   line-height: 3rem;
   letter-spacing: 0px;
