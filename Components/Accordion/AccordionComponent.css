@@ -23,11 +23,12 @@
 .sectionHeader p {
   padding: 20px;
   font-family: MonumentExtended;
-  font-size: 70px;
+  font-size: 4rem;
   font-weight: 500;
   line-height: 90px;
   letter-spacing: 0px;
   text-align: center;
+  
 }
 .sectionHeader span {
   color: #1da7d9;
@@ -60,9 +61,9 @@
 .accordion-par {
   font-family: MonumentExtended;
   text-align: left;
-  font-size: 31px;
+  font-size: 1.5625rem;
   font-weight: 400;
-  line-height: 63px;
+  line-height: 50px;
   letter-spacing: 0px;
   width: 80%;
 }
