@@ -128,3 +128,9 @@
     transition: 0.5s ease;
     cursor: default;
 }
+
+/* TABLET BREAKPOINT */
+@media (min-width: 600px) and (max-width: 991px) {}
+
+/* PHONE BREAKPOINT */
+@media (max-width: 599px) {}

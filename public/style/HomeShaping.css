@@ -1,77 +1,179 @@
 .HomeShapingContainer {
-  margin-top: 100px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 65vh;
-  background: url(../materials/HomeShapingBackground.svg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 65vh;
+    background: url(../materials/HomeShapingBackground.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .HomeShapingBottomLine {
-  width: 200px;
-  border: 1px solid #a9a9a9;
+    width: 200px;
+    border: 1px solid #a9a9a9;
 }
 
 .text-shaping {
-  font-family: MonumentExtended;
-  font-size: 40px;
-  font-weight: 600;
-  line-height: 90px;
-  text-align: center;
+    font-family: MonumentExtended;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 90px;
+    text-align: center;
 }
 
 .text-creativity {
-  font-family: MonumentExtended;
-  text-transform: uppercase;
-  font-size: 100px;
-  font-weight: 700;
-  line-height: 180px;
-  letter-spacing: 0.05em;
-  text-align: center;
-  color: #1da7d9;
+    font-family: MonumentExtended;
+    text-transform: uppercase;
+    font-size: 100px;
+    font-weight: 700;
+    line-height: 180px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #1da7d9;
 }
 
 .at-mood-global {
-  margin-top: 1.6rem;
-  width: 1296px;
-  height: 100px;
-  top: 520px;
-  left: 216.3828125px;
-  font-family: MonumentExtended;
-  text-align: center;
-  font-size: 1.625rem;
-  font-weight: 400;
-  line-height: 3rem;
-  letter-spacing: 0px;
+    margin-top: 1.6rem;
+    width: 1296px;
+    height: 100px;
+    top: 520px;
+    left: 216.3828125px;
+    font-family: MonumentExtended;
+    text-align: center;
+    font-size: 1.625rem;
+    font-weight: 400;
+    line-height: 3rem;
+    letter-spacing: 0px;
 }
 
 .HomeShapingbuttons {
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-  margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
 }
 
 .homeshapping-btn {
-  border: 2px solid #1da7d9;
-  border-radius: 40px;
-  width: 200px;
-  height: 70px;
-  color: black;
+    border: 2px solid #1da7d9;
+    border-radius: 40px;
+    width: 200px;
+    height: 70px;
+    color: black;
 }
 
 .homeshapping-btn.black {
-  background-color: black;
-  color: white;
+    background-color: black;
+    color: white;
 }
 
 /* TABLET BREAKPOINT */
-@media (min-width: 600px) and (max-width:991px) {
+@media (min-width: 600px) and (max-width: 991px) {
+    .HomeShapingContainer {
+        margin-top: 4rem;
+        background-size: cover;
+        text-align: center;
+        padding: 10px;
+    }
 
+    .text-shaping {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .text-creativity {
+        font-size: 100px;
+        line-height: 124px;
+        letter-spacing: 5%;
+    }
+
+    .at-mood-global {
+        margin-top: 1rem;
+        width: 100%;
+        font-size: 22px;
+        line-height: 37px;
+    }
+
+    .HomeShapingbuttons {
+        display: flex;
+        gap: 20px;
+        margin-top: 80px;
+    }
+
+    .homeshapping-btn {
+        border: 2px solid;
+        padding: 16px 30px;
+        font-size: 20px;
+        line-height: 24px;
+        width: 230px;
+        height: 80px;
+    }
+
+    .homeshapping-btn.black {
+        background-color: #1a1a1a;
+        border-color: #0071fb;
+        color: white;
+    }
+
+    .homeshapping-btn.white {
+        border-color: #0071fb;
+    }
+    .HomeShapingBottomLine {
+        display: none;
+    }
 }
 
-/* PHONE BREAKPOINT
-@media (max-width: 599px) {} */
+/* PHONE BREAKPOINT */
+@media (max-width: 599px) {
+    .HomeShapingContainer {
+        margin-top: 4rem;
+        background-size: cover;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .text-shaping {
+        font-size: 18px;
+        line-height: 24px;
+    }
+
+    .text-creativity {
+        font-size: 50px;
+        line-height: 60px;
+        letter-spacing: 5%;
+    }
+
+    .at-mood-global {
+        margin-top: 1rem;
+        width: 100%;
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .HomeShapingbuttons {
+        display: flex;
+        gap: 20px;
+        margin-top: 80px;
+    }
+
+    .homeshapping-btn {
+        border: 2px solid;
+        padding: 16px 30px;
+        width: 150px;
+        height: 60px;
+    }
+
+    .homeshapping-btn.black {
+        background-color: #1a1a1a;
+        border-color: #0071fb;
+        color: white;
+    }
+
+    .homeshapping-btn.white {
+        border-color: #0071fb;
+    }
+    .HomeShapingBottomLine {
+        display: none;
+    }
+}
