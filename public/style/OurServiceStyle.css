@@ -150,7 +150,7 @@
     transform: translateX(3rem);
     color: rgb(0, 240, 255);
     transition: 0.5s ease;
-    cursor: pointer;
+    cursor: default;
 }
 
 /* -------------------- TABLET BREAKPOINT --------------------  */
