@@ -98,3 +98,111 @@ border-radius: 30px;
     color: #17a3d3 !important;
     background-color: #fff;
 }
+
+
+/*Mobile*/
+@media (max-width: 599px) {
+    *{
+        margin: 0;
+        padding: 0 ;
+        box-sizing: border-box ;
+        font-family: MonumentExtended;
+    }
+    
+    .feedbackContainer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 700px;
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    
+    .feedbackContainer h1{
+    font-size: 20.7px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+    }
+    
+    .feedbackContainer h1 span{
+        color: #17a3d3;
+    }
+    
+    
+    
+    
+    .feedbackContainer .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border: 1px solid #a0def3;
+        border-radius: 30px;
+        height:100%;
+        margin-bottom: ;
+    }
+    
+    .rate {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:space-between;
+        align-items: center;
+        padding: 20px 10px;
+        border-bottom: 1px solid #a0def3;
+        width: 100%;
+    }
+    
+    .rate span{
+        margin-left: 10px;
+        font-size: 26px;
+    }
+    
+    .rate button {
+        font-size: 13px !important;
+        border: 1px solid #c7d3d3 !important;
+        border-radius: 50%;
+        background-color: rgba(223, 222, 222, 0.6);
+        color: #000 !important;
+        width: 20px;
+        height:20px;
+        align-items: center;
+        margin: 10px !important;
+        text-align: center;
+    }
+    
+    .feedbackContainer .form textarea{
+    padding: 20px 30px;
+    width: 100%;
+    height: 70%;
+    border: 1px solid rgba(223, 222, 222, 0.6);
+    border-radius: 30px;
+    }
+    
+    .feedbackContainer .form textarea::placeholder{
+        font-size: 15px;
+    }
+    
+    .form .error{
+        padding: 10px 5px;
+        float: left !important;
+    }
+    
+    .form #submitBtn{
+        border: 1px solid #17a3d3;
+        font-size: 15px !important;
+        color: #fff !important;
+        background-color: #17a3d3;
+        border-radius: 30px;
+        padding: 15px 30px;
+        transition: 0.4s;
+        margin: 20px 0 !important;
+    }
+    
+    .form #submitBtn:hover{
+        color: #17a3d3 !important;
+        background-color: #fff;
+    }
+}
