@@ -191,8 +191,271 @@ margin-right: 45px;
 }
 
 
-/* TABLET BREAKPOINT */
-@media (min-width: 600px) and (max-width: 991px) {}
+/* ------------------------ TABLET BREAKPOINT ------------------------ */
+@media (min-width: 600px) and (max-width: 991px) {
+    .headerContainer-5{
+        margin: 30px 0;
+    }
+    .headerContainer-5 h1 {
+        font-size: 40px;
+        line-height: 60px;
+        min-width: unset;
+        text-align: left;
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        height: auto;
+    }
+    .headerContainerp {
+        width: 100%;
+        padding-right: 50px;
+        font-size: 22px;
+        line-height: 45px;
+    }
+    .galleryContainer {
+        margin: 50px auto;
+        width: 90%;
+        align-items: center;
+        margin-left: 0;
+    }
+    .prev-button, .next-button {
+        margin: 10px;
+    }
+     .swiper-wrapper {
+        height: 100%;
+        width: 100%;
+    }
 
-/* PHONE BREAKPOINT */
-@media (max-width: 599px) {}
+    .build30 {
+    width: 100%;
+    padding: 20px 0;
+    margin-right: 0;
+}
+
+     .personContainer {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        padding: 0 50px;
+        padding-bottom: 60px;
+    }
+
+    #iconamoon_settings {
+    position: absolute;
+    top: 700px;
+    left: 600px;
+}
+
+#iconoir_design {
+    position: absolute;
+    top: 720px;
+    left: 10px;
+}
+
+#iconoir_dev_laptop {
+    position: absolute;
+    top: 500px;
+    right: 200px;
+}
+
+#iconoir_dev_phone {
+    position: absolute;
+    top: 800px;
+    left: 400px;
+}
+
+#streamline_interface {
+    position: absolute;
+    top: 950px;
+    right: 500px;
+}
+
+    .whatPeopleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.whatPeopleContainer h1{
+    font-size: 40px;
+    line-height: 60px;
+}
+
+.personContainer{
+    padding-left: 0;
+}
+.personSlider{
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.personSlider h2 {
+    font-size: 30px;
+    line-height: 60px;
+    font-family: MonumentExtended;
+}
+
+.personSlider p {
+    font-size: 22px;
+    line-height: 37px;
+    font-family: MonumentExtended;
+    text-align: center;
+    width: 80%;
+}
+
+}
+
+/* ------------------------ PHONE BREAKPOINT ------------------------ */
+@media (max-width: 599px) {
+    .allContainer-5 {
+        margin: 50px 0;
+    }
+    .headerContainer-5{
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .headerContainer-5 h1 {
+        font-size: 40px;
+        line-height: 60px;
+        float: left;
+        min-width: unset;
+        height: auto;
+    }
+
+    .headerContainer-5 > img {
+        display: none;
+    }
+
+    .headerContainerp {
+        width: 100%;
+        font-size: 16px;
+        line-height: 30px;
+        margin: 20px 0;
+    }
+
+    .galleryContainer {
+        margin: 50px 0;
+        width: 100%;
+        align-items: center;
+    }
+
+    .prev-button, .next-button {
+        margin: 10px;
+    }
+
+    .swiper-wrapper {
+        height: 100%;
+        width: 100%;
+    }
+
+    .personContainer {
+        width: 100%;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .personSlider h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        text-align: center;
+    }
+
+    .personSlider p {
+        font-size: 1rem;
+        line-height: 1.5;
+        width: 100%;
+        text-align: center;
+    }
+
+    .build30 {
+    padding-top: 20px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.build {
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    width: 100%;
+}
+
+#iconamoon_settings {
+    position: absolute;
+    top: 550px;
+    left: 300px;
+}
+
+#iconoir_design {
+    position: absolute;
+    top: 720px;
+    left: 10px;
+}
+
+#iconoir_dev_laptop {
+    position: absolute;
+    top: 500px;
+    right: 200px;
+}
+
+#iconoir_dev_phone {
+    position: absolute;
+    top: 800px;
+    left: 250px;
+}
+
+#streamline_interface {
+    position: absolute;
+    top: 750px;
+    right: 400px;
+}
+
+    .whatPeopleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.whatPeopleContainer h1{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.whatPeopleContainer h1 img{
+    height: 36px;
+}
+
+.personContainer{
+    padding-left: 0;
+}
+.personSlider{
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+}
+
+.personSlider h2 {
+    font-size: 26px;
+    line-height: 60px;
+    font-family: MonumentExtended;
+}
+
+.personSlider p {
+    font-size: 16px;
+    line-height: 37px;
+    font-family: MonumentExtended;
+    text-align: center;
+    width: 80%;
+}
+
+.prev-button, .next-button {
+        height: 80px;
+        width: auto;
+    }
+}
