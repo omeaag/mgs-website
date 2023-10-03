@@ -101,6 +101,7 @@ const OurSolution = () => {
                             <Image
                                 src={imageSource.src}
                                 onClick={() => handleImageClick(index)}
+                                className={`${imageSource.src === Bluecube ? 'showImg' : ''}`}
                             />
                             <h2
                                 dangerouslySetInnerHTML={{__html: headerList[index].header}}
@@ -117,6 +118,20 @@ const OurSolution = () => {
                     </div>
                     <div>
                         <Image src={divList[currentIndex].image}></Image>
+                    </div>
+                    <div className='paginationButtons'>
+                        <button
+                            onClick={() => handleImageClick(0)}
+                            className={`${currentIndex === 0 ? 'blueBtn' : ''}`}></button>
+                        <button
+                            onClick={() => handleImageClick(1)}
+                            className={`${currentIndex === 1 ? 'blueBtn' : ''}`}></button>
+                        <button
+                            onClick={() => handleImageClick(2)}
+                            className={`${currentIndex === 2 ? 'blueBtn' : ''}`}></button>
+                        <button
+                            onClick={() => handleImageClick(3)}
+                            className={`${currentIndex === 3 ? 'blueBtn' : ''}`}></button>
                     </div>
                 </div>
             </div>
