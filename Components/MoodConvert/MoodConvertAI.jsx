@@ -23,14 +23,14 @@ const MoodConvertAI = () => {
                 <h4>Your Personal Project Assistant ✍️</h4>
                 <div className='underForm'>
                     <div className='groupCont'>
-                        <div className='cardContainer'>
+                        <div className='cardContainer' id='backEndPrompt'>
                             <div className='textContainer'>
                                 <h5>Back End development</h5>
                                 <h6>I want to get a quotation for android development</h6>
                             </div>
                             <input className="checkbox" type="checkbox" />
                         </div>
-                        <div className='cardContainer'>
+                        <div className='cardContainer' id='uiuxPrompt'>
                             <div className='textContainer'>
                                 <h5>UI/UX Design</h5>
                                 <h6>I want to get a quotation for android development</h6>
@@ -55,7 +55,7 @@ const MoodConvertAI = () => {
                         </div>
                     </div>
                     <div className='bottomCont'>
-                        <input placeholder="Request A Proejct" type="text" className="inputArea"></input>
+                        <input placeholder="Request A Project" type="text" className="inputArea"></input>
                         <button className="next-button">
                             <Image className='sendButton' src={sendImage} alt="Send"  />
                         </button>

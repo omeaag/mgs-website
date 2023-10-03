@@ -168,3 +168,187 @@ color: red;
     font-weight: 500;
     font-size: 20px !important;
 }
+
+
+/*Mobile*/
+@media (max-width: 599px) {* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: MonumentExtended;
+}
+
+.readyContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 100px 0;
+}
+
+.readyContainer .imageContainer {
+    position: relative;
+    width: 120%;
+    height: fit-content;
+    margin-bottom: 60px;
+}
+
+.readyContainer .imageContainer img {
+    width: 414px;
+    height: 768px;
+    border-radius: 16px;
+    flex-shrink: 0;
+    object-fit: cover;
+}
+
+.readyContainer .imageContainer .readyText {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    text-align: center;
+}
+
+.imageContainer .readyText #readyHeader {
+    font-size: 30px;
+    margin-bottom: 50px;
+    color: #fff;
+}
+.imageContainer .readyText #readyContent {
+    font-size: 18px;
+    color: #fff;
+}
+
+.imageContainer #quoteButton {
+    font-size: 11.5px !important;
+    font-weight: bold;
+    color: #fff !important;
+    background-color: #1da7d9;
+    padding: 15px 70px;
+    border-radius: 40px;
+    margin: 60px 0 0 0 !important;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 2;
+    left: -60px;
+    top: -250px;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 140%;
+}
+
+.modal .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.modal-content form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.modal-content form h1{
+    font-size: 20px ;
+    color: #000 ;
+    font-weight: 500;
+}
+
+.modal-content form p{
+    font-size: 15px ;
+    color: #aaa ;
+    text-align: left;
+    margin-bottom: 5px;
+}
+
+
+.modal-content form input{
+    width: 100%;
+    height: 40px;
+    padding: 3px 5px;
+    font-size: 15px;
+    border-bottom: 1px solid #dcdcdc;
+    margin-bottom: 5px;
+}
+
+.modal-content form textarea{
+    width: 100%;
+    padding: 3px 5px;
+    font-size: 15px;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+.modal-content form #submitButton{
+    border: 1px solid #17a3d3;
+    font-size: 15px !important;
+    color: #fff !important;
+    background-color: #17a3d3;
+    border-radius: 30px;
+    padding: 15px 40px;
+    margin: 40px 0 !important;
+}
+
+.modal-content form .error{
+color: red;
+}
+
+.modal-content .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal-content .close:hover {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.readyContainer .poweredBy {
+    display: flex;
+    justify-content: center;
+}
+
+.poweredBy .logoText {
+    font-size: 40px;
+    font-weight: 500;
+    padding-top: 50px;
+}
+
+.poweredBy .logoAI {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.poweredBy .logoAI div {
+    background-color: #f4f4f4;
+    border: 1px solid #dcdcdc;
+    border-radius: 20px;
+    width: 340px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 20px !important;
+}}

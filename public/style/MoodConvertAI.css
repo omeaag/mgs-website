@@ -128,3 +128,152 @@ bottom: 27px;
     width: 24px;
     height: 24px;
 }
+
+
+/*Mobile*/
+@media (max-width: 599px) {
+    .moodConvertAllContainer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        background-image: url("../materials/moodConverAIImages/background.svg");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: top;
+    }
+    
+    
+    .smallBackground {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("../materials/moodConverAIImages/Frame\ 1261152487.svg");
+        width: 90%;
+        background-size: 20px 15px;
+        background-repeat: no-repeat;
+    }
+    
+    
+    .moodConvertAIContainer {
+        margin: 120px 0;
+        gap: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .moodConvertAIContainer h3 {
+        color: #1A1A1A;
+        font-size: 16px;
+        font-family: MonumentExtended;
+        font-weight: 100;
+        text-align: center;
+    }
+
+    .moodConvertAIContainer img {
+        width: 84.798px;
+        height: 90px;
+        flex-shrink: 0;
+    }
+    
+    .AIformContainer {
+        margin: auto;
+        background-color: #FFFFFF;
+        border-radius: 1.2rem;
+        padding: 3% 7%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0px;
+        border: 1px solid #1DA7D9;
+        width: 95%;
+    }
+    
+    .underForm {
+        gap: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .AIformContainer h4 {
+        font-size: 26px;
+        text-align: center;
+        font-family: MonumentExtended;
+    }
+    
+    .groupCont,
+    .cardContainer {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+    }
+    
+    .groupCont {
+        gap: 20px
+    }
+    
+    .cardContainer {
+        text-align: start;
+        padding: 16px 28px 16px 28px;
+        border: 1px solid #B9B9B9;
+        border-radius: 12px;
+        gap: 10px;
+    }
+    
+    .cardContainer h6 {
+        color: #B9B9B9;
+        font-size: 14px;
+        font-family: MonumentExtended;
+    }
+    
+    .cardContainer h5 {
+        color: #999999;
+        font-size: 19px;
+        font-family: MonumentExtended;
+        color: black;
+    }
+    
+    .textContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 6px
+    }
+    
+    .inputArea {
+        border: 1px solid #BDBDBD;
+        color: #BDBDBD;
+        border-radius: 20px;
+        padding: 10px;
+        height: 80px;
+        width: 100%;
+        padding-left: 30px;
+    }
+    
+    .bottomCont{
+        display: flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sendButton{
+    position: absolute;
+    right: 20px;
+    bottom: 27px;
+    }
+    
+    .checkbox {
+        width: 24px;
+        height: 24px;
+        visibility: hidden;
+    }
+
+    #backEndPrompt, #uiuxPrompt {
+        visibility: hidden;
+    }
+}
