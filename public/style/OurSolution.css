@@ -63,7 +63,7 @@
 .OurSolutionText {
     padding: 0 20px 0 20px;
 }
-.OurSolutionText .cardContainer{
+.OurSolutionText .cardContainer {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -71,35 +71,34 @@
     margin-bottom: 50px;
 }
 
-
-.cardContainer .card h2{
+.cardContainer .card h2 {
     margin-top: 10px;
     text-align: center;
     color: gray;
     font-size: 20px;
 }
 
-.cardContainer .card :hover{
+.cardContainer .card :hover {
     cursor: pointer;
 }
 
-.blackHeader{
+.blackHeader {
     color: black !important;
 }
 
-.OurSolutionText .textContainer div:first-child{
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+.OurSolutionText .textContainer div:first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.OurSolutionText .textContainer img{
+.OurSolutionText .textContainer img {
     max-height: 350px;
     width: 100%;
     object-fit: cover;
 }
 
-.OurSolutionText .textContainer div{
+.OurSolutionText .textContainer div {
     width: 50%;
 }
 
@@ -108,24 +107,181 @@
     width: 100%;
 }
 
-.OurSolutionText .textContainer{
+.OurSolutionText .textContainer {
     display: flex;
     align-items: center;
     height: 40%;
 }
 
-.OurSolutionText .textContainer h3{
+.OurSolutionText .textContainer h3 {
     margin-bottom: 20px;
     font-size: 40px;
     font-weight: 500;
 }
 
-.OurSolutionText .textContainer p{
-font-size: 25px;
+.OurSolutionText .textContainer p {
+    font-size: 25px;
 }
 
-/* TABLET BREAKPOINT */
-@media (min-width: 600px) and (max-width: 991px) {}
+.textContainer .paginationButtons {
+    display: none;
+}
 
-/* PHONE BREAKPOINT */
-@media (max-width: 599px) {}
+/* -------------------------------- TABLET BREAKPOINT -------------------------------- */
+@media (min-width: 600px) and (max-width: 991px) {
+    .OurSolitionContainer {
+        margin: 0 20px;
+        padding: 0;
+    }
+
+    .OurSolitionContainer .titleContainer {
+        width: 100%;
+    }
+
+    .titleContainer .OurSolutionTitle {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .OurSolutionText .cardContainer {
+        margin-bottom: 30px;
+    }
+
+    .cardContainer .card h2 {
+        font-size: 22px;
+        line-height: 27px;
+    }
+
+    .cardContainer .card img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .textContainer {
+        min-height: 600px;
+    }
+    .textContainer div {
+        width: 50%;
+    }
+
+    .textContainer img {
+        height: 490px;
+    }
+
+    .textContainer h3 {
+        font-size: 30px;
+        line-height: 53px;
+    }
+
+    .textContainer p {
+        font-size: 22px;
+        line-height: 35px;
+    }
+
+    .textContainer .paginationButtons {
+        display: none;
+    }
+}
+
+/* -------------------------------- PHONE BREAKPOINT -------------------------------- */
+@media (max-width: 599px) {
+    .OurSolitionContainer {
+        margin: 10px;
+        padding: 10px;
+        height: 100%;
+    }
+
+    .titleContainer .OurSolutionTitle {
+        font-size: 40px;
+        line-height: 60px;
+        margin-left: 0px;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .OurSolutionText .cardContainer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .OurSolutionText .card {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .OurSolutionText .card img,
+    .OurSolutionText .card h2 {
+        display: none;
+    }
+
+    .OurSolutionText .card h2 {
+        font-size: 18px;
+        margin: 0;
+    }
+    .card img.showImg,
+    .card h2.blackHeader {
+        display: block;
+        height: 100%;
+    }
+
+    .card img.showImg {
+        height: 100px;
+        width: 100px;
+    }
+
+    .card h2.blackHeader {
+        font-size: 20px;
+        line-height: 36px;
+    }
+
+    .OurSolutionText .textContainer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 650px;
+        position: relative;
+        margin-bottom: 40px;
+    }
+
+    .OurSolutionText .textContainer div {
+        width: 100%;
+        height: 100%;
+    }
+
+    .OurSolutionText .textContainer h3 {
+        font-size: 30px;
+        line-height: 36px;
+        text-align: left;
+    }
+
+    .OurSolutionText .textContainer img {
+        height: 290px;
+        width: 340px;
+    }
+
+    .OurSolutionText .textContainer p {
+        font-size: 20px;
+    }
+
+    .textContainer .paginationButtons {
+        display: block;
+        position: absolute;
+        bottom: -650px;
+        left: 80px;
+    }
+    .textContainer .paginationButtons button {
+        width: 10px;
+        height: 10px;
+        background-color: #d9d9d9;
+        border-radius: 50%;
+        margin-right: 20px;
+    }
+    .textContainer .paginationButtons button.blueBtn {
+        width: 15px;
+        height: 15px;
+        background-color: #0071fb;
+    }
+}
