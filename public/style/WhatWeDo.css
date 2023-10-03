@@ -3,7 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: MonumentExtended;
-    
+
 }
 .wwdContainer {
     margin: 30px 230px;
@@ -64,5 +64,54 @@
     100% {
         background-position: -200%;
         background: #17a3d3;
+    }
+}
+
+
+/* TABLET BREAKPOINT */
+@media (min-width: 600px) and (max-width: 991px) {
+     .wwdContainer {
+        margin: 40px 10px;
+        padding: 10px;
+    }
+
+    .wwdContainer .blueTitle {
+        font-size: 40px;
+        line-height: 60px;
+        margin-left: 0;
+    }
+
+    .blueTitle + .line{
+        position: relative;
+        top: 10px;
+    }
+
+    .wwdContainer .WeDoText {
+        font-size: 22px;
+        line-height: 45px;
+    }
+}
+
+/* PHONE BREAKPOINT */
+@media (max-width: 599px) {
+    .wwdContainer {
+        margin: 10px;
+        padding: 10px;
+    }
+
+
+    .wwdContainer .blueTitle {
+        font-size: 40px;
+        line-height: 60px;
+        margin-left: 0;
+    }
+
+    .blueTitle + .line {
+        display: none;
+    }
+
+    .wwdContainer .WeDoText {
+        font-size: 16px;
+        line-height: 30px;
     }
 }
