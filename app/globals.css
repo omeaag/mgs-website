@@ -3,120 +3,262 @@
 @tailwind utilities;
 
 @font-face {
-  font-family: "MonumentExtended";
-  src: url(../public/Fonts/PPNeueMontreal-Regular.ttf) format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: 'MonumentExtended';
+    src: url(../public/Fonts/PPNeueMontreal-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
 
 @font-face {
-  font-family: "MonumentExtended";
-  src: url(../public/Fonts/PPNeueMontreal-Bold.ttf) format("truetype");
-  font-weight: bold;
-  font-style: normal;
+    font-family: 'MonumentExtended';
+    src: url(../public/Fonts/PPNeueMontreal-Bold.ttf) format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
 
+body{
+  padding:2rem;
+}
 /* 0 - Header */
 .HeaderContainer {
-  margin-top: 2.5rem;
-  align-items: center;
-  justify-content: center;
-  display: flex;
+    margin-top: 2.5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
 }
 
+
 .Navbar {
-  display: flex;
-  gap: 2.5rem;
-  margin: 0 15rem 0 20rem;
+    display: flex;
+    gap: 2.5rem;
+    margin: 0 15rem 0 20rem;
 }
 
 .HeaderIcons {
-  display: flex;
-  gap: 1.25rem;
+    display: flex;
+    gap: 1.25rem;
 }
+
+.MobileDropdownMenu {
+  display: none;
+}
+
+#dropdownBtn{
+  display: none;
+}
+
 
 /* 1 - Footer */
 .footerContainer {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
 .footerMain {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 98%;
-  margin: 1rem 0rem;
-  font-family: MonumentExtended;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    margin: 1rem 0rem;
+    font-family: MonumentExtended;
 }
 
 .leftFooter {
-  padding-left: 4rem;
-  margin-top: 4rem;
-  display: flex;
-  flex-direction: column;
-  width: 80%;
-  margin-left: 6rem;
-  margin-bottom: 6rem;
-  height: 100%;
+    padding-left: 4rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 6rem;
+    margin-bottom: 6rem;
+    height: 100%;
 }
 .leftFooter h6 {
-  font-size: 0.7rem;
+    font-size: 0.7rem;
 }
 .leftFooter h2 {
-  font-size: 1.8rem;
+    font-size: 1.8rem;
 }
 .footerSocialIcons {
-  width: 25%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 3rem;
-  margin-bottom: 0.5rem;
+    width: 25%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 3rem;
+    margin-bottom: 0.5rem;
 }
 .footerSocialIcons img {
-  display: flex;
-  flex-direction: column;
-  width: 14%;
-  height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 14%;
+    height: 100%;
 }
 .leftFooter h6 {
-  font-size: 1rem;
+    font-size: 1rem;
 }
 .leftFooter h2 {
-  font-size: 1.8rem;
+    font-size: 1.8rem;
 }
 
 .rightFooter {
-  margin-top: -5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  width: 55%;
-  height: 60%;
+    margin-top: -5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 55%;
+    height: 60%;
 }
 
-.rightFooter{opacity: 0.6;}
-
-.ecoFooter,
-.hqFooter {
-  width: 45%;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: flex-start;
+.rightFooter {
+    opacity: 0.6;
 }
 
 .ecoFooter,
 .hqFooter {
-  width: 50%;
-  display: flex;
-  justify-content: space-between;
-  height: 95%;
-  flex-direction: column;
-  align-items: flex-start;
+    width: 45%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.ecoFooter,
+.hqFooter {
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    height: 95%;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 .ecoFooter {
-  height: 125%;
+    height: 125%;
+}
+
+/* TABLET BREAKPOINT */
+@media (min-width: 600px) and (max-width: 991px) {
+    .HeaderContainer {
+        margin-top: 1rem;
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .Navbar {
+        display: flex;
+        gap: 2.5rem;
+        margin: 0 5rem;
+    }
+
+    .HeaderContainer #mgsLogo {
+        height: 2.5rem;
+    }
+
+    .footerMain .leftFooter{
+      margin-left: 0;
+      padding-left: 0;
+      width: auto;
+      justify-content: center;
+    }
+
+    .leftFooter h2, .leftFooter h6{
+      display: inline-block;
+    }
+
+    .ecoFooter button, .ecoFooter a,.hqFooter h5,.leftFooter h6{
+      font-size: 12px;
+    }
+    .leftFooter img{
+      width: 1.5rem;
+      margin-right: 1rem;
+    }
+    .leftFooter > img{
+      width: 5rem;
+    }
+}
+
+
+/* PHONE BREAKPOINT*/
+@media (max-width: 599px) {
+    .HeaderContainer {
+        margin-top: 1rem;
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .HeaderContainer .open{
+  display: none;
+}
+.HeaderContainer #mgsLogo{
+  height: 2.5rem;
+}
+
+    #dropdownBtn{
+      display: block;
+    }
+
+    .Navbar {
+        display: none;
+    }
+
+    .dropdownContainer{
+      display: block;
+      width: 100%;
+    }
+    .MobileDropdownMenu{
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      font-size: 1.5rem;
+      gap: 1rem;
+      margin: 4rem 0;
+    }
+
+    .MobileDropdownMenu + .HeaderIcons{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 1rem;
+      font-size: 1.5rem;
+    }
+    .MobileDropdownMenu + .HeaderIcons img{
+      width: 2rem;
+      margin-right: 1rem;
+    }
+
+    .footerMain{
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+    .rightFooter{
+      flex-direction: column;
+      gap: 2rem;
+      width: 100% !important;
+    }
+    .rightFooter .ecoFooter, .rightFooter .hqFooter{
+      width: 100%;
+    }
+
+    .rightFooter strong,.rightFooter a,.rightFooter button{
+      margin-bottom: 1rem;
+    }
+
+    .leftFooter{
+      margin-left: 0;
+      order: 2;
+      width: auto;
+      padding-left: 0;
+      margin-bottom: 0;
+    }
+    .leftFooter img{
+      width: 2rem;
+      margin-right: 1.5rem;
+    }
 }
