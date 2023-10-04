@@ -33,12 +33,13 @@
 .thirdRow {
     display: flex;
     gap: 7px;
-    margin-top: -70px;
+    margin-top: -70px
 }
 
 .textContainer {
-    margin: auto;
+    margin: auto
 }
+
 
 .textContainer h1 {
     font-size: 100px;
@@ -58,15 +59,65 @@
 
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
+
+    .partnershipAllContainer {
+        display: none !important;
+    }
+
+
+    .textContainer h2 {
+        font-size: 30px;
+    }
+
+    .textContainer h1 {
+        font-size: 30px;
+    }
+
     .allContainer {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .allRows {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    .textContainer h2 ,.textContainer h1{
-        font-size: 40px;
-        line-height: 60px;
+
+    .firstRow {
+        display: flex;
     }
+
+    .secondRow {
+        display: flex;
+        margin: -12px 0;
+    }
+
+    .thirdRow {
+        display: flex;
+        margin-top: 0px;
+    }
+
     #hexagon {
-    margin-right: -120px;
+        width: 141px !important;
+        height: 118px !important;
+    }
+
+    #hexagonImages {
+        width: 66px !important;
+        height: 66px !important;
+        position: absolute;
+        top: 22px;
+        right: 22px;
+    }
+
+    .hexagonContainer {
+        display: flex;
+        width: 108px !important;
+        height: 118px !important;
+        position: relative;
+    }
 }
 }
+

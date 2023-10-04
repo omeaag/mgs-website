@@ -173,35 +173,35 @@ const Partnership = () => {
                 <div className='firstRow'>
                     <div className='hexagonContainer'>
                         <Image alt={logosData[count].id} id='hexagon' src={hexagon} ></Image>
-                        <Image alt={logosData[count].id} src={logosData[0].url[count]}></Image>
+                        <Image alt={logosData[count].id} id='hexagonImages' src={logosData[0].url[count]}></Image>
                     </div>
                     <div className='hexagonContainer'>
                         <Image alt={logosData[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logosData[count].id} src={logosData[1].url[count4]}></Image>
+                        <Image alt={logosData[count].id} id='hexagonImages' src={logosData[1].url[count4]}></Image>
                     </div>
                 </div>
                 <div className='secondRow'>
                     <div className='hexagonContainer'>
                         <Image alt={logosData[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logosData[count].id} src={logosData[2].url[count2]}></Image>
+                        <Image alt={logosData[count].id} id='hexagonImages' src={logosData[2].url[count2]}></Image>
                     </div>
                     <div className='hexagonContainer'>
                         <Image alt={logosData[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logosData[count].id} src={logosData[3].url[count3]}></Image>
+                        <Image alt={logosData[count].id} id='hexagonImages' src={logosData[3].url[count3]}></Image>
                     </div>
                     <div className='hexagonContainer'>
                         <Image alt={logosData[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logosData[count].id} src={logosData[4].url[count1]}></Image>
+                        <Image alt={logosData[count].id} id='hexagonImages' src={logosData[4].url[count1]}></Image>
                     </div>
                 </div>
                 <div className='thirdRow'>
                     <div className='hexagonContainer'>
                         <Image alt={logosData[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logosData[count].id} src={logosData[5].url[count6]}></Image>
+                        <Image alt={logosData[count].id} id='hexagonImages' src={logosData[5].url[count6]}></Image>
                     </div>
                     <div className='hexagonContainer'>
                         <Image alt={logosData[count].id} id='hexagon' src={hexagon}></Image>
-                        <Image alt={logosData[count].id} src={logosData[6].url[count5]}></Image>
+                        <Image alt={logosData[count].id} id='hexagonImages' src={logosData[6].url[count5]}></Image>
                     </div>
                 </div>
             </div>
