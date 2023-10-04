@@ -7,20 +7,20 @@
     margin-right: -240px;
 }
 
-.allContainer{
-    display:flex;
+.allContainer {
+    display: flex;
     gap: 100px;
     align-items: center
 }
 
-.allRows{
+.allRows {
     display: flex;
     flex-direction: column;
 }
 
 .firstRow {
     display: flex;
-    gap: 7px,
+    gap: 7px;
 }
 
 .secondRow {
@@ -33,20 +33,20 @@
 .thirdRow {
     display: flex;
     gap: 7px;
-    margin-top:-70px
+    margin-top: -70px
 }
 
-.textContainer{
+.textContainer {
     margin: auto
 }
 
-.textContainer h1{
+.textContainer h1 {
     font-size: 100px;
     color: #3C3C3C;
     font-family: MonumentExtended
 }
 
-.textContainer h2{
+.textContainer h2 {
     font-size: 60px;
     color: #1DA7D9;
     font-family: MonumentExtended
@@ -56,4 +56,64 @@
 @media (min-width: 600px) and (max-width: 991px) {}
 
 /* PHONE BREAKPOINT */
-@media (max-width: 599px) {}
+@media (max-width: 599px) {
+
+    .partnershipAllContainer {
+        display: none !important;
+    }
+
+
+    .textContainer h2 {
+        font-size: 30px;
+    }
+
+    .textContainer h1 {
+        font-size: 30px;
+    }
+
+    .allContainer {
+        flex-direction: column;
+        gap: 0px;
+    }
+
+    .allRows {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .firstRow {
+        display: flex;
+    }
+
+    .secondRow {
+        display: flex;
+        margin: -12px 0;
+    }
+
+    .thirdRow {
+        display: flex;
+        margin-top: 0px;
+    }
+
+    #hexagon {
+        width: 141px !important;
+        height: 118px !important;
+    }
+
+    #hexagonImages {
+        width: 66px !important;
+        height: 66px !important;
+        position: absolute;
+        top: 22px;
+        right: 22px;
+    }
+
+    .hexagonContainer {
+        display: flex;
+        width: 108px !important;
+        height: 118px !important;
+        position: relative;
+    }
+}
