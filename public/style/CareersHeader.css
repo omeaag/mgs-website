@@ -66,6 +66,166 @@
   justify-content: flex-end;
   height: 100%;
 }
+
 .careersHeaderImageContainer img {
   width: 68%;
+}
+
+#mobileAmsterdamImage {
+  display: none;
+}
+
+/* TABLET BREAKPOINT */
+@media (min-width: 600px) and (max-width: 991px) {}
+
+/* PHONE BREAKPOINT */
+@media (max-width: 599px) {
+
+  body {
+    padding: 0rem;
+  }
+
+  .careersHeaderContainer {
+    background-image: none;
+  }
+
+  .careersBiggestHeader p {
+    font-size: 30px;
+  }
+
+  .careersSmallHeader p {
+    font-size: 25px;
+    line-height: 2.5rem;
+    text-align: center;
+    margin-left: 24px !important;
+  }
+
+  .careersHeaderContainer {
+    height: auto;
+    background: url(/_next/static/media/bluePinkBackground.db02b1bc.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+    justify-content: center;
+  }
+
+  .careersHeaderAllContent {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    justify-content: flex-end;
+  }
+
+  .careersHeaderAllText {
+    display: flex;
+    position: unset;
+    align-items: center;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .careersHeaderPar {
+    font-family: MonumentExtended;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 3rem;
+    text-align: center;
+    letter-spacing: 0px;
+    margin: 0px 5px;
+  }
+
+  .careersHeaderPar br {
+    display: none;
+  }
+
+  .careersHeaderImageContainer img {
+    width: 100%;
+  }
+
+  .MemberCardContainer {
+    justify-content: center;
+    /* width: 80%; */
+    gap: 3.5rem;
+    /* margin: 5.5rem auto 7rem auto; */
+    flex-wrap: wrap;
+  }
+
+  #webAmsterdamImage {
+    display: none;
+  }
+
+  #mobileAmsterdamImage {
+    display: block;
+  }
+
+  .hiringContainer .imageContainer .imageText {
+
+    font-size: 40px !important;
+    line-height: 60px !important;
+    width: 80% !important;
+  }
+
+  .hiringContainer .headerSection {
+    width: 100%;
+    text-align: center;
+    padding: 100px 30px !important;
+  }
+
+  .hiringContainer .headerSection>span {
+    font-size: 20px !important;
+  }
+
+  .hiringContainer .headerSection h1 {
+    font-size: 30px !important;
+    font-weight: 600 !important;
+    padding: -20px !important;
+    overflow: visible;
+  }
+
+  .hiringContainer .headerSection p {
+    font-size: 22px !important;
+    padding: 0px 10px !important;
+    line-height: 50px;
+  }
+
+  .hiringContainer .hiringSection {
+    flex-direction: column;
+  }
+
+  .hiringContainer .hiringSection:nth-child(1) {
+    width: 100%;
+    align-items: center;
+  }
+
+  .hiringSection .apply a {
+    float: left !important;
+    font-size: 30px;
+  }
+
+  .hiringSection .hiringTitle {
+    text-align: center;
+  }
+
+  .hiringSection #hiringDescription {
+    text-align: center;
+  }
+
+  .hiringSection .hiringFeatures {
+    margin-left: 20px;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 18px !important;
+}
+.hiringSectionFirst{
+  display: flex;
+  flex-direction: column;
+}
+
+.hiringContainer .hiring {
+  margin-bottom: 150px;
+}
+
+#viewmore{
+  display: none !important;
+}
 }

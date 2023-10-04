@@ -3,6 +3,7 @@ import React, {useState} from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import amsterdam from '../public/materials/amsterdam.svg';
+import amsterdam2 from '../public/materials/Rectangle674.png';
 import apply from '../public/materials/apply.svg';
 import freeIcon from '../public/materials/freeIcon.svg';
 import remIcon from '../public/materials/remIcon.svg';
@@ -50,7 +51,8 @@ const Hiring = () => {
     return (
         <div className='hiringContainer'>
             <div className='imageContainer'>
-                <Image src={amsterdam} />
+                <Image id='webAmsterdamImage' src={amsterdam} />
+                <Image id='mobileAmsterdamImage' src={amsterdam2} />
                 <p className='imageText'>
                     Started in Amsterdam <br /> enhancing and emplifying connections <br /> across
                     the globe.
@@ -72,7 +74,7 @@ const Hiring = () => {
                     <div
                         className='hiringSection'
                         key={index}>
-                        <div style={{width: '90%'}}>
+                        <div className='hiringSectionFirst' style={{width: '90%'}}>
                             <h1 className='hiringTitle'>{job.title}</h1>
                             <p id='hiringDescription'>{job.description}</p>
                             {job.features.map((feat, index) => (
