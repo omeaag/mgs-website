@@ -10,7 +10,7 @@
 .allContainer {
     display: flex;
     gap: 100px;
-    align-items: center
+    align-items: center;
 }
 
 .allRows {
@@ -27,7 +27,7 @@
     display: flex;
     gap: 7px;
     margin-top: -70px;
-    margin-left: -146px
+    margin-left: -146px;
 }
 
 .thirdRow {
@@ -40,20 +40,22 @@
     margin: auto
 }
 
+
 .textContainer h1 {
     font-size: 100px;
-    color: #3C3C3C;
-    font-family: MonumentExtended
+    color: #3c3c3c;
+    font-family: MonumentExtended;
 }
 
 .textContainer h2 {
     font-size: 60px;
-    color: #1DA7D9;
-    font-family: MonumentExtended
+    color: #1da7d9;
+    font-family: MonumentExtended;
 }
 
 /* TABLET BREAKPOINT */
-@media (min-width: 600px) and (max-width: 991px) {}
+@media (min-width: 600px) and (max-width: 991px) {
+}
 
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
@@ -117,3 +119,5 @@
         position: relative;
     }
 }
+}
+
