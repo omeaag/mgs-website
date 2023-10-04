@@ -110,7 +110,7 @@ padding-right: 60px;
 }
 
 .hiringSection .apply a{
-    float: right !important;
+    float: right;
 }
 
 #viewmore{

@@ -31,8 +31,14 @@
     text-align: center;
 }
 
-.headServiceText h1{font-size: 4.375rem; font-weight: bold;}
-.headServiceText h6{font-size: 1.5rem; font-weight: lighter;}
+.headServiceText h1 {
+    font-size: 4.375rem;
+    font-weight: bold;
+}
+.headServiceText h6 {
+    font-size: 1.5rem;
+    font-weight: lighter;
+}
 .serviceBoxContainer {
     display: flex;
     flex-direction: column;
@@ -41,15 +47,24 @@
     color: white;
 }
 
-.serviceBoxContainer h4, .serviceBoxContainer h3{font-size: 1.8rem; margin: 0.7rem 0rem; transition: 0.7s ease;}
+.serviceBoxContainer h4,
+.serviceBoxContainer h3 {
+    font-size: 1.8rem;
+    margin: 0.7rem 0rem;
+    transition: 0.7s ease;
+}
 
-.serviceTContainer, .serviceBContainer {
+.serviceTContainer,
+.serviceBContainer {
     display: flex;
     flex-direction: row;
     height: 50%;
 }
 
-.tLeftService, .bLeftService, .tRightService, .bRightService {
+.tLeftService,
+.bLeftService,
+.tRightService,
+.bRightService {
     display: flex;
     text-align: start;
     flex-direction: column;
@@ -59,7 +74,10 @@
     margin: 2rem 3rem;
 }
 
-.tLeftService button, .bLeftService button, .tRightService button, .bRightService button {
+.tLeftService button,
+.bLeftService button,
+.tRightService button,
+.bRightService button {
     color: rgba(240, 248, 255, 0);
     height: 0.35rem;
     width: 35rem;
@@ -67,36 +85,44 @@
     transition: 1s ease;
     background-size: 300% 100%;
 }
-.tLeftService button{background-image: linear-gradient(to right, black, rgb(155, 255, 28));}
-
-.tLeftService:hover button{
-    background-position: right;
-    transition: 0.5s ease;
-    cursor:default;
+.tLeftService button {
+    background-image: linear-gradient(to right, black, rgb(155, 255, 28));
 }
 
-.tRightService button{background-image: linear-gradient(to right, black, rgb(255, 199, 0));}
-
-.tRightService:hover button{
+.tLeftService:hover button {
     background-position: right;
     transition: 0.5s ease;
-    cursor:default;
+    cursor: default;
 }
 
-.bLeftService button{background-image: linear-gradient(to right, black, rgb(90, 192, 157));}
+.tRightService button {
+    background-image: linear-gradient(to right, black, rgb(255, 199, 0));
+}
+
+.tRightService:hover button {
+    background-position: right;
+    transition: 0.5s ease;
+    cursor: default;
+}
+
+.bLeftService button {
+    background-image: linear-gradient(to right, black, rgb(90, 192, 157));
+}
 
 .bLeftService:hover button {
     background-position: right;
     transition: 0.5s ease;
-    cursor:default;
+    cursor: default;
 }
 
-.bRightService button{background-image: linear-gradient(to right, black, rgb(0, 240, 255));}
+.bRightService button {
+    background-image: linear-gradient(to right, black, rgb(0, 240, 255));
+}
 
 .bRightService:hover button {
     background-position: right;
     transition: 0.5s ease;
-    cursor:default;
+    cursor: default;
 }
 
 .tLeftService h4:hover {
@@ -113,14 +139,12 @@
     cursor: default;
 }
 
-
 .bLeftService h4:hover {
     transform: translateX(3rem);
     color: rgb(90, 192, 157);
     transition: 0.5s ease;
     cursor: default;
 }
-
 
 .bRightService h4:hover {
     transform: translateX(3rem);
@@ -129,8 +153,147 @@
     cursor: default;
 }
 
+
 /* TABLET BREAKPOINT */
 @media (min-width: 600px) and (max-width: 991px) {}
+=======
+/* -------------------- TABLET BREAKPOINT --------------------  */
+@media (min-width: 600px) and (max-width: 991px) {
+    .mainServiceContainer {
+        margin-right: -30px;
+        margin-left: -30px;
+        height: 100%;
+    }
+    .blueServiceContainer {
+        border-radius: 40px;
+    }
 
-/* PHONE BREAKPOINT */
-@media (max-width: 599px) {}
+    .headServiceText h1 {
+        font-size: 40px;
+        line-height: 60px;
+        font-weight: 500;
+        margin-top: 50px;
+    }
+
+    br {
+        display: none;
+    }
+    .headServiceText h6 {
+        font-size: 22px;
+        line-height: 36px;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .serviceBoxContainer h3 {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+    }
+
+    .serviceBoxContainer {
+        width: 100%;
+        gap: 20px;
+    }
+
+
+
+    .serviceTContainer,
+    .serviceBContainer {
+        width: 100%;
+    }
+
+    .tLeftService,
+    .tRightService,
+    .bLeftService,
+    .bRightService {
+        width: 100%;
+        margin: 0;
+        padding: 30px;
+    }
+   .serviceBoxContainer h3 {
+        font-size: 30px;
+        line-height: 60px;
+    }
+    .serviceBoxContainer h4 {
+        font-size: 25px;
+        line-height: 33px;
+    }
+    .tLeftService button,
+    .bLeftService button,
+    .tRightService button,
+    .bRightService button {
+        width: 100%;
+    }
+}
+
+/* --------------------  PHONE BREAKPOINT --------------------  */
+@media (max-width: 599px) {
+    .mainServiceContainer {
+        margin-right: -30px;
+        margin-left: -30px;
+        height: 100%;
+    }
+    .blueServiceContainer {
+        border-radius: 40px;
+    }
+
+    .headServiceText h1 {
+        font-size: 30px;
+        line-height: 50px;
+        font-weight: 500;
+        margin-top: 50px;
+    }
+
+
+    br {
+        display: none;
+    }
+    .headServiceText h6 {
+        font-size: 16px;
+        line-height: 36px;
+        margin-top: 20px;
+        padding: 0 10px;
+    }
+
+    .serviceBoxContainer h3 {
+        font-size: 1.2rem;
+        margin: 0.5rem 0;
+    }
+
+    .serviceBoxContainer {
+        width: 100%;
+        gap: 20px;
+    }
+
+
+
+    .serviceTContainer,
+    .serviceBContainer {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .tLeftService,
+    .tRightService,
+    .bLeftService,
+    .bRightService {
+        width: 100%;
+        margin: 0;
+        padding: 15px;
+    }
+   .serviceBoxContainer h3 {
+        font-size: 30px;
+        line-height: 90px;
+    }
+    .serviceBoxContainer h4 {
+        font-size: 25px;
+        line-height: 33px;
+    }
+
+    .tLeftService button,
+    .bLeftService button,
+    .tRightService button,
+    .bRightService button {
+        width: 100%;
+    }
+}

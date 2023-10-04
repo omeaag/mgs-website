@@ -186,7 +186,7 @@
 /* -------------------------------- PHONE BREAKPOINT -------------------------------- */
 @media (max-width: 599px) {
     .OurSolitionContainer {
-        margin: 10px;
+        margin: auto;
         padding: 10px;
         height: 100%;
     }
@@ -259,7 +259,7 @@
 
     .OurSolutionText .textContainer img {
         height: 290px;
-        width: 340px;
+        width: 360px;
     }
 
     .OurSolutionText .textContainer p {
@@ -270,7 +270,7 @@
         display: block;
         position: absolute;
         bottom: -650px;
-        left: 80px;
+        left: 60px;
     }
     .textContainer .paginationButtons button {
         width: 10px;
