@@ -58,11 +58,6 @@
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
 
-    .partnershipAllContainer {
-        display: none !important;
-    }
-
-
     .textContainer h2 {
         font-size: 30px;
     }
