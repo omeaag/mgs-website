@@ -156,7 +156,6 @@
 
 /* TABLET BREAKPOINT */
 @media (min-width: 600px) and (max-width: 991px) {}
-=======
 /* -------------------- TABLET BREAKPOINT --------------------  */
 @media (min-width: 600px) and (max-width: 991px) {
     .mainServiceContainer {

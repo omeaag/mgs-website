@@ -100,7 +100,55 @@
 }
 
 /* TABLET BREAKPOINT */
-@media (min-width: 600px) and (max-width: 991px) {}
+@media (min-width: 600px) and (max-width: 991px) {
+     .partnershipAllContainer {
+        margin: auto 0px;
+        padding: 50px;
+        margin-bottom: 100px;
+        max-height: 700px;
+    }
+
+    .getInTouchContainer {
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    .getInTouchContainer h1 {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 20px;
+        font-weight: 500;
+
+    }
+
+    .getInTouchContainer h3 {
+        font-size: 22px;
+        line-height: 39px;
+    }
+
+    .formContainer {
+        width: 100% !important;
+        margin: 0;
+        padding-bottom: 10px;
+        margin-top: 150px;
+    }
+
+    .namesContainer, .comphoneContainer {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .formContainer input {
+        width: 120px;
+    }
+
+    .formContainer input::placeholder {
+        font-size: 10px;
+    }
+
+    .groupContainer + button{
+        margin-bottom: 10px;
+    }
+}
 
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
@@ -131,6 +179,7 @@
         width: 100vw;
         margin-top: 20px;
         margin-bottom: 20px;
+        box-sizing: border-box;
     }
 
     .namesContainer, .comphoneContainer {
