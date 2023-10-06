@@ -3,7 +3,7 @@
     margin: 50px auto;
 }
 
-.headerContainer-5 h1{
+.headerContainer-5 h1 {
     min-width: 498px;
     height: 90px;
     font-family: MonumentExtended;
@@ -60,15 +60,15 @@
 }
 
 
-.galleryContainer{
+.galleryContainer {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 1200px;
-    gap:20px
+    gap: 20px
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
     height: 500px;
 }
 
@@ -77,13 +77,14 @@
     right: 10px !important;
 }
 
-.swiper-pagination-bullet, .swiper-pagination-bullet-active{
+.swiper-pagination-bullet,
+.swiper-pagination-bullet-active {
     height: 15px;
     width: 15px;
 }
 
 
-.personContainer{
+.personContainer {
     display: flex;
     align-items: center;
     margin: auto;
@@ -95,8 +96,8 @@
 }
 
 
-.personSlider{
-    display:flex;
+.personSlider {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -152,7 +153,7 @@ margin-right: 45px;
     font-family: MonumentExtended;
 }
 
-.allContainer-5{
+.allContainer-5 {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -193,9 +194,10 @@ margin-right: 45px;
 
 /* ------------------------ TABLET BREAKPOINT ------------------------ */
 @media (min-width: 600px) and (max-width: 991px) {
-    .headerContainer-5{
+    .headerContainer-5 {
         margin: 30px 0;
     }
+
     .headerContainer-5 h1 {
         font-size: 40px;
         line-height: 60px;
@@ -206,33 +208,38 @@ margin-right: 45px;
         align-items: center;
         height: auto;
     }
+
     .headerContainerp {
         width: 100%;
         padding-right: 50px;
         font-size: 22px;
         line-height: 45px;
     }
+
     .galleryContainer {
         margin: 50px auto;
         width: 90%;
         align-items: center;
         margin-left: 0;
     }
-    .prev-button, .next-button {
+
+    .prev-button,
+    .next-button {
         margin: 10px;
     }
-     .swiper-wrapper {
+
+    .swiper-wrapper {
         height: 100%;
         width: 100%;
     }
 
     .build30 {
-    width: 100%;
-    padding: 20px 0;
-    margin-right: 0;
-}
+        width: 100%;
+        padding: 20px 0;
+        margin-right: 0;
+    }
 
-     .personContainer {
+    .personContainer {
         width: 100%;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -241,78 +248,82 @@ margin-right: 45px;
     }
 
     #iconamoon_settings {
-    position: absolute;
-    top: 700px;
-    left: 600px;
-}
+        position: absolute;
+        top: 700px;
+        left: 600px;
+    }
 
-#iconoir_design {
-    position: absolute;
-    top: 720px;
-    left: 10px;
-}
+    #iconoir_design {
+        position: absolute;
+        top: 720px;
+        left: 10px;
+    }
 
-#iconoir_dev_laptop {
-    position: absolute;
-    top: 500px;
-    right: 200px;
-}
+    #iconoir_dev_laptop {
+        position: absolute;
+        top: 500px;
+        right: 200px;
+    }
 
-#iconoir_dev_phone {
-    position: absolute;
-    top: 800px;
-    left: 400px;
-}
+    #iconoir_dev_phone {
+        position: absolute;
+        top: 800px;
+        left: 400px;
+    }
 
-#streamline_interface {
-    position: absolute;
-    top: 950px;
-    right: 500px;
-}
+    #streamline_interface {
+        position: absolute;
+        top: 950px;
+        right: 500px;
+    }
 
     .whatPeopleContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
 
-.whatPeopleContainer h1{
-    font-size: 40px;
-    line-height: 60px;
-}
+    .whatPeopleContainer h1 {
+        font-size: 40px;
+        line-height: 60px;
+    }
 
-.personContainer{
-    padding-left: 0;
-}
-.personSlider{
-    gap: 10px;
-    height: 100%;
-    width: 100%;
-}
+    .personContainer {
+        padding-left: 0;
+    }
 
-.personSlider h2 {
-    font-size: 30px;
-    line-height: 60px;
-    font-family: MonumentExtended;
-}
+    .personSlider {
+        gap: 10px;
+        height: 100%;
+        width: 100%;
+    }
 
-.personSlider p {
-    font-size: 22px;
-    line-height: 37px;
-    font-family: MonumentExtended;
-    text-align: center;
-    width: 80%;
-}
+    .personSlider h2 {
+        font-size: 30px;
+        line-height: 60px;
+        font-family: MonumentExtended;
+    }
+
+    .personSlider p {
+        font-size: 22px;
+        line-height: 37px;
+        font-family: MonumentExtended;
+        text-align: center;
+        width: 80%;
+    }
 
 }
 
 /* ------------------------ PHONE BREAKPOINT ------------------------ */
 @media (max-width: 599px) {
     .allContainer-5 {
-        margin: 50px 0;
+        margin: 0;
     }
-    .headerContainer-5{
+
+    
+
+    .headerContainer-5 {
         margin-left: 0;
         margin-bottom: 0;
     }
@@ -325,7 +336,7 @@ margin-right: 45px;
         height: auto;
     }
 
-    .headerContainer-5 > img {
+    .headerContainer-5>img {
         display: none;
     }
 
@@ -342,7 +353,8 @@ margin-right: 45px;
         align-items: center;
     }
 
-    .prev-button, .next-button {
+    .prev-button,
+    .next-button {
         margin: 10px;
     }
 
@@ -371,91 +383,110 @@ margin-right: 45px;
     }
 
     .build30 {
-    padding-top: 20px;
-    flex-direction: column-reverse;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-}
+        padding-top: 20px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
 
-.build {
-    font-size: 40px;
-    line-height: 60px;
-    text-align: center;
-    width: 100%;
-}
+    .build {
+        font-size: 40px;
+        line-height: 60px;
+        text-align: center;
+        width: 100%;
+    }
 
-#iconamoon_settings {
-    position: absolute;
-    top: 550px;
-    left: 300px;
-}
+    #iconamoon_settings {
+        position: absolute;
+        top: 550px;
+        left: 300px;
+    }
 
-#iconoir_design {
-    position: absolute;
-    top: 720px;
-    left: 10px;
-}
+    #iconoir_design {
+        position: absolute;
+        top: 720px;
+        left: 10px;
+    }
 
-#iconoir_dev_laptop {
-    position: absolute;
-    top: 500px;
-    right: 200px;
-}
+    #iconoir_dev_laptop {
+        position: absolute;
+        top: 500px;
+        right: 200px;
+    }
 
-#iconoir_dev_phone {
-    position: absolute;
-    top: 800px;
-    left: 250px;
-}
+    #iconoir_dev_phone {
+        position: absolute;
+        top: 800px;
+        left: 250px;
+    }
 
-#streamline_interface {
-    position: absolute;
-    top: 750px;
-    right: 400px;
-}
+    #streamline_interface {
+        position: absolute;
+        top: 750px;
+        right: 400px;
+    }
 
     .whatPeopleContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
-}
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
 
-.whatPeopleContainer h1{
-    font-size: 15px;
-    line-height: 30px;
-}
+    .whatPeopleContainer h1 {
+        font-size: 15px;
+        line-height: 30px;
+    }
 
-.whatPeopleContainer h1 img{
-    height: 36px;
-}
+    .whatPeopleContainer h1 img {
+        height: 36px;
+    }
 
-.personContainer{
-    padding-left: 0;
-}
-.personSlider{
-    gap: 10px;
-    height: 100%;
-    width: 100%;
-}
+    .personContainer {
+        padding-left: 0;
+    }
 
-.personSlider h2 {
-    font-size: 26px;
-    line-height: 60px;
-    font-family: MonumentExtended;
-}
+    .personSlider {
+        gap: 10px;
+        height: 100%;
+        width: 100%;
+    }
 
-.personSlider p {
-    font-size: 16px;
-    line-height: 37px;
-    font-family: MonumentExtended;
-    text-align: center;
-    width: 80%;
-}
+    .personSlider h2 {
+        font-size: 26px;
+        line-height: 60px;
+        font-family: MonumentExtended;
+    }
 
-.prev-button, .next-button {
+    .personSlider p {
+        font-size: 16px;
+        line-height: 37px;
+        font-family: MonumentExtended;
+        text-align: center;
+        width: 80%;
+    }
+
+    .prev-button,
+    .next-button {
         height: 80px;
         width: auto;
+    }
+
+    .whatPeopleContainer h1 {
+        font-size: 40px;
+        width: 100%;
+        text-align: center;
+        justify-items: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px
+    }
+
+    .whatPeopleContainer {
+        width: 100%;
+        padding: 0px;
+        padding-top: 80px;
     }
 }

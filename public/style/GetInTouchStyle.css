@@ -98,3 +98,46 @@
 #email {
     width: 100%;
 }
+
+/* TABLET BREAKPOINT */
+@media (min-width: 600px) and (max-width: 991px) {}
+
+/* PHONE BREAKPOINT */
+@media (max-width: 599px) {
+    .partnershipAllContainer {
+        flex-direction: column;
+        padding: 20px !important;
+        margin: 0 -32px !important;
+        padding: 50px;
+    }
+
+    .getInTouchContainer {
+        margin: 0;
+        width: 100%;
+    }
+
+    .getInTouchContainer h1 {
+        font-size: 30px;
+        line-height: 36px;
+        margin-bottom: 20px;
+    }
+
+    .getInTouchContainer h3 {
+        font-size: 16px;
+        line-height: 29px;
+    }
+
+    .formContainer {
+        width: 100vw;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .namesContainer, .comphoneContainer {
+        width: 100%;
+        justify-content: space-between;
+    }
+    .formContainer input {
+        width: 150px;
+    }
+}

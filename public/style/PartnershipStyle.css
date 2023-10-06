@@ -57,19 +57,27 @@
 
 / PHONE BREAKPOINT */
 @media (max-width: 599px) {
+    
+
+    .allContainer{
+        flex-direction: column-reverse;
+        gap: 30px;
+        margin: 50px;
+
+    }
 
     .textContainer h2 {
+        text-align: center;
         font-size: 30px;
     }
 
     .textContainer h1 {
         font-size: 30px;
+        text-align: center;
+        width: 70%;
+        margin: auto;
     }
 
-    .allContainer {
-        flex-direction: column;
-        gap: 0px;
-    }
 
     .allRows {
         display: flex;

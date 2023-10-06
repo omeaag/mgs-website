@@ -81,9 +81,7 @@
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
 
-  body {
-    padding: 0rem;
-  }
+
 
   .careersHeaderContainer {
     background-image: none;
