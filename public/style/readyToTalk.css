@@ -12,6 +12,7 @@
     align-items: center;
     justify-content: center;
     margin: 100px 0;
+    opacity: 0.3;
 }
 
 .readyContainer .imageContainer {
@@ -184,6 +185,7 @@ color: red;
     align-items: center;
     justify-content: center;
     margin: 100px 0;
+    opacity: 0.3;
 }
 
 .readyContainer .imageContainer {
@@ -352,3 +354,10 @@ color: red;
     font-weight: 500;
     font-size: 20px !important;
 }}
+
+
+@media (min-width: 600px) and (max-width: 991px) {
+    .readyContainer{
+        opacity: 0.3;
+    }
+}

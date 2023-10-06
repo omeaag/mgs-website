@@ -10,6 +10,7 @@
     flex-direction: column;
     align-items: center;
     width: 80%;
+    opacity: 0.3;
     height: 700px;
     margin: auto;
     margin-bottom: 40px;
@@ -110,6 +111,7 @@ border-radius: 30px;
     }
     
     .feedbackContainer{
+        opacity: 0.3;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -203,5 +205,12 @@ border-radius: 30px;
     .form #submitBtn:hover{
         color: #17a3d3 !important;
         background-color: #fff;
+    }
+}
+
+
+@media (min-width: 600px) and (max-width: 991px) {
+    .feedbackContainer{
+        opacity: 0.3;
     }
 }
