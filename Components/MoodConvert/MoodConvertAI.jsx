@@ -13,9 +13,9 @@ const MoodConvertAI = () => {
             <div className='bigBackground' >
                 <div className='smallBackground'>
                     <div className='moodConvertAIContainer'>
-                        <Image alt='ailogo' src={logo} ></Image>
-                        <h3>As a Blockchain-based firm, we help our clients integrate the most optimal blockchain solutions <br />
-                            into their business strategy. We have developed a range of specialised services aimed at helping <br /> companies to fully exploit blockchain technologies.</h3>
+                        <h1>🤖</h1>
+                        <h2><span id='aiTextBlue'>AI module </span>is under development.</h2>
+                        <h3>Check Back Soon</h3>
                     </div>
                 </div>
             </div>
