@@ -52,13 +52,77 @@
     font-family: MonumentExtended
 }
 
-/* TABLET BREAKPOINT /
-@media (min-width: 600px) and (max-width: 991px) {}
+/* TABLET BREAKPOINT */
+@media (min-width: 600px) and (max-width: 991px) {
+    .allContainer{
+        flex-direction: row;
+        margin: 50px;
+        gap: 30px;
+    }
 
-/ PHONE BREAKPOINT */
+     .textContainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+     }
+
+    .textContainer h2 {
+        font-size: 40px;
+        line-height: 60px;
+    }
+
+    .textContainer h1 {
+        font-size: 53px;
+        line-height: 63px;
+    }
+
+
+    .allRows {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .firstRow {
+        display: flex;
+    }
+
+    .secondRow {
+        display: flex;
+        margin: -12px 0;
+    }
+
+    .thirdRow {
+        display: flex;
+        margin-top: 0px;
+    }
+
+    #hexagon {
+        width: 141px !important;
+        height: 118px !important;
+    }
+
+    #hexagonImages {
+        width: 66px !important;
+        height: 66px !important;
+        position: absolute;
+        top: 22px;
+        right: 22px;
+    }
+
+    .hexagonContainer {
+        display: flex;
+        width: 108px !important;
+        height: 118px !important;
+        position: relative;
+    }
+
+}
+
+/* PHONE BREAKPOINT */
 @media (max-width: 599px) {
-    
-
     .allContainer{
         flex-direction: column-reverse;
         gap: 30px;
@@ -120,4 +184,3 @@
         position: relative;
     }
 }
-
