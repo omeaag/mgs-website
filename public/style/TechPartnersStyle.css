@@ -7,7 +7,114 @@
     flex-direction: column;
 }
 
+.blockChainnetworkContainer{
+    flex-direction: column;
+    display: flex;
+    width: 80%;
+    text-align: left;
+}
 
+.blockChainnetworkContainer h1{
+    font-size: 65px;
+    color: black;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.blockChainnetworkContainer span{
+    color: #0071FB;
+}
+
+.blockChainIcons{
+    display: flex;
+    flex-direction: column;
+    height: 170px;
+}
+
+.blockChainIconsLine{
+    display: flex;
+    flex-direction: row;
+}
+
+.blockChainIconsLine img{
+    width: 215.386px;
+    height: 78px;
+    filter: saturate(0);
+    transition: 0.3s ease-in-out;
+}
+
+.blockChainIconsLine img:hover{
+    filter: saturate(1);
+    width: 235.386px;
+    height: 88px;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.techArsenalContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 80%;
+    margin: 100px 0px;
+    justify-content: center;
+}
+
+.techArsenalContainer h1{font-size: 65px; font-weight: bold;}
+.techArsenalContainer span{color: #0071FB;}
+.techArsenalButtonContainer{
+    display: flex;
+    cursor: pointer;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 60px;
+}
+.techArsenalButton{
+    display: flex;
+    width: 15%;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-right: 10px;
+    justify-content: center;
+}
+
+.techArsenalButton button{
+    font-size: 21px;
+    border-top:none ;
+    border-right: none;
+    border-left: none;
+    border-color: #0071fb00;
+    border-width: 5px;
+    transition: 0.8s ease-in-out;
+}
+
+.techArsenalButton button:hover{
+    transition: 0.2s ease-in-out;
+    border-color: #0071FB;
+}
+
+.arsenalChangeComponent{
+    display: flex;
+}
+
+.ArsenalMiniComponent{
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+}
+.ArsenalMiniComponentDEV{
+    width: 95%;
+}
+.mainArsenalChangeComp{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+.mainArsenalChangeComp img{
+    width: 116px;
+    height: 64px;
+}
 .techTextParentContainer {
     flex-direction: column;
     height: 25%;
@@ -70,6 +177,7 @@
 .techSliderParentContainer .techPartnerComponentContainer {
     height: 100%;
     width: 90%;
+    margin:350px 0px
 }
 
 /* TABLET BREAKPOINT */
