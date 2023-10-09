@@ -4,10 +4,10 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+}
+.bigBackground{
     background-image: url("../materials/moodConverAIImages/background.svg");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: top;
+
 }
 
 
@@ -143,10 +143,9 @@ bottom: 27px;
         align-items: center;
         justify-content: center;
         width: 100%;
-        background-image: url("../materials/moodConverAIImages/background.svg");
-        background-size: 100%;
+        background-image: url("../materials/moodConverAIImages/Frame\ 1261152487.svg");        background-size: 100%;
         background-repeat: no-repeat;
-        background-position: top;
+        background-position: top !important;
     }
     
     
@@ -155,7 +154,7 @@ bottom: 27px;
         align-items: center;
         justify-content: center;
         background-image: url("../materials/moodConverAIImages/Frame\ 1261152487.svg");
-        width: 90%;
+        width: 100%;
         background-size: 20px 15px;
         background-repeat: no-repeat;
     }
@@ -307,7 +306,7 @@ bottom: 27px;
         align-items: center;
         justify-content: center;
         background-image: url("../materials/moodConverAIImages/Frame\ 1261152487.svg");
-        width: 90%;
+        width: 100%;
         background-size: 20px 15px;
         background-repeat: no-repeat;
     }
