@@ -21,7 +21,7 @@
 }
 
 .headerContainer-5 h1 span {
-    color: #1DA7D9;
+    color: rgba(0, 113, 251, 1);
 }
 
 .headerContainerp {
@@ -83,6 +83,41 @@
     width: 15px;
 }
 
+.sliderContent{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    gap: 50px;
+    height: 100%;
+    border: 1px solid rgba(202, 220, 227, 1);
+    border-radius: 7px;
+}
+.sliderContent h4{
+    font-family: MonumentExtended;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-align: left;
+    }
+
+.sliderContent p{
+    font-family:MonumentExtended;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.377);
+}
+
+.slideLink{
+    display: flex;
+    gap: 10px;
+    color: rgba(0, 0, 0, 0.577) !important;
+}
 
 .personContainer {
     display: flex;
@@ -94,7 +129,6 @@
     margin-top: 100px;
     margin-bottom: 200px;
 }
-
 
 .personSlider {
     display: flex;
@@ -149,7 +183,7 @@ margin-right: 45px;
     height: 151.8300018310547px;
     top: 5700px;
     left: 1055.94140625px;
-    color: #1DA7D9;
+    color: rgba(0, 113, 251, 1);
     font-family: MonumentExtended;
 }
 

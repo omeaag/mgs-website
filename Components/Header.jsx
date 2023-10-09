@@ -43,10 +43,10 @@ export default function Header() {
             {isMobileMenuOpen && (
                 <div className='dropdownContainer efect'>
                     <div className='MobileDropdownMenu'>
-                        <Link href='/'>Home</Link>
-                        <Link href='/services'>Services</Link>
-                        <Link href='/mood-convert'>MoodConvert</Link>
-                        <Link href='/careers'>Careers</Link>
+                        <Link onClick={toggleMobileMenu} href='/'>Home</Link>
+                        <Link onClick={toggleMobileMenu} href='/services'>Services</Link>
+                        <Link onClick={toggleMobileMenu} href='/mood-convert'>MoodConvert</Link>
+                        <Link onClick={toggleMobileMenu} href='/careers'>Careers</Link>
                     </div>
                     <div className='HeaderIcons'>
                         <Image

@@ -2,7 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #1DA7D9;
+    background-color: rgba(0, 113, 251, 1);
     border-radius: 1.2rem;
     justify-content: start;
     padding-left: 200px;
@@ -60,11 +60,10 @@
 .formContainer button {
     font-size: 16px;
     color: #fff;
-    background-color: black;
+    background: linear-gradient(90deg, #1293BC -10.29%, #0028FB 25.21%, #6100FF 65.24%, #0073FF 113.66%);
     border-radius: 42px;
     width: 218px;
     height: 64px;
-    border: 2px solid #1DA7D9;
     padding: 20px 40px 20px 40px;
     font-family: MonumentExtended;
 }

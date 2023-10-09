@@ -3,11 +3,10 @@ import "../public/style/HomeShaping.css";
 
 export default function HomeShapingFuture() {
   let texts = [
-    "Creativity",
+    "Blockchain.",
+    "Development",
     "Technology",
-    "Imagination",
-    "Innovation",
-    "Simplicity",
+    "Design",
   ];
   const [index, setIndex] = useState(0);
   const [currentText, setCurrentText] = useState(texts[index]);
@@ -29,18 +28,18 @@ export default function HomeShapingFuture() {
   return (
     <div className="HomeShapingContainer">
       <div className="HomeShapingHeaders">
-        <p className="text-shaping">Shaping the Future with Blockchain</p>
-
-        <p className="text-creativity">{currentText}</p>
+        <div className="firstRow">
+          <p className="text-shaping">Think</p>
+          <p className="text-creativity"> {currentText}</p>
+        </div>
+        <p className="text-shaping">Think Mood</p>
       </div>
 
       <div className="HomeShapingBottomLine"></div>
 
       <div className="HomeShapingParagraph">
         <p className="at-mood-global">
-          At Mood Global Services, we&#39;re committed to crafting and setting
-          up digital infrastructures that enhance valuable network communication
-          and stimulate business progression.
+          At Mood Global Services, we're committed to crafting and setting up digital infrastructures that enhance valuable network communication and stimulate business progression.
         </p>
       </div>
 
