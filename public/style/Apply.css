@@ -1,0 +1,316 @@
+.applyContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+.applyContainer .applyHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../materials/HomeShapingBackground.svg);
+    background-color: #fff;
+    width: 100%;
+    padding: 100px;
+}
+
+.applyContainer .applyHeader h1{
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    margin-bottom: 30px;
+    color: #0071FB;
+}
+
+
+.applyContainer .applyHeader p{
+    font-size: 26px;
+    line-height: 50px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.applyContainer .applyQualifications{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 50px;
+}
+
+.applyContainer .applyQualifications h1{
+font-size: 30px;
+line-height: 36px;
+font-weight: 500;
+margin-bottom: 15px;
+margin-top: 40px;
+font-weight: 600;
+}
+.applyContainer .applyQualifications p{
+font-size: 20px;
+line-height: 36px;
+
+}
+
+.applyContainer .applyQualifications .applyInfo h1{
+font-size: 30px;
+line-height: 36px;
+font-weight: normal;
+}
+
+
+.applyContainer .applyQualifications ul{
+    list-style-type: disc;
+    padding-left: 40px;
+
+}
+
+.applyContainer .applyQualifications ul li{
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.applyFormContainer form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.applyFormContainer form > h1{
+font-size: 50px;
+line-height: 60px;
+font-weight: 700;
+color: #0071FB;
+}
+
+.applyFormContainer form > div{
+    width: 100%;
+}
+
+.applyFormContainer .nameInputs h1{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.applyFormContainer .nameInputs input{
+    width: calc(33% - 8px);
+    height: 60px;
+    margin-right: 15px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+.applyFormContainer .nameInputs #last_name{
+    margin-right: 0;
+}
+
+.applyFormContainer .birthdayInputs h1{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.applyFormContainer .birthdayInputs select{
+     width: calc(33% - 8px);
+    height: 60px;
+    margin-right: 15px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 15px;
+    padding-right: 30px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    appearance: none;
+    background: url(../materials/down-arrow.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: right 10px center ;
+}
+
+.applyFormContainer .birthdayInputs #year{
+    margin-right: 0;
+}
+
+
+.applyFormContainer .birthdayInputs select:has(option[value=""]:checked) {
+  color: #BDBDBD;
+}
+
+.applyFormContainer .adressInputs input{
+    width: calc(33% - 8px);
+    height: 60px;
+    margin-right: 15px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+
+.applyFormContainer .adressInputs #streetAdress{
+    width: 100% !important;
+}
+
+
+.applyFormContainer .adressInputs h1{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.applyFormContainer .adressInputs #zipCode{
+    margin-right: 0;
+}
+
+.applyFormContainer .contactInputs{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.applyFormContainer .contactInputs div{
+    width: calc(50% - 6px);
+}
+
+.applyFormContainer .contactInputs input{
+    width: 100%;
+    height: 60px;
+    margin-right: 15px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 50px;
+    font-size: 15px;
+}
+
+.applyFormContainer .contactInputs h1{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.applyFormContainer .questionInputs {
+     display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.applyFormContainer .questionInputs div{
+    width: calc(50% - 6px);
+}
+
+.applyFormContainer .questionInputs select{
+    width: 100%;
+    height: 60px;
+    margin-right: 15px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 15px;
+    padding-right: 30px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    appearance: none;
+    background: url(../materials/down-arrow.svg);
+    background-size: 30px;
+    background-repeat: no-repeat;
+    background-position: right 10px center ;
+}
+
+.applyFormContainer .questionInputs h1{
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+
+.applyFormContainer .resumeInputs .resume h1 {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 15px;
+}
+
+.applyFormContainer .resumeInputs .innerResume {
+  text-align: center;
+  border: 1px solid #BDBDBD;
+  border-radius: 5px;
+  padding: 35px;
+  margin-bottom: 50px;
+}
+
+.applyFormContainer .resumeInputs img {
+    margin: auto;
+}
+
+.applyFormContainer .resumeInputs .innerResume h2 {
+  font-size: 30px;
+  line-height: 36px;
+}
+
+.applyFormContainer .resumeInputs .innerResume h3{
+    font-size: 18px;
+    line-height: 32px;
+    color: #BDBDBD;
+}
+
+
+.applyFormContainer .resumeInputs .fileInput input[type="file"] {
+  display: none;
+}
+
+
+.applyFormContainer .resumeInputs .coverLetter h1{
+font-size: 30px;
+    line-height: 36px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.applyFormContainer .resumeInputs .coverLetter textarea {
+    width: 100%;
+    min-height:400px !important;
+    resize: vertical !important;
+    margin-right: 15px;
+    border: 1px solid #BDBDBD;
+    border-radius: 5px;
+    padding: 15px;
+    margin-bottom: 50px;
+    font-size: 15px;
+    overflow: auto;
+}
+
+.applyFormContainer form #applyBtn{
+width: 387px;
+height:103px;
+font-size: 36px;
+line-height: 43px;
+color: #fff;
+padding: 30px, 110px, 30px, 110px;
+border-radius: 100px;
+background: linear-gradient(90deg, #1293BC -10.29%, #0028FB 25.21%, #6100FF 65.24%, #0073FF 113.66%);
+}
+
+.applyFormContainer form #applyBtn:hover{
+    background: linear-gradient(90deg, #6100FF -10.29%, #0028FB 25.21%, #0073FF 65.24%, #1293BC 113.66%);
+    position: relative;
+    bottom: 0.5px;
+    right: 0.6px;
+}

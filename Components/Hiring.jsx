@@ -9,6 +9,7 @@ import freeIcon from '../public/materials/freeIcon.svg';
 import remIcon from '../public/materials/remIcon.svg';
 import view from '../public/materials/view.svg';
 import '../public/style/Hiring.css';
+import Apply from './Apply';
 
 const Hiring = () => {
     const advertisement = [
@@ -91,7 +92,7 @@ const Hiring = () => {
                             ))}
                         </div>
                         <div className='apply'>
-                            <Link href={'/'}>
+                            <Link href={'/apply'} >
                                 Apply{' '}
                                 <span>
                                     <Image
