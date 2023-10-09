@@ -1,17 +1,17 @@
 import Link from "next/link";
 import Image from "next/image";
-import smallLogoIcon from "../public/materials/Small-logo.svg";
 import twitterIcon from "../public/materials/mdi_twitter.svg";
 import linkedinIcon from "../public/materials/entypo-social_linkedin-with-circle.svg";
 import githubIcon from "../public/materials/mdi_github.svg";
 import notionIcon from "../public/materials/mingcute_notion-fill.svg";
+import mgsLogo from "../public/materials/logo.svg";
 const Footer = () => {
   return (
     <footer>
       <div className="footerContainer">
         <div className="footerMain">
           <div className="leftFooter">
-            <Image src={smallLogoIcon} alt="small-logo" />
+            <Image src={mgsLogo} alt="small-logo" />
             <h2>
               <strong>Mood Global Services</strong> B.V.
             </h2>

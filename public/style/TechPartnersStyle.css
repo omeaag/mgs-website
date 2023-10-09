@@ -1,5 +1,5 @@
 .techParentContainer {
-    height: 75rem;
+    height: auto;
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -130,7 +130,7 @@
 }
 
 .techTextParentContainer span {
-    color: rgb(52, 175, 216);
+    color: rgba(0, 113, 251, 1);
 }
 
 .techTextParentContainer p {
