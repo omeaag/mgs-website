@@ -181,13 +181,19 @@
 }
 
 /* TABLET BREAKPOINT */
-@media (min-width: 600px) and (max-width: 991px) {}
+@media (min-width: 600px) and (max-width: 991px) {
+    
+}
 
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
     .ourServicesTextContainer h1 {
         font-size: 30px !important;
         text-align: center;
+    }
+
+    .techSliderParentContainer .techPartnerComponentContainer{
+        margin: 50px 0px;
     }
 
     .servicesHeaderSmallTextContainer p {
@@ -263,6 +269,7 @@
 
     .techTextParentContainer {
         width: 100%;
+        padding: 2rem;
     }
 
     .techTextParentContainer br {
@@ -286,7 +293,7 @@
     }
 
     .acordionComponentContainer {
-        margin: 70px 0 !important;
+        margin: 70px 20px !important;
     }
 
 

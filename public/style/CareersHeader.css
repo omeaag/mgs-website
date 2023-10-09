@@ -12,7 +12,7 @@
 
 .careersBiggestHeader p {
   font-family: MonumentExtended;
-  color: rgba(0, 113, 251, 1);
+  color: #1da7d9;
   font-size: 3.4rem;
   font-weight: 700;
   line-height: 4.5rem;
@@ -80,6 +80,8 @@
 
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
+
+
 
   .careersHeaderContainer {
     background-image: none;
