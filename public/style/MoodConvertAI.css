@@ -5,7 +5,8 @@
     justify-content: center;
     width: 100%;
 }
-.bigBackground{
+
+.bigBackground {
     background-image: url("../materials/moodConverAIImages/background.svg");
 
 }
@@ -32,9 +33,20 @@
     text-align: center;
 }
 
-.moodConvertAIContainer h1 {font-size: 120px;}
-.moodConvertAIContainer h2 {font-size: 120px; font-weight: bold;}
-#aiTextBlue{color: #0071FB;}
+.moodConvertAIContainer h1 {
+    font-size: 120px;
+}
+
+.moodConvertAIContainer h2 {
+    width: 70%;
+    font-size: 120px;
+    font-weight: bold;
+}
+
+#aiTextBlue {
+    color: #0071FB;
+}
+
 .moodConvertAIContainer h3 {
     color: #1A1A1A;
     font-size: 28px;
@@ -116,17 +128,17 @@
     padding-left: 30px;
 }
 
-.bottomCont{
+.bottomCont {
     display: flex;
     position: relative;
     justify-content: center;
     align-items: center;
 }
 
-.sendButton{
-position: absolute;
-right: 20px;
-bottom: 27px;
+.sendButton {
+    position: absolute;
+    right: 20px;
+    bottom: 27px;
 }
 
 .checkbox {
@@ -143,12 +155,13 @@ bottom: 27px;
         align-items: center;
         justify-content: center;
         width: 100%;
-        background-image: url("../materials/moodConverAIImages/Frame\ 1261152487.svg");        background-size: 100%;
+        background-image: url("../materials/moodConverAIImages/Frame\ 1261152487.svg");
+        background-size: 100%;
         background-repeat: no-repeat;
         background-position: top !important;
     }
-    
-    
+
+
     .smallBackground {
         display: flex;
         align-items: center;
@@ -158,8 +171,8 @@ bottom: 27px;
         background-size: 20px 15px;
         background-repeat: no-repeat;
     }
-    
-    
+
+
     .moodConvertAIContainer {
         margin: 120px 0;
         gap: 6px;
@@ -169,9 +182,20 @@ bottom: 27px;
         align-items: center;
         justify-content: center;
     }
-    .moodConvertAIContainer h1 {font-size: 60px;}
-    .moodConvertAIContainer h2 {font-size: 42px; font-weight: bold;}
-    #aiTextBlue{color: #0071FB;}
+
+    .moodConvertAIContainer h1 {
+        font-size: 60px;
+    }
+
+    .moodConvertAIContainer h2 {
+        font-size: 42px;
+        font-weight: bold;
+    }
+
+    #aiTextBlue {
+        color: #0071FB;
+    }
+
     .moodConvertAIContainer h3 {
         color: #1A1A1A;
         font-size: 30px;
@@ -185,7 +209,7 @@ bottom: 27px;
         height: 90px;
         flex-shrink: 0;
     }
-    
+
     .AIformContainer {
         margin: auto;
         background-color: #FFFFFF;
@@ -199,19 +223,19 @@ bottom: 27px;
         border: 1px solid rgba(0, 113, 251, 1);
         width: 95%;
     }
-    
+
     .underForm {
         gap: 20px;
         display: flex;
         flex-direction: column;
     }
-    
+
     .AIformContainer h4 {
         font-size: 26px;
         text-align: center;
         font-family: MonumentExtended;
     }
-    
+
     .groupCont,
     .cardContainer {
         display: flex;
@@ -220,11 +244,11 @@ bottom: 27px;
         width: 100%;
         align-items: center;
     }
-    
+
     .groupCont {
         gap: 20px
     }
-    
+
     .cardContainer {
         text-align: start;
         padding: 16px 28px 16px 28px;
@@ -232,26 +256,26 @@ bottom: 27px;
         border-radius: 12px;
         gap: 10px;
     }
-    
+
     .cardContainer h6 {
         color: #B9B9B9;
         font-size: 14px;
         font-family: MonumentExtended;
     }
-    
+
     .cardContainer h5 {
         color: #999999;
         font-size: 19px;
         font-family: MonumentExtended;
         color: black;
     }
-    
+
     .textContainer {
         display: flex;
         flex-direction: column;
         gap: 6px
     }
-    
+
     .inputArea {
         border: 1px solid #BDBDBD;
         color: #BDBDBD;
@@ -261,33 +285,34 @@ bottom: 27px;
         width: 100%;
         padding-left: 30px;
     }
-    
-    .bottomCont{
+
+    .bottomCont {
         display: flex;
         position: relative;
         justify-content: center;
         align-items: center;
     }
-    
-    .sendButton{
-    position: absolute;
-    right: 20px;
-    bottom: 27px;
+
+    .sendButton {
+        position: absolute;
+        right: 20px;
+        bottom: 27px;
     }
-    
+
     .checkbox {
         width: 24px;
         height: 24px;
         visibility: hidden;
     }
 
-    #backEndPrompt, #uiuxPrompt {
+    #backEndPrompt,
+    #uiuxPrompt {
         visibility: hidden;
     }
 }
 
 /*Tablet*/
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1024px) {
     .moodConvertAllContainer {
         display: flex;
         flex-direction: column;
@@ -299,8 +324,8 @@ bottom: 27px;
         background-repeat: no-repeat;
         background-position: top;
     }
-    
-    
+
+
     .smallBackground {
         display: flex;
         align-items: center;
@@ -310,8 +335,8 @@ bottom: 27px;
         background-size: 20px 15px;
         background-repeat: no-repeat;
     }
-    
-    
+
+
     .moodConvertAIContainer {
         margin: 120px 0;
         gap: 6px;
@@ -321,9 +346,20 @@ bottom: 27px;
         justify-content: center;
         text-align: center;
     }
-    .moodConvertAIContainer h1 {font-size: 98px;}
-    .moodConvertAIContainer h2 {font-size: 70px; font-weight: bold;}
-    #aiTextBlue{color: #0071FB;}
+
+    .moodConvertAIContainer h1 {
+        font-size: 98px;
+    }
+
+    .moodConvertAIContainer h2 {
+        font-size: 70px;
+        font-weight: bold;
+    }
+
+    #aiTextBlue {
+        color: #0071FB;
+    }
+
     .moodConvertAIContainer h3 {
         color: #1A1A1A;
         font-size: 40px;
@@ -337,7 +373,7 @@ bottom: 27px;
         height: 90px;
         flex-shrink: 0;
     }
-    
+
     .AIformContainer {
         opacity: 0.3;
         margin: auto;
@@ -353,20 +389,20 @@ bottom: 27px;
         width: 95%;
         height: 625px;
     }
-    
+
     .underForm {
         gap: 20px;
         display: flex;
         flex-direction: column;
     }
-    
+
     .AIformContainer h4 {
         font-size: 26px;
         text-align: center;
         font-family: MonumentExtended;
         margin-bottom: 150px;
     }
-    
+
     .groupCont,
     .cardContainer {
         display: flex;
@@ -374,11 +410,11 @@ bottom: 27px;
         width: 100%;
         align-items: center;
     }
-    
+
     .groupCont {
         gap: 20px
     }
-    
+
     .cardContainer {
         text-align: start;
         height: 125px;
@@ -387,26 +423,26 @@ bottom: 27px;
         border-radius: 12px;
         gap: 10px;
     }
-    
+
     .cardContainer h6 {
         color: #B9B9B9;
         font-size: 14px;
         font-family: MonumentExtended;
     }
-    
+
     .cardContainer h5 {
         color: #999999;
         font-size: 19px;
         font-family: MonumentExtended;
         color: black;
     }
-    
+
     .textContainer {
         display: flex;
         flex-direction: column;
         gap: 6px
     }
-    
+
     .inputArea {
         border: 1px solid #BDBDBD;
         color: #BDBDBD;
@@ -416,20 +452,20 @@ bottom: 27px;
         width: 100%;
         padding-left: 30px;
     }
-    
-    .bottomCont{
+
+    .bottomCont {
         display: flex;
         position: relative;
         justify-content: center;
         align-items: center;
     }
-    
-    .sendButton{
-    position: absolute;
-    right: 20px;
-    bottom: 27px;
+
+    .sendButton {
+        position: absolute;
+        right: 20px;
+        bottom: 27px;
     }
-    
+
     .checkbox {
         width: 24px;
         height: 24px;
