@@ -70,7 +70,7 @@
 
 
 /* TABLET BREAKPOINT */
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1024px) {
      .wwdContainer {
         margin: 40px 10px;
         padding: 10px;

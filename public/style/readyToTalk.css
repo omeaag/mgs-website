@@ -190,7 +190,6 @@ color: red;
 
 .readyContainer .imageContainer {
     position: relative;
-    width: 120%;
     height: fit-content;
     margin-bottom: 60px;
 }
@@ -356,7 +355,7 @@ color: red;
 }}
 
 
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1024px) {
     .readyContainer{
         opacity: 0.3;
     }

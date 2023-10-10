@@ -128,7 +128,7 @@
 }
 
 /* -------------------------------- TABLET BREAKPOINT -------------------------------- */
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1024px) {
     .OurSolitionContainer {
         margin: 0 20px;
         padding: 0;

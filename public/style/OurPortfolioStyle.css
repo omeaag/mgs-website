@@ -25,7 +25,6 @@
 }
 
 .headerContainerp {
-    width: 1344px;
     height: 150px;
     top: 4683px;
     left: 192px;
@@ -227,7 +226,7 @@ margin-right: 45px;
 
 
 /* ------------------------ TABLET BREAKPOINT ------------------------ */
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1024px) {
     .headerContainer-5 {
         margin: 30px 0;
     }
