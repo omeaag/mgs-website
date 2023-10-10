@@ -73,6 +73,33 @@ const Apply = () => {
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero velit soluta
                     voluptate, vel labore accusantium suscipit maiores eius saepe error?
                 </p>
+                <div className='mobilViewInfo'>
+                    <p>
+                        <span>Location:</span> Remote (on-site meetings possible in the Netherlands,
+                        Italy and Spain)
+                    </p>
+                    <p>
+                        <span>Salary:</span> Competitive, based on experience{' '}
+                    </p>
+                    <p>
+                        <span>Top type:</span> Full-time or freelance
+                    </p>
+                </div>
+            </div>
+            <div className='mobilViewText'>
+                <p>
+                    At Mood Global Services, our Full Stack Developers are the vital pulse of our
+                    projects. Collaborating closely with smart contract specialists, visionary
+                    designers, and cloud experts, you'll play a pivotal role in transforming dreams
+                    into tangible realities.
+                </p>
+                <p>
+                    Immerse yourself in cutting-edge technologies as you work with modern frameworks
+                    like Nextjs. Craft the foundational building blocks of our frontend through
+                    meticulously designed components. Seamlessly integrate these components using
+                    state management tools like Zustand, ensuring they flawlessly connect with Smart
+                    Contracts, Databases, Rest APIs, and more.
+                </p>
             </div>
             <div className='applyQualifications'>
                 <div className='responsibilities'>
@@ -105,6 +132,31 @@ const Apply = () => {
                         <li>JavaScript knowledge</li>
                         <li>Working knowledge of Git</li>
                         <li>Experience working with MySQL Databases</li>
+                    </ul>
+                </div>
+                <div className='experienceRequired'>
+                    <h1>Experience Required</h1>
+                    <ul>
+                        <li>
+                            Strong proficiency in Javascript with hands-on experience in React,
+                            Nextjs, and TailwindCss. Competing frameworks are also acceptable.
+                        </li>
+                        <li>Experience in state management, preferably Zustand or Redux.</li>
+                        <li>Solid understanding of cloud platforms, especially AWS.</li>
+                        <li>Familiarity with Github Actions or other CI/CD architecture.</li>
+                        <li>
+                            Experience in smart contract interactions using web3, wagmi, or ethers
+                        </li>
+                    </ul>
+                </div>
+                <div className='bonusQualifications'>
+                    <h1>Bonus Qualifications</h1>
+                    <ul>
+                        <li>
+                            Experience with any crypto database or compute-related tools such as
+                            Chainlink or Phala.network.
+                        </li>
+                        <li>Proficiency in deploying scheduled or automated tasks</li>
                     </ul>
                 </div>
                 <div className='benefits'>
@@ -172,7 +224,7 @@ const Apply = () => {
                             <option
                                 value=''
                                 disabled>
-                                Select month
+                                Month
                             </option>
                             {months.map((month) => (
                                 <option
@@ -190,7 +242,7 @@ const Apply = () => {
                             <option
                                 value=''
                                 disabled>
-                                Select day
+                                Day
                             </option>
                             {Array.from({length: daysInMonth}, (_, index) => index + 1).map(
                                 (day) => (
@@ -210,7 +262,7 @@ const Apply = () => {
                             <option
                                 value=''
                                 disabled>
-                                Select year
+                                Year
                             </option>
                             {years.map((year) => (
                                 <option
@@ -311,6 +363,7 @@ const Apply = () => {
                                 <Image src={upload_Icon} />
                                 <h2>Browse Files</h2>
                                 <h3>Drag and drop your file here</h3>
+                                <h3  id='fileHere'>Upload File here</h3>
                                 <div className='fileInput'>
                                     <input
                                         type='file'
