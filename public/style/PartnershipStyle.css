@@ -119,6 +119,47 @@
         position: relative;
     }
 
+    .allRows {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .firstRow {
+        display: flex;
+    }
+
+    .secondRow {
+        display: flex;
+        margin: -12px 0;
+    }
+
+    .thirdRow {
+        display: flex;
+        margin-top: 0px;
+    }
+
+    #hexagon {
+        width: 141px !important;
+        height: 118px !important;
+    }
+
+    #hexagonImages {
+        width: 66px !important;
+        height: 66px !important;
+        position: absolute;
+        top: 22px;
+        right: 22px;
+    }
+
+    .hexagonContainer {
+        display: flex;
+        width: 108px !important;
+        height: 118px !important;
+        position: relative;
+    }
+
 }
 
 /* PHONE BREAKPOINT */
