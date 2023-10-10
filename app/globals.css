@@ -142,11 +142,12 @@ body {}
 /* TABLET BREAKPOINT */
 @media (min-width: 600px) and (max-width: 1024px) {
   .HeaderContainer {
-    margin-top: 1rem;
     font-size: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    max-width: 85%;
+    margin: 1rem auto;
   }
 
   .Navbar {
@@ -193,8 +194,7 @@ body {}
 /* PHONE BREAKPOINT*/
 @media (max-width: 599px) {
   .HeaderContainer {
-    margin: auto;
-    margin-top: 1rem;
+    margin:1rem auto;
     font-size: 0.8rem;
     display: flex;
     align-items: center;
