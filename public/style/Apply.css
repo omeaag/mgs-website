@@ -328,7 +328,7 @@ display: none;
 
 
 /* ----------------- TABLET BREAKPOINT -------------------- */
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1024px) {
      .applyQualifications .requirements,.applyQualifications .benefits, .applyQualifications .qualifications, .applyQualifications .applyInfo {
     display: none;
   }
