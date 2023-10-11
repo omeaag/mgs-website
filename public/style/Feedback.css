@@ -24,7 +24,7 @@ padding: 30px;
 }
 
 .feedbackContainer h1 span{
-    color: #17a3d3;
+    color: rgba(0, 113, 251, 1);
 }
 
 
@@ -85,10 +85,10 @@ border-radius: 30px;
 }
 
 .form #submitBtn{
-    border: 1px solid #17a3d3;
+    border: 1px solid rgba(0, 113, 251, 1);
     font-size: 15px !important;
     color: #fff !important;
-    background-color: #17a3d3;
+    background-color: rgba(0, 113, 251, 1);
     border-radius: 30px;
     padding: 15px 30px;
     transition: 0.4s;
@@ -96,7 +96,7 @@ border-radius: 30px;
 }
 
 .form #submitBtn:hover{
-    color: #17a3d3 !important;
+    color: rgba(0, 113, 251, 1) !important;
     background-color: #fff;
 }
 
@@ -129,7 +129,7 @@ border-radius: 30px;
     }
     
     .feedbackContainer h1 span{
-        color: #17a3d3;
+        color: rgba(0, 113, 251, 1);
     }
     
     
@@ -192,10 +192,10 @@ border-radius: 30px;
     }
     
     .form #submitBtn{
-        border: 1px solid #17a3d3;
+        border: 1px solid rgba(0, 113, 251, 1);
         font-size: 15px !important;
         color: #fff !important;
-        background-color: #17a3d3;
+        background-color: rgba(0, 113, 251, 1);
         border-radius: 30px;
         padding: 15px 30px;
         transition: 0.4s;
@@ -203,13 +203,13 @@ border-radius: 30px;
     }
     
     .form #submitBtn:hover{
-        color: #17a3d3 !important;
+        color: rgba(0, 113, 251, 1) !important;
         background-color: #fff;
     }
 }
 
 
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1024px) {
     .feedbackContainer{
         opacity: 0.3;
     }

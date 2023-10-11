@@ -12,13 +12,13 @@
 
 .careersBiggestHeader p {
   font-family: MonumentExtended;
-  color: #1da7d9;
+  color: rgba(0, 113, 251, 1);
   font-size: 3.4rem;
   font-weight: 700;
   line-height: 4.5rem;
   letter-spacing: 0em;
   text-align: left;
-  text-transform: uppercase;
+
 }
 
 .careersSmallHeader p {
@@ -152,7 +152,6 @@ letter-spacing: 0px;
   .hiringSectionFirst .hiringFeatures img{
     padding-bottom: 7px;
   }
-
 }
 
 /* PHONE BREAKPOINT */
@@ -298,16 +297,23 @@ letter-spacing: 0px;
     justify-content: center;
     margin-bottom: 20px;
     font-size: 18px !important;
-}
-.hiringSectionFirst{
+  }
+  
+  .hiringSectionFirst{
   display: flex;
-}
+  }
 
-.hiringContainer .hiring {
-  margin-bottom: 150px;
-}
 
-#viewmore{
-  display: none !important;
-}
+  .hiringSectionFirst {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hiringContainer .hiring {
+    margin-bottom: 150px;
+  }
+
+  #viewmore {
+    display: none !important;
+  }
 }

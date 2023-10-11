@@ -29,10 +29,11 @@
 .wwdContainer .WeDoText {
     margin-bottom: 30px;
     font-size: 25px;
+    line-height: 50px;
 }
 
 .wwdContainer .blueTitle span {
-    color: #17a3d3;
+    color: rgba(0, 113, 251, 1);
 }
 
 .blueTitle + .line{
@@ -47,7 +48,7 @@
         rgba(230, 88, 223, 0.5),
         magenta,
         rgba(197, 27, 197, 0.5),
-        #17a3d3
+        rgba(0, 113, 251, 1)
     );
     background-size: 1200% 100%;
     animation: animate 30s linear infinite;
@@ -63,13 +64,13 @@
     }
     100% {
         background-position: -200%;
-        background: #17a3d3;
+        background: rgba(0, 113, 251, 1);
     }
 }
 
 
 /* TABLET BREAKPOINT */
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1024px) {
      .wwdContainer {
         margin: 40px 10px;
         padding: 10px;

@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Pagination } from 'swiper/modules';
 import SwiperCore, { Navigation } from "swiper";
+import { useEffect, useState } from "react";
 import "swiper/swiper-bundle.css";
 import 'swiper/css/pagination';
 import 'swiper/css';
@@ -26,6 +27,7 @@ import Heart from "../public/materials/ourPortfolioImages/Vector.svg";
 import pp1 from "../public/materials/ourPortfolioImages/pp1.svg";
 import pp2 from "../public/materials/ourPortfolioImages/pp2.svg";
 import pp3 from "../public/materials/ourPortfolioImages/pp3.svg";
+import sliderlogo from "../public/materials/ourPortfolioImages/sliderlogo.svg";
 
 function OurPortfolio() {
   SwiperCore.use([Navigation]);
@@ -99,169 +101,192 @@ function OurPortfolio() {
     }
   };
 
+  const [slidesPerView, setSlidesPerView] = useState(2);
+  const [slideGap, setSlideGap] = useState(24);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    const updateWindowDimensions = () => {
+      if (window.innerWidth < 600) {
+            setSlidesPerView(1);
+            setSlideGap(0);
+          };
+    };
+    window.addEventListener("resize", updateWindowDimensions);
+    return () => window.removeEventListener("resize", updateWindowDimensions) 
+  }, []);
+
+
+  // useEffect(() => {
+  //   if (window.innerWidth < 600) {
+  //     setSlidesPerView(1);
+  //     setSlideGap(0);
+  //   };
+  // }, [window.innerWidth]);
+
   return (
-      <div className='allContainer-5'>
-          <Image
-              alt='iconoir_design'
-              id='iconoir_design'
-              src={iconoir_design}
-          />
-          <Image
-              alt='iconoir_dev_laptop'
-              id='iconoir_dev_laptop'
-              src={iconoir_dev_laptop}
-          />
-          <Image
-              alt='iconoir_dev_phone'
-              id='iconoir_dev_phone'
-              src={iconoir_dev_phone}
-          />
-          <Image
-              alt='iconamoon_settings'
-              id='iconamoon_settings'
-              src={iconamoon_settings}
-          />
-          <Image
-              alt='streamline_interface'
-              id='streamline_interface'
-              src={streamline_interface}
-          />
+    <div className='allContainer-5'>
+      <Image
+        alt='iconoir_design'
+        id='iconoir_design'
+        src={iconoir_design}
+      />
+      <Image
+        alt='iconoir_dev_laptop'
+        id='iconoir_dev_laptop'
+        src={iconoir_dev_laptop}
+      />
+      <Image
+        alt='iconoir_dev_phone'
+        id='iconoir_dev_phone'
+        src={iconoir_dev_phone}
+      />
+      <Image
+        alt='iconamoon_settings'
+        id='iconamoon_settings'
+        src={iconamoon_settings}
+      />
+      <Image
+        alt='streamline_interface'
+        id='streamline_interface'
+        src={streamline_interface}
+      />
 
-          <div className='headerContainer-5'>
-              <h1>
-                  Our <span>Portfolio</span>
-              </h1>
-              <Image
-                  alt='Line'
-                  id=''
-                  src={Line}
-              />
-          </div>
-          <p className='headerContainerp'>
-              An analysis of the Blockchain marketplace in 2021 by Markets and Markets found the
-              industry is expected to grow from a value of $4.9 billion (as of 2021) to $67.4
-              billion by 2026. This represents a Compound Annual Growth Rate of 68.4% during the
-              forecast period.
-          </p>
-          <div className='galleryContainer'>
-              <button
-                  onClick={goPrev1}
-                  className='prev-button'>
-                  <Image
-                      src={LeftArrow}
-                      alt='Sol Ok'
-                      width={50}
-                      height={50}
-                  />
-              </button>
-              <Swiper
-                  ref={swiper1}
-                  spaceBetween={50}
-                  slidesPerView={2}>
-                  <SwiperSlide>
-                      <Image
-                          src={photos[0].url}
-                          alt='Image 1'
-                          height={600}
-                      />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                      <Image
-                          src={photos[1].url}
-                          alt='Image 2'
-                          height={600}
-                      />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                      <Image
-                          src={photos[2].url}
-                          alt='Image 3'
-                          height={600}
-                      />
-                  </SwiperSlide>
-                  <SwiperSlide>
-                      <Image
-                          src={photos[3].url}
-                          alt='Image 4'
-                          height={600}
-                      />
-                  </SwiperSlide>
-              </Swiper>
-              <button
-                  onClick={goNext1}
-                  className='next-button'>
-                  <Image
-                      src={RightArrow}
-                      alt='Sağ Ok'
-                      width={50}
-                      height={50}
-                  />
-              </button>
-          </div>
-
-          <div className='build30'>
-              <h2 className='build'>Builders and Projects Helped</h2>
-              <h2 className='plus30'>30+</h2>
-          </div>
-          <div className='whatPeopleContainer'>
-              <h1>
-                  What People&nbsp;
-                  <Image
-                      alt='Heart'
-                      id='heart'
-                      src={Heart}
-                  />
-                  &nbsp;to say about us!{' '}
-              </h1>
-          </div>
-
-          <div className='personContainer'>
-              <button
-                  onClick={goPrev}
-                  className='prev-button'>
-                  <Image
-                      src={LeftArrow}
-                      alt='Sol Ok'
-                      width={100}
-                      height={100}
-                  />
-              </button>
-              <Swiper
-                  className='mySwiper'
-                  pagination={true}
-                  modules={[Pagination]}
-                  ref={swiper}
-                  spaceBetween={20}
-                  slidesPerView={1}
-                  navigation={{
-                      prevEl: '.prev-button',
-                      nextEl: '.next-button',
-                  }}>
-                  {people.map((person) => (
-                      <SwiperSlide key={person.id}>
-                          <div className='personSlider'>
-                              <img
-                                  src={person.image.src}
-                                  alt={person.name}
-                              />
-                              <h2>{person.name}</h2>
-                              <p>{person.description}</p>
-                          </div>
-                      </SwiperSlide>
-                  ))}
-              </Swiper>
-              <button
-                  onClick={goNext}
-                  className='next-button'>
-                  <Image
-                      src={RightArrow}
-                      alt='Sağ Ok'
-                      width={100}
-                      height={100}
-                  />
-              </button>
-          </div>
+      <div className='headerContainer-5'>
+        <h1>
+          Our <span>Portfolio</span>
+        </h1>
+        <Image
+          alt='Line'
+          id=''
+          src={Line}
+        />
       </div>
+      <p className='headerContainerp'>
+        An analysis of the Blockchain marketplace in 2021 by Markets and Markets found the
+        industry is expected to grow from a value of $4.9 billion (as of 2021) to $67.4
+        billion by 2026. This represents a Compound Annual Growth Rate of 68.4% during the
+        forecast period.
+      </p>
+      <div className='galleryContainer'>
+        <button
+          onClick={goPrev1}
+          className='prev-button'>
+          <Image
+            src={LeftArrow}
+            alt='Sol Ok'
+            width={50}
+            height={50}
+          />
+        </button>
+        <Swiper
+          ref={swiper1}
+          spaceBetween={slideGap}
+          slidesPerView={slidesPerView}>
+          <SwiperSlide>
+            <div className="sliderContent">
+              <h4>Nex Decentralized Exchange Decentralized Exchange</h4>
+              <p>Nexlabs.io, welcome! <br /> Nexlabs: decentralised trading platform</p>
+              <p className="slideLink"><Image src={sliderlogo} /> https://www.nexlabs.io</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="sliderContent">
+              <h4>The NFT Shoppe NFT's MarketPlace</h4>
+              <p>React App, welcome! <br /> Web site created using create-react-app</p>
+              <p className="slideLink">https://nft-wall-arts.vercel.app/home</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="sliderContent">
+              <h4>Wedge Finance E-Commerce Solutions On Blockchain</h4>
+              <p>Wedge Finance Provide Frictionless Decentralised Finance transactions in a block chain Environment </p>
+              <p className="slideLink">https://wedge-token.vercel.app/</p>
+            </div>
+          </SwiperSlide>
+          <SwiperSlide>
+            <div className="sliderContent">
+              <h4>CBD Platform Real World Asset Tokenization E-Commerce</h4>
+              <p>Real World Asset TokenizationE-commerce Crypto payments Ramp</p>
+              <p className="slideLink">https://cbdplatform.xyz/</p>
+            </div>
+          </SwiperSlide>
+        </Swiper>
+        <button
+          onClick={goNext1}
+          className='next-button'>
+          <Image
+            src={RightArrow}
+            alt='Sağ Ok'
+            width={50}
+            height={50}
+          />
+        </button>
+      </div>
+
+      <div className='build30'>
+        <h2 className='build'>Builders and Projects Helped</h2>
+        <h2 className='plus30'>22+</h2>
+      </div>
+      <div className='whatPeopleContainer'>
+        <h1>
+          What People&nbsp;
+          <Image
+            alt='Heart'
+            id='heart'
+            src={Heart}
+          />
+          &nbsp;to say about us!{' '}
+        </h1>
+      </div>
+
+      <div className='personContainer'>
+        <button
+          onClick={goPrev}
+          className='prev-button'>
+          <Image
+            src={LeftArrow}
+            alt='Sol Ok'
+            width={100}
+            height={100}
+          />
+        </button>
+        <Swiper
+          className='mySwiper'
+          pagination={true}
+          modules={[Pagination]}
+          ref={swiper}
+          spaceBetween={20}
+          slidesPerView={1}
+          navigation={{
+            prevEl: '.prev-button',
+            nextEl: '.next-button',
+          }}>
+          {people.map((person) => (
+            <SwiperSlide key={person.id}>
+              <div className='personSlider'>
+                <img
+                  src={person.image.src}
+                  alt={person.name}
+                />
+                <h2>{person.name}</h2>
+                <p>{person.description}</p>
+              </div>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+        <button
+          onClick={goNext}
+          className='next-button'>
+          <Image
+            src={RightArrow}
+            alt='Sağ Ok'
+            width={100}
+            height={100}
+          />
+        </button>
+      </div>
+    </div>
   );
 }
 

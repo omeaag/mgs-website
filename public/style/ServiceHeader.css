@@ -2,17 +2,19 @@
   overflow-x: hidden;
   display: flex;
   align-items: center;
-  height: 100vh;
+  flex-direction: column;
+  justify-content: center;
   background: url(../materials/bluePinkBackground.svg);
   background-repeat: no-repeat;
   background-position: 100%;
   background-size: cover;
-  justify-content: center;
+  width: 100%;
+  margin-top: 100px;
 }
+
 .serviceTextHeaderContainer {
-  height: 50%;
+  margin: 0 200px;
   display: flex;
-  width: 75%;
   justify-content: center;
   flex-direction: column;
 }
@@ -22,10 +24,11 @@
 }
 
 .ourServicesTextContainer h1 {
-  color: rgb(71, 183, 224);
+  color: rgba(0, 113, 251, 1);
   font-size: 4.375rem;
   font-weight: bold;
 }
+
 .servicesHeaderSmallTextContainer p {
   font-size: 1.625rem;
 }
@@ -34,20 +37,15 @@
   line-height: 3.2rem;
 }
 
-.serviceHeaderImageContainer {
-  height: 60%;
-  position: absolute;
-  width: 120%;
+.servicesTop {
   display: flex;
-  justify-content: flex-end; /* Use 'flex-end' instead of 'end' */
-  position: absolute;
-  margin-right: 23.7rem;
-  overflow-x: hidden; /*Hide horizontal overflow */
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
-#epArrow {
-  position: absolute;
-  justify-content: center;
-
-  align-self: flex-end;
+.servicesImageContainer {
+  height: 60%;
+  display: flex;
 }
+

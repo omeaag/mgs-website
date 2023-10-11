@@ -27,7 +27,7 @@
 }
 
 .OurSolutionTitle span {
-    color: #17a3d3;
+    color: rgba(0, 113, 251, 1);
 }
 
 .OurSolitionContainer .line {
@@ -42,7 +42,7 @@
         rgba(230, 88, 223, 0.5),
         magenta,
         rgba(197, 27, 197, 0.5),
-        #17a3d3
+        rgba(0, 113, 251, 1)
     );
     background-size: 1200% 100%;
     animation: animate 30s linear infinite;
@@ -128,7 +128,7 @@
 }
 
 /* -------------------------------- TABLET BREAKPOINT -------------------------------- */
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1024px) {
     .OurSolitionContainer {
         margin: 0 20px;
         padding: 0;
@@ -267,10 +267,7 @@
     }
 
     .textContainer .paginationButtons {
-        display: block;
-        position: absolute;
-        bottom: -650px;
-        left: 60px;
+        display: none;
     }
     .textContainer .paginationButtons button {
         width: 10px;

@@ -10,7 +10,7 @@
     justify-content: center;
     width: 100%;
     height: 100%;
-    background-color: rgb(43, 177, 232);
+    background-color: rgba(0, 113, 251, 1);
     border-radius: 1.2rem;
 }
 
@@ -154,13 +154,10 @@
 }
 
 
-/* TABLET BREAKPOINT */
-@media (min-width: 600px) and (max-width: 991px) {}
+
 /* -------------------- TABLET BREAKPOINT --------------------  */
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1024px) {
     .mainServiceContainer {
-        margin-right: -30px;
-        margin-left: -30px;
         height: 100%;
     }
     .blueServiceContainer {
@@ -228,8 +225,6 @@
 /* --------------------  PHONE BREAKPOINT --------------------  */
 @media (max-width: 599px) {
     .mainServiceContainer {
-        margin-right: -30px;
-        margin-left: -30px;
         height: 100%;
     }
     .blueServiceContainer {

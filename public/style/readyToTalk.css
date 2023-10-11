@@ -45,7 +45,7 @@
 .imageContainer #quoteButton {
     font-size: 16px !important;
     color: #fff !important;
-    background-color: #1da7d9;
+    background-color: rgba(0, 113, 251, 1);
     padding: 15px 70px;
     border-radius: 40px;
     margin: 60px 0 0 0 !important;
@@ -110,10 +110,10 @@
 }
 
 .modal-content form #submitButton{
-    border: 1px solid #17a3d3;
+    border: 1px solid rgba(0, 113, 251, 1);
     font-size: 15px !important;
     color: #fff !important;
-    background-color: #17a3d3;
+    background-color: rgba(0, 113, 251, 1);
     border-radius: 30px;
     padding: 15px 40px;
     margin: 40px 0 !important;
@@ -190,7 +190,6 @@ color: red;
 
 .readyContainer .imageContainer {
     position: relative;
-    width: 120%;
     height: fit-content;
     margin-bottom: 60px;
 }
@@ -230,7 +229,7 @@ color: red;
     font-size: 11.5px !important;
     font-weight: bold;
     color: #fff !important;
-    background-color: #1da7d9;
+    background-color: rgba(0, 113, 251, 1);
     padding: 15px 70px;
     border-radius: 40px;
     margin: 60px 0 0 0 !important;
@@ -295,10 +294,10 @@ color: red;
 }
 
 .modal-content form #submitButton{
-    border: 1px solid #17a3d3;
+    border: 1px solid rgba(0, 113, 251, 1);
     font-size: 15px !important;
     color: #fff !important;
-    background-color: #17a3d3;
+    background-color: rgba(0, 113, 251, 1);
     border-radius: 30px;
     padding: 15px 40px;
     margin: 40px 0 !important;
@@ -356,7 +355,7 @@ color: red;
 }}
 
 
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1024px) {
     .readyContainer{
         opacity: 0.3;
     }

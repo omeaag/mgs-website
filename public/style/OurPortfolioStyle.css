@@ -3,6 +3,8 @@
     margin: 50px auto;
 }
 
+
+
 .headerContainer-5 h1 {
     min-width: 498px;
     height: 90px;
@@ -21,14 +23,12 @@
 }
 
 .headerContainer-5 h1 span {
-    color: #1DA7D9;
+    color: rgba(0, 113, 251, 1);
 }
 
 .headerContainerp {
-    width: 1344px;
-    height: 150px;
-    top: 4683px;
-    left: 192px;
+    width: 100%;
+    text-align: center;
     font-family: MonumentExtended;
     font-size: 1.5625rem;
     font-weight: 400;
@@ -64,7 +64,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1200px;
+    width: 80%;
     gap: 20px
 }
 
@@ -83,6 +83,47 @@
     width: 15px;
 }
 
+.swiper-slide .swiper-slide-active .swiper-slide-active{
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.sliderContent {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    height: 400px;
+    border: 1px solid rgba(202, 220, 227, 1);
+    border-radius: 7px;
+}
+
+.sliderContent h4 {
+    font-family: MonumentExtended;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.sliderContent p {
+    font-family: MonumentExtended;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 38px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(0, 0, 0, 0.377);
+}
+
+.slideLink {
+    display: flex;
+    gap: 10px;
+    color: rgba(0, 0, 0, 0.577) !important;
+}
 
 .personContainer {
     display: flex;
@@ -94,7 +135,6 @@
     margin-top: 100px;
     margin-bottom: 200px;
 }
-
 
 .personSlider {
     display: flex;
@@ -123,9 +163,12 @@ margin-right: 45px;
 
 .build30 {
     display: flex;
-    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin: auto;
     gap: 30px;
-    padding-top: 200px;
+    padding-top: 150px;
 }
 
 .build {
@@ -143,13 +186,14 @@ margin-right: 45px;
 }
 
 .plus30 {
-    font-size: 6rem;
+    text-align: center;
+    align-items: center;
+    font-size: 15rem;
     font-weight: 900;
-    width: 370.43017578125px;
-    height: 151.8300018310547px;
+    display: flex;
     top: 5700px;
     left: 1055.94140625px;
-    color: #1DA7D9;
+    color: rgba(0, 113, 251, 1);
     font-family: MonumentExtended;
 }
 
@@ -193,9 +237,9 @@ margin-right: 45px;
 
 
 /* ------------------------ TABLET BREAKPOINT ------------------------ */
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1024px) {
     .headerContainer-5 {
-        margin: 30px 0;
+        margin: 30px 50px;
     }
 
     .headerContainer-5 h1 {
@@ -211,13 +255,12 @@ margin-right: 45px;
 
     .headerContainerp {
         width: 100%;
-        padding-right: 50px;
+        padding: 0 50px;
         font-size: 22px;
         line-height: 45px;
     }
 
     .galleryContainer {
-        margin: 50px auto;
         width: 90%;
         align-items: center;
         margin-left: 0;
@@ -233,10 +276,14 @@ margin-right: 45px;
         width: 100%;
     }
 
+    .swiper-pagination {
+        display: none;
+    }
+
     .build30 {
-        width: 100%;
+        width: 95%;
         padding: 20px 0;
-        margin-right: 0;
+        margin: auto;
     }
 
     .personContainer {
@@ -249,35 +296,65 @@ margin-right: 45px;
 
     #iconamoon_settings {
         position: absolute;
-        top: 700px;
-        left: 600px;
+        top: 900px;
+        left: 60px;
+        width: 35px;
+        height: 35px;
     }
 
     #iconoir_design {
         position: absolute;
-        top: 720px;
-        left: 10px;
+        top: 920px;
+        left: 500px;
+        width: 35px;
+        height: 35px;
     }
 
     #iconoir_dev_laptop {
         position: absolute;
-        top: 500px;
-        right: 200px;
+        top: 900px;
+        right: 60px;
+        width: 35px;
+        height: 35px;
     }
 
     #iconoir_dev_phone {
         position: absolute;
-        top: 800px;
-        left: 400px;
+        top: 1300px;
+        left: 100px;
+        width: 35px;
+        height: 35px;
     }
 
     #streamline_interface {
         position: absolute;
-        top: 950px;
-        right: 500px;
+        top: 1300px;
+        right: 400px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .sliderContent h4 {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 36px;
+    }
+
+    .sliderContent p {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 39px;
+    }
+
+    .slideLink {
+        font-size: 22px;
+        font-weight: 400;
+        line-height: 39px;
     }
 
     .whatPeopleContainer {
+        width: 90%;
+        margin: auto;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -321,7 +398,26 @@ margin-right: 45px;
         margin: 0;
     }
 
-    
+    .sliderContent h4 {
+        font-size: 22px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    .sliderContent p {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 29px;
+    }
+
+    .sliderContent{
+        height: 350px;
+    }
+    .slideLink {
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 22px;
+    }
 
     .headerContainer-5 {
         margin-left: 0;
@@ -390,6 +486,10 @@ margin-right: 45px;
         text-align: center;
     }
 
+    .plus30 {
+        font-size: 120px !important;
+    }
+
     .build {
         font-size: 40px;
         line-height: 60px;
@@ -399,32 +499,49 @@ margin-right: 45px;
 
     #iconamoon_settings {
         position: absolute;
-        top: 550px;
-        left: 300px;
+        top: 700px;
+        left: 50px;
+        width: 35px;
+        height: 35px;
     }
 
     #iconoir_design {
         position: absolute;
-        top: 720px;
-        left: 10px;
+        top: 920px;
+        left: unset;
+        right: 50px;
+        width: 35px;
+        height: 35px;
     }
 
     #iconoir_dev_laptop {
         position: absolute;
-        top: 500px;
-        right: 200px;
+        top: 1200px;
+        right: unset;
+        left: 50px;
+        width: 35px;
+        height: 35px;
     }
 
     #iconoir_dev_phone {
         position: absolute;
-        top: 800px;
-        left: 250px;
+        top: 720px;
+        left: 300px;
+        width: 35px;
+        height: 35px;
+    }
+
+    .swiper-pagination {
+        display: none;
     }
 
     #streamline_interface {
         position: absolute;
-        top: 750px;
-        right: 400px;
+        top: 1200px;
+        left: unset;
+        right: 50px;
+        width: 35px;
+        height: 35px;
     }
 
     .whatPeopleContainer {

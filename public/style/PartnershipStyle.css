@@ -48,12 +48,12 @@
 
 .textContainer h2 {
     font-size: 60px;
-    color: #1DA7D9;
+    color: rgba(0, 113, 251, 1);
     font-family: MonumentExtended
 }
 
 /* TABLET BREAKPOINT */
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1024px) {
     .allContainer{
         flex-direction: row;
         margin: 50px;
@@ -77,6 +77,47 @@
         line-height: 63px;
     }
 
+
+    .allRows {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .firstRow {
+        display: flex;
+    }
+
+    .secondRow {
+        display: flex;
+        margin: -12px 0;
+    }
+
+    .thirdRow {
+        display: flex;
+        margin-top: 0px;
+    }
+
+    #hexagon {
+        width: 141px !important;
+        height: 118px !important;
+    }
+
+    #hexagonImages {
+        width: 66px !important;
+        height: 66px !important;
+        position: absolute;
+        top: 22px;
+        right: 22px;
+    }
+
+    .hexagonContainer {
+        display: flex;
+        width: 108px !important;
+        height: 118px !important;
+        position: relative;
+    }
 
     .allRows {
         display: flex;
