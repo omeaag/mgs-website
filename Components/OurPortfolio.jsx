@@ -2,6 +2,7 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade, Pagination } from 'swiper/modules';
 import SwiperCore, { Navigation } from "swiper";
+import { useEffect, useState } from "react";
 import "swiper/swiper-bundle.css";
 import 'swiper/css/pagination';
 import 'swiper/css';
@@ -100,6 +101,29 @@ function OurPortfolio() {
     }
   };
 
+  const [slidesPerView, setSlidesPerView] = useState(2);
+  const [slideGap, setSlideGap] = useState(24);
+  const [height, setHeight] = useState(0);
+
+  useEffect(() => {
+    const updateWindowDimensions = () => {
+      if (window.innerWidth < 600) {
+            setSlidesPerView(1);
+            setSlideGap(0);
+          };
+    };
+    window.addEventListener("resize", updateWindowDimensions);
+    return () => window.removeEventListener("resize", updateWindowDimensions) 
+  }, []);
+
+
+  // useEffect(() => {
+  //   if (window.innerWidth < 600) {
+  //     setSlidesPerView(1);
+  //     setSlideGap(0);
+  //   };
+  // }, [window.innerWidth]);
+
   return (
     <div className='allContainer-5'>
       <Image
@@ -157,8 +181,8 @@ function OurPortfolio() {
         </button>
         <Swiper
           ref={swiper1}
-          spaceBetween={24}
-          slidesPerView={2}>
+          spaceBetween={slideGap}
+          slidesPerView={slidesPerView}>
           <SwiperSlide>
             <div className="sliderContent">
               <h4>Nex Decentralized Exchange Decentralized Exchange</h4>
@@ -202,7 +226,7 @@ function OurPortfolio() {
 
       <div className='build30'>
         <h2 className='build'>Builders and Projects Helped</h2>
-        <h2 className='plus30'>30+</h2>
+        <h2 className='plus30'>22+</h2>
       </div>
       <div className='whatPeopleContainer'>
         <h1>
