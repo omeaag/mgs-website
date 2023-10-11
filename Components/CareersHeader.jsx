@@ -10,7 +10,7 @@ function CareersHeader() {
       <div className="careersHeaderAllContent">
         <div className="careersHeaderAllText">
           <div className="careersBiggestHeader">
-            <p>Meet our team of</p>
+            <p>Meet Our Team Of</p>
           </div>
           <div className="careersSmallHeader">
             <p>Developers, Managers, and world-class problem solvers</p>

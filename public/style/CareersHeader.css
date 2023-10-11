@@ -12,13 +12,13 @@
 
 .careersBiggestHeader p {
   font-family: MonumentExtended;
-  color: #1da7d9;
+  color: rgba(0, 113, 251, 1);
   font-size: 3.4rem;
   font-weight: 700;
   line-height: 4.5rem;
   letter-spacing: 0em;
   text-align: left;
-  text-transform: uppercase;
+
 }
 
 .careersSmallHeader p {
@@ -76,7 +76,73 @@
 }
 
 /* TABLET BREAKPOINT */
-@media (min-width: 600px) and (max-width: 1024px) {}
+@media (min-width: 600px) and (max-width: 1024px) {
+  .MemberCardContainer {
+    justify-content: center;
+    width: 100% !important;
+    gap: 3.5rem;
+    /* margin: 5.5rem auto 7rem auto; */
+    flex-wrap: wrap;
+  }
+
+  .careersHeaderPar p br {
+    display: none;
+  }
+  .memberName{
+    font-size: 25px !important;
+    line-height: 30px !important;
+  }
+
+  .imageText{
+    font-size: 40px !important;
+    line-height: 60px !important;
+      }
+
+      .hiringContainer .headerSection h1{
+font-size: 40px !important;
+line-height: 60px !important;
+     }
+
+     #viewmore{
+      font-size: 30px !important;
+     }
+
+  .careersHeaderPar {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  .careersHeaderAllText {
+    position: unset;
+    width: 100%;
+    margin-top: 0;
+  }
+  
+
+  .careersHeaderContainer{
+    height: unset;
+    padding: 60px;
+    margin-top: 80px;
+  }
+
+  .careersHeaderImageContainer img {
+    width: 100%;
+  }
+
+  .careersBiggestHeader p {
+    font-size: 40px;
+    line-height: 60px;
+
+  }
+
+  .careersSmallHeader p {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
 
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
@@ -213,17 +279,18 @@
     justify-content: center;
     margin-bottom: 20px;
     font-size: 18px !important;
-}
-.hiringSectionFirst{
-  display: flex;
-  flex-direction: column;
-}
+  }
 
-.hiringContainer .hiring {
-  margin-bottom: 150px;
-}
+  .hiringSectionFirst {
+    display: flex;
+    flex-direction: column;
+  }
 
-#viewmore{
-  display: none !important;
-}
+  .hiringContainer .hiring {
+    margin-bottom: 150px;
+  }
+
+  #viewmore {
+    display: none !important;
+  }
 }
