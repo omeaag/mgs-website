@@ -93,8 +93,7 @@ const Hiring = () => {
                         </div>
                         <div className='apply'>
                             <Link href={'/apply'} >
-                                Apply{' '}
-                                <span>
+                                Apply<span>
                                     <Image
                                         src={apply}
                                         alt='apply'
