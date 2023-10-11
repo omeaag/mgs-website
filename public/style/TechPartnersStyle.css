@@ -28,12 +28,15 @@
 .blockChainIcons {
     display: flex;
     flex-direction: column;
+    float: inline-start;
+    width: 100%;
     height: 170px;
 }
 
 .blockChainIconsLine {
     display: flex;
-    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
 }
 
 .blockChainIconsLine img {
@@ -328,6 +331,17 @@
     .hexagonContainer {
 
     }
+
+    .blockChainIconsLine{
+        justify-content: center;
+    }
+    .blockChainIcons{
+        display: flex;
+        flex-direction: column;
+        float: inline-start;
+        width: 100%;
+        height: 340px;
+    }
 }
 
 /* PHONE BREAKPOINT */
@@ -496,6 +510,120 @@
     .TechComponentContainerImage {
         width: 100% !important;
         margin-top: 20px !important;
+    }
+
+        .blockChainIconsLine{
+        justify-content: center;
+    }
+    .blockChainIcons{
+        display: flex;
+        flex-direction: column;
+        float: inline-start;
+        width: 100%;
+        height: 340px;
+    }
+
+    .blockChainIconsLine img {
+        width: 140.386px;
+        height: 72px;
+        filter: saturate(0);
+        transition: 0.3s ease-in-out;
+    }
+    
+    .blockChainIconsLine img:hover {
+        filter: saturate(1);
+        width: 152.386px;
+        height: 77px;
+        transition: 0.2s ease-in-out;
+        cursor: pointer;
+    }
+
+    .blockChainnetworkContainer h1{font-size: 40px;}
+    .techArsenalContainer h1{font-size: 40px;}
+
+    .techArsenalContainer {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 80%;
+        justify-content: center;
+    }
+    
+    .techArsenalContainer h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+    
+    .techArsenalContainer span {
+        color: #0071FB;
+    }
+    .techArsenalButtonContainer div:nth-child(4),
+    .techArsenalButtonContainer div:nth-child(5),
+    .techArsenalButtonContainer div:nth-child(6) {
+      display: none;
+    }
+    
+    .techArsenalButtonContainer {
+        display: flex;
+        cursor: pointer;
+        flex-direction: row;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+    
+    .techArsenalButton {
+        display: flex;
+        width: 30%;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-right: 10px;
+        justify-content: center;
+    }
+    .techArsenalButton img{
+        width: 20px;
+    }
+    
+    .techArsenalButton button {
+        margin-left: 2px;
+        font-size: 18px;
+        border-top: none;
+        border-right: none;
+        border-left: none;
+        border-color: #0071fb00;
+        border-width: 5px;
+        transition: 0.8s ease-in-out;
+    }
+    
+    .techArsenalButton button:hover {
+        transition: 0.2s ease-in-out;
+        border-color: #0071FB;
+    }
+    
+    .arsenalChangeComponent {
+        display: flex;
+    }
+    
+    .ArsenalMiniComponent {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 85%;
+    }
+    
+    .ArsenalMiniComponentDEV {
+        width: 95%;
+    }
+    
+    .mainArsenalChangeComp {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+    }
+    
+    .mainArsenalChangeComp img {
+        width: 116px;
+        height: 64px;
     }
 
 }
