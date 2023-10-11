@@ -267,10 +267,7 @@
     }
 
     .textContainer .paginationButtons {
-        display: block;
-        position: absolute;
-        bottom: -650px;
-        left: 108px;
+        display: none;
     }
     .textContainer .paginationButtons button {
         width: 10px;
