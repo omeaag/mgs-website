@@ -28,6 +28,7 @@ import pp1 from "../public/materials/ourPortfolioImages/pp1.svg";
 import pp2 from "../public/materials/ourPortfolioImages/pp2.svg";
 import pp3 from "../public/materials/ourPortfolioImages/pp3.svg";
 import sliderlogo from "../public/materials/ourPortfolioImages/sliderlogo.svg";
+import clutchco1 from "../public/materials/ourPortfolioImages/clutchco1.svg";
 
 function OurPortfolio() {
   SwiperCore.use([Navigation]);
@@ -107,21 +108,21 @@ function OurPortfolio() {
   useEffect(() => {
     const updateWindowDimensions = () => {
       if (window.innerWidth < 600) {
-            setSlidesPerView(1);
-            setSlideGap(0);
-          } else if (window.innerWidth >= 600){
-            setSlidesPerView(2);
-            setSlideGap(24);
-          }
+        setSlidesPerView(1);
+        setSlideGap(0);
+      } else if (window.innerWidth >= 600) {
+        setSlidesPerView(2);
+        setSlideGap(24);
+      }
     };
     updateWindowDimensions();
     window.addEventListener("resize", updateWindowDimensions);
-    return () => window.removeEventListener("resize", updateWindowDimensions) 
+    return () => window.removeEventListener("resize", updateWindowDimensions)
   }, []);
 
 
   return (
-    <div className='allContainer-5'>
+    <div className='ourPortfolioContainer'>
       <Image
         alt='iconoir_design'
         id='iconoir_design'
@@ -224,63 +225,71 @@ function OurPortfolio() {
         <h2 className='build'>Builders and Projects Helped</h2>
         <h2 className='plus30'>22+</h2>
       </div>
-      <div className='whatPeopleContainer'>
-        <h1>
-          What People&nbsp;
-          <Image
-            alt='Heart'
-            id='heart'
-            src={Heart}
-          />
-          &nbsp;to say about us!{' '}
-        </h1>
-      </div>
+      <div className="whatPeoplePersonBackground">
+        <div className='whatPeopleContainer'>
+          <h1>
+            What People&nbsp;
+            <Image
+              alt='Heart'
+              id='heart'
+              src={Heart}
+            />
+            &nbsp;to say about us!{' '}
+          </h1>
+        </div>
 
-      <div className='personContainer'>
-        <button
-          onClick={goPrev}
-          className='prev-button'>
+        <div className='personContainer'>
+          <button
+            onClick={goPrev}
+            className='prev-button'>
+            <Image
+              src={LeftArrow}
+              alt='Sol Ok'
+              width={100}
+              height={100}
+            />
+          </button>
+          <Swiper
+            className='mySwiper'
+            pagination={true}
+            modules={[Pagination]}
+            ref={swiper}
+            spaceBetween={20}
+            slidesPerView={1}
+            navigation={{
+              prevEl: '.prev-button',
+              nextEl: '.next-button',
+            }}>
+            {people.map((person) => (
+              <SwiperSlide key={person.id}>
+                <div className='personSlider'>
+                  <img
+                    src={person.image.src}
+                    alt={person.name}
+                  />
+                  <h2>{person.name}</h2>
+                  <p>{person.description}</p>
+                </div>
+              </SwiperSlide>
+            ))}
+          </Swiper>
+          <button
+            onClick={goNext}
+            className='next-button'>
+            <Image
+              src={RightArrow}
+              alt='Sağ Ok'
+              width={100}
+              height={100}
+            />
+          </button>
+        </div>
+        <div className="clutchContainer">
+          <p>We are on trusted platforms</p>
           <Image
-            src={LeftArrow}
-            alt='Sol Ok'
-            width={100}
-            height={100}
-          />
-        </button>
-        <Swiper
-          className='mySwiper'
-          pagination={true}
-          modules={[Pagination]}
-          ref={swiper}
-          spaceBetween={20}
-          slidesPerView={1}
-          navigation={{
-            prevEl: '.prev-button',
-            nextEl: '.next-button',
-          }}>
-          {people.map((person) => (
-            <SwiperSlide key={person.id}>
-              <div className='personSlider'>
-                <img
-                  src={person.image.src}
-                  alt={person.name}
-                />
-                <h2>{person.name}</h2>
-                <p>{person.description}</p>
-              </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-        <button
-          onClick={goNext}
-          className='next-button'>
-          <Image
-            src={RightArrow}
-            alt='Sağ Ok'
-            width={100}
-            height={100}
-          />
-        </button>
+            src={clutchco1}
+            alt="clutchco1"></Image>
+        </div>
       </div>
     </div>
   );

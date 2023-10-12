@@ -6,7 +6,8 @@
 }
 
 .OurSolitionContainer {
-    margin: 30px 230px;
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-direction: column;
     padding: 20px;

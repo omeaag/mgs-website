@@ -9,7 +9,7 @@
 
 .allContainer {
     display: flex;
-    gap: 100px;
+    gap: 0px;
     align-items: center
 }
 
