@@ -167,7 +167,7 @@
     .allContainer{
         flex-direction: column-reverse;
         gap: 30px;
-        margin: 50px;
+        margin-top: 90px;
 
     }
 

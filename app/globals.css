@@ -45,6 +45,10 @@ body {}
   display: none;
 }
 
+.dropdownContainer .leftFooter{
+margin-top: 10px;
+}
+
 
 /* 1 - Footer */
 .footerContainer {
@@ -92,12 +96,12 @@ body {}
 .footerSocialIcons img {
   display: flex;
   flex-direction: column;
-
   height: 100%;
 }
 
 .leftFooter h6 {
   font-size: 1rem;
+  font-size: 15px;
 }
 
 .leftFooter h2 {
@@ -112,7 +116,10 @@ body {}
   height: 60%;
 }
 
-.rightFooter {
+.rightFooter h5,
+.rightFooter a,
+.rightFooter button,
+.leftFooter h6 {
   opacity: 0.6;
 }
 
@@ -123,6 +130,10 @@ body {}
   justify-content: space-between;
   flex-direction: column;
   align-items: flex-start;
+}
+
+.hqFooter strong {
+  color: #000;
 }
 
 .ecoFooter,
@@ -194,7 +205,7 @@ body {}
 /* PHONE BREAKPOINT*/
 @media (max-width: 599px) {
   .HeaderContainer {
-    margin:1rem auto;
+    margin: 1rem auto;
     font-size: 0.8rem;
     display: flex;
     align-items: center;
@@ -218,10 +229,13 @@ body {}
   .Navbar {
     display: none;
   }
+
   .dropdownContainer {
-    display: block;
+    display: flex;
     width: 100%;
-  }
+    height: 100vh;
+    flex-direction: column;
+    }
 
   .MobileDropdownMenu {
     display: flex;
@@ -271,12 +285,20 @@ body {}
     margin-bottom: 1rem;
   }
 
+  .hqFooter {
+    gap: 13px;
+  }
+
   .leftFooter {
     margin-left: 0;
     order: 2;
     width: auto;
     padding-left: 0;
     margin-bottom: 0;
+  }
+
+  .leftFooter h2 {
+    display: none;
   }
 
   .leftFooter img {

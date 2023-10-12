@@ -23,6 +23,7 @@
 }
 
 .getInTouchContainer h3 {
+    text-align: justify;
     color: #FFFFFF;
     font-size: 24px;
     font-family: MonumentExtended;
