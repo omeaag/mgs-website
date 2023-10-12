@@ -15,6 +15,7 @@
 }
 
 .blueContentContainer {
+    gap: 60px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -41,10 +42,11 @@
 }
 .serviceBoxContainer {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     color: white;
+    gap: 20px;
+    padding-bottom:150px ;
 }
 
 .serviceBoxContainer h4,
@@ -57,7 +59,8 @@
 .serviceTContainer,
 .serviceBContainer {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    gap: 20px;
     height: 50%;
 }
 
@@ -71,7 +74,9 @@
     height: 100%;
     width: 100%;
     justify-content: space-between;
-    margin: 2rem 3rem;
+    padding: 40px 60px;
+    border: 1px solid rgba(155, 255, 28, 1);
+    border-radius: 20px;
 }
 
 .tLeftService button,
@@ -243,6 +248,7 @@
         display: none;
     }
     .headServiceText h6 {
+        text-align: justify;
         font-size: 16px;
         line-height: 36px;
         margin-top: 20px;
