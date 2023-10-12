@@ -15,7 +15,7 @@ const MoodConvertAI = () => {
                     <div className='moodConvertAIContainer'>
                         <h1>🤖</h1>
                         <h2><span id='aiTextBlue'>AI module </span>is under development.</h2>
-                        <h3>Check Back Soon</h3>
+                        <h3>Check Back Soon.</h3>
                     </div>
                 </div>
             </div>

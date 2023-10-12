@@ -34,7 +34,7 @@ import Database from "./techArsenalComponents/Database";
 import Uiux from "./techArsenalComponents/Uiux";
 const techPartners = () => {
         // Define an array of components and a state variable to track the current component
-        const sliderArrayList = [NextLabsComponent, MirrorTrackerComponent, GoalStarComponent];
+        const sliderArrayList = [NextLabsComponent, MirrorTrackerComponent];
         const [currentComponentIndex, setCurrentComponentIndex] = useState(0);
     
         // Function to handle changing the component to the next one
@@ -134,9 +134,8 @@ const techPartners = () => {
             </div>
             <div className="techTextParentContainer">
             <h1>Technology <span>Partners</span> </h1>
-            <p>Mood Global Services Hub gives startups and third parties a place to conceptualize and build their ideas. The hub <br />
-            is the space where ideas become reality, by providing the necessary infrastructure and services that supports <br />
-            entrepreneurs and established.</p>
+            <p>Mood Global Services Hub gives startups and third parties a place to conceptualize and build their ideas. The hub is the space where ideas become<br />
+            reality, by providing the necessary infrastructure and services that supports entrepreneurs and established.</p>
             </div>
             <div className="techSliderParentContainer">
                 <div className="techPartnersLeftButtonContainer">
