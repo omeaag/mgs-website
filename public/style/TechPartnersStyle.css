@@ -16,9 +16,9 @@
 
 .blockChainnetworkContainer h1 {
     font-size: 65px;
-    color: black;
-    font-weight: bold;
-    display: inline-block;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
 }
 
 .blockChainnetworkContainer span {
@@ -65,7 +65,10 @@
 
 .techArsenalContainer h1 {
     font-size: 65px;
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 40px;
 }
 
 .techArsenalContainer span {
@@ -103,6 +106,7 @@
 .techArsenalButton button:hover {
     transition: 0.2s ease-in-out;
     border-color: #0071FB;
+    color: #0071FB;
 }
 
 .arsenalChangeComponent {
@@ -139,9 +143,9 @@
 }
 
 .techTextParentContainer h1 {
-    font-size: 4.375rem;
+    font-size: 65px;
     color: black;
-    font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .techTextParentContainer span {
@@ -149,12 +153,13 @@
 }
 
 .techTextParentContainer p {
-    font-size: 1.5625rem;
-    line-height: 4rem;
+    font-size: 22px;
+    line-height: 50px;
 }
 
 .techSliderParentContainer {
-    height: 55%;
+    margin: 100px 0px;
+    height: 600px;
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -360,8 +365,8 @@
     }
 
     .servicesHeaderSmallTextContainer p {
-        font-size: 18px !important;
-        line-height: 35px;
+        font-size: 16px !important;
+        line-height: 30px;
         text-align: center;
     }
 
@@ -445,6 +450,7 @@
     .techTextParentContainer {
         width: 100%;
         padding: 2rem;
+        margin-bottom: 150px;
     }
 
     .techTextParentContainer br {
@@ -551,7 +557,6 @@
     
     .techArsenalContainer h1 {
         font-size: 40px;
-        font-weight: bold;
     }
     
     .techArsenalContainer span {

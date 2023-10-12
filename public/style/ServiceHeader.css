@@ -25,16 +25,16 @@
 
 .ourServicesTextContainer h1 {
   color: rgba(0, 113, 251, 1);
-  font-size: 4.375rem;
+  font-size: 50px;
   font-weight: bold;
 }
 
 .servicesHeaderSmallTextContainer p {
-  font-size: 1.625rem;
+  font-size: 26px;
 }
 
 .servicesHeaderSmallTextContainer {
-  line-height: 3.2rem;
+  line-height: 50px;
 }
 
 .servicesTop {
@@ -47,5 +47,13 @@
 .servicesImageContainer {
   height: 60%;
   display: flex;
+}
+
+
+/*Phone/ Mobile*/
+@media (max-width: 599px) {
+  .serviceTextHeaderContainer{
+
+  }
 }
 

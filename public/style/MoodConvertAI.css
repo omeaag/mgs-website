@@ -37,10 +37,13 @@
     font-size: 120px;
 }
 
+.moodConvertAIContainer span {
+    font-weight: bold;
+}
+
 .moodConvertAIContainer h2 {
     width: 70%;
     font-size: 120px;
-    font-weight: bold;
 }
 
 #aiTextBlue {
@@ -49,7 +52,7 @@
 
 .moodConvertAIContainer h3 {
     color: #1A1A1A;
-    font-size: 28px;
+    font-size: 60px;
     font-family: MonumentExtended;
     font-weight: 100;
     text-align: center;
@@ -188,7 +191,13 @@
     }
 
     .moodConvertAIContainer h2 {
-        font-size: 42px;
+        font-size: 33px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 50px;
+    }
+
+    .moodConvertAIContainer span {
         font-weight: bold;
     }
 
@@ -353,6 +362,9 @@
 
     .moodConvertAIContainer h2 {
         font-size: 70px;
+    }
+
+    .moodConvertAIContainer span {
         font-weight: bold;
     }
 
