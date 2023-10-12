@@ -263,9 +263,8 @@
     .serviceBoxContainer {
         width: 100%;
         gap: 20px;
+        flex-direction: column;
     }
-
-
 
     .serviceTContainer,
     .serviceBContainer {

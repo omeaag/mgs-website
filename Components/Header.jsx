@@ -47,6 +47,9 @@ export default function Header() {
                         <Link onClick={toggleMobileMenu} href='/services'>Services</Link>
                         <Link onClick={toggleMobileMenu} href='/mood-convert'>MoodConvert</Link>
                         <Link onClick={toggleMobileMenu} href='/careers'>Careers</Link>
+                        <Link onClick={toggleMobileMenu} href='/careers'>FAQ</Link>
+                        <Link onClick={toggleMobileMenu} href='/careers'>Terms and Conditions</Link>
+                        <Link onClick={toggleMobileMenu} href='/careers'>Privacy Policy</Link>
                     </div>
                     <div className='HeaderIcons'>
                         <Image
@@ -65,6 +68,9 @@ export default function Header() {
                             src={linkedinIcon}
                             alt='linkedin-icon'
                         />
+                    </div>
+                    <div className="leftFooter">
+                        <h6>© &nbsp;2023 &nbsp;Mood Global Services. All rights reserved.</h6>
                     </div>
                 </div>
             )}
