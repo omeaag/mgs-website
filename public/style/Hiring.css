@@ -98,12 +98,11 @@ padding-right: 60px;
     align-items: center;
     gap: 10px;
     align-items: flex-end;
-
 }
 
 .hiringFeatures img{
     align-items:flex-end;
-    height: 10% !important;
+    height: 10% ;
     padding-bottom: 7px;
 }
 
