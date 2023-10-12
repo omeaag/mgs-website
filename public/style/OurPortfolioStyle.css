@@ -1,19 +1,20 @@
 .headerContainer-5 {
+    width: 100%;
     display: flex;
-    margin: 50px auto;
+    justify-content: start;
 }
 
 
 
 .headerContainer-5 h1 {
-    min-width: 498px;
+    width: 30%;
     height: 90px;
     font-family: MonumentExtended;
     font-size: 4.375rem;
     font-weight: 300;
     line-height: 90px;
     letter-spacing: 0px;
-    text-align: center;
+    text-align: start;
 }
 
 .whatPeopleContainer h1 {
@@ -64,7 +65,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 80%;
+    width: 105%;
     gap: 20px
 }
 
@@ -157,9 +158,6 @@
     width: 80%;
 }
 
-/* .prev-button{
-margin-right: 45px;
-} */
 
 .build30 {
     display: flex;
@@ -198,6 +196,7 @@ margin-right: 45px;
 }
 
 .allContainer-5 {
+    margin: 30px 230px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -238,6 +237,10 @@ margin-right: 45px;
 
 /* ------------------------ TABLET BREAKPOINT ------------------------ */
 @media (min-width: 600px) and (max-width: 1024px) {
+    .allContainer-5 {
+    margin: 30px 50px;
+    }
+    
     .headerContainer-5 {
         margin: 30px 50px;
     }
@@ -246,7 +249,7 @@ margin-right: 45px;
         font-size: 40px;
         line-height: 60px;
         min-width: unset;
-        text-align: left;
+        text-align: start;
         display: flex;
         gap: 10px;
         align-items: center;
@@ -255,13 +258,12 @@ margin-right: 45px;
 
     .headerContainerp {
         width: 100%;
-        padding: 0 50px;
         font-size: 22px;
         line-height: 45px;
     }
 
     .galleryContainer {
-        width: 90%;
+        width: 105%;
         align-items: center;
         margin-left: 0;
     }
@@ -395,7 +397,8 @@ margin-right: 45px;
 /* ------------------------ PHONE BREAKPOINT ------------------------ */
 @media (max-width: 599px) {
     .allContainer-5 {
-        margin: 0;
+        margin: 10px;
+        padding: 10px;
     }
 
     .sliderContent h4 {
@@ -411,7 +414,7 @@ margin-right: 45px;
     }
 
     .sliderContent{
-        height: 350px;
+        height: 300px;
     }
     .slideLink {
         font-size: 18px;
@@ -420,15 +423,15 @@ margin-right: 45px;
     }
 
     .headerContainer-5 {
-        margin-left: 0;
-        margin-bottom: 0;
+        width: 100%;
+
     }
 
     .headerContainer-5 h1 {
+        width: 100%;
         font-size: 40px;
         line-height: 60px;
-        float: left;
-        min-width: unset;
+        text-align: start;
         height: auto;
     }
 
@@ -437,6 +440,7 @@ margin-right: 45px;
     }
 
     .headerContainerp {
+        text-align: justify;
         width: 100%;
         font-size: 16px;
         line-height: 30px;
@@ -444,15 +448,12 @@ margin-right: 45px;
     }
 
     .galleryContainer {
-        margin: 50px 0;
-        width: 100%;
+        margin: 20px 0;
+        width: 105%;
         align-items: center;
     }
 
-    .prev-button,
-    .next-button {
-        margin: 10px;
-    }
+
 
     .swiper-wrapper {
         height: 100%;
@@ -581,13 +582,22 @@ margin-right: 45px;
         line-height: 37px;
         font-family: MonumentExtended;
         text-align: center;
-        width: 80%;
+        width: 100%;
     }
 
     .prev-button,
     .next-button {
         height: 80px;
         width: auto;
+    }
+
+    .next-button img, .prev-button img {
+        height: 60px;
+        width: 60px;
+    }
+
+    .personSlider img{
+        width: 100px;
     }
 
     .whatPeopleContainer h1 {

@@ -103,26 +103,22 @@ function OurPortfolio() {
 
   const [slidesPerView, setSlidesPerView] = useState(2);
   const [slideGap, setSlideGap] = useState(24);
-  const [height, setHeight] = useState(0);
 
   useEffect(() => {
     const updateWindowDimensions = () => {
       if (window.innerWidth < 600) {
             setSlidesPerView(1);
             setSlideGap(0);
-          };
+          } else if (window.innerWidth >= 600){
+            setSlidesPerView(2);
+            setSlideGap(24);
+          }
     };
+    updateWindowDimensions();
     window.addEventListener("resize", updateWindowDimensions);
     return () => window.removeEventListener("resize", updateWindowDimensions) 
   }, []);
 
-
-  // useEffect(() => {
-  //   if (window.innerWidth < 600) {
-  //     setSlidesPerView(1);
-  //     setSlideGap(0);
-  //   };
-  // }, [window.innerWidth]);
 
   return (
     <div className='allContainer-5'>

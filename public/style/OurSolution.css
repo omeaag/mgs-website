@@ -188,7 +188,12 @@
     .OurSolitionContainer {
         margin: auto;
         padding: 10px;
+        margin: 10px;
         height: 100%;
+    }
+
+    .OurSolutionText{
+        padding: 0;
     }
 
     .titleContainer .OurSolutionTitle {
@@ -264,6 +269,7 @@
 
     .OurSolutionText .textContainer p {
         font-size: 20px;
+        text-align: justify;
     }
 
     .textContainer .paginationButtons {
