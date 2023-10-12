@@ -90,7 +90,7 @@
 }
 
 /* TABLET BREAKPOINT */
-@media (min-width: 600px) and (max-width: 991px) {
+@media (min-width: 600px) and (max-width: 1024px) {
 .MemberCardContainer .MemberCardComponent{
   width: calc(33.9% - 3.5rem);
   margin-right: 0!important;
