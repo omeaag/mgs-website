@@ -1,4 +1,4 @@
-.applyContainer{
+.applyContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -9,89 +9,105 @@
 .applyContainer .applyHeader {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     background-image: url(../materials/HomeShapingBackground.svg);
     background-color: #fff;
     width: 100%;
-    padding: 100px;
+    padding: 150px;
 }
 
-.applyContainer .applyHeader h1{
+.applyContainer .applyHeader h1 {
     font-size: 50px;
     line-height: 60px;
     font-weight: 700;
     margin-bottom: 30px;
-    color: #0071FB;
+    color: #0071fb;
 }
 
-
-.applyContainer .applyHeader p{
+.applyContainer .applyHeader p {
     font-size: 26px;
     line-height: 50px;
     font-weight: 400;
-    text-align: center;
 }
 
-.applyContainer .applyQualifications{
+.applyContainer .applyHeader .mobilViewInfo p {
+    font-size: 26px;
+    line-height: 50px;
+}
+.applyContainer .applyHeader .mobilViewInfo span {
+    font-size: 30px;
+    font-weight: 600;
+}
+.applyContainer .mobilViewText {
+    padding: 60px 150px;
+}
+
+.applyContainer .mobilViewText p {
+    font-size: 26px;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+
+.applyContainer .applyQualifications {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 50px;
+    padding: 0 150px;
+    margin-bottom: 50px;
 }
 
-.applyContainer .applyQualifications h1{
-font-size: 30px;
-line-height: 36px;
-font-weight: 500;
-margin-bottom: 15px;
-margin-top: 40px;
-font-weight: 600;
+.applyContainer .applyQualifications h1 {
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 15px;
+    margin-top: 40px;
+    text-decoration: underline;
+    font-weight: 600;
 }
-.applyContainer .applyQualifications p{
-font-size: 20px;
-line-height: 36px;
-
-}
-
-.applyContainer .applyQualifications .applyInfo h1{
-font-size: 30px;
-line-height: 36px;
-font-weight: normal;
+.applyContainer .applyQualifications p {
+    font-size: 20px;
+    line-height: 36px;
+    margin-top: 50px;
 }
 
-
-.applyContainer .applyQualifications ul{
+.applyContainer .applyQualifications ul {
     list-style-type: disc;
     padding-left: 40px;
-
 }
 
-.applyContainer .applyQualifications ul li{
+.applyContainer .applyQualifications ul li {
     font-size: 20px;
     line-height: 40px;
 }
 
-.applyFormContainer form{
+.applyContainer .applyQualifications span{
+font-weight: 600;
+}
+.applyFormContainer{
+  width: 100%;
+}
+.applyFormContainer form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 50px 150px;
 }
 
-.applyFormContainer form > h1{
-font-size: 50px;
-line-height: 60px;
-font-weight: 700;
-color: #0071FB;
+.applyFormContainer form > h1 {
+    font-size: 50px;
+    line-height: 60px;
+    font-weight: 700;
+    color: #0071fb;
 }
 
-.applyFormContainer form > div{
+.applyFormContainer form > div {
     width: 100%;
 }
 
-.applyFormContainer .nameInputs h1{
+.applyFormContainer .nameInputs h1 {
     font-size: 30px;
     line-height: 36px;
     font-weight: 500;
@@ -99,21 +115,21 @@ color: #0071FB;
     margin-bottom: 15px;
 }
 
-.applyFormContainer .nameInputs input{
+.applyFormContainer .nameInputs input {
     width: calc(33% - 8px);
     height: 60px;
     margin-right: 15px;
-    border: 1px solid #BDBDBD;
+    border: 1px solid #bdbdbd;
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 50px;
     font-size: 15px;
 }
-.applyFormContainer .nameInputs #last_name{
+.applyFormContainer .nameInputs #last_name {
     margin-right: 0;
 }
 
-.applyFormContainer .birthdayInputs h1{
+.applyFormContainer .birthdayInputs h1 {
     font-size: 30px;
     line-height: 36px;
     font-weight: 500;
@@ -121,11 +137,11 @@ color: #0071FB;
     margin-bottom: 15px;
 }
 
-.applyFormContainer .birthdayInputs select{
-     width: calc(33% - 8px);
+.applyFormContainer .birthdayInputs select {
+    width: calc(33% - 8px);
     height: 60px;
     margin-right: 15px;
-    border: 1px solid #BDBDBD;
+    border: 1px solid #bdbdbd;
     border-radius: 5px;
     padding: 15px;
     padding-right: 30px;
@@ -135,36 +151,33 @@ color: #0071FB;
     background: url(../materials/down-arrow.svg);
     background-size: 30px;
     background-repeat: no-repeat;
-    background-position: right 10px center ;
+    background-position: right 10px center;
 }
 
-.applyFormContainer .birthdayInputs #year{
+.applyFormContainer .birthdayInputs #year {
     margin-right: 0;
 }
 
-
-.applyFormContainer .birthdayInputs select:has(option[value=""]:checked) {
-  color: #BDBDBD;
+.applyFormContainer .birthdayInputs select:has(option[value='']:checked) {
+    color: #bdbdbd;
 }
 
-.applyFormContainer .adressInputs input{
+.applyFormContainer .adressInputs input {
     width: calc(33% - 8px);
     height: 60px;
     margin-right: 15px;
-    border: 1px solid #BDBDBD;
+    border: 1px solid #bdbdbd;
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 50px;
     font-size: 15px;
 }
 
-
-.applyFormContainer .adressInputs #streetAdress{
+.applyFormContainer .adressInputs #streetAdress {
     width: 100% !important;
 }
 
-
-.applyFormContainer .adressInputs h1{
+.applyFormContainer .adressInputs h1 {
     font-size: 30px;
     line-height: 36px;
     font-weight: 500;
@@ -172,33 +185,33 @@ color: #0071FB;
     margin-bottom: 15px;
 }
 
-.applyFormContainer .adressInputs #zipCode{
+.applyFormContainer .adressInputs #zipCode {
     margin-right: 0;
 }
 
-.applyFormContainer .contactInputs{
+.applyFormContainer .contactInputs {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.applyFormContainer .contactInputs div{
+.applyFormContainer .contactInputs div {
     width: calc(50% - 6px);
 }
 
-.applyFormContainer .contactInputs input{
+.applyFormContainer .contactInputs input {
     width: 100%;
     height: 60px;
     margin-right: 15px;
-    border: 1px solid #BDBDBD;
+    border: 1px solid #bdbdbd;
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 50px;
     font-size: 15px;
 }
 
-.applyFormContainer .contactInputs h1{
+.applyFormContainer .contactInputs h1 {
     font-size: 30px;
     line-height: 36px;
     font-weight: 500;
@@ -207,21 +220,21 @@ color: #0071FB;
 }
 
 .applyFormContainer .questionInputs {
-     display: flex;
+    display: flex;
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
 }
 
-.applyFormContainer .questionInputs div{
+.applyFormContainer .questionInputs div {
     width: calc(50% - 6px);
 }
 
-.applyFormContainer .questionInputs select{
+.applyFormContainer .questionInputs select {
     width: 100%;
     height: 60px;
     margin-right: 15px;
-    border: 1px solid #BDBDBD;
+    border: 1px solid #bdbdbd;
     border-radius: 5px;
     padding: 15px;
     padding-right: 30px;
@@ -231,10 +244,10 @@ color: #0071FB;
     background: url(../materials/down-arrow.svg);
     background-size: 30px;
     background-repeat: no-repeat;
-    background-position: right 10px center ;
+    background-position: right 10px center;
 }
 
-.applyFormContainer .questionInputs h1{
+.applyFormContainer .questionInputs h1 {
     font-size: 29px;
     line-height: 36px;
     font-weight: 500;
@@ -242,19 +255,18 @@ color: #0071FB;
     margin-bottom: 15px;
 }
 
-
 .applyFormContainer .resumeInputs .resume h1 {
-  font-size: 30px;
-  line-height: 36px;
-  margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 36px;
+    margin-bottom: 15px;
 }
 
 .applyFormContainer .resumeInputs .innerResume {
-  text-align: center;
-  border: 1px solid #BDBDBD;
-  border-radius: 5px;
-  padding: 35px;
-  margin-bottom: 50px;
+    text-align: center;
+    border: 1px solid #bdbdbd;
+    border-radius: 5px;
+    padding: 35px;
+    margin-bottom: 50px;
 }
 
 .applyFormContainer .resumeInputs img {
@@ -262,28 +274,26 @@ color: #0071FB;
 }
 
 .applyFormContainer .resumeInputs .innerResume h2 {
-  font-size: 30px;
-  line-height: 36px;
+    font-size: 30px;
+    line-height: 36px;
 }
 
-.applyFormContainer .resumeInputs .innerResume h3{
+.applyFormContainer .resumeInputs .innerResume h3 {
     font-size: 18px;
     line-height: 32px;
-    color: #BDBDBD;
+    color: #bdbdbd;
 }
 
-.applyFormContainer .resumeInputs .innerResume #fileHere{
+.applyFormContainer .resumeInputs .innerResume #fileHere {
     display: none;
 }
 
-
-.applyFormContainer .resumeInputs .fileInput input[type="file"] {
-  display: none;
+.applyFormContainer .resumeInputs .fileInput input[type='file'] {
+    display: none;
 }
 
-
-.applyFormContainer .resumeInputs .coverLetter h1{
-font-size: 30px;
+.applyFormContainer .resumeInputs .coverLetter h1 {
+    font-size: 30px;
     line-height: 36px;
     font-weight: 500;
     margin-bottom: 15px;
@@ -291,10 +301,10 @@ font-size: 30px;
 
 .applyFormContainer .resumeInputs .coverLetter textarea {
     width: 100%;
-    min-height:400px !important;
+    min-height: 400px !important;
     resize: vertical !important;
     margin-right: 15px;
-    border: 1px solid #BDBDBD;
+    border: 1px solid #bdbdbd;
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 50px;
@@ -302,204 +312,205 @@ font-size: 30px;
     overflow: auto;
 }
 
-.applyFormContainer form #applyBtn{
-width: 387px;
-height:103px;
-font-size: 36px;
-line-height: 43px;
-color: #fff;
-padding: 30px, 110px, 30px, 110px;
-border-radius: 100px;
-background: linear-gradient(90deg, #1293BC -10.29%, #0028FB 25.21%, #6100FF 65.24%, #0073FF 113.66%);
+.applyFormContainer form #applyBtn {
+    width: 387px;
+    height: 103px;
+    font-size: 36px;
+    line-height: 43px;
+    color: #fff;
+    padding: 30px, 110px, 30px, 110px;
+    border-radius: 100px;
+    background: linear-gradient(
+        90deg,
+        #1293bc -10.29%,
+        #0028fb 25.21%,
+        #6100ff 65.24%,
+        #0073ff 113.66%
+    );
 }
 
-.applyFormContainer form #applyBtn:hover{
-    background: linear-gradient(90deg, #6100FF -10.29%, #0028FB 25.21%, #0073FF 65.24%, #1293BC 113.66%);
+.applyFormContainer form #applyBtn:hover {
+    background: linear-gradient(
+        90deg,
+        #6100ff -10.29%,
+        #0028fb 25.21%,
+        #0073ff 65.24%,
+        #1293bc 113.66%
+    );
     position: relative;
     bottom: 0.5px;
     right: 0.6px;
 }
 
-.applyContainer .applyHeader .mobilViewInfo,.applyContainer .mobilViewText,.applyQualifications .bonusQualifications,.applyQualifications .experienceRequired{
-display: none;
-}
-
-
-
-
 /* ----------------- TABLET BREAKPOINT -------------------- */
 @media (min-width: 600px) and (max-width: 1024px) {
-     .applyQualifications .requirements,.applyQualifications .benefits, .applyQualifications .qualifications, .applyQualifications .applyInfo {
-    display: none;
-  }
 
-  .applyContainer .applyHeader .mobilViewInfo,.applyContainer .mobilViewText,.applyQualifications .bonusQualifications,.applyQualifications .experienceRequired{
-display: block;
-}
+    .applyFormContainer form h1 {
+        margin-top: 40px;
+    }
 
-.applyFormContainer form h1{
-    margin-top: 40px;
-}
+    .applyContainer .applyHeader > p {
+        display: none;
+    }
 
-.applyContainer .applyHeader > p{
-    display: none;
-}
+    .applyContainer .mobilViewInfo span {
+        font-size: 30px;
+        font-weight: 600;
+    }
 
-.applyContainer .mobilViewInfo span{
-    font-size: 30px;
-    font-weight: 600;
-}
+    .applyContainer .mobilViewText p {
+        margin: 30px auto;
+        font-size: 19px;
+        line-height: 50px;
+        padding: 0 50px;
+    }
 
-.applyContainer .mobilViewText p{
-    margin: 30px auto;
-    font-size: 19px;
-    line-height: 50px;
-    padding: 0 50px;
-  }
-
-.applyFormContainer form #applyBtn{
-font-size: 36px;
-line-height: 43px;
-color: #fff;
-border-radius: 100px;
-background: linear-gradient(90deg, #1293BC -10.29%, #0028FB 25.21%, #6100FF 65.24%, #0073FF 113.66%);
-width: 300.17px;
-height:89px;
-padding: 23px, 110px, 23px, 110px;
-
-}
+    .applyFormContainer form #applyBtn {
+        font-size: 36px;
+        line-height: 43px;
+        color: #fff;
+        border-radius: 100px;
+        background: linear-gradient(
+            90deg,
+            #1293bc -10.29%,
+            #0028fb 25.21%,
+            #6100ff 65.24%,
+            #0073ff 113.66%
+        );
+        width: 300.17px;
+        height: 89px;
+        padding: 23px, 110px, 23px, 110px;
+    }
 
 }
 
 /* ----------------- PHONE BREAKPOINT ----------------- */
 @media (max-width: 599px) {
     .applyContainer {
-    padding: 10px;
-    width: 100%;
-  }
+        padding: 10px;
+        width: 100%;
+    }
 
-  .applyContainer .applyHeader {
-    padding: 100px 0px;
+    .applyContainer .applyHeader {
+        padding: 100px 0px;
+    }
 
-  }
+    .applyContainer .applyHeader h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
 
-.applyContainer .applyHeader h1{
-    font-size: 30px;
-    line-height: 36px;
-}
+    .applyContainer .applyHeader > p {
+        display: none;
+    }
 
-  .applyContainer .applyHeader > p {
-    display: none;
-  }
+    .applyContainer .applyHeader .mobilViewInfo {
+        display: block;
+    }
 
-  .applyContainer .applyHeader .mobilViewInfo{
-    display: block;
-  }
+    .applyContainer .applyHeader .mobilViewInfo p {
+        font-size: 26px;
+        line-height: 50px;
+    }
+    .applyContainer .applyHeader .mobilViewInfo span {
+        font-size: 30px;
+        font-weight: 600;
+    }
 
-  .applyContainer .applyHeader .mobilViewInfo p{
-font-size: 26px;
-line-height: 50px;
-  }
-  .applyContainer .applyHeader .mobilViewInfo span{
-font-size: 30px;
-    font-weight: 600;
-  }
+    .applyContainer .mobilViewText {
+        display: block;
+    }
+    .applyContainer .mobilViewText p {
+        margin: 30px auto;
+        font-size: 18px;
+        font-weight: 26px;
+    }
 
-  .applyContainer .mobilViewText{
-    display: block;
-  }
-  .applyContainer .mobilViewText p{
-    margin: 30px auto;
-    font-size: 18px;
-    font-weight: 26px;
-  }
+    .applyContainer .applyQualifications {
+        padding-right: 0;
+        padding-left: 0;
+    }
 
-  .applyContainer .applyQualifications {
-    padding-right: 0;
-    padding-left: 0;
-  }
+    .applyContainer .applyQualifications h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
 
-  .applyContainer .applyQualifications h1 {
-    font-size: 30px;
-    line-height: 36px;
-  }
+    .applyQualifications ul li {
+        font-size: 18px;
+        line-height: 26px;
+    }
 
-  .applyQualifications ul li {
-    font-size: 18px;
-    line-height: 26px;
-  }
+    .applyFormContainer {
+        width: 100%;
+        padding: 0 auto;
+    }
+    .applyFormContainer form > div {
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
 
- .applyQualifications .requirements,.applyQualifications .benefits, .applyQualifications .qualifications, .applyQualifications .applyInfo {
-    display: none;
+    .applyFormContainer form h1 {
+        font-size: 30px;
+        line-height: 36px;
+    }
 
-  }
+    .applyFormContainer .nameInputs input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
-  .applyFormContainer{
-    width: 100%;
-    padding: 0 auto;
-  }
-  .applyFormContainer form > div{
-    margin-bottom: 10px;
-    margin-top: 10px;
-  }
+    .applyFormContainer .birthdayInputs select {
+        width: calc(33.9% - 10px);
+        margin-right: 10px;
+        margin-bottom: 20px;
+        background-size: 15px;
+    }
 
-  .applyFormContainer form h1 {
-    font-size: 30px;
-    line-height: 36px;
-  }
+    .applyFormContainer .adressInputs input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
 
-  .applyFormContainer .nameInputs input{
-    width: 100%;
-    margin-bottom: 20px;
-  }
+    .applyFormContainer .contactInputs div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .applyFormContainer .contactInputs div input {
+        margin-bottom: 0;
+    }
 
-  .applyFormContainer .birthdayInputs select{
-    width:  calc(33.9% - 10px);
-    margin-right: 10px;
-    margin-bottom: 20px;
-    background-size: 15px;
-  }
+    .applyFormContainer .questionInputs div {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .applyFormContainer .questionInputs div select {
+        margin-bottom: 0;
+        background-size: 15px;
+    }
 
+    .applyFormContainer form #applyBtn {
+        font-size: 16px;
+        line-height: 19px;
+        color: #fff;
+        border-radius: 100px;
+        background: linear-gradient(
+            90deg,
+            #1293bc -10.29%,
+            #0028fb 25.21%,
+            #6100ff 65.24%,
+            #0073ff 113.66%
+        );
+        width: 134px;
+        height: 51px;
+        padding: 16px, 30px, 16px, 30px;
+    }
 
-  .applyFormContainer .adressInputs input{
-    width: 100%;
-    margin-bottom: 20px;
-  }
+    .applyFormContainer .resumeInputs .innerResume h3 {
+        display: none;
+    }
 
-  .applyFormContainer .contactInputs div{
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .applyFormContainer .contactInputs div input{
-    margin-bottom: 0;
-  }
-
-  .applyFormContainer .questionInputs div{
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .applyFormContainer .questionInputs div select{
-    margin-bottom: 0;
-    background-size: 15px
-  }
-
-  .applyFormContainer form #applyBtn{
-font-size: 16px;
-line-height: 19px;
-color: #fff;
-border-radius: 100px;
-background: linear-gradient(90deg, #1293BC -10.29%, #0028FB 25.21%, #6100FF 65.24%, #0073FF 113.66%);
-width: 134px;
-height:51px;
-padding: 16px, 30px, 16px, 30px;
-}
-
-.applyFormContainer .resumeInputs .innerResume h3{
-    display: none;
-}
-
-.applyFormContainer .resumeInputs .innerResume #fileHere{
-    display: block;
-}
-
+    .applyFormContainer .resumeInputs .innerResume #fileHere {
+        display: block;
+    }
 }

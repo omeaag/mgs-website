@@ -9,38 +9,44 @@ import freeIcon from '../public/materials/freeIcon.svg';
 import remIcon from '../public/materials/remIcon.svg';
 import view from '../public/materials/view.svg';
 import '../public/style/Hiring.css';
-import Apply from './Apply';
 
 const Hiring = () => {
     const advertisement = [
         {
-            title: 'Machine Learning and  Python Specialist',
-            description: 'We are looking for Senior-level Python Specialist to join our team.',
-            features: ['Remote', 'Freelancer'],
-        },
-        {
             title: 'Full Stack Developer',
             description: 'We are looking for an experienced Full Stack Developer to join our team.',
-            features: ['Remote', 'Full-time'],
+            features: ['Remote', 'Full-time or Freelance'],
+            navigate: '/apply/full-stack-developer',
         },
         {
             title: 'Defi/Tokenomics Expert',
             description: 'We are lookin for a Tokenomics Expert to join our team.',
-            features: ['Remote', 'Part-time'],
+            features: ['Remote', 'Full-time or Freelance'],
+            navigate: '/apply/tokenomics',
         },
         {
-            title: 'Engineering Manager',
-            description: 'We are lookin for an experienced Engineering Manager to join our team.',
-            features: ['Remote', 'Full-time'],
+            title: 'Machine Learning and  Python Specialist',
+            description: 'We are looking for Senior-level Python Specialist to join our team.',
+            features: ['Remote', 'Freelance'],
+            navigate: '/apply/machine-learn-and-python-specialists',
         },
         {
-            title: 'Full Stack Developer',
-            description: 'We are lookin for an experienced Full Stack Developer to join our team.',
-            features: ['Remote', 'Full-time'],
+            title: 'Digital Content Creator / Tik Tok Specialist',
+            description:
+                'In the dynamic world of social media, Mood Global Services is on the lookout for a passionate TikToker to amplify our digital presence. TikTok, with its vast user base and innovative content formats, offers a unique platform to engage and educate audiences. We aim to leverage this platform to its fullest potential, making tech topics, especially blockchain and AI, accessible and engaging for all.',
+            features: ['Remote', 'Freelance'],
+            navigate: '/apply/digital-content-creator',
+        },
+        {
+            title: 'SEO specialist',
+            description:
+                'In the dynamic digital landscape, Mood Global Services seeks an SEO Expert to elevate our online presence and drive organic traffic growth.',
+            features: ['Remote', 'Full-time or Freelance'],
+            navigate: '/apply/seo-specialist',
         },
     ];
 
-    const [jobs, setJobs] = useState(advertisement.slice(0, 4));
+    const [jobs, setJobs] = useState(advertisement);
     const [visibleJobs, setVisibleJobs] = useState(4);
 
     const viewMoreJobs = () => {
@@ -52,8 +58,14 @@ const Hiring = () => {
     return (
         <div className='hiringContainer'>
             <div className='imageContainer'>
-                <Image id='webAmsterdamImage' src={amsterdam} />
-                <Image id='mobileAmsterdamImage' src={amsterdam2} />
+                <Image
+                    id='webAmsterdamImage'
+                    src={amsterdam}
+                />
+                <Image
+                    id='mobileAmsterdamImage'
+                    src={amsterdam2}
+                />
                 <p className='imageText'>
                     Started in Amsterdam <br /> enhancing and emplifying connections <br /> across
                     the globe.
@@ -75,14 +87,14 @@ const Hiring = () => {
                     <div
                         className='hiringSection'
                         key={index}>
-                        <div className='hiringSectionFirst' style={{width: '90%'}}>
+                        <div className='hiringSectionFirst'>
                             <h1 className='hiringTitle'>{job.title}</h1>
                             <p id='hiringDescription'>{job.description}</p>
                             {job.features.map((feat, index) => (
                                 <span
                                     className='hiringFeatures'
                                     key={index}>
-                                    {feat !== ('Remote' ||'Hybrid'||'On site') ? (
+                                    {feat !== ('Remote' || 'Hybrid' || 'On site') ? (
                                         <Image src={freeIcon} />
                                     ) : (
                                         <Image src={remIcon} />
@@ -91,9 +103,12 @@ const Hiring = () => {
                                 </span>
                             ))}
                         </div>
-                        <div className='apply'>
-                            <Link href={'/apply'} >
-                                Apply<span>
+                        <div
+                            key={job.navigate}
+                            className='apply'>
+                            <Link href={job.navigate}>
+                                Apply
+                                <span>
                                     <Image
                                         src={apply}
                                         alt='apply'
@@ -105,7 +120,7 @@ const Hiring = () => {
                 ))}
             </div>
             {visibleJobs < advertisement.length && (
-                <button id='viewmore' onClick={viewMoreJobs}>
+                <button id='viewmore' /*onClick={viewMoreJobs}*/>
                     View More
                     <span>
                         <Image
