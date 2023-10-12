@@ -68,6 +68,12 @@ padding-right: 60px;
     padding: 20px 0px;
 }
 
+.hiringContainer .hiringSection .hiringSectionFirst{
+    width: 85% !important;
+}
+.hiringContainer .hiringSection .apply{
+    width: 15%;
+}
 
 .hiringSection .hiringTitle {
     font-size: 30px;
@@ -91,11 +97,13 @@ padding-right: 60px;
     display: inline-flex;
     align-items: center;
     gap: 10px;
+    align-items: flex-end;
 }
 
 .hiringFeatures img{
     align-items:flex-end;
     height: 10% !important;
+    padding-bottom: 7px;
 }
 
 .hiringSection .apply{
@@ -121,4 +129,5 @@ padding-right: 60px;
     display: flex;
     gap: 12px;
     align-items: center;
+    visibility: hidden;
 }

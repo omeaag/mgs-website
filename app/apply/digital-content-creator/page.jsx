@@ -1,10 +1,11 @@
 "use client"
-import '../public/style/Apply.css';
+import '../../../public/style/Apply.css';
 import Image from 'next/image';
-import upload_Icon from '../public/materials/upload-icon.svg'
+import upload_Icon from '../../../public/materials/upload-icon.svg';
 import {useState, useEffect} from 'react';
 
-const Apply = () => {
+
+const page = () => {
     const [dragging, setDragging] = useState(false);
     const [selectedMonth, setSelectedMonth] = useState('');
     const [selectedDay, setSelectedDay] = useState('');
@@ -68,11 +69,7 @@ const Apply = () => {
     return (
         <div className='applyContainer'>
             <div className='applyHeader'>
-                <h1>FullStack Developer</h1>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero velit soluta
-                    voluptate, vel labore accusantium suscipit maiores eius saepe error?
-                </p>
+                <h1>Digital Content Creator / Tik Tok Specialist</h1>
                 <div className='mobilViewInfo'>
                     <p>
                         <span>Location:</span> Remote (on-site meetings possible in the Netherlands,
@@ -82,116 +79,82 @@ const Apply = () => {
                         <span>Salary:</span> Competitive, based on experience{' '}
                     </p>
                     <p>
-                        <span>Top type:</span> Full-time or freelance
+                        <span>Top type:</span> Freelance
                     </p>
                 </div>
             </div>
             <div className='mobilViewText'>
                 <p>
-                    At Mood Global Services, our Full Stack Developers are the vital pulse of our
-                    projects. Collaborating closely with smart contract specialists, visionary
-                    designers, and cloud experts, you'll play a pivotal role in transforming dreams
-                    into tangible realities.
+                    In the dynamic world of social media, Mood Global Services is on the lookout for
+                    a passionate TikToker to amplify our digital presence. TikTok, with its vast
+                    user base and innovative content formats, offers a unique platform to engage and
+                    educate audiences. We aim to leverage this platform to its fullest potential,
+                    making tech topics, especially blockchain and AI, accessible and engaging for
+                    all.
                 </p>
                 <p>
-                    Immerse yourself in cutting-edge technologies as you work with modern frameworks
-                    like Nextjs. Craft the foundational building blocks of our frontend through
-                    meticulously designed components. Seamlessly integrate these components using
-                    state management tools like Zustand, ensuring they flawlessly connect with Smart
-                    Contracts, Databases, Rest APIs, and more.
+                    As our dedicated TikToker, you'll be the creative force behind our TikTok
+                    content, crafting videos that not only entertain but also educate. Your role
+                    will be pivotal in bridging the gap between complex tech concepts and the
+                    general public, making technology more relatable and understandable.
                 </p>
             </div>
             <div className='applyQualifications'>
                 <div className='responsibilities'>
-                    <h1>Full Stack Developer Responsibilies</h1>
+                    <h1>Responsibilies:</h1>
                     <ul>
                         <li>
-                            You will be coming onboard and getting a thorough understanding of
-                            project scopes, dependencies and timescales
+                            <span>Content Creation:</span> Design and produce captivating TikTok
+                            videos that resonate with our target audience.
                         </li>
                         <li>
-                            You will be working in a fast-paced environment, multitasking across
-                            different projects
+                            <span>Tech Education:</span> Break down complex tech topics, especially
+                            blockchain and AI, into digestible and engaging content for the TikTok
+                            audience.
                         </li>
                         <li>
-                            You will be working closely with the wider team, including stakeholders
-                            and account managers
+                            <span>Trendspotting:</span> Stay updated with the latest TikTok trends
+                            to ensure our content remains relevant and fresh.
                         </li>
                         <li>
-                            You will be responsible for producing high quality work whilst adhering
-                            to best practices and coding standards
+                            <span>Collaboration:</span> Work closely with our tech experts,
+                            blockchain enthusiasts, and community managers to curate content that's
+                            both informative and entertaining.
+                        </li>
+                        <li>
+                            <span>Engagement:</span> Boost community engagement through interactive
+                            content, challenges, and collaborations on TikTok.
+                        </li>
+                        <li>
+                            <span>Continuous Learning:</span> Stay informed about the evolving
+                            digital content landscape, especially in the realms of tech education on
+                            social media platforms.
                         </li>
                     </ul>
                 </div>
                 <div className='requirements'>
-                    <h1>Full Stack Developer Requirements</h1>
-                    <ul>
-                        <li>Commercial experience with PHP 7 +</li>
-                        <li>Understanding with associated frameworks ideally Laravel</li>
-                        <li>Front end technologies such as HTML, CSS and SASS</li>
-                        <li>JavaScript knowledge</li>
-                        <li>Working knowledge of Git</li>
-                        <li>Experience working with MySQL Databases</li>
-                    </ul>
-                </div>
-                <div className='experienceRequired'>
-                    <h1>Experience Required</h1>
+                    <h1>Experience Required:</h1>
                     <ul>
                         <li>
-                            Strong proficiency in Javascript with hands-on experience in React,
-                            Nextjs, and TailwindCss. Competing frameworks are also acceptable.
+                            <span>TikTok Expertise:</span> Minimum 2 years of hands-on experience in
+                            creating TikTok videos.
                         </li>
-                        <li>Experience in state management, preferably Zustand or Redux.</li>
-                        <li>Solid understanding of cloud platforms, especially AWS.</li>
-                        <li>Familiarity with Github Actions or other CI/CD architecture.</li>
                         <li>
-                            Experience in smart contract interactions using web3, wagmi, or ethers
+                            <span>Tech Passion:</span> A strong passion for tech education,
+                            especially blockchain and AI.
                         </li>
-                    </ul>
-                </div>
-                <div className='bonusQualifications'>
-                    <h1>Bonus Qualifications</h1>
-                    <ul>
                         <li>
-                            Experience with any crypto database or compute-related tools such as
-                            Chainlink or Phala.network.
+                            <span>Content Translation:</span> Ability to translate complex tech
+                            jargon into engaging and relatable TikTok content.
                         </li>
-                        <li>Proficiency in deploying scheduled or automated tasks</li>
-                    </ul>
-                </div>
-                <div className='benefits'>
-                    <h1>Full Stack Developer Benefits</h1>
-                    <ul>
-                        <li>Friendly, supportive, and forward-thinking team</li>
-                        <li>Flexible working hours</li>
                         <li>
-                            Excellent career progression opportunities and regular career
-                            development plans
+                            <span>Tech Background:</span> Prior experience in tech education or
+                            content creation for tech platforms is a plus.
                         </li>
-                        <li>2 days per week on site the rest form home</li>
-                        <li>Regular social events</li>
-                        <li>Birthdays off</li>
-                        <li>25 days holiday plus bank holidays</li>
                     </ul>
-                </div>
-                <div className='qualifications'>
-                    <h1>Full Stack Developer</h1>
-                    <ul>
-                        <li>Fully remote working arrangements</li>
-                        <li>PHP, MVC, Larval, HTML, CSS, SASS, JavaScript, MySQL, Bootstrap</li>
-                        <li>Salary up to £60,000 with benefits</li>
-                        <li>Please apply by emailing me directly to</li>
-                    </ul>
-                </div>
-                <div className='applyInfo'>
-                    <h1>TO BE CONSIDERED… .</h1>
                     <p>
-                        Please either apply by clicking online or emailing me directly to . For
-                        further information please call me on 07719 051 877 or 01244 567 567. By
-                        applying for this role, you give express consent for us to process & submit
-                        (subject to required skills) your application to our client in conjunction
-                        with this vacancy only. Also feel free to connect with me on LinkedIn, just
-                        search Millicent Nicholson Gates. I look forward to hearing from you.
+                        Do you have a portfolio of your TikTok videos, especially those related to
+                        tech topics? We'd love to see your creativity in action!
                     </p>
                 </div>
             </div>
@@ -363,7 +326,7 @@ const Apply = () => {
                                 <Image src={upload_Icon} />
                                 <h2>Browse Files</h2>
                                 <h3>Drag and drop your file here</h3>
-                                <h3  id='fileHere'>Upload File here</h3>
+                                <h3 id='fileHere'>Upload File here</h3>
                                 <div className='fileInput'>
                                     <input
                                         type='file'
@@ -387,6 +350,6 @@ const Apply = () => {
             </div>
         </div>
     );
-};
+}
 
-export default Apply;
+export default page
