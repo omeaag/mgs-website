@@ -23,20 +23,20 @@ const OurServices = () => {
                                 <h4>Blockchain advisory</h4>
                                 <h4>Tokenomics Advisory</h4>
                             </div>
-                            <div className="tRightService">
-                                <h3>Smart Contracts Solution</h3>
-                                <button>.</button>
-                                <h4>ERC-Model Components</h4>
-                                <h4>Dapps Architecture</h4>
-                            </div>
-                        </div>
-                        <div className="serviceBContainer">
                             <div className="bLeftService">
                                 <h3>Audit Smart Contracts</h3>
                                 <button>.</button>
                                 <h4>Security Audit</h4>
                                 <h4>Logic Audit</h4>
                                 <h4>Analytics & Performance Tools</h4>
+                            </div>
+                        </div>
+                        <div className="serviceBContainer">
+                        <div className="tRightService">
+                                <h3>Smart Contracts Solution</h3>
+                                <button>.</button>
+                                <h4>ERC-Model Components</h4>
+                                <h4>Dapps Architecture</h4>
                             </div>
                             <div className="bRightService">
                                 <h3>Development</h3>
