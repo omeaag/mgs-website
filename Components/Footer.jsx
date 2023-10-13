@@ -30,9 +30,9 @@ const Footer = () => {
               <Link href="/services">Services</Link>
               <Link href="/mood-convert">MoodConvert</Link>
               <Link href="/careers">Careers</Link>
-              <button>FAQ</button>
-              <button>Terms and Conditions</button>
-              <button>Privacy Policy</button>
+              <Link href="/faq">FAQ</Link>
+              <Link href="/terms-conditions">Terms and Conditions</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
             </div>
             <div className="hqFooter">
               <strong>HEADQUARTERS:</strong>
