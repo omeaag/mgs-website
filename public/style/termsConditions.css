@@ -70,6 +70,12 @@
     text-align: left;
 }
 
+#PrivacySecondHeader{font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: capitalize;}
+
 @media (min-width: 600px) and (max-width: 1024px) {
     .termsConditionsText {
         width: 80%;
@@ -79,6 +85,33 @@
         padding-left: 10%;
         height: 40vh;
     }
+
+    #PrivacySecondHeader{font-size: 26px;}
+}
+
+/* Add these styles for unordered lists and list items */
+ul {
+    list-style-type: disc; /* or 'circle' or 'square' based on your preference */
+    margin-left: 20px; /* Adjust the margin as needed */
+}
+
+li {
+    margin-bottom: 10px; /* Adjust the margin as needed */
+}
+
+/* Add these styles for ordered lists and list items */
+ol {
+    list-style-type: decimal; /* or 'lower-roman' or 'upper-alpha', etc. based on your preference */
+    margin-left: 20px; /* Adjust the margin as needed */
+}
+
+u strong{
+    font-size: 26px;
+font-style: italic;
+font-weight: 500;
+line-height: normal;
+text-decoration-line: underline;
+text-transform: capitalize;
 }
 
 @media (max-width: 599px) {
