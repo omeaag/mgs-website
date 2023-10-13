@@ -17,10 +17,6 @@ import iconoir_dev_phone from "../public/materials/ourPortfolioImages/iconoir_de
 import iconamoon_settings from "../public/materials/ourPortfolioImages/iconamoon_settings-thin.svg";
 import streamline_interface from "../public/materials/ourPortfolioImages/streamline_interface-edit-magic-wand-design-magic-star-supplies-tool-wand.svg";
 import Line from "../public/materials/ourPortfolioImages/Line-Separation.svg";
-import Block1 from "../public/materials/ourPortfolioImages/Block-1.svg";
-import Block2 from "../public/materials/ourPortfolioImages/Block-2.svg";
-import Block3 from "../public/materials/ourPortfolioImages/Block-3.svg";
-import Block4 from "../public/materials/ourPortfolioImages/Block-4.svg";
 import LeftArrow from "../public/materials/ourPortfolioImages/Vector 14.svg";
 import RightArrow from "../public/materials/ourPortfolioImages/Vector 17.svg";
 import Heart from "../public/materials/ourPortfolioImages/Vector.svg";
@@ -28,31 +24,11 @@ import pp1 from "../public/materials/ourPortfolioImages/pp1.svg";
 import pp2 from "../public/materials/ourPortfolioImages/pp2.svg";
 import pp3 from "../public/materials/ourPortfolioImages/pp3.svg";
 import sliderlogo from "../public/materials/ourPortfolioImages/sliderlogo.svg";
+import sliderlogo2 from "../public/materials/ourPortfolioImages/sliderlogo2.svg";
 import clutchco1 from "../public/materials/ourPortfolioImages/clutchco1.svg";
 
 function OurPortfolio() {
   SwiperCore.use([Navigation]);
-  const photos = [
-    {
-      id: 1,
-      url: Block1,
-    },
-
-    {
-      id: 2,
-      url: Block2,
-    },
-
-    {
-      id: 3,
-      url: Block3,
-    },
-
-    {
-      id: 4,
-      url: Block4,
-    },
-  ];
 
   const people = [
     {
@@ -191,7 +167,7 @@ function OurPortfolio() {
             <div className="sliderContent">
               <h4>The NFT Shoppe NFT's MarketPlace</h4>
               <p>React App, welcome! <br /> Web site created using create-react-app</p>
-              <p className="slideLink">https://nft-wall-arts.vercel.app/home</p>
+              <p className="slideLink"><Image src={sliderlogo2} />https://nft-wall-arts.vercel.app/home</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>

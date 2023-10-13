@@ -102,6 +102,7 @@
         margin-top: 1rem;
         font-size: 22px;
         line-height: 37px;
+        margin: 0 70px;
     }
 
     .HomeShapingbuttons {
@@ -132,6 +133,26 @@
     .HomeShapingBottomLine {
         display: none;
     }
+
+    .text-shaping,
+    .text-creativity {
+        font-size: 80px !important;
+        line-height: 90px !important;
+    }
+
+    .HomeShapingHeaders {
+        margin-bottom: 30px;
+    }
+
+    .HomeShapingbuttons {
+        width: 100%;
+        margin: 40px 0 70px 0;
+    }
+
+    .HomeShapingbuttons button {
+        height: 65px;
+    }
+
 }
 
 /* PHONE BREAKPOINT */
@@ -143,11 +164,11 @@
         padding: 10px;
     }
 
-    .firsRow{
+    .firsRow {
         padding: 10px;
     }
 
-    .HomeShapingParagraph{
+    .HomeShapingParagraph {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -167,7 +188,7 @@
     }
 
     .at-mood-global {
-        margin: 0 ;
+        margin: 0;
         margin-top: 1rem;
         width: 90%;
         font-size: 16px;

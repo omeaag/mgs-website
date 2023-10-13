@@ -83,6 +83,7 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        margin-left: -170px;
     }
 
     .firstRow {
@@ -91,7 +92,7 @@
 
     .secondRow {
         display: flex;
-        margin: -12px 0;
+        margin: -45px 0;
     }
 
     .thirdRow {
@@ -100,63 +101,22 @@
     }
 
     #hexagon {
-        width: 141px !important;
-        height: 118px !important;
+        width: 242px !important;
+        height: 277px !important;
     }
 
     #hexagonImages {
-        width: 66px !important;
-        height: 66px !important;
+        width: 130px !important;
+        height: 139px !important;
         position: absolute;
-        top: 22px;
-        right: 22px;
+        top: 55px;
+        right: 56px;
     }
 
     .hexagonContainer {
         display: flex;
-        width: 108px !important;
-        height: 118px !important;
-        position: relative;
-    }
-
-    .allRows {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .firstRow {
-        display: flex;
-    }
-
-    .secondRow {
-        display: flex;
-        margin: -12px 0;
-    }
-
-    .thirdRow {
-        display: flex;
-        margin-top: 0px;
-    }
-
-    #hexagon {
-        width: 141px !important;
-        height: 118px !important;
-    }
-
-    #hexagonImages {
-        width: 66px !important;
-        height: 66px !important;
-        position: absolute;
-        top: 22px;
-        right: 22px;
-    }
-
-    .hexagonContainer {
-        display: flex;
-        width: 108px !important;
-        height: 118px !important;
+        width: 242px !important;
+        height: 277px !important;
         position: relative;
     }
 
