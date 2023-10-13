@@ -47,9 +47,9 @@ export default function Header() {
                         <Link onClick={toggleMobileMenu} href='/services'>Services</Link>
                         <Link onClick={toggleMobileMenu} href='/mood-convert'>MoodConvert</Link>
                         <Link onClick={toggleMobileMenu} href='/careers'>Careers</Link>
-                        <Link onClick={toggleMobileMenu} href='/careers'>FAQ</Link>
-                        <Link onClick={toggleMobileMenu} href='/careers'>Terms and Conditions</Link>
-                        <Link onClick={toggleMobileMenu} href='/careers'>Privacy Policy</Link>
+                        <Link onClick={toggleMobileMenu} href='/faq'>FAQ</Link>
+                        <Link onClick={toggleMobileMenu} href='/terms-conditions'>Terms and Conditions</Link>
+                        <Link onClick={toggleMobileMenu} href='/privacy'>Privacy Policy</Link>
                     </div>
                     <div className='HeaderIcons'>
                         <Image

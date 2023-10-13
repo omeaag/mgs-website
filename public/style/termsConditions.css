@@ -1,0 +1,71 @@
+.termsConditionsAllContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.termsConditionsHeader {
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 50px;
+    padding-left: 370px;
+    width: 100%;
+    background: url("../materials/HomeShapingBackground.svg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.termsConditionsHeader h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    letter-spacing: 0px;
+    text-align: left;
+    font-family: MonumentExtended;
+    color: rgba(0, 113, 251, 1);
+    ;
+}
+
+.termsConditionsHeader p {
+    font-family: MonumentExtended;
+    font-size: 26px;
+    font-weight: 400;
+    line-height: 50px;
+    letter-spacing: 0px;
+    text-align: left;
+}
+
+.termsConditionsText {
+    margin: 70px auto 200px auto;
+    width: 60%;
+    gap: 50px;
+}
+
+.termsConditionsTitle {
+    gap: 30px
+}
+
+.termsConditionsText,
+.termsConditionsTitle {
+    display: flex;
+    flex-direction: column;
+    font-family: MonumentExtended;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: justify;
+
+}
+
+.termsConditionsTitle h2 {
+    font-family: MonumentExtended;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: left;
+}
