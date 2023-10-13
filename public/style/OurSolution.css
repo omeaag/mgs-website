@@ -134,6 +134,10 @@
         margin: 0 20px;
         padding: 0;
     }
+    
+    .OurSolutionText .textContainer{
+        flex-direction: row;
+    }
 
     .OurSolitionContainer .titleContainer {
         width: 100%;

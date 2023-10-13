@@ -261,10 +261,13 @@
 @media (min-width: 600px) and (max-width: 1024px) {
     .ourPortfolioContainer {
         margin: 30px 50px;
+        padding-top: 30px;
+        gap: 55px;
     }
 
     .headerContainer-5 {
-        margin: 30px 50px;
+        margin: 30px 0px;
+        width: 100%;
     }
 
     .headerContainer-5 h1 {
@@ -314,7 +317,7 @@
         width: 100%;
         margin-top: 20px;
         margin-bottom: 20px;
-        padding: 0 50px;
+        padding: 0;
         padding-bottom: 60px;
     }
 
@@ -374,6 +377,7 @@
         font-size: 22px;
         font-weight: 400;
         line-height: 39px;
+        width: 103%;
     }
 
     .whatPeopleContainer {
@@ -386,12 +390,9 @@
     }
 
     .whatPeopleContainer h1 {
+        margin-top: 200px;
         font-size: 40px;
         line-height: 60px;
-    }
-
-    .personContainer {
-        padding-left: 0;
     }
 
     .personSlider {
@@ -412,6 +413,18 @@
         font-family: MonumentExtended;
         text-align: center;
         width: 80%;
+    }
+
+    .clutchContainer {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 60px;
+        gap: 30px;
+        margin-top: 70px;
+        margin-bottom: 30px;
+    }
+    .clutchContainer img {
+        width: 172.55px
     }
 
 }
@@ -591,11 +604,6 @@
         margin: 0;
     }
 
-    .whatPeopleContainer h1 {
-        font-size: 15px;
-        line-height: 30px;
-    }
-
     .whatPeopleContainer h1 img {
         height: 36px;
     }
@@ -642,6 +650,7 @@
 
     .whatPeopleContainer h1 {
         font-size: 40px;
+        line-height: 60px;
         width: 100%;
         text-align: center;
         justify-items: center;
