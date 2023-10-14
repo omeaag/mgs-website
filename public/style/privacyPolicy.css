@@ -1,11 +1,11 @@
-.termsConditionsAllContainer {
+.privacyPolicyAllContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: auto;
 }
 
-.termsConditionsHeader {
+.privacyPolicyHeader {
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -18,7 +18,7 @@
     background-repeat: no-repeat;
 }
 
-.termsConditionsHeader h1 {
+.privacyPolicyHeader h1 {
     font-size: 50px;
     font-weight: 700;
     line-height: 60px;
@@ -29,7 +29,7 @@
     ;
 }
 
-.termsConditionsHeader p {
+.privacyPolicyHeader p {
     font-family: MonumentExtended;
     font-size: 26px;
     font-weight: 400;
@@ -38,18 +38,18 @@
     text-align: left;
 }
 
-.termsConditionsText {
+.privacyPolicyText {
     margin: 70px auto 200px auto;
     width: 60%;
     gap: 50px;
 }
 
-.termsConditionsTitle {
+.privacyPolicyTitle {
     gap: 30px
 }
 
-.termsConditionsText,
-.termsConditionsTitle {
+.privacyPolicyText,
+.privacyPolicyTitle {
     display: flex;
     flex-direction: column;
     font-family: MonumentExtended;
@@ -61,7 +61,7 @@
 
 }
 
-.termsConditionsTitle h2 {
+.privacyPolicyTitle h2 {
     font-family: MonumentExtended;
     font-size: 30px;
     font-weight: 600;
@@ -78,7 +78,6 @@
     text-transform: capitalize;
 }
 
-
 .paragraphs {
     display: flex;
     flex-direction: column;
@@ -86,13 +85,13 @@
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
-    .termsConditionsText {
+    .privacyPolicyText {
         width: 80%;
     }
 
-    .termsConditionsHeader {
+    .privacyPolicyHeader {
         padding-left: 10%;
-        height: 40vh;
+        height: 55vh;
     }
 
     #PrivacySecondHeader {
@@ -128,101 +127,36 @@ u strong {
     line-height: normal;
     text-decoration-line: underline;
     text-transform: capitalize;
-
 }
-
-.FaqContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
-
-}
-
-.FaqUpperDiv {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 52px;
-    width: 100%;
-
-    align-items: center;
-}
-
-.FaqUpperDiv img {
-    cursor: pointer;
-}
-
-.FaqTitleContainer {
-    width: 80%;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 150%;
-    text-transform: capitalize;
-    text-align: left;
-}
-
-.FaqLowerDiv {
-    width: 79%;
-    color: var(--text-txt-secondary, rgba(60, 60, 67, 0.85));
-    font-feature-settings: 'clig' off, 'liga' off;
-
-    /* MGS/Paragraph/Para 3 */
-    font-family: Neue Montreal;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 39px;
-    /* 177.273% */
-}
-
-.FaqContainer h1 {
-    font-size: 50px;
-    font-weight: 700;
-    color: var(--text-txt-tertiary, rgba(60, 60, 67, 0.50));
-    margin-top: 9.5px;
-}
-
-.FaqContainer h2 {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 150%;
-    text-transform: capitalize;
-    text-align: left;
-}
-
 
 @media (max-width: 599px) {
-    .termsConditionsText {
+    .privacyPolicyText {
         width: 90%;
-
     }
 
-    .termsConditionsHeader {
+    #PrivacySecondHeader{
+        width: 90%;
+        margin:auto;
+    }    
+
+    .privacyPolicyHeader {
         display: flex;
         flex-direction: column;
     }
 
-    .termsConditionsHeader h1 {
+    .privacyPolicyHeader h1 {
         font-size: 30px;
         margin: auto;
         width: 90%;
     }
 
-    .termsConditionsHeader h1,
-    .termsConditionsHeader p {
+    .privacyPolicyHeader h1,
+    .privacyPolicyHeader p {
         margin: 0 auto;
         width: 90%;
     }
 
-    .termsConditionsHeader h5 {
-        margin: 0 auto;
-        width: 90%;
-        font-size: 26px;
-    }
-
-    .termsConditionsHeader p {
+    .privacyPolicyHeader p {
         font-size: 22px;
         font-weight: 400;
         line-height: 50px;
@@ -230,16 +164,17 @@ u strong {
         text-align: left;
     }
 
-    .termsConditionsHeader {
+    .privacyPolicyHeader {
         padding: 0;
-        height: 40vh;
+
     }
 
-    .termsConditionsTitle h2 {
+    .privacyPolicyTitle h2 {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
 
     #accordionimage {
         width: 26px;
@@ -250,54 +185,5 @@ u strong {
         flex-direction: column;
         gap: 20px;
         display: none;
-
-    .FaqTitleContainer,
-    .FaqContainer h1 {
-        font-size: 30px;
-    }
-
-    .FaqUpperDiv img {
-        display: flex;
-        width: 32px;
-        height: 32px;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
-    }
-    .FaqTitleContainer{
-        width: 100%;
-        margin-left: -50px;
-    }
-
-    .FaqLowerDiv {
-        font-size: 18px;
-    }
-
-    .FaqUpperDiv h1 {
-        order: -1; /* Move h1 to the beginning */
-        margin-bottom: 300px; /* Adjust margin for spacing */
-      }
-}
-
-
-/*Tablet*/
-@media (min-width: 600px) and (max-width: 1024px) {
-    .FaqLowerDiv {
-        font-size: 18px;
-    }
-
-    .FaqTitleContainer,
-    .FaqContainer h1 {
-        font-size: 30px;
-    }
-
-
-    .termsConditionsHeader h1 {
-        font-size: 40px;
-    }
-
-    .termsConditionsHeader p {
-        font-size: 22px;
-
     }
 }
