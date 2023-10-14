@@ -8,7 +8,13 @@ import Vector19 from "@/public/materials/Vector19.svg";
 
 function Privacypolicy() {
     const [isMobileOn, setIsMobileOn] = useState(false);
-    const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
+    const [showStates, setShowStates] = useState(Array(3).fill(false));
+    
+    const toggleShow = (index) => {
+        const newShowStates = [...showStates];
+        newShowStates[index] = !newShowStates[index];
+        setShowStates(newShowStates);
+    };
 
     useEffect(() => {
         const updateWindowDimensions = () => {
@@ -430,14 +436,14 @@ function Privacypolicy() {
                                 {isMobileOn &&
                                     <Image id="accordionimage" onClick={() => {
                                         const element = document.getElementById(e.id);
-                                        setMobileMenuOpen(!isMobileMenuOpen);
+                                        toggleShow(e.id);
                                         if (element.style.display === "none" || element.style.display === "") {
                                             element.style.display = "flex";
                                         } else {
                                             element.style.display = "none";
                                         }
-                                    }}
-                                        src={isMobileMenuOpen ? accordionUp : accordionDown}>
+                                    }}  
+                                    src={showStates[e.id] ? accordionUp : accordionDown}>
                                     </Image>}
                             </h2>
                             <Image style={{ display: `${isMobileOn ? "block" : "none"}` }} src={Vector19}></Image>
