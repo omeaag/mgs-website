@@ -152,16 +152,16 @@ function TermsConditions() {
                             <Image style={{ display: `${isMobileOn ? "block" : "none"}` }} src={Vector19}></Image>
                             {<div className="paragraphs" id={`${e.id}`}>
                                 <p>
-                                    <b>{e.b1}</b> {e.p1}
+                                    <b>{e.b1.length > 0 && e.b1}</b> {e.p1.length > 0 && e.p1}
                                 </p>
                                 <p>
-                                    <b>{e.b2}</b> {e.p2}
+                                    <b>{e.b2.length > 0 && e.b2}</b> {e.p2.length > 0 && e.p2}
                                 </p>
                                 <p>
-                                    <b>{e.b3}</b> {e.p3}
+                                    <b>{e.b3.length > 0 && e.b3}</b> {e.p3.length > 0 && e.p3}
                                 </p>
                                 <p>
-                                    <b>{e.b4}</b> {e.p4}
+                                    <b>{e.b4.length > 0 && e.b4}</b> {e.p4.length > 0 && e.p4}
                                 </p>
                             </div>
                             }
