@@ -49,8 +49,7 @@
 }
 
 .termsConditionsText,
-.termsConditionsTitle,
-.FaqContainer {
+.termsConditionsTitle {
     display: flex;
     flex-direction: column;
     font-family: MonumentExtended;
@@ -130,7 +129,7 @@ u strong {
     gap: 24px;
     align-items: center;
     justify-content: center;
-    
+
 }
 
 .FaqUpperDiv {
@@ -139,12 +138,15 @@ u strong {
     flex-direction: row;
     gap: 52px;
     width: 100%;
+
+    align-items: center;
 }
-.FaqUpperDiv img{
+
+.FaqUpperDiv img {
     cursor: pointer;
 }
 
-.FaqTitleContainer{
+.FaqTitleContainer {
     width: 80%;
     font-size: 40px;
     font-weight: 500;
@@ -152,6 +154,7 @@ u strong {
     text-transform: capitalize;
     text-align: left;
 }
+
 .FaqLowerDiv {
     width: 79%;
     color: var(--text-txt-secondary, rgba(60, 60, 67, 0.85));
@@ -221,5 +224,54 @@ u strong {
     .termsConditionsHeader {
         padding: 0;
         height: 40vh;
+    }
+
+    .FaqTitleContainer,
+    .FaqContainer h1 {
+        font-size: 30px;
+    }
+
+    .FaqUpperDiv img {
+        display: flex;
+        width: 32px;
+        height: 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .FaqTitleContainer{
+        width: 100%;
+        margin-left: -50px;
+    }
+
+    .FaqLowerDiv {
+        font-size: 18px;
+    }
+
+    .FaqUpperDiv h1 {
+        order: -1; /* Move h1 to the beginning */
+        margin-bottom: 300px; /* Adjust margin for spacing */
+      }
+}
+
+
+/*Tablet*/
+@media (min-width: 600px) and (max-width: 1024px) {
+    .FaqLowerDiv {
+        font-size: 18px;
+    }
+
+    .FaqTitleContainer,
+    .FaqContainer h1 {
+        font-size: 30px;
+    }
+
+
+    .termsConditionsHeader h1 {
+        font-size: 40px;
+    }
+
+    .termsConditionsHeader p {
+        font-size: 22px;
     }
 }
