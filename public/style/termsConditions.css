@@ -262,7 +262,7 @@ u strong {
         width: 32px;
         height: 32px;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         gap: 10px;
     }
 

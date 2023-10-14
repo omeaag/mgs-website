@@ -151,7 +151,8 @@ function FaqPage() {
                     {isMobileOn ? <div className="FaqUpperDivMobile">
                         <div className="mobileLeft">
                             <h1>07</h1>
-                            <div className="FaqTitleContainer">What is tokenization?</div>
+                            <div className="FaqTitleContainer">What is tokenization? <span style={{ opacity: '0'}}>...</span>
+</div>
                         </div>
                         <Image src={showStates[6] ? button2 : button1} onClick={() => toggleShow(6)} />
                     </div> :
