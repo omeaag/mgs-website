@@ -250,38 +250,35 @@ u strong {
         flex-direction: column;
         gap: 20px;
         display: none;
-
-        .FaqTitleContainer,
-        .FaqContainer h1 {
-            font-size: 30px;
-        }
-
-        .FaqUpperDiv img {
-            display: flex;
-            width: 32px;
-            height: 32px;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .FaqTitleContainer {
-            width: 100%;
-            margin-left: -50px;
-        }
-
-        .FaqLowerDiv {
-            font-size: 18px;
-        }
-
-        .FaqUpperDiv h1 {
-            order: -1;
-            /* Move h1 to the beginning */
-            margin-bottom: 300px;
-            /* Adjust margin for spacing */
-        }
     }
-}
+    .FaqTitleContainer,
+    .FaqContainer h1 {
+        font-size: 30px;
+    }
+
+    .FaqUpperDiv img {
+        display: flex;
+        width: 32px;
+        height: 32px;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+    }
+    .FaqTitleContainer{
+        width: 100%;
+        margin-left: -50px;
+    }
+
+    .FaqLowerDiv {
+        font-size: 18px;
+    }
+
+    .FaqUpperDiv h1 {
+        order: -1; /* Move h1 to the beginning */
+        margin-bottom: 300px; /* Adjust margin for spacing */
+      }
+    }
+
 
 
 /*Tablet*/
