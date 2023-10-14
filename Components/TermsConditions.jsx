@@ -161,7 +161,7 @@ function TermsConditions() {
                                     <b>{e.b3.length > 0 && e.b3}</b> {e.p3.length > 0 && e.p3}
                                 </p>
                                 <p>
-                                    <b>{e.b4.length > 0 && e.b4}</b> {e.p4.length > 0 && e.p4}
+                                     {e.p4.length > 0 && e.p4}
                                 </p>
                             </div>
                             }

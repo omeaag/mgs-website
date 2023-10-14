@@ -78,7 +78,6 @@ function Privacypolicy() {
             p6: `The biometric data will be processed exclusively by our data controller Gianluca Di Bella in order to carry out the user due diligence process`,
             li1: [],
             li2: [],
-
             li3: [`if a natural person: name, surname, tax code, date of birth, residential address, telephone number, e-mail, date of birth, photo of the user;`,
                 `if a legal person: name, registered office, tax code.`,
                 `Data for due diligence: for the purposes of due diligence of the user pursuant to anti-money laundering legislation, depending on the activities actually carried out by the Company, one or more of the following Personal Data may be required: copy of a current identification document validity (passport, driving license, identity card); copy of documents proving the "contact information" (by way of example, data from a utility bill in the user's name for verification of the relevant residence, data on the status of politically exposed persons, video data for the execution of the procedure remote user identification and authentication, biometric verification data, etc.).`,
