@@ -29,6 +29,7 @@
     ;
 }
 
+
 .termsConditionsHeader p {
     font-family: MonumentExtended;
     font-size: 26px;
@@ -196,7 +197,6 @@ u strong {
 @media (max-width: 599px) {
     .termsConditionsText {
         width: 90%;
-
     }
 
     .termsConditionsHeader {
@@ -251,6 +251,7 @@ u strong {
         gap: 20px;
         display: none;
     }
+
     .FaqTitleContainer,
     .FaqContainer h1 {
         font-size: 30px;
@@ -264,9 +265,10 @@ u strong {
         align-items: center;
         gap: 10px;
     }
-    .FaqTitleContainer{
+
+    .FaqTitleContainer {
         width: 100%;
-        margin-left: -50px;
+
     }
 
     .FaqLowerDiv {
@@ -274,10 +276,22 @@ u strong {
     }
 
     .FaqUpperDiv h1 {
-        order: -1; /* Move h1 to the beginning */
-        margin-bottom: 300px; /* Adjust margin for spacing */
-      }
+        order: -1;
     }
+
+    .mobileLeft {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .FaqUpperDivMobile {
+        display: flex;
+        justify-content: space-between;
+    }
+    .FaqLowerDiv{
+        width: 100%;
+    }
+}
 
 
 

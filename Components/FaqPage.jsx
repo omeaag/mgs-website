@@ -3,16 +3,30 @@ import "../public/style/termsConditions.css";
 import Image from "next/image";
 import button1 from "../public/materials/faqplus.svg";
 import button2 from "../public/materials/faqxmark.svg";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function FaqPage() {
     const [showStates, setShowStates] = useState(Array(3).fill(false)); // Adjust the array size based on the number of FAQ items
+    const [isMobileOn, setIsMobileOn] = useState(false);
 
     const toggleShow = (index) => {
         const newShowStates = [...showStates];
         newShowStates[index] = !newShowStates[index];
         setShowStates(newShowStates);
     };
+
+    useEffect(() => {
+        const updateWindowDimensions = () => {
+            if (window.innerWidth < 600) {
+                setIsMobileOn(true);
+            } else if (window.innerWidth >= 600) {
+                setIsMobileOn(false);
+            }
+        };
+        updateWindowDimensions();
+        window.addEventListener("resize", updateWindowDimensions);
+        return () => window.removeEventListener("resize", updateWindowDimensions)
+    }, []);
 
     return (
         <div className="termsConditionsAllContainer">
@@ -22,11 +36,20 @@ function FaqPage() {
             </div>
             <div className="termsConditionsText">
                 <div className="FaqContainer">
-                    <div className="FaqUpperDiv">
-                        <h1>01</h1>
-                        <div className="FaqTitleContainer">What is the primary focus of Mood Global Services?</div>
+                    {isMobileOn ? <div className="FaqUpperDivMobile">
+                        <div className="mobileLeft">
+                            <h1>01</h1>
+                            <div className="FaqTitleContainer">What is the primary focus of Mood Global Services?</div>
+                        </div>
                         <Image src={showStates[0] ? button2 : button1} onClick={() => toggleShow(0)} />
-                    </div>
+                    </div> :
+                        <div className="FaqUpperDiv">
+                            <h1>01</h1>
+                            <div className="FaqTitleContainer">What is the primary focus of Mood Global Services?</div>
+                            <Image src={showStates[0] ? button2 : button1} onClick={() => toggleShow(0)} />
+                        </div>
+                    }
+
                     <div className="FaqLowerDiv">
                         {showStates[0] ? <p>Our expertise lies in pioneering blockchain solutions and integrating emerging technologies, empowering businesses and entrepreneurs to navigate technological innovation.</p> : null}
                     </div>
