@@ -19,6 +19,7 @@
   display: flex;
   gap: 1.8rem;
 }
+
 .icons img {
   width: 25px;
   height: 25px;
@@ -32,4 +33,30 @@
   line-height: 36px;
   letter-spacing: 0px;
   text-align: left;
+}
+
+/* PHONE BREAKPOINT */
+@media (max-width: 599px) {
+  .MemberCardComponent {
+    width: 100% !important;
+  }
+
+  .memberName {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+
+  }
+  .memberName p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+  }
+
+  .icons img {
+    width: 25px;
+height: 25px
+  }
 }
