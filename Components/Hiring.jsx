@@ -14,19 +14,19 @@ const Hiring = () => {
     const advertisement = [
         {
             title: 'Full Stack Developer',
-            description: 'We are looking for an experienced Full Stack Developer to join our team.',
+            description: `At Mood Global Services, our Full Stack Developers are the vital pulse of our projects. Collaborating closely with smart contract specialists, visionary designers, and cloud experts, you'll play a pivotal role in transforming dreams into tangible realities.`,
             features: ['Remote', 'Full-time or Freelance'],
             navigate: '/apply/full-stack-developer',
         },
         {
             title: 'Defi/Tokenomics Expert',
-            description: 'We are lookin for a Tokenomics Expert to join our team.',
+            description: `In the rapidly evolving world of decentralised finance (DeFi), Mood Global Services seeks a DeFi/Tokenomics Expert to guide clients' financial innovations.`,
             features: ['Remote', 'Full-time or Freelance'],
             navigate: '/apply/tokenomics',
         },
         {
             title: 'Machine Learning and  Python Specialist',
-            description: 'We are looking for Senior-level Python Specialist to join our team.',
+            description: 'In the ever-evolving domain of artificial intelligence, Mood Global Services is in search of a Machine Learning and Python Specialist to spearhead our AI initiatives. The world of machine learning offers endless possibilities, from predictive analytics to natural language processing and beyond.',
             features: ['Remote', 'Freelance'],
             navigate: '/apply/machine-learn-and-python-specialists',
         },

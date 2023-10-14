@@ -111,27 +111,7 @@ line-height: 60px;
 letter-spacing: 0px;
 }
 
- .hiringContainer .headerSection {
-    width: 100%;
-    text-align: center;
-    padding: 100px 30px !important;
-  }
-
-  .hiringContainer .headerSection>span {
-    font-size: 20px !important;
-  }
-
-  .hiringContainer .headerSection h1 {
-    font-size: 40px !important;
-    line-height: 60px;
-    font-weight: 600 !important;
-    padding: -20px !important;
-  }
-
-  .hiringContainer .headerSection p {
-    font-size: 22px !important;
-    line-height: 50px;
-  }
+ 
 
     .hiringSection > div{
     width: auto !important;
@@ -157,10 +137,13 @@ letter-spacing: 0px;
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
 
-
-
   .careersHeaderContainer {
     background-image: none;
+  }
+  .mobilCareersHeaderImageContainer{
+    display: flex;
+    justify-content: center;
+    height: 100%;
   }
 
   .careersBiggestHeader p {
@@ -170,10 +153,13 @@ letter-spacing: 0px;
     margin-bottom: 0;
 }
   .careersSmallHeader p {
-    font-size: 25px;
-    line-height: 2.5rem;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 31px;
+    letter-spacing: 0px;
     text-align: center;
-    margin-left: 24px !important;
+    margin: auto;
+    width: 80%;
   }
 
   .careersHeaderImageContainer{
@@ -202,6 +188,8 @@ letter-spacing: 0px;
     align-items: center;
     width: 100%;
     flex-direction: column;
+    margin-top: 50px;
+    gap: 20px;
   }
 
   .careersHeaderPar {
@@ -216,6 +204,20 @@ letter-spacing: 0px;
 
   .careersHeaderPar br {
     display: none;
+  }
+
+  .careersHeaderPar {
+    margin-top: -70px;
+  }
+
+  .careersHeaderPar p{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 39px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin: auto;
+    width: 90%;
   }
 
   .careersHeaderImageContainer img {
@@ -236,84 +238,5 @@ letter-spacing: 0px;
 
   #mobileAmsterdamImage {
     display: block;
-  }
-
-  .hiringContainer .imageContainer .imageText {
-
-    font-size: 40px !important;
-    line-height: 60px !important;
-    width: 80% !important;
-  }
-
-  .hiringContainer .headerSection {
-    width: 100%;
-    text-align: center;
-    padding: 100px 30px !important;
-  }
-
-  .hiringContainer .headerSection>span {
-    font-size: 20px !important;
-  }
-
-  .hiringContainer .headerSection h1 {
-    font-size: 30px !important;
-    font-weight: 600 !important;
-    padding: -20px !important;
-    overflow: visible;
-  }
-
-  .hiringContainer .headerSection p {
-    font-size: 22px !important;
-    padding: 0px 10px !important;
-    line-height: 50px;
-  }
-
-  .hiringContainer .hiringSection {
-    flex-direction: column;
-  }
-
-  .hiringContainer .hiringSection:nth-child(1) {
-    width: 100%;
-    align-items: center;
-  }
-
-
-
-  .hiringSection .apply a {
-    float: left !important;
-    font-size: 30px;
-  }
-
-  .hiringSection .hiringTitle {
-    text-align: center;
-  }
-
-  .hiringSection #hiringDescription {
-    text-align: center;
-  }
-
-  .hiringSection .hiringFeatures {
-    margin-left: 20px;
-    justify-content: center;
-    margin-bottom: 20px;
-    font-size: 18px !important;
-  }
-  
-  .hiringSectionFirst{
-  display: flex;
-  }
-
-
-  .hiringSectionFirst {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .hiringContainer .hiring {
-    margin-bottom: 150px;
-  }
-
-  #viewmore {
-    display: none !important;
   }
 }
