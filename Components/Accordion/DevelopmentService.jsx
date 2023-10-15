@@ -57,7 +57,7 @@ function DevelopmentService() {
           <Image alt="accordion-down" src={accordionDown} />
         )}
       </div>
-
+      <div className="accordionIndex">
       {array4.map((item, index) => {
         if (index % 2 === 0) {
           return (
@@ -69,6 +69,7 @@ function DevelopmentService() {
           );
         }
       })}
+    </div>
     </div>
   );
 }

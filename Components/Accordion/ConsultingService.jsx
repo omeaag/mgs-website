@@ -50,18 +50,19 @@ function ConsultingService() {
           <Image alt="accordion-down" src={accordionDown} />
         )}
       </div>
-
-      {array1.map((item, index) => {
-        if (index % 2 === 0) {
-          return (
-            <LeftSection displayContent={display} key={item.id} item={item} />
-          );
-        } else {
-          return (
-            <RightSection displayContent={display} key={item.id} item={item} />
-          );
-        }
-      })}
+      <div className="accordionIndex">
+        {array1.map((item, index) => {
+          if (index % 2 === 0) {
+            return (
+              <LeftSection displayContent={display} key={item.id} item={item} />
+            );
+          } else {
+            return (
+              <RightSection displayContent={display} key={item.id} item={item} />
+            );
+          }
+        })}
+      </div>
     </div>
   );
 }
