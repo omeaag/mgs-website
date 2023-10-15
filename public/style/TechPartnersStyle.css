@@ -36,7 +36,8 @@
 .blockChainIconsLine {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    flex-wrap: wrap;
+    /* Allow items to wrap to the next line */
 }
 
 .blockChainIconsLine img {
@@ -206,6 +207,22 @@
         font-size: 22px !important;
     }
 
+    .accordion-title {
+        font-size: 26px !important;
+        font-weight: 500 !important;
+        line-height: 31px !important;
+        margin-bottom: 20px;
+    }
+
+    .accordion-par {
+        font-size: 18px !important;
+        font-weight: 400;
+        line-height: 33px !important;
+        letter-spacing: 0px;
+        text-align: left;
+
+    }
+
     .servicesHeaderSmallTextContainer p br {
         display: none;
     }
@@ -270,6 +287,9 @@
     .techTextParentContainer p br {
         display: none;
     }
+    .TechComponentContainerText{
+        justify-content: center;
+    }
 
     .TechComponentContainerText h1 {
         font-size: 40px !important;
@@ -309,43 +329,49 @@
         line-height: 64px !important;
     }
 
-    .allRows {
+    .allRows {}
 
-    }
+    .firstRow {}
 
-    .firstRow {
+    .secondRow {}
 
-    }
+    .thirdRow {}
 
-    .secondRow {
+    #hexagon {}
 
-    }
+    #hexagonImages {}
 
-    .thirdRow {
+    .hexagonContainer {}
 
-    }
-
-    #hexagon {
-
-    }
-
-    #hexagonImages {
-
-    }
-
-    .hexagonContainer {
-
-    }
-
-    .blockChainIconsLine{
+    .blockChainIconsLine {
         justify-content: center;
     }
-    .blockChainIcons{
+
+    .blockChainIcons {
         display: flex;
         flex-direction: column;
         float: inline-start;
         width: 100%;
         height: 340px;
+    }
+
+    .acordionComponentContainer {
+        gap: 20px !important;
+    }
+
+    .blockChainnetworkContainer h1 {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 60px;
+        letter-spacing: 0px;
+        text-align: left;
+    }
+    .techArsenalContainer h1 {
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 60px;
+        letter-spacing: 0px;
+        text-align: left;
     }
 }
 
@@ -423,6 +449,7 @@
         padding: 20px 10px;
         margin-top: 30px;
         box-shadow: 0px 14px 24px 0px rgba(0, 0, 0, 0.04) inset;
+        width: 100% !important;
     }
 
     .accordion-par {
@@ -518,10 +545,11 @@
         margin-top: 20px !important;
     }
 
-        .blockChainIconsLine{
+    .blockChainIconsLine {
         justify-content: center;
     }
-    .blockChainIcons{
+
+    .blockChainIcons {
         display: flex;
         flex-direction: column;
         float: inline-start;
@@ -535,7 +563,7 @@
         filter: saturate(0);
         transition: 0.3s ease-in-out;
     }
-    
+
     .blockChainIconsLine img:hover {
         filter: saturate(1);
         width: 152.386px;
@@ -544,8 +572,13 @@
         cursor: pointer;
     }
 
-    .blockChainnetworkContainer h1{font-size: 40px;}
-    .techArsenalContainer h1{font-size: 40px;}
+    .blockChainnetworkContainer h1 {
+        font-size: 40px;
+    }
+
+    .techArsenalContainer h1 {
+        font-size: 40px;
+    }
 
     .techArsenalContainer {
         display: flex;
@@ -554,20 +587,21 @@
         width: 80%;
         justify-content: center;
     }
-    
+
     .techArsenalContainer h1 {
         font-size: 40px;
     }
-    
+
     .techArsenalContainer span {
         color: #0071FB;
     }
+
     .techArsenalButtonContainer div:nth-child(4),
     .techArsenalButtonContainer div:nth-child(5),
     .techArsenalButtonContainer div:nth-child(6) {
-      display: none;
+        display: none;
     }
-    
+
     .techArsenalButtonContainer {
         display: flex;
         cursor: pointer;
@@ -576,7 +610,7 @@
         justify-content: center;
         margin-bottom: 60px;
     }
-    
+
     .techArsenalButton {
         display: flex;
         width: 30%;
@@ -585,10 +619,11 @@
         margin-right: 10px;
         justify-content: center;
     }
-    .techArsenalButton img{
+
+    .techArsenalButton img {
         width: 20px;
     }
-    
+
     .techArsenalButton button {
         margin-left: 2px;
         font-size: 18px;
@@ -599,33 +634,33 @@
         border-width: 5px;
         transition: 0.8s ease-in-out;
     }
-    
+
     .techArsenalButton button:hover {
         transition: 0.2s ease-in-out;
         border-color: #0071FB;
     }
-    
+
     .arsenalChangeComponent {
         display: flex;
     }
-    
+
     .ArsenalMiniComponent {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
         width: 85%;
     }
-    
+
     .ArsenalMiniComponentDEV {
         width: 95%;
     }
-    
+
     .mainArsenalChangeComp {
         display: flex;
         justify-content: space-around;
         width: 100%;
     }
-    
+
     .mainArsenalChangeComp img {
         width: 116px;
         height: 64px;

@@ -41,7 +41,7 @@ function SmartContractSolutions() {
           <Image alt="accordion down" src={accordionDown} />
         )}
       </div>
-
+      <div className="accordionIndex">
       {array2.map((item, index) => {
         if (index % 2 === 0) {
           return (
@@ -53,6 +53,7 @@ function SmartContractSolutions() {
           );
         }
       })}
+    </div>
     </div>
   );
 }
