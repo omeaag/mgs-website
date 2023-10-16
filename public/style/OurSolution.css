@@ -12,19 +12,21 @@
     flex-direction: column;
     padding: 20px;
     padding-right: 20;
-    margin-bottom: 50px;
+
 }
 
 .OurSolitionContainer .titleContainer {
+    margin: 100px 0px;
     display: flex;
     align-items: center;
 }
 
 .titleContainer .OurSolutionTitle {
-    font-size: 4.375rem;
+    font-size: 65px;
     font-weight: 500;
-    margin-bottom: 40px;
-    margin-left: 40px;
+    line-height: 78px;
+    letter-spacing: 0px;
+    text-align: center;
 }
 
 .OurSolutionTitle span {
@@ -37,33 +39,27 @@
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 5px;
-    background: linear-gradient(
-        to right,
-        rgb(109, 9, 121),
-        rgba(230, 88, 223, 0.5),
-        magenta,
-        rgba(197, 27, 197, 0.5),
-        rgba(0, 113, 251, 1)
-    );
-    background-size: 1200% 100%;
-    animation: animate 30s linear infinite;
-    transform: translateY(-1000%);
+    background: rgba(225, 225, 225, 1);
 }
 
 @keyframes animate {
     0% {
         background-position: 150%;
     }
+
     95% {
         background-position: -150%;
     }
+
     100% {
         background-position: -150%;
     }
 }
+
 .OurSolutionText {
     padding: 0 20px 0 20px;
 }
+
 .OurSolutionText .cardContainer {
     display: flex;
     align-items: center;
@@ -134,8 +130,8 @@
         margin: 0 20px;
         padding: 0;
     }
-    
-    .OurSolutionText .textContainer{
+
+    .OurSolutionText .textContainer {
         flex-direction: row;
     }
 
@@ -165,6 +161,7 @@
     .textContainer {
         min-height: 600px;
     }
+
     .textContainer div {
         width: 50%;
     }
@@ -197,7 +194,7 @@
         height: 100%;
     }
 
-    .OurSolutionText{
+    .OurSolutionText {
         padding: 0;
     }
 
@@ -222,6 +219,7 @@
         justify-content: space-around;
         width: 100%;
     }
+
     .OurSolutionText .card img,
     .OurSolutionText .card h2 {
         display: none;
@@ -231,6 +229,7 @@
         font-size: 18px;
         margin: 0;
     }
+
     .card img.showImg,
     .card h2.blackHeader {
         display: block;
@@ -280,6 +279,7 @@
     .textContainer .paginationButtons {
         display: none;
     }
+
     .textContainer .paginationButtons button {
         width: 10px;
         height: 10px;
@@ -287,6 +287,7 @@
         border-radius: 50%;
         margin-right: 20px;
     }
+
     .textContainer .paginationButtons button.blueBtn {
         width: 15px;
         height: 15px;

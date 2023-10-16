@@ -129,11 +129,7 @@ function OurPortfolio() {
         <h1>
           Our <span>Portfolio</span>
         </h1>
-        <Image
-          alt='Line'
-          id=''
-          src={Line}
-        />
+        <div className='line'></div>
       </div>
       <p className='headerContainerp'>
         An analysis of the Blockchain marketplace in 2021 by Markets and Markets found the

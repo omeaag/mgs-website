@@ -66,22 +66,11 @@ export default function Header() {
                 </div>
             )}
             <div className={`HeaderIcons open`}>
-                <Image
-                    src={notionIcon}
-                    alt='notion-icon'
-                />
-                <Image
-                    src={githubIcon}
-                    alt='github-icon'
-                />
-                <Image
-                    src={twitterIcon}
-                    alt='twitter-icon'
-                />
-                <Image
-                    src={linkedinIcon}
-                    alt='linkedin-icon'
-                />
+                <Link href="https://moodglobalservices.notion.site/Mood-Global-Services-Portfolio-203bce8c178b4b6aa6cabeb6309d18f8"><Image src={notionIcon} alt="notion-logo" /></Link>
+                <Link href="https://github.com/orgs/Mood-Global-Services/repositories"><Image src={githubIcon} alt="github-logo" /></Link>
+                <Link href="https://twitter.com/MoodServices"><Image src={twitterIcon} alt="twitter-logo" /></Link>
+                <Link href="https://www.linkedin.com/company/mood-global-services/"><Image src={linkedinIcon} alt="linkedin-logo" /></Link>
+                <Link href="https://www.instagram.com/moodglobalservices/"><Image id="instaIcon" src={instaIcon} alt="insta-logo" /></Link>
             </div>
         </div>
     );

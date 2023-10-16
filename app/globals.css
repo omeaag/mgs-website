@@ -27,6 +27,7 @@ body {}
 }
 
 
+
 .Navbar {
   display: flex;
   gap: 2.5rem;
@@ -258,6 +259,12 @@ margin-top: 10px;
   .MobileDropdownMenu+.HeaderIcons img {
     width: 2rem;
     margin-right: 1rem;
+  }
+
+  #instaIcon{
+    width: 17px !important;
+    height: 17px !important;
+    background-color: pink;
   }
 
   .footerMain {
