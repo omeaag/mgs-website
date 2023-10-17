@@ -197,7 +197,7 @@
 
 
 
-*/ .tLeftService h4:hover {
+.tLeftService h4:hover {
     transform: translateX(1rem);
     color: rgb(155, 255, 28);
     transition: 0.5s ease;
