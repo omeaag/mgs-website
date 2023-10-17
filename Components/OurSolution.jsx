@@ -2,12 +2,12 @@
 import React, {useState, useEffect} from 'react';
 import '@/public/style/OurSolution.css';
 import Image from 'next/image';
-import frame_1 from '../public/materials/Frame.png';
-import frame_3 from '../public/materials/Frame_2.png';
-import frame_2 from '../public/materials/Frame_3.png';
-import frame_4 from '../public/materials/Frame_4.png';
-import cube from '../public/materials/Group33.png';
-import Bluecube from '../public/materials/Group32.png';
+import frame_1 from '../public/materials/Frame.svg';
+import frame_3 from '../public/materials/Frame_2.svg';
+import frame_2 from '../public/materials/Frame_3.svg';
+import frame_4 from '../public/materials/Frame_4.svg';
+import cube from '../public/materials/Group33.svg';
+import Bluecube from '../public/materials/Group32.svg';
 
 
 const OurSolution = () => {

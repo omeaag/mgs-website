@@ -205,7 +205,7 @@ const Partnership = () => {
                     </div>
                 </div>
             </div>
-            <div className='textContainer' style={{ margin: "auto" }}>
+            <div className='textContainer'>
                 <h2>Collaborators and <br /> Partnerships</h2>
                 <h1>Developing <br /> With The Best</h1>
             </div>

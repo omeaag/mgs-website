@@ -12,6 +12,7 @@
     height: 100%;
     background-color: rgba(0, 113, 251, 1);
     border-radius: 1.2rem;
+    margin-top: 120px;
 }
 
 .blueContentContainer {
@@ -33,25 +34,34 @@
 }
 
 .headServiceText h1 {
-    font-size: 4.375rem;
+    font-size: 65px;
     font-weight: bold;
+    margin: 100px 0 50px 0;
 }
+
 .headServiceText h6 {
     font-size: 1.5rem;
     font-weight: lighter;
 }
+
 .serviceBoxContainer {
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     gap: 20px;
-    padding-bottom:150px ;
+    padding-bottom: 150px;
 }
 
 .serviceBoxContainer h4,
 .serviceBoxContainer h3 {
-    font-size: 1.8rem;
+    font-size: 30px;
+    margin: 0.7rem 0rem;
+    transition: 0.7s ease;
+}
+
+.serviceBoxContainer h3 {
+    font-size: 36px;
     margin: 0.7rem 0rem;
     transition: 0.7s ease;
 }
@@ -79,17 +89,34 @@
     border-radius: 20px;
 }
 
+.textImageCont {
+    display: flex;
+    position: relative;
+}
+
+.textImageCont img {
+    margin: 7px;
+    display: none;
+}
+
+.textImageCont:hover img {
+    display: block;
+    transition: 0.5s ease;
+}
+
+
 .tLeftService button,
 .bLeftService button,
 .tRightService button,
 .bRightService button {
     color: rgba(240, 248, 255, 0);
-    height: 0.35rem;
+    height: 4px;
     width: 35rem;
     border-radius: 6rem;
-    transition: 1s ease;
+    transition: 1s ease-in-out;
     background-size: 300% 100%;
 }
+
 .tLeftService button {
     background-image: linear-gradient(to right, black, rgb(155, 255, 28));
 }
@@ -121,7 +148,7 @@
 }
 
 .bRightService button {
-    background-image: linear-gradient(to right, black, rgb(0, 240, 255));
+    background-image: linear-gradient(to left, black, rgb(0, 240, 255));
 }
 
 .bRightService:hover button {
@@ -131,28 +158,28 @@
 }
 
 .tLeftService h4:hover {
-    transform: translateX(3rem);
+    transform: translateX(1rem);
     color: rgb(155, 255, 28);
     transition: 0.5s ease;
     cursor: default;
 }
 
 .tRightService h4:hover {
-    transform: translateX(3rem);
+    transform: translateX(1rem);
     color: rgb(255, 199, 0);
     transition: 0.5s ease;
     cursor: default;
 }
 
 .bLeftService h4:hover {
-    transform: translateX(3rem);
+    transform: translateX(1rem);
     color: rgb(90, 192, 157);
     transition: 0.5s ease;
     cursor: default;
 }
 
 .bRightService h4:hover {
-    transform: translateX(3rem);
+    transform: translateX(1rem);
     color: rgb(0, 240, 255);
     transition: 0.5s ease;
     cursor: default;
@@ -165,6 +192,7 @@
     .mainServiceContainer {
         height: 100%;
     }
+
     .blueServiceContainer {
         border-radius: 40px;
     }
@@ -179,6 +207,7 @@
     br {
         display: none;
     }
+
     .headServiceText h6 {
         font-size: 22px;
         line-height: 36px;
@@ -211,14 +240,17 @@
         margin: 0;
         padding: 30px;
     }
-   .serviceBoxContainer h3 {
+
+    .serviceBoxContainer h3 {
         font-size: 30px;
         line-height: 60px;
     }
+
     .serviceBoxContainer h4 {
         font-size: 25px;
         line-height: 33px;
     }
+
     .tLeftService button,
     .bLeftService button,
     .tRightService button,
@@ -232,6 +264,7 @@
     .mainServiceContainer {
         height: 100%;
     }
+
     .blueServiceContainer {
         border-radius: 40px;
     }
@@ -247,6 +280,7 @@
     br {
         display: none;
     }
+
     .headServiceText h6 {
         text-align: justify;
         font-size: 16px;
@@ -280,10 +314,12 @@
         margin: 0;
         padding: 15px;
     }
-   .serviceBoxContainer h3 {
+
+    .serviceBoxContainer h3 {
         font-size: 30px;
         line-height: 90px;
     }
+
     .serviceBoxContainer h4 {
         font-size: 25px;
         line-height: 33px;

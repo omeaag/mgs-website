@@ -3,12 +3,22 @@
     margin: auto;
     display: flex;
     justify-content: start;
+    margin: 100px 0 30px 0;
+    align-items: center;
 }
 
-
+.line {
+    flex-grow: 1;
+    height: 2px;
+    margin-left: 50px;
+    margin-right: 20px;
+    border-radius: 5px;
+    background: rgba(225, 225, 225, 1);
+    text-align: center;
+}
 
 .headerContainer-5 h1 {
-    width: 30%;
+
     height: 90px;
     font-family: MonumentExtended;
     font-size: 4.375rem;
@@ -69,7 +79,6 @@
     line-height: 78px;
     letter-spacing: 0px;
     text-align: center;
-    margin-bottom: 150px;
     justify-content: center;
     align-items: center;
 }
@@ -133,18 +142,21 @@
 
 .sliderContent p {
     font-family: MonumentExtended;
-    font-size: 27px;
+    font-size: 32px;
     font-weight: 400;
     line-height: 38px;
     letter-spacing: 0px;
     text-align: left;
-    color: rgba(0, 0, 0, 0.377);
+    color: rgba(26, 26, 26, 1);
+    opacity: 60%;
 }
 
 .slideLink {
     display: flex;
     gap: 10px;
-    color: rgba(0, 0, 0, 0.577) !important;
+    color: rgba(26, 26, 26, 1);
+    opacity: 60%;
+
 }
 
 .personContainer {
@@ -173,7 +185,11 @@
 }
 
 .personSlider p {
-    font-size: 28px;
+font-size: 26px;
+font-weight: 400;
+line-height: 50px;
+letter-spacing: 0px;
+
     font-family: MonumentExtended;
     text-align: center;
     width: 80%;
@@ -217,13 +233,13 @@
 }
 
 .ourPortfolioContainer {
-    padding-top: 150px;
     gap: 70px;
     position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 200px;
 }
 
 #iconamoon_settings {
@@ -261,7 +277,6 @@
 @media (min-width: 600px) and (max-width: 1024px) {
     .ourPortfolioContainer {
         margin: 30px 50px;
-        padding-top: 30px;
         gap: 55px;
     }
 

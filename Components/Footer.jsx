@@ -39,10 +39,10 @@ const Footer = () => {
             </div>
             <div className="hqFooter">
               <strong>HEADQUARTERS:</strong>
-              <h5>🇳🇱 Amsterdam, Netherlands</h5>
-              <h5>🇪🇺 KVK: 85502081</h5>
-              <h5>✉️ info@moodglobalservices.com</h5>
-              <h5>📞 +31-6-19565119</h5>
+              <h5>🇳🇱&nbsp; &nbsp;Amsterdam, Netherlands</h5>
+              <h5>🇪🇺&nbsp;&nbsp; KVK: 85502081</h5>
+              <h5>✉️&nbsp;&nbsp; info@moodglobalservices.com</h5>
+              <h5>📞&nbsp;&nbsp; +31-6-19565119</h5>
             </div>
           </div>
         </div>
