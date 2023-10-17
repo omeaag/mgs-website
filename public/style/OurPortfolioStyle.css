@@ -1,5 +1,5 @@
 .headerContainer-5 {
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: flex;
     justify-content: start;
@@ -39,7 +39,7 @@
 }
 
 .headerContainerp {
-    width: 90%;
+    width: 80%;
     margin: auto;
     text-align: center;
     font-family: MonumentExtended;
@@ -65,7 +65,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 240px;
     gap: 60px;
 }
 
@@ -91,7 +91,7 @@
 
 
 .galleryContainer {
-    width: 90%;
+    width: 85%;
     margin: auto;
     display: flex;
     align-items: center;
@@ -126,7 +126,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: start;
-    height: 400px;
+    height: 100%;
     border: 1px solid rgba(202, 220, 227, 1);
     border-radius: 7px;
 }
