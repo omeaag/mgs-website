@@ -142,18 +142,21 @@
 
 .sliderContent p {
     font-family: MonumentExtended;
-    font-size: 27px;
+    font-size: 32px;
     font-weight: 400;
     line-height: 38px;
     letter-spacing: 0px;
     text-align: left;
-    color: rgba(0, 0, 0, 0.377);
+    color: rgba(26, 26, 26, 1);
+    opacity: 60%;
 }
 
 .slideLink {
     display: flex;
     gap: 10px;
-    color: rgba(0, 0, 0, 0.577) !important;
+    color: rgba(26, 26, 26, 1);
+    opacity: 60%;
+
 }
 
 .personContainer {
@@ -182,7 +185,11 @@
 }
 
 .personSlider p {
-    font-size: 28px;
+font-size: 26px;
+font-weight: 400;
+line-height: 50px;
+letter-spacing: 0px;
+
     font-family: MonumentExtended;
     text-align: center;
     width: 80%;

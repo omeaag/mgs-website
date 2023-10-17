@@ -71,6 +71,7 @@ margin-top: 10px;
   margin-top: 4rem;
   display: flex;
   flex-direction: column;
+  gap: 10px;
   width: 80%;
   margin-left: 6rem;
   margin-bottom: 6rem;
@@ -121,7 +122,7 @@ margin-top: 10px;
 .rightFooter a,
 .rightFooter button,
 .leftFooter h6 {
-  opacity: 0.6;
+  color:rgba(90, 91, 94, 1)
 }
 
 .ecoFooter,

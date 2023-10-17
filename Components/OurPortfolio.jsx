@@ -17,6 +17,8 @@ import iconoir_dev_phone from "../public/materials/ourPortfolioImages/iconoir_de
 import iconamoon_settings from "../public/materials/ourPortfolioImages/iconamoon_settings-thin.svg";
 import streamline_interface from "../public/materials/ourPortfolioImages/streamline_interface-edit-magic-wand-design-magic-star-supplies-tool-wand.svg";
 import Line from "../public/materials/ourPortfolioImages/Line-Separation.svg";
+import LeftArrowBlue from "../public/materials/ourPortfolioImages/LeftArrowBlue.svg";
+import RightArrowBlue from "../public/materials/ourPortfolioImages/RightArrowBlue.svg";
 import LeftArrow from "../public/materials/ourPortfolioImages/Vector 14.svg";
 import RightArrow from "../public/materials/ourPortfolioImages/Vector 17.svg";
 import Heart from "../public/materials/ourPortfolioImages/Vector.svg";
@@ -80,6 +82,8 @@ function OurPortfolio() {
 
   const [slidesPerView, setSlidesPerView] = useState(2);
   const [slideGap, setSlideGap] = useState(24);
+  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide2, setCurrentSlide2] = useState(0);
 
   useEffect(() => {
     const updateWindowDimensions = () => {
@@ -99,31 +103,33 @@ function OurPortfolio() {
 
   return (
     <div className='ourPortfolioContainer'>
-      <Image
-        alt='iconoir_design'
-        id='iconoir_design'
-        src={iconoir_design}
-      />
-      <Image
-        alt='iconoir_dev_laptop'
-        id='iconoir_dev_laptop'
-        src={iconoir_dev_laptop}
-      />
-      <Image
-        alt='iconoir_dev_phone'
-        id='iconoir_dev_phone'
-        src={iconoir_dev_phone}
-      />
-      <Image
-        alt='iconamoon_settings'
-        id='iconamoon_settings'
-        src={iconamoon_settings}
-      />
-      <Image
-        alt='streamline_interface'
-        id='streamline_interface'
-        src={streamline_interface}
-      />
+      <div>
+        <Image
+          alt='iconoir_design'
+          id='iconoir_design'
+          src={iconoir_design}
+        />
+        <Image
+          alt='iconoir_dev_laptop'
+          id='iconoir_dev_laptop'
+          src={iconoir_dev_laptop}
+        />
+        <Image
+          alt='iconoir_dev_phone'
+          id='iconoir_dev_phone'
+          src={iconoir_dev_phone}
+        />
+        <Image
+          alt='iconamoon_settings'
+          id='iconamoon_settings'
+          src={iconamoon_settings}
+        />
+        <Image
+          alt='streamline_interface'
+          id='streamline_interface'
+          src={streamline_interface}
+        />
+      </div>
 
       <div className='headerContainer-5'>
         <h1>
@@ -139,11 +145,14 @@ function OurPortfolio() {
       </p>
       <div className='galleryContainer'>
         <button
-          onClick={goPrev1}
+          onClick={() => {
+            (currentSlide > 0 && setCurrentSlide(currentSlide - 1));
+            goPrev1()
+          }}
           className='prev-button'>
           <Image
-            src={LeftArrow}
-            alt='Sol Ok'
+            src={currentSlide ==!1 ? LeftArrow : LeftArrowBlue}
+            alt="Sol Ok"
             width={50}
             height={50}
           />
@@ -182,11 +191,14 @@ function OurPortfolio() {
           </SwiperSlide>
         </Swiper>
         <button
-          onClick={goNext1}
+          onClick={() => {
+            (currentSlide < 2 && setCurrentSlide(currentSlide + 1));
+            goNext1() 
+          }}
           className='next-button'>
           <Image
-            src={RightArrow}
-            alt='Sağ Ok'
+            src={currentSlide ==2 ? RightArrow : RightArrowBlue}
+            alt="Sag Ok"
             width={50}
             height={50}
           />
@@ -211,16 +223,19 @@ function OurPortfolio() {
         </div>
 
         <div className='personContainer'>
-          <button
-            onClick={goPrev}
-            className='prev-button'>
-            <Image
-              src={LeftArrow}
-              alt='Sol Ok'
-              width={100}
-              height={100}
-            />
-          </button>
+        <button
+          onClick={() => {
+            (currentSlide2 > 0 && setCurrentSlide2(currentSlide2 - 1));
+            goPrev()
+          }}
+          className='prev-button'>
+          <Image
+            src={currentSlide2 ==!1 ? LeftArrow : LeftArrowBlue}
+            alt="Sol Ok"
+            width={100}
+            height={100}
+          />
+        </button>
           <Swiper
             className='mySwiper'
             pagination={true}
@@ -245,16 +260,20 @@ function OurPortfolio() {
               </SwiperSlide>
             ))}
           </Swiper>
+
           <button
-            onClick={goNext}
-            className='next-button'>
-            <Image
-              src={RightArrow}
-              alt='Sağ Ok'
-              width={100}
-              height={100}
-            />
-          </button>
+          onClick={() => {
+            (currentSlide2 < 2 && setCurrentSlide2(currentSlide2 + 1));
+            goNext() 
+          }}
+          className='next-button'>
+          <Image
+            src={currentSlide2 ==2 ? RightArrow : RightArrowBlue}
+            alt="Sag Ok"
+            width={100}
+            height={100}
+          />
+        </button>
         </div>
         <div className="clutchContainer">
           <p>We are on trusted platforms</p>
