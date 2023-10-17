@@ -35,22 +35,13 @@
 
 .headServiceText h1 {
     font-size: 65px;
-    font-weight: 500;
-    line-height: 78px;
-    letter-spacing: 0px;
-    text-align: center;
+    font-weight: bold;
     margin: 100px 0 50px 0;
 }
 
 .headServiceText h6 {
-
-font-size: 22px;
-font-weight: 400;
-line-height: 50px;
-letter-spacing: 0px;
-text-align: center;
-width: 60%;
-margin: auto;
+    font-size: 1.5rem;
+    font-weight: lighter;
 }
 
 .serviceBoxContainer {
@@ -83,6 +74,18 @@ margin: auto;
     height: 50%;
 }
 
+.tLeftService{
+    border: 1px solid rgba(155, 255, 28, 1);
+}
+.bLeftService{
+    border: 1px solid rgba(185, 173, 255, 1);
+}
+.tRightService{
+    border: 1px solid rgba(255, 199, 0, 1);
+}
+.bRightService{
+    border: 1px solid rgba(0, 240, 255, 1);
+}
 .tLeftService,
 .bLeftService,
 .tRightService,
@@ -94,7 +97,6 @@ margin: auto;
     width: 100%;
     justify-content: space-between;
     padding: 40px 60px;
-    border: 1px solid rgba(155, 255, 28, 1);
     border-radius: 20px;
 }
 
@@ -114,59 +116,80 @@ margin: auto;
 }
 
 
-.tLeftService button,
-.bLeftService button,
-.tRightService button,
-.bRightService button {
-    color: rgba(240, 248, 255, 0);
-    height: 4px;
-    width: 35rem;
-    border-radius: 6rem;
-    transition: 1s ease-in-out;
-    background-size: 300% 100%;
-}
 
-.tLeftService button {
-    background-image: linear-gradient(to right, black, rgb(155, 255, 28));
+
+.lineClass1,
+.lineClass2,
+.lineClass3,
+.lineClass4 {
+    width: 35rem;
+    background-color: rgba(22, 103, 202, 1);
+    height: 4px;
+    border-radius: 50px;
 }
 
 .tLeftService:hover button {
-    background-position: right;
-    transition: 0.5s ease;
-    cursor: default;
-}
-
-.tRightService button {
-    background-image: linear-gradient(to right, black, rgb(255, 199, 0));
-}
-
-.tRightService:hover button {
-    background-position: right;
-    transition: 0.5s ease;
-    cursor: default;
-}
-
-.bLeftService button {
-    background-image: linear-gradient(to right, black, rgb(90, 192, 157));
+    width: 35rem;
 }
 
 .bLeftService:hover button {
-    background-position: right;
-    transition: 0.5s ease;
-    cursor: default;
+    width: 35rem;
 }
-
-.bRightService button {
-    background-image: linear-gradient(to left, black, rgb(0, 240, 255));
+.tRightService:hover button {
+    width: 35rem;
 }
-
 .bRightService:hover button {
-    background-position: right;
-    transition: 0.5s ease;
-    cursor: default;
+    width: 35rem;
 }
 
-.tLeftService h4:hover {
+.lineClass1 button {
+    width: 0px;
+    background-color: rgba(155, 255, 28, 1);
+    ;
+    height: 4px;
+    border-radius: 50px;
+    color: rgba(0, 113, 251, 0);
+    transition: 0.5s ease;
+}
+
+.lineClass2 button {
+    width: 0px;
+    background-color: rgba(185, 173, 255, 1);
+    height: 4px;
+    border-radius: 50px;
+    color: rgba(0, 113, 251, 0);
+    transition: 0.5s ease;
+}
+.lineClass3 button {
+    width: 0px;
+    background-color: rgba(255, 199, 0, 1);
+    height: 4px;
+    border-radius: 50px;
+    color: rgba(0, 113, 251, 0);
+    transition: 0.5s ease;
+}
+.lineClass4 button {
+    width: 0px;
+    background-color: rgba(0, 240, 255, 1);
+    height: 4px;
+    border-radius: 50px;
+    color: rgba(0, 113, 251, 0);
+    transition: 0.5s ease;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+*/ .tLeftService h4:hover {
     transform: translateX(1rem);
     color: rgb(155, 255, 28);
     transition: 0.5s ease;

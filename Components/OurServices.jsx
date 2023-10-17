@@ -14,7 +14,7 @@ const OurServices = () => {
                     <div className="headServiceText">
                         <h1>Our Services</h1>
                         <h6>Mood Global Services offers a range of services to help your business thrive in the digital age.
-                            From comprehensive consulting to smart contract creation, mobile app development, and software development for
+                            From <br />comprehensive consulting to smart contract creation, mobile app development, and software development for <br />
                             Web 2.0 and 3.0, we're your partners in the digital transformation
                             journey.</h6>
                     </div>
@@ -22,7 +22,9 @@ const OurServices = () => {
                         <div className="serviceTContainer">
                             <div className="tLeftService">
                                 <h3>Consulting</h3>
-                                <button>.</button>
+                                <div className="lineClass1">
+                                    <button>'</button>
+                                </div>
                                 <div className="textImageCont">
                                     <Image src={greenHere}></Image>
                                     <h4>MicaR Compliance 🇪🇺</h4>
@@ -38,7 +40,9 @@ const OurServices = () => {
                             </div>
                             <div className="bLeftService">
                                 <h3>Audit Smart Contracts</h3>
-                                <button>.</button>
+                                <div className="lineClass2">
+                                    <button>'</button>
+                                </div>
                                 <div className="textImageCont">
                                     <Image src={aquaHere}></Image>
                                     <h4>Security Audit</h4>
@@ -56,7 +60,9 @@ const OurServices = () => {
                         <div className="serviceBContainer">
                             <div className="tRightService">
                                 <h3>Smart Contracts Solution</h3>
-                                <button>.</button>
+                                <div className="lineClass3">
+                                    <button>'</button>
+                                </div>
                                 <div className="textImageCont">
                                     <Image src={orangeHere}></Image>
                                     <h4>ERC-Model Components</h4>
@@ -68,7 +74,10 @@ const OurServices = () => {
                             </div>
                             <div className="bRightService">
                                 <h3>Development</h3>
-                                <button>.</button><div className="textImageCont">
+                                <div className="lineClass4">
+                                    <button>'</button>
+                                </div>
+                                <div className="textImageCont">
                                     <Image src={turkuazHere}></Image>
                                     <h4>Cloud & Database Management</h4>
                                 </div>
