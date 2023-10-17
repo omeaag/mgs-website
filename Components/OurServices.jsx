@@ -14,7 +14,7 @@ const OurServices = () => {
                     <div className="headServiceText">
                         <h1>Our Services</h1>
                         <h6>Mood Global Services offers a range of services to help your business thrive in the digital age.
-                            From <br />comprehensive consulting to smart contract creation, mobile app development, and software development for <br />
+                            From comprehensive consulting to smart contract creation, mobile app development, and software development for
                             Web 2.0 and 3.0, we're your partners in the digital transformation
                             journey.</h6>
                     </div>
@@ -23,7 +23,7 @@ const OurServices = () => {
                             <div className="tLeftService">
                                 <h3>Consulting</h3>
                                 <div className="lineClass1">
-                                    <button>'</button>
+                                    <button>.</button>
                                 </div>
                                 <div className="textImageCont">
                                     <Image src={greenHere}></Image>
@@ -41,7 +41,7 @@ const OurServices = () => {
                             <div className="bLeftService">
                                 <h3>Audit Smart Contracts</h3>
                                 <div className="lineClass2">
-                                    <button>'</button>
+                                    <button>.</button>
                                 </div>
                                 <div className="textImageCont">
                                     <Image src={aquaHere}></Image>
@@ -61,7 +61,7 @@ const OurServices = () => {
                             <div className="tRightService">
                                 <h3>Smart Contracts Solution</h3>
                                 <div className="lineClass3">
-                                    <button>'</button>
+                                    <button>.</button>
                                 </div>
                                 <div className="textImageCont">
                                     <Image src={orangeHere}></Image>
@@ -75,7 +75,7 @@ const OurServices = () => {
                             <div className="bRightService">
                                 <h3>Development</h3>
                                 <div className="lineClass4">
-                                    <button>'</button>
+                                    <button>.</button>
                                 </div>
                                 <div className="textImageCont">
                                     <Image src={turkuazHere}></Image>
