@@ -27,10 +27,19 @@ body {}
 }
 
 
-
+#mgsLogo{
+  width: 139px;
+}
 .Navbar {
   display: flex;
   gap: 2.5rem;
+}
+
+.Navbar a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 22px;
+  letter-spacing: 0em;
 }
 
 .HeaderIcons {
@@ -46,8 +55,8 @@ body {}
   display: none;
 }
 
-.dropdownContainer .leftFooter{
-margin-top: 10px;
+.dropdownContainer .leftFooter {
+  margin-top: 10px;
 }
 
 
@@ -122,7 +131,7 @@ margin-top: 10px;
 .rightFooter a,
 .rightFooter button,
 .leftFooter h6 {
-  color:rgba(90, 91, 94, 1)
+  color: rgba(90, 91, 94, 1)
 }
 
 .ecoFooter,
@@ -237,7 +246,7 @@ margin-top: 10px;
     width: 100%;
     height: 100vh;
     flex-direction: column;
-    }
+  }
 
   .MobileDropdownMenu {
     display: flex;
@@ -262,7 +271,7 @@ margin-top: 10px;
     margin-right: 1rem;
   }
 
-  #instaIcon{
+  #instaIcon {
     width: 17px !important;
     height: 17px !important;
     background-color: pink;

@@ -6,13 +6,10 @@
 }
 
 .OurSolitionContainer {
-    width: 90%;
+    width: 80%;
     margin: auto;
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    padding-right: 20;
-
 }
 
 .OurSolitionContainer .titleContainer {
@@ -56,9 +53,7 @@
     }
 }
 
-.OurSolutionText {
-    padding: 0 20px 0 20px;
-}
+
 
 .OurSolutionText .cardContainer {
     display: flex;
@@ -87,10 +82,10 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-right: 30px;
 }
 
 .OurSolutionText .textContainer img {
-    max-height: 350px;
     width: 100%;
     object-fit: cover;
 }
@@ -102,6 +97,9 @@
 .OurSolutionText .textContainer {
     height: 100%;
     width: 100%;
+    margin: 0;;
+    gap: 140px;
+    padding-bottom: 100px;
 }
 
 .OurSolutionText .textContainer {
