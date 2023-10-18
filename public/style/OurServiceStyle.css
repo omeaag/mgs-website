@@ -285,7 +285,7 @@
 /* --------------------  PHONE BREAKPOINT --------------------  */
 @media (max-width: 599px) {
     .mainServiceContainer {
-        height: 100%;
+
     }
 
     .blueServiceContainer {
@@ -352,10 +352,5 @@ text-align: left;
 
     }
 
-    .tLeftService button,
-    .bLeftService button,
-    .tRightService button,
-    .bRightService button {
-        width: 100%;
-    }
+
 }

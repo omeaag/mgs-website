@@ -119,6 +119,7 @@ const OurSolution = () => {
                     <div>
                         <Image src={divList[currentIndex].image}></Image>
                     </div>
+                </div>
                     <div className='paginationButtons'>
                         <button
                             onClick={() => handleImageClick(0)}
@@ -133,7 +134,6 @@ const OurSolution = () => {
                             onClick={() => handleImageClick(3)}
                             className={`${currentIndex === 3 ? 'blueBtn' : ''}`}></button>
                     </div>
-                </div>
             </div>
         </div>
     );
