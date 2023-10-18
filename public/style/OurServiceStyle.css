@@ -123,31 +123,28 @@
     transition: 0.5s ease;
 }
 
-
-
-
 .lineClass1,
 .lineClass2,
 .lineClass3,
 .lineClass4 {
-    width: 35rem;
+    width: 100%;
     background-color: rgba(22, 103, 202, 1);
     height: 4px;
     border-radius: 50px;
 }
 
 .tLeftService:hover button {
-    width: 35rem;
+    width: 100%;
 }
 
 .bLeftService:hover button {
-    width: 35rem;
+    width: 100%;
 }
 .tRightService:hover button {
-    width: 35rem;
+    width: 100%;
 }
 .bRightService:hover button {
-    width: 35rem;
+    width: 100%;
 }
 
 .lineClass1 button {
@@ -184,18 +181,6 @@
     color: rgba(0, 113, 251, 0);
     transition: 0.5s ease;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 .tLeftService h4:hover {
     transform: translateX(1rem);
@@ -265,8 +250,6 @@
         gap: 20px;
     }
 
-
-
     .serviceTContainer,
     .serviceBContainer {
         width: 100%;
@@ -316,17 +299,17 @@
         margin-top: 50px;
     }
 
-
     br {
         display: none;
     }
 
     .headServiceText h6 {
-        text-align: justify;
+        text-align: center;
         font-size: 16px;
         line-height: 36px;
         margin-top: 20px;
         padding: 0 10px;
+        width: 93%;
     }
 
     .serviceBoxContainer h3 {
@@ -350,8 +333,8 @@
     .tRightService,
     .bLeftService,
     .bRightService {
-        width: 100%;
-        margin: 0;
+        width: 93%;
+        margin: auto;
         padding: 15px;
     }
 
@@ -361,8 +344,12 @@
     }
 
     .serviceBoxContainer h4 {
-        font-size: 25px;
-        line-height: 33px;
+font-size: 28px;
+font-weight: 500;
+line-height: 34px;
+letter-spacing: 0px;
+text-align: left;
+
     }
 
     .tLeftService button,

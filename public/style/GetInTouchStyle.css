@@ -167,11 +167,10 @@
 @media (max-width: 599px) {
     .partnershipAllContainer {
         flex-direction: column;
-        padding: 20px;
         margin: 60px 0;
-        margin-bottom: 80px;
-        padding: 50px;
+        padding: 0px;
         max-height: 996px;
+        padding-top: 50px;
     }
 
     .getInTouchContainer {
@@ -183,16 +182,20 @@
         font-size: 30px;
         line-height: 36px;
         margin-bottom: 20px;
+        width: 88%;
+        margin: auto;
     }
 
     .getInTouchContainer h3 {
         font-size: 16px;
         line-height: 29px;
+        width: 87%;
+        margin: auto;
     }
 
     .formContainer {
         width: 100vw;
-        margin-top: 20px;
+        margin-top: 30px;
         box-sizing: border-box;
     }
 
