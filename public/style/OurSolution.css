@@ -98,7 +98,6 @@
     height: 100%;
     width: 100%;
     margin: 0;
-    ;
     gap: 140px;
     padding-bottom: 100px;
 }
@@ -256,7 +255,8 @@
         flex-direction: column-reverse;
         align-items: center;
         position: relative;
-        margin-bottom: 40px;
+        margin-bottom: 70px;
+        padding: 0;
     }
 
     .OurSolutionText .textContainer div {
@@ -286,11 +286,15 @@
         text-align: justify;
     }
 
-    .textContainer .paginationButtons {
-        display: none;
+    .paginationButtons {
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
     }
 
-    .textContainer .paginationButtons button {
+    .paginationButtons button {
         width: 10px;
         height: 10px;
         background-color: #d9d9d9;
@@ -298,7 +302,7 @@
         margin-right: 20px;
     }
 
-    .textContainer .paginationButtons button.blueBtn {
+    .paginationButtons button.blueBtn {
         width: 15px;
         height: 15px;
         background-color: #0071fb;
