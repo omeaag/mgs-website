@@ -477,6 +477,7 @@ letter-spacing: 0px;
     .headerContainer-5 {
         width: 100%;
         margin-top: 60px;
+        margin-bottom: 0;
     }
 
     .headerContainer-5 h1 {
@@ -563,7 +564,7 @@ letter-spacing: 0px;
     #iconamoon_settings {
         position: absolute;
         top: 700px;
-        left: 50px;
+        left: 15px;
         width: 35px;
         height: 35px;
     }
@@ -572,7 +573,7 @@ letter-spacing: 0px;
         position: absolute;
         top: 920px;
         left: unset;
-        right: 50px;
+        right: 15px;
         width: 35px;
         height: 35px;
     }
@@ -581,7 +582,7 @@ letter-spacing: 0px;
         position: absolute;
         top: 1200px;
         right: unset;
-        left: 50px;
+        left: 15px;
         width: 35px;
         height: 35px;
     }
@@ -589,7 +590,7 @@ letter-spacing: 0px;
     #iconoir_dev_phone {
         position: absolute;
         top: 720px;
-        left: 300px;
+        left: 335px;
         width: 35px;
         height: 35px;
     }
