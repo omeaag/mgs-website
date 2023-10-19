@@ -16,8 +16,6 @@
   font-style: normal;
 }
 
-body {}
-
 /* 0 - Header */
 .HeaderContainer {
   margin-top: 3.5rem;
@@ -44,6 +42,7 @@ body {}
 
 .HeaderIcons {
   display: flex;
+  align-items: center;
   gap: 1.25rem;
 }
 
@@ -96,18 +95,24 @@ body {}
 }
 
 .footerSocialIcons {
-  width: 25%;
+  width: 30%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 3rem;
   margin-bottom: 0.5rem;
+  align-items: center;
 }
 
 .footerSocialIcons img {
   display: flex;
   flex-direction: column;
   height: 100%;
+}
+
+
+#instaIcon {
+  width: 25px;
 }
 
 .leftFooter h6 {
