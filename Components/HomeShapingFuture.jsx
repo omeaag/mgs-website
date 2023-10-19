@@ -1,4 +1,5 @@
-import {useEffect, useState} from 'react';
+"use client"
+import { useEffect, useState } from 'react';
 import '../public/style/HomeShaping.css';
 import styled from 'styled-components';
 import {useTransition, animated} from 'react-spring';
@@ -9,7 +10,7 @@ const SlotMachineWrapper = styled.div`
 `;
 
 const WordWrapper = styled(animated.div)`
-    margin: 0 10px;
+    margin: 0 0px;
 `;
 const words = ['Blockchain.', 'Development.', 'Technology.', 'Design.'];
 
