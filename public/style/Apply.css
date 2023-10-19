@@ -6,6 +6,7 @@
     width: 100%;
     margin-bottom: 50px;
 }
+
 .applyContainer .applyHeader {
     display: flex;
     flex-direction: column;
@@ -13,8 +14,10 @@
     justify-content: center;
     background-image: url(../materials/HomeShapingBackground.svg);
     background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
     width: 100%;
-    padding: 150px;
+    padding: 150px 150px 100px 150px;
 }
 
 .applyContainer .applyHeader h1 {
@@ -35,10 +38,12 @@
     font-size: 26px;
     line-height: 50px;
 }
+
 .applyContainer .applyHeader .mobilViewInfo span {
     font-size: 30px;
     font-weight: 600;
 }
+
 .applyContainer .mobilViewText {
     padding: 60px 150px;
 }
@@ -66,6 +71,7 @@
     text-decoration: underline;
     font-weight: 600;
 }
+
 .applyContainer .applyQualifications p {
     font-size: 20px;
     line-height: 36px;
@@ -82,12 +88,14 @@
     line-height: 40px;
 }
 
-.applyContainer .applyQualifications span{
-font-weight: 600;
+.applyContainer .applyQualifications span {
+    font-weight: 600;
 }
-.applyFormContainer{
-  width: 100%;
+
+.applyFormContainer {
+    width: 100%;
 }
+
 .applyFormContainer form {
     display: flex;
     flex-direction: column;
@@ -96,14 +104,14 @@ font-weight: 600;
     padding: 50px 150px;
 }
 
-.applyFormContainer form > h1 {
+.applyFormContainer form>h1 {
     font-size: 50px;
     line-height: 60px;
     font-weight: 700;
     color: #0071fb;
 }
 
-.applyFormContainer form > div {
+.applyFormContainer form>div {
     width: 100%;
 }
 
@@ -115,16 +123,22 @@ font-weight: 600;
     margin-bottom: 15px;
 }
 
+.applyFormContainer input::placeholder,
+.applyFormContainer select option:first-child {
+    color: rgb(130, 130, 130);
+}
+
 .applyFormContainer .nameInputs input {
     width: calc(33% - 8px);
     height: 60px;
     margin-right: 15px;
-    border: 1px solid #bdbdbd;
+    border: 1px solid rgba(189, 189, 189, 1);
     border-radius: 5px;
     padding: 15px;
     margin-bottom: 50px;
     font-size: 15px;
 }
+
 .applyFormContainer .nameInputs #last_name {
     margin-right: 0;
 }
@@ -159,7 +173,7 @@ font-weight: 600;
 }
 
 .applyFormContainer .birthdayInputs select:has(option[value='']:checked) {
-    color: #bdbdbd;
+    color: rgb(130, 130, 130);
 }
 
 .applyFormContainer .adressInputs input {
@@ -320,23 +334,19 @@ font-weight: 600;
     color: #fff;
     padding: 30px, 110px, 30px, 110px;
     border-radius: 100px;
-    background: linear-gradient(
-        90deg,
-        #1293bc -10.29%,
-        #0028fb 25.21%,
-        #6100ff 65.24%,
-        #0073ff 113.66%
-    );
+    background: linear-gradient(90deg,
+            #1293bc -10.29%,
+            #0028fb 25.21%,
+            #6100ff 65.24%,
+            #0073ff 113.66%);
 }
 
 .applyFormContainer form #applyBtn:hover {
-    background: linear-gradient(
-        90deg,
-        #6100ff -10.29%,
-        #0028fb 25.21%,
-        #0073ff 65.24%,
-        #1293bc 113.66%
-    );
+    background: linear-gradient(90deg,
+            #6100ff -10.29%,
+            #0028fb 25.21%,
+            #0073ff 65.24%,
+            #1293bc 113.66%);
     position: relative;
     bottom: 0.5px;
     right: 0.6px;
@@ -349,7 +359,7 @@ font-weight: 600;
         margin-top: 40px;
     }
 
-    .applyContainer .applyHeader > p {
+    .applyContainer .applyHeader>p {
         display: none;
     }
 
@@ -370,13 +380,11 @@ font-weight: 600;
         line-height: 43px;
         color: #fff;
         border-radius: 100px;
-        background: linear-gradient(
-            90deg,
-            #1293bc -10.29%,
-            #0028fb 25.21%,
-            #6100ff 65.24%,
-            #0073ff 113.66%
-        );
+        background: linear-gradient(90deg,
+                #1293bc -10.29%,
+                #0028fb 25.21%,
+                #6100ff 65.24%,
+                #0073ff 113.66%);
         width: 300.17px;
         height: 89px;
         padding: 23px, 110px, 23px, 110px;
@@ -400,7 +408,7 @@ font-weight: 600;
         line-height: 36px;
     }
 
-    .applyContainer .applyHeader > p {
+    .applyContainer .applyHeader>p {
         display: none;
     }
 
@@ -412,6 +420,7 @@ font-weight: 600;
         font-size: 26px;
         line-height: 50px;
     }
+
     .applyContainer .applyHeader .mobilViewInfo span {
         font-size: 30px;
         font-weight: 600;
@@ -420,6 +429,7 @@ font-weight: 600;
     .applyContainer .mobilViewText {
         display: block;
     }
+
     .applyContainer .mobilViewText p {
         margin: 30px auto;
         font-size: 18px;
@@ -445,7 +455,8 @@ font-weight: 600;
         width: 100%;
         padding: 0 auto;
     }
-    .applyFormContainer form > div {
+
+    .applyFormContainer form>div {
         margin-bottom: 10px;
         margin-top: 10px;
     }
@@ -476,6 +487,7 @@ font-weight: 600;
         width: 100%;
         margin-bottom: 20px;
     }
+
     .applyFormContainer .contactInputs div input {
         margin-bottom: 0;
     }
@@ -484,6 +496,7 @@ font-weight: 600;
         width: 100%;
         margin-bottom: 20px;
     }
+
     .applyFormContainer .questionInputs div select {
         margin-bottom: 0;
         background-size: 15px;
@@ -494,13 +507,11 @@ font-weight: 600;
         line-height: 19px;
         color: #fff;
         border-radius: 100px;
-        background: linear-gradient(
-            90deg,
-            #1293bc -10.29%,
-            #0028fb 25.21%,
-            #6100ff 65.24%,
-            #0073ff 113.66%
-        );
+        background: linear-gradient(90deg,
+                #1293bc -10.29%,
+                #0028fb 25.21%,
+                #6100ff 65.24%,
+                #0073ff 113.66%);
         width: 134px;
         height: 51px;
         padding: 16px, 30px, 16px, 30px;
