@@ -12,7 +12,7 @@ const SlotMachineWrapper = styled.div`
 const WordWrapper = styled(animated.div)`
     margin: 0 0px;
 `;
-const words = ['Blockchain.', 'Development.', 'Technology.', 'Design.'];
+const words = ['Blockchain.', 'Development', 'Technology', 'Design'];
 
 export default function HomeShapingFuture() {
  const [index, setIndex] = useState(0);
