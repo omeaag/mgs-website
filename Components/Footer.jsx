@@ -18,13 +18,13 @@ const Footer = () => {
             </h2>
             <div className="footerSocialIcons">
               <Link href="https://moodglobalservices.notion.site/Mood-Global-Services-Portfolio-203bce8c178b4b6aa6cabeb6309d18f8"><Image src={notionIcon} alt="notion-logo" /></Link>
+              <Link href="https://www.linkedin.com/company/mood-global-services/"><Image src={linkedinIcon} alt="linkedin-logo" /></Link>
               <Link href="https://github.com/orgs/Mood-Global-Services/repositories"><Image src={githubIcon} alt="github-logo" /></Link>
               <Link href="https://twitter.com/MoodServices"><Image src={twitterIcon} alt="twitter-logo" /></Link>
-              <Link href="https://www.linkedin.com/company/mood-global-services/"><Image src={linkedinIcon} alt="linkedin-logo" /></Link>
-              <Link href="https://www.instagram.com/moodglobalservices/"><Image src={instaIcon} alt="linkedin-logo" /></Link>
+              <Link href="https://www.instagram.com/moodglobalservices/"><Image id="instaIcon" src={instaIcon} alt="linkedin-logo" /></Link>
 
             </div>
-            <h6>©2023 Mood Global Services. All rights reserved.</h6>
+            <h6>©2023 Mood Global Services B.V. All rights reserved.</h6>
           </div>
           <div className="rightFooter">
             <div className="ecoFooter">
@@ -39,7 +39,7 @@ const Footer = () => {
             </div>
             <div className="hqFooter">
               <strong>HEADQUARTERS:</strong>
-              <h5>🇳🇱&nbsp; &nbsp;Amsterdam, Netherlands</h5>
+              <h5>🇳🇱&nbsp;&nbsp;Amsterdam, Netherlands</h5>
               <h5>🇪🇺&nbsp;&nbsp; KVK: 85502081</h5>
               <h5>✉️&nbsp;&nbsp; info@moodglobalservices.com</h5>
               <h5>📞&nbsp;&nbsp; +31-6-19565119</h5>
