@@ -9,7 +9,6 @@
   background-position: 100%;
   background-size: cover;
   width: 100%;
-  margin-top: 100px;
 }
 
 .serviceTextHeaderContainer {
@@ -50,10 +49,12 @@
 }
 
 
-/*Phone/ Mobile*/
-@media (max-width: 599px) {
-  .serviceTextHeaderContainer{
-
+/*Desktop*/
+@media only screen and (min-width: 1025px) {
+  #epArrow{
+    margin-top: -60px;
+    padding-bottom: 50px;
   }
 }
+
 

@@ -76,8 +76,8 @@ const techPartners = () => {
     return (
         <div className="techParentContainer">
             <div className="blockChainnetworkContainer">
-                <h1><span>Blockchain Network</span> we <br /></h1>
-                <h1>work with</h1>
+                <h1><span>Blockchain Network</span> We <br /></h1>
+                <h1>Support</h1>
                 <div className="blockChainIcons">
                     <div className="blockChainIconsLine">
                         <Image src={bitcoin}></Image>
