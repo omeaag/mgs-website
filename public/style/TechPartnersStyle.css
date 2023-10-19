@@ -18,7 +18,7 @@
     font-size: 65px;
     font-style: normal;
     font-weight: 500;
-    line-height: normal;
+    line-height: 1;
 }
 
 .blockChainnetworkContainer span {
@@ -41,16 +41,16 @@
 }
 
 .blockChainIconsLine img {
-    width: 215.386px;
-    height: 78px;
+    width: 200px;
+    height: 70px;
     filter: saturate(0);
     transition: 0.3s ease-in-out;
 }
 
 .blockChainIconsLine img:hover {
     filter: saturate(1);
-    width: 235.386px;
-    height: 88px;
+    width: 212.386px;
+    height: 77px;
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
@@ -92,6 +92,12 @@
     align-items: flex-start;
     margin-right: 10px;
     justify-content: center;
+}
+
+.techArsenalButton img {
+    width: 20px;
+    margin-top: 5px;
+    margin-right: 5px;
 }
 
 .techArsenalButton button {
@@ -159,7 +165,7 @@
 }
 
 .techSliderParentContainer {
-    margin: 100px 0px;
+    margin-top: 100px;
     height: 600px;
     display: flex;
     flex-direction: row;
