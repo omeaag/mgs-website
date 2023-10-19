@@ -1,8 +1,8 @@
 .MemberCardContainer {
   font-family: MonumentExtended;
   display: flex;
-  width: 80%;
-  gap: 3.5rem;
+  width: 90%;
+  justify-content: center;
   margin: 5.5rem auto 7rem auto;
   flex-wrap: wrap;
 }
@@ -12,6 +12,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 3.5rem;
 }
 
 .icons {
@@ -26,7 +27,7 @@
 }
 
 .memberName {
-  color: #51c3f6;
+  color: rgba(0, 113, 251, 1);
   margin-top: 1rem;
   font-size: 30px;
   font-weight: 500;

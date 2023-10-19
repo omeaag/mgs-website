@@ -79,10 +79,7 @@
   display: none;
 }
 
-.MemberCardContainer {
-  width: 100% !important;
-  gap: 4.6rem !important;
-}
+
 
 .MemberCardContainer .MemberCardComponent {
   width: calc(25% - 3.5rem);
