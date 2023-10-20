@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-function RightSection({ item, displayContent }) {
+function RightSection({ item, displayContent}) {
   return (
     <div
       className={`sectionContent ${

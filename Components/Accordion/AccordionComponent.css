@@ -77,6 +77,13 @@
   line-height: 63px;
   letter-spacing: 0px;
   text-align: left;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.accordion-title img{
+  width: 30px;
 }
 
 .accordion-par {

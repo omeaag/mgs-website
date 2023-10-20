@@ -132,6 +132,11 @@
   height: 60%;
 }
 
+.rightFooter h5{
+  display: flex;
+  align-items: center;
+}
+
 .rightFooter h5,
 .rightFooter a,
 .rightFooter button,

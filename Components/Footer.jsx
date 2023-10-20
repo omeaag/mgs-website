@@ -6,6 +6,11 @@ import githubIcon from "../public/materials/mdi_github.svg";
 import notionIcon from "../public/materials/mingcute_notion-fill.svg";
 import instaIcon from "../public/materials/instalogo.svg";
 import mgsLogo from "../public/materials/logo.svg";
+import netherland from "../public/materials/netherland.svg";
+import phone from "../public/materials/phone.svg";
+import europe from "../public/materials/europe.svg";
+import mail from "../public/materials/mail.svg";
+
 const Footer = () => {
   return (
     <footer>
@@ -39,10 +44,10 @@ const Footer = () => {
             </div>
             <div className="hqFooter">
               <strong>HEADQUARTERS:</strong>
-              <h5>🇳🇱&nbsp;&nbsp;Amsterdam, Netherlands</h5>
-              <h5>🇪🇺&nbsp;&nbsp; KVK: 85502081</h5>
-              <h5>✉️&nbsp;&nbsp; info@moodglobalservices.com</h5>
-              <h5>📞&nbsp;&nbsp; +31-6-19565119</h5>
+              <h5><Image src={netherland}/>&nbsp;&nbsp;Amsterdam, Netherlands</h5>
+              <h5><Image src={europe}/>&nbsp;&nbsp; KVK: 85502081</h5>
+              <h5><Image src={mail}/>&nbsp;&nbsp; info@moodglobalservices.com</h5>
+              <h5><Image src={phone}/>&nbsp;&nbsp; +31-6-19565119</h5>
             </div>
           </div>
         </div>
