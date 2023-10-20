@@ -5,6 +5,7 @@ import greenHere from "../public/materials/greenHere.svg";
 import aquaHere from "../public/materials/aquaHere.svg";
 import orangeHere from "../public/materials/orangeHere.svg";
 import turkuazHere from "../public/materials/turkuazHere.svg";
+import europe from "../public/materials/europe.svg";
 import { useState, useEffect } from "react";
 
 const OurServices = () => {
@@ -43,7 +44,7 @@ const OurServices = () => {
                                     </div>
                                     <div className="textImageCont">
                                         <Image src={greenHere}></Image>
-                                        <h4>MicaR Compliance 🇪🇺</h4>
+                                        <h4>MicaR Compliance <Image id="flag" src={europe}/></h4>
                                     </div>
                                     <div className="textImageCont">
                                         <Image src={greenHere}></Image>
@@ -121,7 +122,7 @@ const OurServices = () => {
                                     </div>
                                     <div className="textImageCont">
                                         <Image src={greenHere}></Image>
-                                        <h4>MicaR Compliance 🇪🇺</h4>
+                                        <h4>MicaR Compliance <Image id="flag" src={europe}/></h4>
                                     </div>
                                     <div className="textImageCont">
                                         <Image src={greenHere}></Image>

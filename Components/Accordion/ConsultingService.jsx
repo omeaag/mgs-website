@@ -5,6 +5,7 @@ import accordionDown from "./accordion-images/accordion-down.svg";
 import micarCompliance from "./accordion-images/micar-compliance.svg";
 import blockchainAdvisory from "./accordion-images/blockchain-advisory.svg";
 import tokenomics from "./accordion-images/tokenomics.svg";
+import europe from "../../public/materials/europe.svg"
 import Image from "next/image";
 import "./AccordionComponent.css";
 import LeftSection from "./LeftSection";
@@ -15,7 +16,8 @@ function ConsultingService() {
   const array1 = [
     {
       id: 1,
-      title: "MicaR Compliance 🇪🇺",
+      title: `MicaR Compliance`,
+      img:europe,
       paragraph:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget neque lectus. Donec a lobortis est, a molestie augue. Pellentesque eget est lobortis, iaculis mi et, pulvinar lectus. Donec molestie mauris vel aliquet fermentum.",
       image: micarCompliance,
@@ -51,14 +53,14 @@ function ConsultingService() {
         )}
       </div>
       <div className="accordionIndex">
-        {array1.map((item, index) => {
+        {array1.map((item, index, img) => {
           if (index % 2 === 0) {
             return (
               <LeftSection displayContent={display} key={item.id} item={item} />
             );
           } else {
             return (
-              <RightSection displayContent={display} key={item.id} item={item} />
+              <RightSection displayContent={display} img={img} key={item.id} item={item} />
             );
           }
         })}

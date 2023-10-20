@@ -66,6 +66,13 @@
     font-size: 30px;
     margin: 0.7rem 0rem;
     transition: 0.7s ease;
+    display: flex;
+    align-items: center;
+}
+
+#flag{
+    display: block;
+    width: 25px;
 }
 
 .serviceBoxContainer h3 {
