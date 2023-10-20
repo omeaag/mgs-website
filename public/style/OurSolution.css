@@ -58,7 +58,7 @@
 .OurSolutionText .cardContainer {
     display: flex;
     align-items: center;
-    justify-content:center;
+    justify-content: center;
     border: none;
     margin-bottom: 50px;
 }
@@ -227,8 +227,13 @@
     .line {
         display: none;
     }
-    .dashedLine{
+
+    .dashedLine {
         display: none;
+    }
+
+    .ourSolutionAllCardContainer {
+        width: 100%;
     }
 
     .OurSolutionText .cardContainer {
@@ -239,7 +244,8 @@
     .OurSolutionText .card {
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: start;
+        gap: 20px;
         width: 100%;
     }
 
@@ -250,12 +256,15 @@
 
     .OurSolutionText .card h2 {
         font-size: 18px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
         margin: 0;
     }
 
     .card img.showImg,
     .card h2.blackHeader {
-        display: block;
+        display: flex;
         height: 100%;
     }
 

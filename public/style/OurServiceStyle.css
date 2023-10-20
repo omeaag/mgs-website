@@ -284,9 +284,7 @@
 
 /* --------------------  PHONE BREAKPOINT --------------------  */
 @media (max-width: 599px) {
-    .mainServiceContainer {
 
-    }
 
     .blueServiceContainer {
         border-radius: 40px;
@@ -337,6 +335,7 @@
         margin: auto;
         padding: 15px;
     }
+
 
     .serviceBoxContainer h3 {
         font-size: 30px;
