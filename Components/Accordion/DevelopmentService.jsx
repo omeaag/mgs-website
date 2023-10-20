@@ -10,7 +10,7 @@ import Image from "next/image";
 import "./AccordionComponent.css";
 import LeftSection from "./LeftSection";
 import RightSection from "./RightSection";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 function DevelopmentService() {
   let array4 = [
@@ -44,10 +44,17 @@ function DevelopmentService() {
     },
   ];
   const [display, setDisplay] = useState(false);
+  useEffect(()=>{
+    let item = localStorage.getItem('service');
+    if(item && item == 'development'){
+      setDisplay(true);
+      localStorage.removeItem('service');
+    }
+  },[])
 
   return (
     <div className="accordionSection">
-      <div onClick={() => setDisplay(!display)} className="sectionHeader">
+      <div id="development" onClick={() => setDisplay(!display)} className="sectionHeader">
         <p>
           <span>Development</span> Service
         </p>

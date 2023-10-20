@@ -37,8 +37,8 @@ const OurServices = () => {
                     {isMobileOn ?
                         <div className="serviceBoxContainer">
                             <div className="serviceTContainer">
-                                <div className="tLeftService">
-                                    <h3>Consulting</h3>
+                                <div className="tLeftService" >
+                                    <h3 >Consulting</h3>
                                     <div className="lineClass1">
                                         <button>.</button>
                                     </div>
@@ -116,7 +116,11 @@ const OurServices = () => {
                         <div className="serviceBoxContainer">
                             <div className="serviceTContainer">
                                 <div className="tLeftService">
-                                    <h3>Consulting</h3>
+                                    <h3 onClick={()=>{
+                                        localStorage.setItem("service","consulting");
+                                        window.location.href = '/services#Consulting'
+                                        
+                                        }}>Consulting</h3>
                                     <div className="lineClass1">
                                         <button>.</button>
                                     </div>
@@ -134,7 +138,11 @@ const OurServices = () => {
                                     </div>
                                 </div>
                                 <div className="bLeftService">
-                                    <h3>Audit Smart Contracts</h3>
+                                    <h3 onClick={()=>{
+                                        localStorage.setItem("service","audit");
+                                        window.location.href = '/services#audit'
+                                        
+                                        }} >Audit Smart Contracts</h3>
                                     <div className="lineClass2">
                                         <button>.</button>
                                     </div>
@@ -154,7 +162,12 @@ const OurServices = () => {
                             </div>
                             <div className="serviceBContainer">
                                 <div className="tRightService">
-                                    <h3>Smart Contracts Solution</h3>
+                                    <h3 onClick={()=>{
+                                        localStorage.setItem("service","smart");
+                                        window.location.href = '/services#smart'
+                                        
+                                        }}
+                                        >Smart Contracts Solution</h3>
                                     <div className="lineClass3">
                                         <button>.</button>
                                     </div>
@@ -168,7 +181,12 @@ const OurServices = () => {
                                     </div>
                                 </div>
                                 <div className="bRightService">
-                                    <h3>Development</h3>
+                                    <h3 onClick={()=>{
+                                        localStorage.setItem("service","development");
+                                        window.location.href = '/services#development'
+                                        
+                                        }}
+                                        >Development</h3>
                                     <div className="lineClass4">
                                         <button>.</button>
                                     </div>

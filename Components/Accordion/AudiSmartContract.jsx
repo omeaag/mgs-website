@@ -9,7 +9,7 @@ import RightSection from "./RightSection";
 import logicAudit from "./accordion-images/ai-implementations.svg";
 import securityAudit from "./accordion-images/securityAudit.svg";
 import analyticsPerformance from "./accordion-images/analytics-performance.svg";
-import { useState } from "react";
+import { useState,useEffect } from "react";
 
 function AudiSmartContract() {
   let array3 = [
@@ -36,10 +36,16 @@ function AudiSmartContract() {
     },
   ];
   const [display, setDisplay] = useState(false);
-
+  useEffect(()=>{
+    let item = localStorage.getItem('service');
+    if(item && item == 'audit'){
+      setDisplay(true);
+      localStorage.removeItem('service');
+    }
+  },[])
   return (
     <div className="accordionSection">
-      <div onClick={() => setDisplay(!display)} className="sectionHeader">
+      <div id="audit" onClick={() => setDisplay(!display)} className="sectionHeader">
         <p>
           Audi Smart <span>Contract</span>
         </p>
