@@ -226,7 +226,7 @@
         font-size: 40px;
         line-height: 60px;
         font-weight: 500;
-        margin-top: 50px;
+        margin: 100px 0 50px 0;
     }
 
     br {
@@ -236,8 +236,8 @@
     .headServiceText h6 {
         font-size: 22px;
         line-height: 36px;
-        margin-top: 20px;
         padding: 0 10px;
+        width: 76.5%;
     }
 
     .serviceBoxContainer h3 {

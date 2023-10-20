@@ -88,23 +88,11 @@
         padding: 10px;
     }
 
-    .text-shaping,
-    .text-creativity {
-        font-size: 40px !important;
-        line-height: 48px !important;
-    }
-
-    .text-creativity {
-        font-size: 100px;
-        line-height: 124px;
-        letter-spacing: 5%;
-    }
-
     .at-mood-global {
         margin-top: 1rem;
         font-size: 22px;
         line-height: 37px;
-        margin: 0 70px;
+        width: 85%;
     }
 
     .HomeShapingbuttons {
@@ -138,8 +126,12 @@
 
     .text-shaping,
     .text-creativity {
-        font-size: 80px !important;
-        line-height: 90px !important;
+        font-size: 80px;
+        font-weight: 700;
+        line-height: 90px;
+        letter-spacing: 0em;
+        text-align: center;
+
     }
 
     .HomeShapingHeaders {
@@ -179,15 +171,14 @@
 
     .text-shaping,
     .text-creativity {
-        font-size: 44px !important;
-        line-height: 50px !important;
+        font-size: 44px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: 0em;
+        text-align: center;
+
     }
 
-    .text-creativity {
-        font-size: 50px;
-        line-height: 60px;
-        letter-spacing: 5%;
-    }
 
     .at-mood-global {
         margin: 0;
