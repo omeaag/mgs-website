@@ -27,6 +27,9 @@
 }
 
 .memberName {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   color: rgba(0, 113, 251, 1);
   margin-top: 1rem;
   font-size: 30px;
