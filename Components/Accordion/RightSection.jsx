@@ -7,7 +7,7 @@ function RightSection({ item, displayContent}) {
         displayContent === true ? "open" : "close"
       } right-section`}
     >
-      <Image alt={item.title} width={377} src={item.image} />
+      <Image alt={item.title} id="AccordionTitleImage" width={377} src={item.image} />
       <div className="sectionTitle">
         <p className="accordion-title">{item.title}</p>
         <p className="accordion-par">{item.paragraph}</p>
