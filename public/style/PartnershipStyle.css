@@ -1,20 +1,28 @@
-.hexagonContainer {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-#hexagon {
-    margin-right: -257px;
-    height: 351px;
-    width: 371px;
-}
-
 .allContainer {
     display: flex;
     gap: 0px;
     align-items: center;
     margin-bottom: 150px;
 }
+
+.hexagonContainer {
+    display: flex;
+    align-items: center;
+    height: 300px;
+}
+
+#hexagon {
+    margin-right: -203px;
+    height: 381px;
+    width: 296px;
+}
+
+#hexagonImages {
+    height: 160px;
+    width: 160px;
+
+}
+
 
 .allRows {
     display: flex;
