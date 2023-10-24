@@ -91,7 +91,7 @@
 }
 
 .leftFooter h2 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
 }
 
 .footerSocialIcons {
@@ -110,18 +110,8 @@
   height: 100%;
 }
 
-
 #instaIcon {
   width: 25px;
-}
-
-.leftFooter h6 {
-  font-size: 1rem;
-  font-size: 15px;
-}
-
-.leftFooter h2 {
-  font-size: 1.8rem;
 }
 
 .rightFooter {
@@ -130,6 +120,7 @@
   justify-content: space-evenly;
   width: 55%;
   height: 60%;
+  font-size: 0.8rem;
 }
 
 .rightFooter h5{
@@ -162,13 +153,13 @@
   width: 50%;
   display: flex;
   justify-content: space-between;
-  height: 95%;
+  height: 71%;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .ecoFooter {
-  height: 125%;
+  height: 100%;
 }
 
 /* TABLET BREAKPOINT */
