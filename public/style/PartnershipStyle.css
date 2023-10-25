@@ -32,19 +32,21 @@
 .firstRow {
     display: flex;
     gap: 7px;
+    margin-left: 100px;
 }
 
 .secondRow {
     display: flex;
     gap: 7px;
     margin-top: -70px;
-    margin-left: -146px
+    margin-left: -46px
 }
 
 .thirdRow {
     display: flex;
     gap: 7px;
-    margin-top: -70px
+    margin-top: -70px;
+    margin-left: 100px;
 }
 
 .textContainer {
