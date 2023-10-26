@@ -41,39 +41,54 @@ const OurServices = () => {
                         <div className='serviceBoxContainer'>
                             <div className='serviceTContainer'>
                                 <div className='tLeftService'>
-                                    <h3>Consulting</h3>
+                                    <h3 onClick={() => {
+                                        localStorage.setItem('service', 'consulting');
+                                        window.location.href = '/services#Consulting';
+                                    }} href='/services#Consulting'>Consulting</h3>
                                     <div className='lineClass1'>
                                         <button>.</button>
                                     </div>
-                                    <div className='textImageCont'>
+                                    <div className='textImageCont' onClick={() => {
+                                        localStorage.setItem('service', 'consulting');
+                                        window.location.href = '/services#Consulting';
+                                    }}>
                                         <Image src={greenHere}></Image>
-                                        <h4>
-                                            MicaR Compliance{' '}
-                                            <Image
-                                                id='flag'
-                                                src={europe}
-                                            />
-                                        </h4>
+                                        <h4>MicaR Compliance <Image id='flag' src={europe} /></h4>
                                     </div>
-                                    <div className='textImageCont'>
+                                    <div className='textImageCont' onClick={() => {
+                                        localStorage.setItem('service', 'consulting');
+                                        window.location.href = '/services#Consulting';
+                                    }}>
                                         <Image src={greenHere}></Image>
                                         <h4>Blockchain advisory</h4>
                                     </div>
-                                    <div className='textImageCont'>
+                                    <div className='textImageCont' onClick={() => {
+                                        localStorage.setItem('service', 'consulting');
+                                        window.location.href = '/services#Consulting';
+                                    }}>
                                         <Image src={greenHere}></Image>
                                         <h4>Tokenomics Advisory</h4>
                                     </div>
                                 </div>
                                 <div className='tRightService'>
-                                    <h3>Smart Contracts Solution</h3>
+                                    <h3 onClick={() => {
+                                        localStorage.setItem('service', 'smart');
+                                        window.location.href = '/services#smart';
+                                    }} href='/services#smart'>Smart Contracts Solution</h3>
                                     <div className='lineClass3'>
                                         <button>.</button>
                                     </div>
-                                    <div className='textImageCont'>
+                                    <div className='textImageCont' onClick={() => {
+                                        localStorage.setItem('service', 'smart');
+                                        window.location.href = '/services#smart';
+                                    }}>
                                         <Image src={orangeHere}></Image>
                                         <h4>ERC-Model Components</h4>
                                     </div>
-                                    <div className='textImageCont'>
+                                    <div className='textImageCont' onClick={() => {
+                                        localStorage.setItem('service', 'smart');
+                                        window.location.href = '/services#smart';
+                                    }}>
                                         <Image src={orangeHere}></Image>
                                         <h4>Dapps Architecture</h4>
                                     </div>
@@ -81,41 +96,68 @@ const OurServices = () => {
                             </div>
                             <div className='serviceBContainer'>
                                 <div className='bLeftService'>
-                                    <h3>Audit Smart Contracts</h3>
+                                    <h3 onClick={() => {
+                                        localStorage.setItem('service', 'audit');
+                                        window.location.href = '/services#audit';
+                                    }} href='/services#audit'>Audit Smart Contracts</h3>
                                     <div className='lineClass2'>
                                         <button>.</button>
                                     </div>
-                                    <div className='textImageCont'>
+                                    <div className='textImageCont' onClick={() => {
+                                        localStorage.setItem('service', 'audit');
+                                        window.location.href = '/services#audit';
+                                    }}>
                                         <Image src={aquaHere}></Image>
                                         <h4>Security Audit</h4>
                                     </div>
-                                    <div className='textImageCont'>
+                                    <div className='textImageCont' onClick={() => {
+                                        localStorage.setItem('service', 'audit');
+                                        window.location.href = '/services#audit';
+                                    }}>
                                         <Image src={aquaHere}></Image>
                                         <h4>Logic Audit</h4>
                                     </div>
-                                    <div className='textImageCont'>
+                                    <div className='textImageCont' onClick={() => {
+                                        localStorage.setItem('service', 'audit');
+                                        window.location.href = '/services#audit';
+                                    }}>
                                         <Image src={aquaHere}></Image>
                                         <h4>Analytics & Performance Tools</h4>
                                     </div>
                                 </div>
                                 <div className='bRightService'>
-                                    <h3>Development</h3>
+                                    <h3 onClick={() => {
+                                        localStorage.setItem('service', 'development');
+                                        window.location.href = '/services#development';
+                                    }} href='/services#development'>Development</h3>
                                     <div className='lineClass4'>
                                         <button>.</button>
                                     </div>
-                                    <div className='textImageCont'>
+                                    <div className='textImageCont' onClick={() => {
+                                        localStorage.setItem('service', 'development');
+                                        window.location.href = '/services#development';
+                                    }}>
                                         <Image src={turkuazHere}></Image>
                                         <h4>Cloud & Database Management</h4>
                                     </div>
-                                    <div className='textImageCont'>
+                                    <div className='textImageCont' onClick={() => {
+                                        localStorage.setItem('service', 'development');
+                                        window.location.href = '/services#development';
+                                    }}>
                                         <Image src={turkuazHere}></Image>
                                         <h4>Web & Apps Development</h4>
                                     </div>
-                                    <div className='textImageCont'>
+                                    <div className='textImageCont' onClick={() => {
+                                        localStorage.setItem('service', 'development');
+                                        window.location.href = '/services#development';
+                                    }}>
                                         <Image src={turkuazHere}></Image>
                                         <h4>AI Implementations</h4>
                                     </div>
-                                    <div className='textImageCont'>
+                                    <div className='textImageCont' onClick={() => {
+                                        localStorage.setItem('service', 'development');
+                                        window.location.href = '/services#development';
+                                    }}>
                                         <Image src={turkuazHere}></Image>
                                         <h4>API Connections</h4>
                                     </div>
@@ -199,7 +241,7 @@ const OurServices = () => {
                                         <Image src={aquaHere}></Image>
                                         <h4>Logic Audit</h4>
                                     </div>
-                                    <div
+                                    <div id="AnalyticsText"
                                         className='textImageCont'
                                         onClick={() => {
                                             localStorage.setItem('service', 'audit');
@@ -252,7 +294,7 @@ const OurServices = () => {
                                     <div className='lineClass4'>
                                         <button>.</button>
                                     </div>
-                                    <div
+                                    <div id="CloudDataText"
                                         className='textImageCont'
                                         onClick={() => {
                                             localStorage.setItem('service', 'development');

@@ -63,12 +63,13 @@
 
 .serviceBoxContainer h4,
 .serviceBoxContainer h3 {
-    font-size: 30px;
+    font-size: 23.5px;
     margin: 0.7rem 0rem;
     transition: 0.7s ease;
     display: flex;
     align-items: center;
 }
+
 
 #flag{
     display: block;
@@ -129,6 +130,8 @@
     display: block;
     transition: 0.5s ease;
 }
+
+
 
 .lineClass1,
 .lineClass2,
