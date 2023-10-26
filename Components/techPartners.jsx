@@ -8,6 +8,7 @@ import techPartnersButton from '../public/materials/TechPartnersImages/techpartn
 import NextLabsComponent from "./TechPartnersComponents/NexLabsComponent";
 import MirrorTrackerComponent from "./TechPartnersComponents/MirrorTrackerComponent";
 import GoalStarComponent from "./TechPartnersComponents/GoalStarComponent";
+
 import bitcoin from '../public/materials/TechPartnersImages/mgsServciesIcons/bitcoin.svg'
 import etherum from '../public/materials/TechPartnersImages/mgsServciesIcons/etherum.svg'
 import binance from '../public/materials/TechPartnersImages/mgsServciesIcons/binance.svg'
@@ -20,6 +21,7 @@ import arbitrum from '../public/materials/TechPartnersImages/mgsServciesIcons/ar
 import avalanche from '../public/materials/TechPartnersImages/mgsServciesIcons/avalanche.svg'
 import optimism from '../public/materials/TechPartnersImages/mgsServciesIcons/optimism.svg'
 import cosmos from '../public/materials/TechPartnersImages/mgsServciesIcons/cosmos.svg'
+
 import blockchain from '../public/materials/TechPartnersImages/mgsServciesIcons/blockchain.svg'
 import gear from '../public/materials/TechPartnersImages/mgsServciesIcons/gear.svg'
 import code from '../public/materials/TechPartnersImages/mgsServciesIcons/code.svg'
@@ -33,51 +35,53 @@ import Devops from "./techArsenalComponents/Devops";
 import Database from "./techArsenalComponents/Database";
 import Uiux from "./techArsenalComponents/Uiux";
 const techPartners = () => {
-        // Define an array of components and a state variable to track the current component
-        const sliderArrayList = [NextLabsComponent, MirrorTrackerComponent];
-        const [currentComponentIndex, setCurrentComponentIndex] = useState(0);
-    
-        // Function to handle changing the component to the next one
-        const sliderChangerNext = () => {
-            // Calculate the index of the next component in the array
-            const nextIndex = (currentComponentIndex + 1) % sliderArrayList.length;
-            setCurrentComponentIndex(nextIndex);
-        }
-    
-        // Function to handle changing the component to the previous one
-        const sliderChangerPrevious = () => {
-            // Calculate the index of the previous component in the array
-            const previousIndex = (currentComponentIndex - 1 + sliderArrayList.length) % sliderArrayList.length;
-            setCurrentComponentIndex(previousIndex);
-        }
-        const arsenalArray = [Blockchain, Backend, Frontend, Devops, Database, Uiux];
-        const [currentArsenal, setcurrentArsenal] = useState(0);
+    // Define an array of components and a state variable to track the current component
+    const sliderArrayList = [NextLabsComponent, MirrorTrackerComponent];
+    const [currentComponentIndex, setCurrentComponentIndex] = useState(0);
 
-        const setBackend = () => {
-            setcurrentArsenal(1);
-        }
-        
-        const setBlockchain = () => {
-            setcurrentArsenal(0);
-        }
+    // Function to handle changing the component to the next one
+    const sliderChangerNext = () => {
+        // Calculate the index of the next component in the array
+        const nextIndex = (currentComponentIndex + 1) % sliderArrayList.length;
+        setCurrentComponentIndex(nextIndex);
+    }
 
-        const setFrontend = () => {
-            setcurrentArsenal(2);
-        }
-        const setDevops = () => {
-            setcurrentArsenal(3);
-        }
-        const setDatabase = () => {
-            setcurrentArsenal(4);
-        }
-        const setUiux = () => {
-            setcurrentArsenal(5);
-        }
+    // Function to handle changing the component to the previous one
+    const sliderChangerPrevious = () => {
+        // Calculate the index of the previous component in the array
+        const previousIndex = (currentComponentIndex - 1 + sliderArrayList.length) % sliderArrayList.length;
+        setCurrentComponentIndex(previousIndex);
+    }
+    const arsenalArray = [Blockchain, Backend, Frontend, Devops, Database, Uiux];
+    const [currentArsenal, setcurrentArsenal] = useState(0);
+
+    const setBackend = () => {
+        setcurrentArsenal(1);
+    }
+
+    const setBlockchain = () => {
+        setcurrentArsenal(0);
+    }
+
+    const setFrontend = () => {
+        setcurrentArsenal(2);
+    }
+    const setDevops = () => {
+        setcurrentArsenal(3);
+    }
+    const setDatabase = () => {
+        setcurrentArsenal(4);
+    }
+    const setUiux = () => {
+        setcurrentArsenal(5);
+    }
     return (
         <div className="techParentContainer">
             <div className="blockChainnetworkContainer">
-                <h1><span>Blockchain Network</span> We <br /></h1>
-                <h1>Support</h1>
+                <div>
+                    <h1><span>Blockchain Network</span> We <br /></h1>
+                    <h1>Support</h1>
+                </div>
                 <div className="blockChainIcons">
                     <div className="blockChainIconsLine">
                         <Image src={bitcoin}></Image>
@@ -130,12 +134,12 @@ const techPartners = () => {
                         {/* Render the current component based on the state */}
                         {React.createElement(arsenalArray[currentArsenal])}
                     </div>
-                    </div>
+                </div>
             </div>
             <div className="techTextParentContainer">
-            <h1>Technology <span>Partners</span> </h1>
-            <p>Mood Global Services Hub gives startups and third parties a place to conceptualize and build their ideas. The hub is the space where ideas become<br />
-            reality, by providing the necessary infrastructure and services that supports entrepreneurs and established.</p>
+                <h1>Technology <span>Partners</span> </h1>
+                <p>Mood Global Services Hub gives startups and third parties a place to conceptualize and build their ideas. The hub is the space where ideas become<br />
+                    reality, by providing the necessary infrastructure and services that supports entrepreneurs and established.</p>
             </div>
             <div className="techSliderParentContainer">
                 <div className="techPartnersLeftButtonContainer">
@@ -151,7 +155,7 @@ const techPartners = () => {
                     {React.createElement(sliderArrayList[currentComponentIndex])}
                 </div>
                 <div className="techPartnersRightButtonContainer">
-                <Image
+                    <Image
                         id="techRightButtonID"
                         src={techPartnersButton}
                         onClick={sliderChangerNext} // Call the sliderChangerNext function on click

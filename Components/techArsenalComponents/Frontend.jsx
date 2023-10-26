@@ -1,5 +1,4 @@
 import Image from "next/image";
-import '../../public/style/TechPartnersStyle.css';
 import Nex from "../../public/materials/TechPartnersImages/mgsServciesIcons/frontendIcons/Nex.svg"
 import rea from "../../public/materials/TechPartnersImages/mgsServciesIcons/frontendIcons/rea.svg"
 import Gat from "../../public/materials/TechPartnersImages/mgsServciesIcons/frontendIcons/Gat.svg"

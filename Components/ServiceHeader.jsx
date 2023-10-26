@@ -11,15 +11,14 @@ const ServiceHeader = () => {
             <div className="servicesTop">
                 <div className="serviceTextHeaderContainer">
                     <div className="ourServicesTextContainer">
-                        <h1>OUR SERVICES</h1>
+                        <h1>Our Services</h1>
                     </div>
                     <div className="servicesHeaderSmallTextContainer">
                         <p>
-                            As a Blockchain-based firm, we help our clients integrate <br />
-                            the most optimal blockchain solutions into their business<br />
-                            strategy. We have developed a range of specialized services<br />
-                            aimed at helping companies to fully exploit blockchain<br />
-                            technologies.
+                            As a Blockchain-based firm, we help our clients integrate
+                            the most optimal blockchain solutions into their business
+                            strategy. We have developed a range of specialized services
+                            aimed at helping companies to fully exploit blockchain technologies.
                         </p>
                     </div>
                 </div>

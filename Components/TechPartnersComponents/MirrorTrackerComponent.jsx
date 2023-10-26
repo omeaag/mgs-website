@@ -8,8 +8,7 @@ const NextLabsComponent = () => {
         <div className="TechComponentContainer">
             <div className="TechComponentContainerText">
                 <h1>Mirror Tracker</h1>
-                <h3>Mirror Tracker provides professional grade tools, data and research<br />combined with a decentralised social media platform. Users can<br />
-                subscribe to feeds and receive live updates.</h3>
+                <h3>Mirror Tracker provides professional grade tools, data and research combined with a decentralised social media platform. Users can subscribe to feeds and receive live updates.</h3>
                 <a href="">Go To Website →</a>
             </div>
             <div className="TechComponentContainerImage"><Image src={mirrorTrackerImage}></Image></div>
