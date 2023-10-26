@@ -184,6 +184,7 @@
 
     .firstRow {
         display: flex;
+        margin: 0;
     }
 
     .secondRow {
@@ -194,6 +195,8 @@
     .thirdRow {
         display: flex;
         margin-top: 0px;
+        margin: 0;
+
     }
 
     #hexagon {

@@ -5,7 +5,7 @@ import githubIcon from "../public/icons/github.svg";
 import linkedinIcon from "../public/icons/linkedin.svg";
 import twitterIcon from "../public/icons/twitter.svg";
 import notionIcon from "../public/icons/notion.svg";
-import instaIcon from "../public/materials/instalogo.svg";
+import instaIcon from "../public/materials/headerInstaLogo.svg";
 
 import mgsLogo from "../public/materials/logo.svg";
 import menu from '../public/materials/menu.svg';
@@ -49,16 +49,13 @@ export default function Header() {
                         <Link onClick={toggleMobileMenu} href='/services'>Services</Link>
                         <Link onClick={toggleMobileMenu} href='/mood-convert'>MoodConvert</Link>
                         <Link onClick={toggleMobileMenu} href='/careers'>Careers</Link>
-                        <Link onClick={toggleMobileMenu} href='/faq'>FAQ</Link>
-                        <Link onClick={toggleMobileMenu} href='/terms-conditions'>Terms and Conditions</Link>
-                        <Link onClick={toggleMobileMenu} href='/privacy-policy'>Privacy Policy</Link>
                     </div>
                     <div className='HeaderIcons'>
                         <Link href="https://moodglobalservices.notion.site/Mood-Global-Services-Portfolio-203bce8c178b4b6aa6cabeb6309d18f8"><Image src={notionIcon} alt="notion-logo" /></Link>
                         <Link href="https://github.com/orgs/Mood-Global-Services/repositories"><Image src={githubIcon} alt="github-logo" /></Link>
                         <Link href="https://twitter.com/MoodServices"><Image src={twitterIcon} alt="twitter-logo" /></Link>
                         <Link href="https://www.linkedin.com/company/mood-global-services/"><Image src={linkedinIcon} alt="linkedin-logo" /></Link>
-                        <Link href="https://www.instagram.com/moodglobalservices/"><Image src={instaIcon} alt="linkedin-logo" /></Link>
+                        <Link href="https://www.instagram.com/moodglobalservices/"><Image src={instaIcon} id="instaIcon" alt="instagram-logo" /></Link>
                     </div>
                     <div className="leftFooter">
                         <h6>© &nbsp;2023 &nbsp;Mood Global Services. All rights reserved.</h6>

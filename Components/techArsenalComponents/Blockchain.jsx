@@ -1,5 +1,5 @@
 import Image from "next/image";
-import '../../public/style/TechPartnersStyle.css';
+
 import sol from "../../public/materials/TechPartnersImages/mgsServciesIcons/blockchainIcons/sol.svg"
 import rus from "../../public/materials/TechPartnersImages/mgsServciesIcons/blockchainIcons/rus.svg"
 import fab from "../../public/materials/TechPartnersImages/mgsServciesIcons/blockchainIcons/fab.svg"

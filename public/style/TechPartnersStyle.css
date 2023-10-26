@@ -5,6 +5,7 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: column;
+    gap: 50px;
 }
 
 .blockChainnetworkContainer {
@@ -12,6 +13,7 @@
     display: flex;
     width: 80%;
     text-align: left;
+    gap: 50px;
 }
 
 .blockChainnetworkContainer h1 {
@@ -31,6 +33,7 @@
     float: inline-start;
     width: 100%;
     height: 170px;
+    gap: 20px;
 }
 
 .blockChainIconsLine {
@@ -60,8 +63,8 @@
     flex-direction: column;
     text-align: left;
     width: 80%;
-    margin: 100px 0px;
     justify-content: center;
+    margin-bottom: 100px;
 }
 
 .techArsenalContainer h1 {
@@ -81,37 +84,34 @@
     cursor: pointer;
     flex-direction: row;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
     margin-bottom: 60px;
+    border-bottom: 2px solid gray;
+    height: 55px;
 }
 
 .techArsenalButton {
+    height: 57px;
     display: flex;
     width: 15%;
     flex-direction: row;
-    align-items: flex-start;
-    margin-right: 10px;
+    align-items: center;
     justify-content: center;
 }
 
 .techArsenalButton img {
     width: 20px;
-    margin-top: 5px;
-    margin-right: 5px;
 }
 
 .techArsenalButton button {
     font-size: 21px;
-    border-top: none;
-    border-right: none;
-    border-left: none;
-    border-color: #0071fb00;
-    border-width: 5px;
+    padding: 0 0px 0 5px;
     transition: 0.8s ease-in-out;
 }
 
-.techArsenalButton button:hover {
+.techArsenalButton:hover {
     transition: 0.2s ease-in-out;
+    border-bottom: 7px solid gray;
     border-color: #0071FB;
     color: #0071FB;
 }
@@ -166,7 +166,6 @@
 
 .techSliderParentContainer {
     margin-top: 100px;
-    height: 600px;
     display: flex;
     flex-direction: row;
     width: 90%;
@@ -204,7 +203,6 @@
 .techSliderParentContainer .techPartnerComponentContainer {
     height: 100%;
     width: 90%;
-    margin: 350px 0px
 }
 
 /* TABLET BREAKPOINT */
@@ -344,7 +342,6 @@
         flex-direction: column;
         float: inline-start;
         width: 100%;
-        height: 340px;
     }
 
     .acordionComponentContainer {
@@ -369,293 +366,13 @@
 
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
-    .ourServicesTextContainer h1 {
-        font-size: 30px !important;
-        text-align: center;
-    }
 
-    .techSliderParentContainer .techPartnerComponentContainer {
-        margin: 50px 0px;
-    }
-
-    .serviceTextHeaderContainer {
-        margin: 0 !important;
-    }
-
-    .servicesHeaderSmallTextContainer p {
-        font-size: 16px !important;
-        line-height: 30px;
-        text-align: center;
-    }
-
-    .servicesHeaderSmallTextContainer br {
-        display: none;
-    }
-
-    .servicesImageContainer img:nth-child(2) {
-        display: none;
-    }
-
-    .servicesImageContainer img:nth-child(1) {
-        display: none;
-    }
-
-    .mainServiceBackgroundContainer {
-        height: 100vh;
-    }
-
-    .servicesTop {
-        background-image: url(../materials/Component11.png);
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: cover;
-    }
-
-
-    .sectionHeader p {
-        font-size: 30px !important;
-        line-height: normal !important;
-        text-align: start !important;
-        padding: 20px 0 !important;
-    }
-
-    .accordion-title {
-        font-size: 30px !important;
-    }
-
-    .accordionSection {
-        width: 100% !important;
-
-    }
-
-    .sectionContent.open {
-        display: flex;
-        flex-direction: column-reverse;
-        gap: 0px !important;
-    }
-
-    .sectionContent.open.left-section,
-    .sectionContent.open.right-section {
-        border: 1px solid #B2EBFF;
-        border-radius: 16px;
-        padding: 20px 10px;
-        margin-top: 30px;
-        box-shadow: 0px 14px 24px 0px rgba(0, 0, 0, 0.04) inset;
-        width: 100% !important;
-    }
-
-    .accordion-par {
-        text-align: left;
-        font-size: 18px !important;
-        line-height: 35px !important;
-        width: 100% !important;
-    }
-
-    .sectionHeader {
-        align-items: center;
-    }
-
-
-    .sectionHeader img {
-        width: 38px;
-        height: 20px;
-    }
-
-    .acordionComponentContainer {
-        gap: 0px !important;
-        margin: 0px !important;
-    }
-
-    .techTextParentContainer {
-        width: 100%;
-        padding: 2rem;
-        margin-bottom: 150px;
-    }
-
-    .techTextParentContainer br {
-        display: none;
-    }
-
-    .techTextParentContainer h1 {
-        font-size: 35px;
-        display: flex;
-        gap: 10px;
-        margin-bottom: 70px;
-    }
-
-    .techTextParentContainer span {
-        font-size: 35px;
-    }
-
-    .techTextParentContainer p {
-        font-size: 18px;
-        line-height: 35px;
-    }
+   
 
     .acordionComponentContainer {
         margin: 70px 20px !important;
     }
 
 
-    /*NEX LABS*/
-    .TechComponentContainerText h1 {
-        font-size: 30px !important;
-    }
-
-    .TechComponentContainerText h3 {
-        font-size: 18px !important;
-    }
-
-    .TechComponentContainer {
-        flex-direction: column !important;
-    }
-
-    .TechComponentContainerText {
-        width: 100% !important;
-    }
-
-    .TechComponentContainerText br {
-        display: none;
-    }
-
-    .TechComponentContainerText h3 {
-        line-height: 35px !important;
-    }
-
-    .TechComponentContainerText a {
-        font-size: 18px !important;
-        margin-top: 10px !important;
-    }
-
-    .techSliderParentContainer {
-        gap: 10px;
-        width: 100% !important;
-    }
-
-    .TechComponentContainerImage {
-        width: 100% !important;
-        margin-top: 20px !important;
-    }
-
-    .blockChainIconsLine {
-        justify-content: center;
-    }
-
-    .blockChainIcons {
-        display: flex;
-        flex-direction: column;
-        float: inline-start;
-        width: 100%;
-        height: 340px;
-    }
-
-    .blockChainIconsLine img {
-        width: 140.386px;
-        height: 72px;
-        filter: saturate(0);
-        transition: 0.3s ease-in-out;
-    }
-
-    .blockChainIconsLine img:hover {
-        filter: saturate(1);
-        width: 152.386px;
-        height: 77px;
-        transition: 0.2s ease-in-out;
-        cursor: pointer;
-    }
-
-    .blockChainnetworkContainer h1 {
-        font-size: 40px;
-    }
-
-    .techArsenalContainer h1 {
-        font-size: 40px;
-    }
-
-    .techArsenalContainer {
-        display: flex;
-        flex-direction: column;
-        text-align: left;
-        width: 80%;
-        justify-content: center;
-    }
-
-    .techArsenalContainer h1 {
-        font-size: 40px;
-    }
-
-    .techArsenalContainer span {
-        color: #0071FB;
-    }
-
-    .techArsenalButtonContainer div:nth-child(4),
-    .techArsenalButtonContainer div:nth-child(5),
-    .techArsenalButtonContainer div:nth-child(6) {
-        display: none;
-    }
-
-    .techArsenalButtonContainer {
-        display: flex;
-        cursor: pointer;
-        flex-direction: row;
-        width: 100%;
-        justify-content: center;
-        margin-bottom: 60px;
-    }
-
-    .techArsenalButton {
-        display: flex;
-        width: 30%;
-        flex-direction: row;
-        align-items: flex-start;
-        margin-right: 10px;
-        justify-content: center;
-    }
-
-    .techArsenalButton img {
-        width: 20px;
-    }
-
-    .techArsenalButton button {
-        margin-left: 2px;
-        font-size: 18px;
-        border-top: none;
-        border-right: none;
-        border-left: none;
-        border-color: #0071fb00;
-        border-width: 5px;
-        transition: 0.8s ease-in-out;
-    }
-
-    .techArsenalButton button:hover {
-        transition: 0.2s ease-in-out;
-        border-color: #0071FB;
-    }
-
-    .arsenalChangeComponent {
-        display: flex;
-    }
-
-    .ArsenalMiniComponent {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 85%;
-    }
-
-    .ArsenalMiniComponentDEV {
-        width: 95%;
-    }
-
-    .mainArsenalChangeComp {
-        display: flex;
-        justify-content: space-around;
-        width: 100%;
-    }
-
-    .mainArsenalChangeComp img {
-        width: 116px;
-        height: 64px;
-    }
-
+    
 }

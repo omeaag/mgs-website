@@ -8,9 +8,7 @@ const NextLabsComponent = () => {
         <div className="TechComponentContainer">
             <div className="TechComponentContainerText">
                 <h1>Goal Star</h1>
-                <h3>Introducing Goal Star, the sports betting platform that<br />uses NFTs to let users participate in their favourite<br />sports events. By purchasing an NFT on the platform,<br />users can bet on the outcomes of sports events and<br />
-                compete for tournament prize pools. Goal Star allows<br />users to engage with sports in a fun and exciting way,<br />and potentially earn rewards through tournament<br />
-                competition.</h3>
+                <h3>Introducing Goal Star, the sports betting platform that uses NFTs to let users participate in their favouritesports events. By purchasing an NFT on the platform, users can bet on the outcomes of sports events and compete for tournament prize pools. Goal Star allows users to engage with sports in a fun and exciting way,and potentially earn rewards through tournament competition.</h3>
                 <a href="">Go To Website →</a>
             </div>
             <div className="TechComponentContainerImage"><Image src={goalStarImage}></Image></div>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import '../../public/style/TechPartnersStyle.css';
+
 import mon from "../../public/materials/TechPartnersImages/mgsServciesIcons/dbIcons/mon.svg"
 import ela from "../../public/materials/TechPartnersImages/mgsServciesIcons/dbIcons/ela.svg"
 import pos from "../../public/materials/TechPartnersImages/mgsServciesIcons/dbIcons/pos.svg"

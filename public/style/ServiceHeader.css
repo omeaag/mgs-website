@@ -6,7 +6,7 @@
   justify-content: center;
   background: url(../materials/bluePinkBackground.svg);
   background-repeat: no-repeat;
-  background-position: 100%;
+  background-position: bottom left;
   background-size: cover;
   width: 100%;
 }
@@ -33,6 +33,10 @@
 }
 
 .servicesHeaderSmallTextContainer {
+  width: 81.7%;
+}
+
+.servicesHeaderSmallTextContainer {
   line-height: 50px;
 }
 
@@ -51,10 +55,60 @@
 
 /*Desktop*/
 @media only screen and (min-width: 1025px) {
-  #epArrow{
+  #epArrow {
     margin-top: -60px;
     padding-bottom: 50px;
   }
 }
 
+/* PHONE BREAKPOINT */
+@media (max-width: 599px) {
+  .ourServicesTextContainer h1 {
 
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.05em;
+    text-align: center;
+    
+  }
+
+  .servicesHeaderSmallTextContainer {
+    width: 81.7%;
+    margin: auto;
+  }
+
+  #epArrow {
+    display: none;
+  }
+
+  .serviceTextHeaderContainer {
+    margin: 180px 0;
+    gap: 30px;
+  }
+
+  .servicesTop {
+    background: url(../materials/sevicesbckgrnd.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .servicesHeaderSmallTextContainer p {
+    font-size: 16px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  .servicesHeaderSmallTextContainer br {
+    display: none;
+  }
+
+  .servicesImageContainer img:nth-child(2) {
+    display: none;
+  }
+
+  .servicesImageContainer img:nth-child(1) {
+    display: none;
+  }
+
+}

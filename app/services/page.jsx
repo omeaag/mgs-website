@@ -3,6 +3,7 @@ import AccordionComponent from "../../Components/Accordion/AccordionComponent";
 import ServiceHeader from "../../Components/ServiceHeader";
 import GetInTouch from "@/Components/GetInTouch";
 import Partnership from "@/Components/Partnership";
+import OurPortfolio from "@/Components/OurPortfolio";
 
 export default function Services() {
   return (
@@ -11,6 +12,7 @@ export default function Services() {
       <AccordionComponent />
       <TechPartners />
       <Partnership />
+
       <GetInTouch />
     </div>
   );

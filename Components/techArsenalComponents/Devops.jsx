@@ -1,5 +1,4 @@
 import Image from "next/image";
-import '../../public/style/TechPartnersStyle.css';
 import aws from "../../public/materials/TechPartnersImages/mgsServciesIcons/devopsIcons/aws.svg"
 import ans from "../../public/materials/TechPartnersImages/mgsServciesIcons/devopsIcons/ans.svg"
 import dig from "../../public/materials/TechPartnersImages/mgsServciesIcons/devopsIcons/dig.svg"

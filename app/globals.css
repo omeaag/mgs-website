@@ -56,6 +56,18 @@
 
 .dropdownContainer .leftFooter {
   margin-top: 10px;
+  width: 100%;
+  margin: auto;
+}
+.dropdownContainer .leftFooter h6{
+  text-align: center;
+  margin-top: 10px;
+
+}
+.dropdownContainer .leftFooter h6{
+  text-align: center;
+  margin-top: 10px;
+
 }
 
 
@@ -110,9 +122,6 @@
   height: 100%;
 }
 
-#instaIcon {
-  width: 25px;
-}
 
 .rightFooter {
   display: flex;
@@ -261,7 +270,7 @@
 
   .MobileDropdownMenu+.HeaderIcons {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-items: center;
     margin-top: 1rem;
     font-size: 1.5rem;
@@ -269,13 +278,6 @@
 
   .MobileDropdownMenu+.HeaderIcons img {
     width: 2rem;
-    margin-right: 1rem;
-  }
-
-  #instaIcon {
-    width: 17px !important;
-    height: 17px !important;
-    background-color: pink;
   }
 
   .footerMain {
@@ -290,6 +292,7 @@
     flex-direction: column;
     gap: 2rem;
     width: 100% !important;
+    font-size: 14px;
   }
 
   .rightFooter .ecoFooter,
@@ -320,6 +323,6 @@
   }
 
   .leftFooter img {
-    margin-right: 1.5rem;
+    margin-right: 2.5rem;
   }
 }
