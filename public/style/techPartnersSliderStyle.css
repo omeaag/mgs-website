@@ -217,7 +217,7 @@
     }
 
     .blockChainnetworkContainer {
-        width: 86%;
+        width: 88%;
     }
 
     .techTextParentContainer {
@@ -234,7 +234,7 @@
         font-size: 35px;
         display: flex;
         gap: 10px;
-        margin-bottom: 70px;
+        margin-bottom: 50px;
     }
 
     .techTextParentContainer span {
