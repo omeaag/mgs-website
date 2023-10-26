@@ -392,6 +392,7 @@
 
 }
 
+
 /* ----------------- PHONE BREAKPOINT ----------------- */
 @media (max-width: 599px) {
     .applyContainer {
@@ -428,6 +429,7 @@
 
     .applyContainer .mobilViewText {
         display: block;
+        padding: 0px 37px;
     }
 
     .applyContainer .mobilViewText p {
@@ -455,6 +457,10 @@
         width: 100%;
         padding: 0 auto;
     }
+    .applyFormContainer form{
+        padding: 0 37px;
+    }
+    
 
     .applyFormContainer form>div {
         margin-bottom: 10px;
@@ -464,6 +470,7 @@
     .applyFormContainer form h1 {
         font-size: 30px;
         line-height: 36px;
+        margin-bottom: 30px;
     }
 
     .applyFormContainer .nameInputs input {
