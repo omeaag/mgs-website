@@ -79,8 +79,8 @@ const techPartners = () => {
         <div className="techParentContainer">
             <div className="blockChainnetworkContainer">
                 <div>
-                    <h1><span>Blockchain Network</span> We <br /></h1>
-                    <h1>Support</h1>
+                    <h1><span>Blockchain Network</span></h1>
+                    <h1>We Support</h1>
                 </div>
                 <div className="blockChainIcons">
                     <div className="blockChainIconsLine">
