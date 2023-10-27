@@ -11,17 +11,13 @@ const WhatWeDo = () => {
                 <div className='line'></div>
             </div>
             <p className='WeDoText'>
-                At Mood Global Services, we believe in the power of personalized solutions. Our
-                expertise extends beyond blockchain and distributed ledger technologies to encompass
-                a wide range of technological advancements, all with the aim of enhancing your
-                business operations.
+            We excel in crafting personalized solutions beyond blockchain and distributed ledger technologies to elevate your business operations.
             </p>
             <p className='WeDoText'>
-                We pride ourselves on our tailor-made approach, ensuring each client is guided from
-                A to Z and beyond. We demystify complexities, highlight the potential of
-                technological synergy, and illustrate its impact on your business growth. Our
-                commitment doesn't end with implementation; we provide ongoing support and strategic
-                guidance throughout your digital transformation journey and beyond.
+            We excel in crafting personalized solutions beyond blockchain and distributed ledger technologies to elevate your business operations.
+            </p>
+            <p className='WeDoText'>
+            Our tailored approach simplifies tech complexities, unleashes technological synergy, and provides enduring support beyond implementation for sustained growth. 
             </p>
         </div>
     );

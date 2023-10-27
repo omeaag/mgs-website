@@ -30,11 +30,7 @@ const OurServices = () => {
                     <div className='headServiceText'>
                         <h1>Our Services</h1>
                         <h6>
-                            Mood Global Services offers a range of services to help your business
-                            thrive in the digital age. From comprehensive consulting to smart
-                            contract creation, mobile app development, and software development for
-                            Web 2.0 and 3.0, we're your partners in the digital transformation
-                            journey.
+                        At Mood Global Services, we offer a spectrum of services to navigate your business through the digital tide. Whether it's comprehensive consulting, crafting smart contracts, mobile app development, or pioneering software solutions for Web 2.0 and 3.0, we are with you in every stride of your digital transformation journey.
                         </h6>
                     </div>
                     {isMobileOn ? (

@@ -138,10 +138,7 @@ function OurPortfolio() {
         <div className='line'></div>
       </div>
       <p className='headerContainerp'>
-        An analysis of the Blockchain marketplace in 2021 by Markets and Markets found the
-        industry is expected to grow from a value of $4.9 billion (as of 2021) to $67.4
-        billion by 2026. This represents a Compound Annual Growth Rate of 68.4% during the
-        forecast period.
+      Dive into our portfolio to see how we've enabled businesses to flourish digitally. From blockchain solutions to innovative app development, our projects reflect our dedication and commitment to tailored strategies and technological advancement.
       </p>
       <div className='galleryContainer'>
         <button

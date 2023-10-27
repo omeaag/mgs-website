@@ -17,21 +17,21 @@ function AudiSmartContract() {
       id: 6,
       title: "Security Audit",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget neque lectus. Donec a lobortis est, a molestie augue. Pellentesque eget est lobortis, iaculis mi et, pulvinar lectus. Donec molestie mauris vel aliquet fermentum.",
+        "Discover and rectify potential vulnerabilities with our Security Audit service. We focus on fortifying your blockchain projects against threats, ensuring adherence to industry security standards. ",
       image: securityAudit,
     },
     {
       id: 7,
       title: "Logic Audit",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget neque lectus. Donec a lobortis est, a molestie augue. Pellentesque eget est lobortis, iaculis mi et, pulvinar lectus. Donec molestie mauris vel aliquet fermentum.",
+        "With our Logic Audit service, the accuracy and efficiency of your smart contracts are meticulously verified. We delve into contract logic to prevent costly errors and optimize performance. ",
       image: logicAudit,
     },
     {
       id: 8,
       title: "Analytics & Performance Tools",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget neque lectus. Donec a lobortis est, a molestie augue. Pellentesque eget est lobortis, iaculis mi et, pulvinar lectus. Donec molestie mauris vel aliquet fermentum.",
+        "Our Performance Audit service is orchestrated towards elevating your project's efficiency. By analyzing and optimizing system performance, we strive to meet your operational goals and deliver seamless user experiences.",
       image: analyticsPerformance,
     },
   ];

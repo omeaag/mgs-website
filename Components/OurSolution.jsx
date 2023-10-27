@@ -25,25 +25,25 @@ const OurSolution = () => {
         {
             title: 'Innovative Research & <br/> Business Solutions',
             content:
-                'Our journey begins with extensive research, understanding your business, and the possibilities that blockchain and other technologies can offer.',
+                'Our process kicks off with in-depth research to grasp your business dynamics, unlocking the potential of technologies and innovation to propel your operations.',
             image: frame_1,
         },
         {
             title: 'Tailored Strategy For Your <br/> Unique Business',
             content:
-                "We craft a strategy that's custom-made for your business, aligning with your unique goals and requirements.",
+                "We devise a customized strategy aligned with your unique goals, ensuring a tailored solution to your business needs and ambitions.",
             image: frame_2,
         },
         {
             title: 'Redefining Boundaries: <br/> Innovation For A New Era',
             content:
-                'We collaborate with you in brainstorming sessions, discovering new opportunities and creative solutions.',
+                'Through collaborative brainstorming, we unearth new opportunities and creative solutions, fostering innovation for a progressive era.',
             image: frame_3,
         },
         {
             title: 'Unwavering Support For <br/> Ongoing Success',
             content:
-                'Our support continues even after implementation, ensuring your business remains at the forefront of the digital transformation journey.',
+                'Our support continues after implementation, ensuring your business remains at the forefront of the digital transformation journey.',
             image: frame_4,
         },
     ];

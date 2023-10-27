@@ -10,7 +10,7 @@ const GetInTouch = () => {
         <div className="partnershipAllContainer" >
             <div className='getInTouchContainer'>
                 <h1>Get in touch</h1>
-                <h3>We're here to guide you every step of the way. Start with a free initial meeting where we'll discuss your project, assess its feasibility, and outline potential strategies. This is just the beginning of our journey together towards your digital transformation. Don't hesitate to reach out to us today. We're excited to embark on this journey with you.</h3>
+                <h3>Your journey towards digital transformation begins with a free initial consultation. We'll delve into your project, assess its feasibility, and sketch out potential strategies. Reach out today — let's start this exciting voyage together, guiding you at every step towards a digital horizon.</h3>
             </div>
 
             <form className="formContainer" action="">

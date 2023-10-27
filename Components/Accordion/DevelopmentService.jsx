@@ -18,28 +18,28 @@ function DevelopmentService() {
       id: 9,
       title: "Cloud & Database Management",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget neque lectus. Donec a lobortis est, a molestie augue. Pellentesque eget est lobortis, iaculis mi et, pulvinar lectus. Donec molestie mauris vel aliquet fermentum.",
+        "We offer robust cloud architectures and database management services ensuring secure, accessible, and scalable data infrastructure to bolster project reliability and performance. ",
       image: cloudDatabase,
     },
     {
       id: 10,
       title: "Web & Apps Development",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget neque lectus. Donec a lobortis est, a molestie augue. Pellentesque eget est lobortis, iaculis mi et, pulvinar lectus. Donec molestie mauris vel aliquet fermentum.",
+        "We offer robust cloud architectures and database management services ensuring secure, accessible, and scalable data infrastructure to bolster project reliability and performance. ",
       image: webApps,
     },
     {
       id: 11,
       title: "AI Implementations",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget neque lectus. Donec a lobortis est, a molestie augue. Pellentesque eget est lobortis, iaculis mi et, pulvinar lectus. Donec molestie mauris vel aliquet fermentum.",
+        "Provide machine learning and artificial intelligence implementation services, tailored to drive innovation, enhance operational efficiency, and sharpen your competitive edge in your domain. ",
       image: aiImplementations,
     },
     {
       id: 12,
       title: "API Connections",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget neque lectus. Donec a lobortis est, a molestie augue. Pellentesque eget est lobortis, iaculis mi et, pulvinar lectus. Donec molestie mauris vel aliquet fermentum.",
+        "Offer robust API connections and management services to facilitate smooth interactions between applications, third-party services, and data resources, ensuring optimized system integration",
       image: apiConnections,
     },
   ];

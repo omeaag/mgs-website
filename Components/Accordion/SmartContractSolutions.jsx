@@ -1,6 +1,7 @@
 "use client";
 import dappsArchitecture from "./accordion-images/dapps-architecture.svg";
 import ercModel from "./accordion-images/logic-audit.svg";
+import processAut from "./accordion-images/process.svg";
 import accordionUp from "./accordion-images/accordion-up.svg";
 import accordionDown from "./accordion-images/accordion-down.svg";
 import Image from "next/image";
@@ -15,15 +16,22 @@ function SmartContractSolutions() {
       id: 4,
       title: "ERC-Model Components",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget neque lectus. Donec a lobortis est, a molestie augue. Pellentesque eget est lobortis, iaculis mi et, pulvinar lectus. Donec molestie mauris vel aliquet fermentum.",
+        "Guidance through the selection and customization of Ethereum-based token standards is provided, ensuring seamless integration within your blockchain projects for robust token creation and efficient management. ",
       image: ercModel,
     },
     {
       id: 5,
       title: "Dapps Architecture",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget neque lectus. Donec a lobortis est, a molestie augue. Pellentesque eget est lobortis, iaculis mi et, pulvinar lectus. Donec molestie mauris vel aliquet fermentum.",
+        "We provide expertise in designing and developing decentralized applications (dApps) tailored to meet your business objectives, enabling a smooth transition to blockchain-based solutions. ",
       image: dappsArchitecture,
+    },
+    {
+      id: 5.5,
+      title: "Process Automatization",
+      paragraph:
+        "Process Automatization Specialized smart contract solutions are created to automate and streamline your business operations, enhancing efficiency, reducing operational costs, and optimizing your processes for superior performance.",
+      image: processAut,
     },
   ];
 
