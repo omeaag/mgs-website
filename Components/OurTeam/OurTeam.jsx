@@ -167,18 +167,18 @@ function OurTeam() {
                 <div
                     key={index}
                     className='MemberCardComponent'>
-                    <Image src={member.image} />
+                    <Image id="memberImage" src={member.image} />
                     <p className='memberName'>{member.member_name} <Image src={member.img}/> </p>
                     <p> {member.member_position} </p>
                     <div className='icons'>
                         {member.twitter_link && (
                             <Link href={member.twitter_link}>
-                                <Image src={twitterIcon} />
+                                <Image id='socialImage' src={twitterIcon} />
                             </Link>
                         )}
                         {member.linkedin_link && (
                             <Link href={member.linkedin_link}>
-                                <Image src={linkedInIcon} />
+                                <Image id='socialImage' src={linkedInIcon} />
                             </Link>
                         )}
                     </div>
