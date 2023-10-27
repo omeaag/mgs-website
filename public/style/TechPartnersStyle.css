@@ -206,6 +206,11 @@
 
 /* TABLET BREAKPOINT */
 @media (min-width: 600px) and (max-width: 1024px) {
+
+    .servicesHeaderSmallTextContainer {
+        width: 100% !important;
+      }
+
     .servicesHeaderSmallTextContainer p {
         font-size: 22px !important;
     }
@@ -223,7 +228,10 @@
         line-height: 33px !important;
         letter-spacing: 0px;
         text-align: left;
+    }
 
+    .servicesTop{
+        margin: 100px 0;
     }
 
     .servicesHeaderSmallTextContainer p br {
@@ -236,7 +244,7 @@
     }
 
     .serviceTextHeaderContainer {
-        margin: 0 100px !important;
+        margin: 0 0px 0 30px !important;
         width: 50%;
     }
 

@@ -77,11 +77,12 @@
 @media (min-width: 600px) and (max-width: 1024px) {
     .allContainer {
         flex-direction: row;
-        margin: 50px;
+        margin: 100px 0;
         gap: 30px;
     }
 
     .textContainer {
+        margin: 0;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -104,40 +105,42 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-left: -170px;
+        margin-left: -70px;
     }
 
     .firstRow {
         display: flex;
+        margin-left: 15px;
     }
 
     .secondRow {
         display: flex;
-        margin: -45px 0;
+        margin: -55px 0px;
     }
 
     .thirdRow {
         display: flex;
         margin-top: 0px;
+        margin-left: 15px;
     }
 
     #hexagon {
-        width: 242px !important;
-        height: 277px !important;
+        width: 182px !important;
+        height: 230px !important ;
     }
 
     #hexagonImages {
         width: 130px !important;
         height: 139px !important;
         position: absolute;
-        top: 55px;
-        right: 56px;
+        top: 45px;
+        right: 26px;
     }
 
     .hexagonContainer {
         display: flex;
-        width: 242px !important;
-        height: 277px !important;
+        width: 182px !important;
+        height: 230px !important ;
         position: relative;
     }
 
