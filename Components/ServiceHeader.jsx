@@ -15,10 +15,7 @@ const ServiceHeader = () => {
                     </div>
                     <div className="servicesHeaderSmallTextContainer">
                         <p>
-                            As a Blockchain-based firm, we help our clients integrate
-                            the most optimal blockchain solutions into their business
-                            strategy. We have developed a range of specialized services
-                            aimed at helping companies to fully exploit blockchain technologies.
+                        As a technologically rooted firm, we guide our clients in integrating suitable blockchain solutions alongside other emerging technologies into their business strategy. We present a range of specialized services designed to empower companies to harness the full spectrum of digital advancements. 
                         </p>
                     </div>
                 </div>

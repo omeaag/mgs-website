@@ -8,7 +8,7 @@ const NextLabsComponent = () => {
         <div className="TechComponentContainer">
             <div className="TechComponentContainerText">
                 <h1>Nex Labs</h1>
-                <h3>NexLabs gives investors access to decentralized indices powered by in-house built oracles to invest in cryptocurrencies, NFTs, synthetic assets and a variety of prediction markets. Users can easily own multiple assets by investing in one or more indices without needing to spend time tracking latest developments in the market and being exposed to its high volatility.</h3>
+                <h3>NEX presents regular, mixed, and exotic indices, which provide easy access to the most popular assets. This innovation is aimed at new investors aiming to enter the market and experienced traders seeking to expand their portfolios. Overall, NEX indices represent a significant step forward in the evolution of the DeFi (Decentralized Finance) sector by making it more accessible and user-friendly, allowing more individuals to take advantage of the unique opportunities it offers.</h3>
                 <a href="">Go To Website →</a>
             </div>
             <div className="TechComponentContainerImage"><Image src={nexLabsImage}></Image></div>

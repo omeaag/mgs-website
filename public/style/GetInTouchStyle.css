@@ -4,8 +4,7 @@
     justify-content: center;
     background-color: rgba(0, 113, 251, 1);
     border-radius: 1.2rem;
-    justify-content: start;
-    padding-left: 200px;
+    padding-left: 100px;
     margin-bottom: 200px;
     max-height: 500px;
 }
@@ -40,7 +39,7 @@
 
 .formContainer {
     margin-top: 150px;
-    width: 35%;
+    width: 40%;
     background-color: #FFFFFF;
     border-radius: 1.2rem;
     padding: 44px 32px 44px 32px;
@@ -113,7 +112,7 @@
 @media (min-width: 600px) and (max-width: 1024px) {
     .partnershipAllContainer {
         margin: auto 0px;
-        padding: 50px;
+        padding: 20px;
         margin-bottom: 100px;
         max-height: 600px;
     }
@@ -121,7 +120,7 @@
     .getInTouchContainer {
         width: 100%;
         margin: 0 !important;
-        padding: 40px;
+        padding: 20px;
     }
 
     .getInTouchContainer h1 {

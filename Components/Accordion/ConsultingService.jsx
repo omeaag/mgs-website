@@ -19,21 +19,21 @@ function ConsultingService() {
       title: `MicaR Compliance`,
       img:europe,
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget neque lectus. Donec a lobortis est, a molestie augue. Pellentesque eget est lobortis, iaculis mi et, pulvinar lectus. Donec molestie mauris vel aliquet fermentum.",
+        "Under the Micar Compliance Service, our specialized legal team navigates the regulatory landscape, evaluating your blockchain projects against legal standards, identifying compliance gaps, and devising strategies for full regulatory adherence. ",
       image: micarCompliance,
     },
     {
       id: 2,
       title: "Blockchain advisory",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget neque lectus. Donec a lobortis est, a molestie augue. Pellentesque eget est lobortis, iaculis mi et, pulvinar lectus. Donec molestie mauris vel aliquet fermentum.",
+        "Our Blockchain Advisory service provides expert counsel on blockchain integration, assisting you in leveraging its potential to optimize operational efficiency, enhance security, and drive innovation within your business landscape. ",
       image: blockchainAdvisory,
     },
     {
       id: 3,
       title: "Tokenomics Advisory",
       paragraph:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer eget neque lectus. Donec a lobortis est, a molestie augue. Pellentesque eget est lobortis, iaculis mi et, pulvinar lectus. Donec molestie mauris vel aliquet fermentum.",
+        "The Tokenomics Advisory service offers specialized guidance on tokenization strategies and token distribution models ensuring a balanced ecosystem for your tokens, optimizing utility, and driving sustainable growth within your blockchain projects.",
       image: tokenomics,
     },
   ];
