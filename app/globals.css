@@ -18,10 +18,15 @@
 
 /* 0 - Header */
 .HeaderContainer {
-  margin-top: 3.5rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
   align-items: center;
   justify-content: space-around;
   display: flex;
+  background-color: white;
+  padding: 20px 0px;
+  z-index: 2;
 }
 
 
@@ -177,15 +182,12 @@
     font-size: 0.8rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    max-width: 85%;
-    margin: 1rem auto;
+    justify-content: space-around;
   }
 
   .Navbar {
     display: flex;
     gap: 2.5rem;
-    margin: 0 5rem;
   }
 
   .HeaderContainer #mgsLogo {
@@ -226,13 +228,12 @@
 /* PHONE BREAKPOINT*/
 @media (max-width: 599px) {
   .HeaderContainer {
-    margin: 1rem auto;
+    padding: 30px 20px;
     font-size: 0.8rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    max-width: 85%;
   }
 
   .HeaderContainer .open {

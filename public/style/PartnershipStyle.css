@@ -32,7 +32,6 @@
 .firstRow {
     display: flex;
     gap: 7px;
-    margin-left: 100px;
 }
 
 .secondRow {
@@ -110,7 +109,6 @@
 
     .firstRow {
         display: flex;
-        margin-left: 15px;
     }
 
     .secondRow {
@@ -187,7 +185,6 @@
 
     .firstRow {
         display: flex;
-        margin: 0;
     }
 
     .secondRow {
