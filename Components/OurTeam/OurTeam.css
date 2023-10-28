@@ -1,7 +1,7 @@
 .MemberCardContainer {
   font-family: MonumentExtended;
   display: flex;
-  width: 90%;
+  width: 96%;
   justify-content: center;
   margin: 5.5rem auto 7rem auto;
   flex-wrap: wrap;
@@ -37,6 +37,42 @@
   line-height: 36px;
   letter-spacing: 0px;
   text-align: left;
+}
+
+.MemberCardContainer .MemberCardComponent {
+  width: calc(25%);
+  margin-right: 0 ;
+}
+
+/* TABLET BREAKPOINT */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .MemberCardContainer{
+    justify-content: space-between;
+  }
+  .memberName {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0px;
+    text-align: left;
+    
+
+  }
+  .memberName p{
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: 0px;
+  }
+  .MemberCardContainer{
+    width: 95% !important;
+  }
+  .MemberCardContainer .MemberCardComponent {
+    width: calc(34.5% - 1.5rem);
+    margin-right: 0 !important;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /* PHONE BREAKPOINT */

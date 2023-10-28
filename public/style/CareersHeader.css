@@ -81,23 +81,12 @@
 
 
 
-.MemberCardContainer .MemberCardComponent {
-  width: calc(25% - 3.5rem);
-  margin-right: 0 !important;
-}
+
 
 /* TABLET BREAKPOINT */
 @media (min-width: 600px) and (max-width: 1024px) {
 
-  .MemberCardContainer{
-    width: 95% !important;
-  }
-  .MemberCardContainer .MemberCardComponent {
-    width: calc(33.9% - 1.5rem);
-    margin-right: 0 !important;
-    justify-content: center;
-    align-items: center;
-  }
+  
 
   .careersBiggestHeader p {
     font-size: 40px;
@@ -182,6 +171,7 @@
   }
   .careersHeaderAllText{
     margin-top: 0px;
+    left: 4rem
   }
 }
 

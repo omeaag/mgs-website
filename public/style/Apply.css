@@ -368,6 +368,19 @@
         font-weight: 600;
     }
 
+    .applyContainer .mobilViewText {
+    padding: 60px 30px;
+    }
+    .applyQualifications{
+        padding: 0 80px !important;
+    }
+
+    .applyFormContainer form{
+        padding: 0 80px !important;
+
+    }
+
+
     .applyContainer .mobilViewText p {
         margin: 30px auto;
         font-size: 19px;
