@@ -86,7 +86,7 @@
 /* TABLET BREAKPOINT */
 @media (min-width: 600px) and (max-width: 1024px) {
 
-  
+
 
   .careersBiggestHeader p {
     font-size: 40px;
@@ -132,11 +132,11 @@
 
 
   .hiringSection>div {
-    width: auto !important;
+    width: auto;
   }
 
   .hiringSection .apply {
-    width: 30% !important;
+    width: 25% !important;
   }
 
   .hiringSectionFirst span {
@@ -171,7 +171,7 @@
   }
   .careersHeaderAllText{
     margin-top: 0px;
-    left: 4rem
+    left: 4rem;
   }
 }
 

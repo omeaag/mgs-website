@@ -95,7 +95,6 @@
 
 .hiringContainer .hiringSection .apply {
     width: 15%;
-
 }
 
 .hiringSection .hiringTitle {
@@ -137,7 +136,7 @@
 }
 
 .hiringSection .apply a img {
-    display: inline;
+    display: inline-flex;
 }
 
 
@@ -238,4 +237,8 @@
     #viewmore {
         display: none !important;
     }
+
+    .hiringContainer .hiringSection .apply {
+    width: auto;
+}
 }

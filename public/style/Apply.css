@@ -403,6 +403,11 @@
         padding: 23px, 110px, 23px, 110px;
     }
 
+    .applyContainer .applyHeader{
+    padding: 150px 50px 100px 70px;
+
+    }
+
 }
 
 
@@ -473,7 +478,7 @@
     .applyFormContainer form{
         padding: 0 37px;
     }
-    
+
 
     .applyFormContainer form>div {
         margin-bottom: 10px;
