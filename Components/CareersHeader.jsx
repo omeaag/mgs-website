@@ -23,8 +23,7 @@ function CareersHeader() {
                     </div>
                     <div className='careersHeaderPar'>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur <br /> adipiscing elit. Integer
-                            eget neque lectus.
+                        Uncover a realm of innovation with our adept ensemble, where each challenge unraveled leads to a hallmark solution. Your venture into the digital domain is navigated with precision, ensuring every milestone is a stride towards enduring success. Engage with a team where dedication converges with excellence, propelling your projects to horizons yet explored.
                             <br /> Donec a lobortis est, a molestie augue.
                             <br />
                             Pellentesque.

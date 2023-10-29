@@ -14,9 +14,6 @@ const WhatWeDo = () => {
             We excel in crafting personalized solutions beyond blockchain and distributed ledger technologies to elevate your business operations.
             </p>
             <p className='WeDoText'>
-            We excel in crafting personalized solutions beyond blockchain and distributed ledger technologies to elevate your business operations.
-            </p>
-            <p className='WeDoText'>
             Our tailored approach simplifies tech complexities, unleashes technological synergy, and provides enduring support beyond implementation for sustained growth. 
             </p>
         </div>
