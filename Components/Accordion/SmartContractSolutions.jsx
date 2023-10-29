@@ -30,7 +30,7 @@ function SmartContractSolutions() {
       id: 5.5,
       title: "Process Automatization",
       paragraph:
-        "Process Automatization Specialized smart contract solutions are created to automate and streamline your business operations, enhancing efficiency, reducing operational costs, and optimizing your processes for superior performance.",
+        "Specialized smart contract solutions are created to automate and streamline your business operations, enhancing efficiency, reducing operational costs, and optimizing your processes for superior performance.",
       image: processAut,
     },
   ];

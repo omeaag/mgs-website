@@ -25,7 +25,7 @@ function DevelopmentService() {
       id: 10,
       title: "Web & Apps Development",
       paragraph:
-        "We offer robust cloud architectures and database management services ensuring secure, accessible, and scalable data infrastructure to bolster project reliability and performance. ",
+        "Deliver design and development services for user-centric websites and applications, tailored to ensure a seamless, engaging online presence that effectively communicates brand values.",
       image: webApps,
     },
     {
