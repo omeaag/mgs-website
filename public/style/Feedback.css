@@ -11,7 +11,6 @@
     align-items: center;
     width: 80%;
     opacity: 0.3;
-    height: 700px;
     margin: auto;
     margin-bottom: 40px;
 }
@@ -26,8 +25,6 @@ padding: 30px;
 .feedbackContainer h1 span{
     color: rgba(0, 113, 251, 1);
 }
-
-
 
 
 .feedbackContainer .form{
@@ -116,7 +113,6 @@ border-radius: 30px;
         flex-direction: column;
         align-items: center;
         width: 100%;
-        height: 700px;
         margin: auto;
         margin-bottom: 40px;
     }
@@ -140,25 +136,27 @@ border-radius: 30px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
         border: 1px solid #a0def3;
         border-radius: 30px;
         height:100%;
+        padding: 20px;
+        margin: 20px;
     }
     
     .rate {
         display: flex;
-        flex-wrap: wrap;
-        justify-content:space-between;
-        align-items: center;
+        flex-direction: column;
+        justify-content:center;
+        align-items: start;
         padding: 20px 10px;
         border-bottom: 1px solid #a0def3;
         width: 100%;
+        gap: 15px;
     }
     
     .rate span{
         margin-left: 10px;
-        font-size: 26px;
+        font-size: 15px;
     }
     
     .rate button {

@@ -654,6 +654,11 @@ letter-spacing: 0px;
         width: auto;
     }
 
+    #sendButtonImage{
+        height: 30px;
+        width: 30px;
+    }
+
     .next-button img,
     .prev-button img {
         height: 60px;

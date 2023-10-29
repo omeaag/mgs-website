@@ -99,6 +99,38 @@
   width: 100%;
 }
 
+@media (min-width: 600px) and (max-width: 1024px) {
+  .accordionSection{
+    width: 90%;
+  }
+  .acordionComponentContainer{
+    margin-bottom: 100px;
+  }
+
+  .blockChainnetworkContainer{
+    width: 90%;
+  }
+  .blockChainIconsLine{
+    justify-content: space-between;
+  }
+  .techArsenalContainer{
+    width: 90%;
+  }
+  .mainArsenalChangeComp{
+    justify-content: space-between;
+  }
+  .ArsenalMiniComponent{
+    width: 100%;
+  }
+
+  .techTextParentContainer{
+    width: 90%;
+  }
+  .techSliderParentContainer{
+    width: 100%;
+  }
+}
+
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
   .sectionHeader p {

@@ -300,6 +300,7 @@
     }
     .TechComponentContainerText{
         justify-content: center;
+        width: 50% !important;
     }
 
     .TechComponentContainerText h1 {
@@ -316,11 +317,6 @@
 
     .TechComponentContainerText h3 br {
         display: none;
-    }
-
-    .TechComponentContainerImage {
-        width: 383px !important;
-        height: 398px !important;
     }
 
     .TechComponentContainerText a {

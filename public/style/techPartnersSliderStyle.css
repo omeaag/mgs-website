@@ -89,6 +89,7 @@
     .techSliderParentContainer {
         gap: 10px;
         width: 100%;
+        margin-top: 0px;
     }
 
     .TechComponentContainerImage {
@@ -142,6 +143,7 @@
         text-align: left;
         width: 86%;
         justify-content: center;
+        margin-bottom: 0px;
     }
 
     .techArsenalContainer h1 {
