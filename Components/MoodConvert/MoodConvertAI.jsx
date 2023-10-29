@@ -57,7 +57,7 @@ const MoodConvertAI = () => {
                     <div className='bottomCont'>
                         <input placeholder="Request A Project" type="text" className="inputArea"></input>
                         <button className="next-button">
-                            <Image className='sendButton' src={sendImage} alt="Send"  />
+                            <Image id='sendButtonImage' className='sendButton' src={sendImage} alt="Send"  />
                         </button>
                     </div>
                 </div>

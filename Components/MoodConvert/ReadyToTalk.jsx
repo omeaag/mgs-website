@@ -2,14 +2,30 @@
 import React from 'react';
 import Image from 'next/image';
 import {useFormik} from 'formik';
+import {useState, useEffect} from 'react';
 import * as yup from 'yup';
 import '../../public/style/readyToTalk.css';
 import office from '../../public/materials/moodConverAIImages/office.svg';
+import office2 from '../../public/materials/moodConverAIImages/office2.svg';
 import global from '../../public/materials/moodConverAIImages/global.svg';
 import openAI from '../../public/materials/moodConverAIImages/openAI.svg';
 
 const ReadyToTalk = () => {
     const modal = window.document.getElementById('myModal');
+    const [isTabletOn, setIsTabletOn] = useState(false);
+
+    useEffect(() => {
+        const updateWindowDimensions = () => {
+            if (window.innerWidth < 1024) {
+                setIsTabletOn(true);
+            } else {
+                setIsTabletOn(false);
+            }
+        };
+        updateWindowDimensions();
+        window.addEventListener("resize", updateWindowDimensions);
+        return () => window.removeEventListener("resize", updateWindowDimensions)
+    }, []);
 
     const handleClick = () => {
         if (modal) {
@@ -60,7 +76,7 @@ const ReadyToTalk = () => {
         <div className='readyContainer'>
             <div className='imageContainer'>
                 <Image
-                    src={office}
+                    src={isTabletOn ? office: office2}
                     alt='office'
                 />
 

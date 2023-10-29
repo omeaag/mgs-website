@@ -1,6 +1,6 @@
 'use client';
 import React from 'react';
-import {useFormik} from 'formik';
+import { useFormik } from 'formik';
 import * as yup from 'yup';
 import '../../public/style/Feedback.css';
 
@@ -30,16 +30,18 @@ const Feedback = () => {
                 className='form'>
                 <div className='rate'>
                     <span>Extremely Poor</span>
-                    <button>1</button>
-                    <button>2</button>
-                    <button>3</button>
-                    <button>4</button>
-                    <button>5</button>
-                    <button>6</button>
-                    <button>7</button>
-                    <button>8</button>
-                    <button>9</button>
-                    <button>10</button>
+                    <div className='rateButtonContainer'>
+                        <button>1</button>
+                        <button>2</button>
+                        <button>3</button>
+                        <button>4</button>
+                        <button>5</button>
+                        <button>6</button>
+                        <button>7</button>
+                        <button>8</button>
+                        <button>9</button>
+                        <button>10</button>
+                    </div>
                     <span>Exteremly Good</span>
                 </div>
                 <textarea
