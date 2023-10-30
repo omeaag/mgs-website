@@ -44,10 +44,10 @@ const Footer = () => {
             </div>
             <div className="hqFooter">
               <strong>HEADQUARTERS:</strong>
-              <h5><Image src={netherland}/>&nbsp;&nbsp;Amsterdam, Netherlands</h5>
-              <h5><Image src={europe}/>&nbsp;&nbsp; KVK: 85502081</h5>
-              <h5><Image src={mail}/>&nbsp;&nbsp; info@moodglobalservices.com</h5>
-              <h5><Image src={phone}/>&nbsp;&nbsp; +31-6-19565119</h5>
+              <h5><Image alt="Flag Of Netherlands" src={netherland}/>&nbsp;&nbsp;Amsterdam, Netherlands</h5>
+              <h5><Image alt="Flag Of European Union" src={europe}/>&nbsp;&nbsp; KVK: 85502081</h5>
+              <h5><Image alt="Mail Icon" src={mail}/>&nbsp;&nbsp; info@moodglobalservices.com</h5>
+              <h5><Image alt="Phone Icon" src={phone}/>&nbsp;&nbsp; +31-6-19565119</h5>
             </div>
           </div>
         </div>

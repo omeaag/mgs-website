@@ -111,7 +111,7 @@ function WhatPeople() {
                         className='prev-button'>
                         <Image
                             src={currentSlide2 == !1 ? LeftArrow : LeftArrowBlue}
-                            alt="Sol Ok"
+                            alt="Left Arrow"
                             width={100}
                             height={100}
                         />
@@ -149,7 +149,7 @@ function WhatPeople() {
                         className='next-button'>
                         <Image
                             src={currentSlide2 == 2 ? RightArrow : RightArrowBlue}
-                            alt="Sag Ok"
+                            alt="Right Arrow"
                             width={100}
                             height={100}
                         />

@@ -6,10 +6,10 @@ import Rus from "../../public/materials/TechPartnersImages/mgsServciesIcons/back
 const Backend = () => {
     return(
         <div className="ArsenalMiniComponent">
-            <Image src={go}></Image>
-            <Image src={nod}></Image>
-            <Image src={Pyt}></Image>
-            <Image src={Rus}></Image>
+            <Image src={go} alt="Logo of Go"></Image>
+            <Image src={nod} alt="Logo of Node JS"></Image>
+            <Image src={Pyt} alt="Logo of Python"></Image>
+            <Image src={Rus} alt="Logo of Rust"></Image>
         </div>
     );
 };

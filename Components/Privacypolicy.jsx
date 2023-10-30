@@ -434,7 +434,7 @@ function Privacypolicy() {
                         <div className="privacyPolicyTitle">
                             <h2>{e.h2}
                                 {isMobileOn &&
-                                    <Image id="accordionimage" onClick={() => {
+                                    <Image alt="Accordion Part" id="accordionimage" onClick={() => {
                                         const element = document.getElementById(e.id);
                                         toggleShow(e.id);
                                         if (element.style.display === "none" || element.style.display === "") {
@@ -446,7 +446,7 @@ function Privacypolicy() {
                                     src={showStates[e.id] ? accordionUp : accordionDown}>
                                     </Image>}
                             </h2>
-                            <Image style={{ display: `${isMobileOn ? "block" : "none"}` }} src={Vector19}></Image>
+                            <Image alt="Vector" style={{ display: `${isMobileOn ? "block" : "none"}` }} src={Vector19}></Image>
                             {<div className="paragraphs" id={`${e.id}`}>
                                 {e.p1}
                                 {e.li1.length > 0 &&

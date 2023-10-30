@@ -139,7 +139,7 @@ function TermsConditions() {
                         <div className="termsConditionsTitle">
                             <h2>{e.h2}
                                 {isMobileOn &&
-                                    <Image id="accordionimage" onClick={() => {
+                                    <Image alt="Accordion Image" id="accordionimage" onClick={() => {
                                         const element = document.getElementById(e.id);
                                         toggleShow(e.id);
                                         if (element.style.display === "none" || element.style.display === "") {
@@ -154,7 +154,7 @@ function TermsConditions() {
 
 
 
-                            <Image style={{ display: `${isMobileOn ? "block" : "none"}` }} src={Vector19}></Image>
+                            <Image alt="Vector" style={{ display: `${isMobileOn ? "block" : "none"}` }} src={Vector19}></Image>
                             {<div className="paragraphs" id={`${e.id}`}>
                                 <p>
                                     <b>{e.b1}</b> {e.p1}

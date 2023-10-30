@@ -101,6 +101,7 @@ const OurSolution = () => {
                                 className={`card`}
                                 key={index}>
                                 <Image
+                                    alt='Blue Cube'
                                     src={imageSource.src}
                                     onClick={() => handleImageClick(index)}
                                     className={`${imageSource.src === Bluecube ? 'showImg' : ''}`}
@@ -112,7 +113,7 @@ const OurSolution = () => {
                                 />
                             </div>
                             <div className='dashedLine'>
-                                <Image src={solutionLine} />
+                                <Image alt='Solution Line' src={solutionLine} />
                             </div>
                         </div>
                     ))}
@@ -123,7 +124,7 @@ const OurSolution = () => {
                         <p>{divList[currentIndex].content}</p>
                     </div>
                     <div>
-                        <Image src={divList[currentIndex].image}></Image>
+                        <Image alt='Current Image' src={divList[currentIndex].image}></Image>
                     </div>
                 </div>
                 <div className='paginationButtons'>
