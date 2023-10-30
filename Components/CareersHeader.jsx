@@ -24,9 +24,6 @@ function CareersHeader() {
                     <div className='careersHeaderPar'>
                         <p>
                         Uncover a realm of innovation with our adept ensemble, where each challenge unraveled leads to a hallmark solution. Your venture into the digital domain is navigated with precision, ensuring every milestone is a stride towards enduring success. Engage with a team where dedication converges with excellence, propelling your projects to horizons yet explored.
-                            <br /> Donec a lobortis est, a molestie augue.
-                            <br />
-                            Pellentesque.
                         </p>
                     </div>
                 </div>
