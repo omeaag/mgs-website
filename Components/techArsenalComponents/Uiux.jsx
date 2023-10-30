@@ -11,14 +11,14 @@ import fra from "../../public/materials/TechPartnersImages/mgsServciesIcons/uiIc
 const Uiux = () => {
     return(
         <div className="ArsenalMiniComponent">
-            <Image src={fig}></Image>
-            <Image src={ae}></Image>
-            <Image src={pho}></Image>
-            <Image src={ill}></Image>
-            <Image src={lun}></Image>
-            <Image src={web}></Image>
-            <Image src={ble}></Image>
-            <Image src={fra}></Image>
+            <Image src={fig} alt="Logo of Figma"></Image>
+            <Image src={ae} alt="Logo of After Effects"></Image>
+            <Image src={pho} alt="Logo of Photoshop"></Image>
+            <Image src={ill} alt="Logo of Ai"></Image>
+            <Image src={lun} alt="Logo of Lun"></Image>
+            <Image src={web} alt="Logo of Webflow"></Image>
+            <Image src={ble} alt="Logo of Blender"></Image>
+            <Image src={fra} alt="Logo of Framer"></Image>
         </div>
     );
 };

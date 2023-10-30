@@ -48,21 +48,21 @@ const OurServices = () => {
                                         localStorage.setItem('service', 'consulting');
                                         window.location.href = '/services#Consulting';
                                     }}>
-                                        <Image src={greenHere}></Image>
-                                        <h4>MicaR Compliance <Image id='flag' src={europe} /></h4>
+                                        <Image alt="Green" src={greenHere}></Image>
+                                        <h4>MicaR Compliance <Image alt="Flag Of European Union" id='flag' src={europe} /></h4>
                                     </div>
                                     <div className='textImageCont' onClick={() => {
                                         localStorage.setItem('service', 'consulting');
                                         window.location.href = '/services#Consulting';
                                     }}>
-                                        <Image src={greenHere}></Image>
+                                        <Image alt="Green" src={greenHere}></Image>
                                         <h4>Blockchain advisory</h4>
                                     </div>
                                     <div className='textImageCont' onClick={() => {
                                         localStorage.setItem('service', 'consulting');
                                         window.location.href = '/services#Consulting';
                                     }}>
-                                        <Image src={greenHere}></Image>
+                                        <Image alt="Green" src={greenHere}></Image>
                                         <h4>Tokenomics Advisory</h4>
                                     </div>
                                 </div>
@@ -78,14 +78,14 @@ const OurServices = () => {
                                         localStorage.setItem('service', 'smart');
                                         window.location.href = '/services#smart';
                                     }}>
-                                        <Image src={orangeHere}></Image>
+                                        <Image alt="Orange" src={orangeHere}></Image>
                                         <h4>ERC-Model Components</h4>
                                     </div>
                                     <div className='textImageCont' onClick={() => {
                                         localStorage.setItem('service', 'smart');
                                         window.location.href = '/services#smart';
                                     }}>
-                                        <Image src={orangeHere}></Image>
+                                        <Image alt="Orange" src={orangeHere}></Image>
                                         <h4>Dapps Architecture</h4>
                                     </div>
                                 </div>
@@ -103,21 +103,21 @@ const OurServices = () => {
                                         localStorage.setItem('service', 'audit');
                                         window.location.href = '/services#audit';
                                     }}>
-                                        <Image src={aquaHere}></Image>
+                                        <Image alt="Aqua" src={aquaHere}></Image>
                                         <h4>Security Audit</h4>
                                     </div>
                                     <div className='textImageCont' onClick={() => {
                                         localStorage.setItem('service', 'audit');
                                         window.location.href = '/services#audit';
                                     }}>
-                                        <Image src={aquaHere}></Image>
+                                        <Image alt="Aqua" src={aquaHere}></Image>
                                         <h4>Logic Audit</h4>
                                     </div>
                                     <div className='textImageCont' onClick={() => {
                                         localStorage.setItem('service', 'audit');
                                         window.location.href = '/services#audit';
                                     }}>
-                                        <Image src={aquaHere}></Image>
+                                        <Image alt="Aqua" src={aquaHere}></Image>
                                         <h4>Analytics & Performance Tools</h4>
                                     </div>
                                 </div>
@@ -133,28 +133,28 @@ const OurServices = () => {
                                         localStorage.setItem('service', 'development');
                                         window.location.href = '/services#development';
                                     }}>
-                                        <Image src={turkuazHere}></Image>
+                                        <Image alt="turquoise" src={turkuazHere}></Image>
                                         <h4>Cloud & Database Management</h4>
                                     </div>
                                     <div className='textImageCont' onClick={() => {
                                         localStorage.setItem('service', 'development');
                                         window.location.href = '/services#development';
                                     }}>
-                                        <Image src={turkuazHere}></Image>
+                                        <Image alt="turquoise" src={turkuazHere}></Image>
                                         <h4>Web & Apps Development</h4>
                                     </div>
                                     <div className='textImageCont' onClick={() => {
                                         localStorage.setItem('service', 'development');
                                         window.location.href = '/services#development';
                                     }}>
-                                        <Image src={turkuazHere}></Image>
+                                        <Image alt="turquoise" src={turkuazHere}></Image>
                                         <h4>AI Implementations</h4>
                                     </div>
                                     <div className='textImageCont' onClick={() => {
                                         localStorage.setItem('service', 'development');
                                         window.location.href = '/services#development';
                                     }}>
-                                        <Image src={turkuazHere}></Image>
+                                        <Image alt="turquoise" src={turkuazHere}></Image>
                                         <h4>API Connections</h4>
                                     </div>
                                 </div>
@@ -180,7 +180,7 @@ const OurServices = () => {
                                             localStorage.setItem('service', 'consulting');
                                             window.location.href = '/services#Consulting';
                                         }}>
-                                        <Image src={greenHere}></Image>
+                                        <Image alt="Green" src={greenHere}></Image>
                                         <h4>
                                             MicaR Compliance{' '}
                                             <Image
@@ -195,7 +195,7 @@ const OurServices = () => {
                                             localStorage.setItem('service', 'consulting');
                                             window.location.href = '/services#Consulting';
                                         }}>
-                                        <Image src={greenHere}></Image>
+                                        <Image alt="Green" src={greenHere}></Image>
                                         <h4>Blockchain advisory</h4>
                                     </div>
                                     <div
@@ -204,7 +204,7 @@ const OurServices = () => {
                                             localStorage.setItem('service', 'consulting');
                                             window.location.href = '/services#Consulting';
                                         }}>
-                                        <Image src={greenHere}></Image>
+                                        <Image alt="Green" src={greenHere}></Image>
                                         <h4>Tokenomics Advisory</h4>
                                     </div>
                                 </div>
@@ -225,7 +225,7 @@ const OurServices = () => {
                                             localStorage.setItem('service', 'audit');
                                             window.location.href = '/services#audit';
                                         }}>
-                                        <Image src={aquaHere}></Image>
+                                        <Image alt="Aqua" src={aquaHere}></Image>
                                         <h4>Security Audit</h4>
                                     </div>
                                     <div
@@ -234,7 +234,7 @@ const OurServices = () => {
                                             localStorage.setItem('service', 'audit');
                                             window.location.href = '/services#audit';
                                         }}>
-                                        <Image src={aquaHere}></Image>
+                                        <Image alt="Aqua" src={aquaHere}></Image>
                                         <h4>Logic Audit</h4>
                                     </div>
                                     <div id="AnalyticsText"
@@ -243,7 +243,7 @@ const OurServices = () => {
                                             localStorage.setItem('service', 'audit');
                                             window.location.href = '/services#audit';
                                         }}>
-                                        <Image src={aquaHere}></Image>
+                                        <Image alt="Aqua" src={aquaHere}></Image>
                                         <h4>Analytics & Performance Tools</h4>
                                     </div>
                                 </div>
@@ -266,7 +266,7 @@ const OurServices = () => {
                                             localStorage.setItem('service', 'smart');
                                             window.location.href = '/services#smart';
                                         }}>
-                                        <Image src={orangeHere}></Image>
+                                        <Image alt="Orange" src={orangeHere}></Image>
                                         <h4>ERC-Model Components</h4>
                                     </div>
                                     <div
@@ -275,7 +275,7 @@ const OurServices = () => {
                                             localStorage.setItem('service', 'smart');
                                             window.location.href = '/services#smart';
                                         }}>
-                                        <Image src={orangeHere}></Image>
+                                        <Image alt="Orange" src={orangeHere}></Image>
                                         <h4>Dapps Architecture</h4>
                                     </div>
                                 </div>
@@ -296,7 +296,7 @@ const OurServices = () => {
                                             localStorage.setItem('service', 'development');
                                             window.location.href = '/services#development';
                                         }}>
-                                        <Image src={turkuazHere}></Image>
+                                        <Image alt="turquoise" src={turkuazHere}></Image>
                                         <h4>Cloud & Database Management</h4>
                                     </div>
                                     <div
@@ -305,7 +305,7 @@ const OurServices = () => {
                                             localStorage.setItem('service', 'development');
                                             window.location.href = '/services#development';
                                         }}>
-                                        <Image src={turkuazHere}></Image>
+                                        <Image alt="turquoise" src={turkuazHere}></Image>
                                         <h4>Web & Apps Development</h4>
                                     </div>
                                     <div
@@ -314,7 +314,7 @@ const OurServices = () => {
                                             localStorage.setItem('service', 'development');
                                             window.location.href = '/services#development';
                                         }}>
-                                        <Image src={turkuazHere}></Image>
+                                        <Image alt="turquoise" src={turkuazHere}></Image>
                                         <h4>AI Implementations</h4>
                                     </div>
                                     <div
@@ -323,7 +323,7 @@ const OurServices = () => {
                                             localStorage.setItem('service', 'development');
                                             window.location.href = '/services#development';
                                         }}>
-                                        <Image src={turkuazHere}></Image>
+                                        <Image alt="turquoise" src={turkuazHere}></Image>
                                         <h4>API Connections</h4>
                                     </div>
                                 </div>

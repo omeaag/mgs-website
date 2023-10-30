@@ -20,11 +20,11 @@ const ServiceHeader = () => {
                     </div>
                 </div>
                 <div className="servicesImageContainer">
-                <Image src={serviceBackgroundElementOne}></Image>
-                <Image src={serviceBackgroundElementTwo}></Image>
+                <Image alt="Background Vector" src={serviceBackgroundElementOne}></Image>
+                <Image alt="Background Vector" src={serviceBackgroundElementTwo}></Image>
                 </div>
             </div>
-            <Image id="epArrow" src={eparrowdown}></Image>
+            <Image alt="Down Arrow Vector" id="epArrow" src={eparrowdown}></Image>
         </div>
     );
 };

@@ -149,7 +149,7 @@ function OurPortfolio() {
           className='prev-button'>
           <Image
             src={currentSlide ==!1 ? LeftArrow : LeftArrowBlue}
-            alt="Sol Ok"
+            alt="Left Arrow"
             width={50}
             height={50}
           />
@@ -162,14 +162,14 @@ function OurPortfolio() {
             <div className="sliderContent">
               <h4>Nex Decentralized Exchange Decentralized Exchange</h4>
               <p>Nexlabs.io, welcome! <br /> Nexlabs: decentralised trading platform</p>
-              <p className="slideLink"><Image src={sliderlogo} /> https://www.nexlabs.io</p>
+              <p className="slideLink"><Image alt="NexLabs Logo" src={sliderlogo} /> https://www.nexlabs.io</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="sliderContent">
               <h4>The NFT Shoppe NFT's MarketPlace</h4>
               <p>React App, welcome! <br /> Web site created using create-react-app</p>
-              <p className="slideLink"><Image src={sliderlogo2} />https://nft-wall-arts.vercel.app/home</p>
+              <p className="slideLink"><Image alt="Nft Wall Art Logo" src={sliderlogo2} />https://nft-wall-arts.vercel.app/home</p>
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -195,7 +195,7 @@ function OurPortfolio() {
           className='next-button'>
           <Image
             src={currentSlide ==2 ? RightArrow : RightArrowBlue}
-            alt="Sag Ok"
+            alt="Right Arrow"
             width={50}
             height={50}
           />
@@ -228,7 +228,7 @@ function OurPortfolio() {
           className='prev-button'>
           <Image
             src={currentSlide2 ==!1 ? LeftArrow : LeftArrowBlue}
-            alt="Sol Ok"
+            alt="Left Arrow"
             width={100}
             height={100}
           />
@@ -266,7 +266,7 @@ function OurPortfolio() {
           className='next-button'>
           <Image
             src={currentSlide2 ==2 ? RightArrow : RightArrowBlue}
-            alt="Sag Ok"
+            alt="Right Arrow"
             width={100}
             height={100}
           />

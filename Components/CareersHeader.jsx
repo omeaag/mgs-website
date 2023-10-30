@@ -17,6 +17,7 @@ function CareersHeader() {
                     </div>
                     <div className='mobilCareersHeaderImageContainer'>
                         <Image
+                            alt="World Map"
                             className='floatImage'
                             src={worldMap}
                         />
@@ -29,6 +30,7 @@ function CareersHeader() {
                 </div>
                 <div className='careersHeaderImageContainer'>
                     <Image
+                        alt="World Map"
                         className='floatImage'
                         src={worldMap}
                     />

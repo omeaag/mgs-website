@@ -9,12 +9,12 @@ import ipf from "../../public/materials/TechPartnersImages/mgsServciesIcons/dbIc
 const Database = () => {
     return(
         <div className="ArsenalMiniComponent">
-            <Image src={mon}></Image>
-            <Image src={ela}></Image>
-            <Image src={pos}></Image>
-            <Image src={red}></Image>
-            <Image src={mar}></Image>
-            <Image src={ipf}></Image>
+            <Image src={mon} alt="Logo of MongoDB"></Image>
+            <Image src={ela} alt="Logo of Elasticsearch"></Image>
+            <Image src={pos} alt="Logo of PostSQL"></Image>
+            <Image src={red} alt="Logo of Redis"></Image>
+            <Image src={mar} alt="Logo of MariaDB"></Image>
+            <Image src={ipf} alt="Logo of IPFS"></Image>
         </div>
     );
 };

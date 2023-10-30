@@ -41,12 +41,12 @@ function FaqPage() {
                             <h1>01</h1>
                             <div className="FaqTitleContainer">What is the primary focus of Mood Global Services?</div>
                         </div>
-                        <Image src={showStates[0] ? button2 : button1} onClick={() => toggleShow(0)} />
+                        <Image alt="Button" src={showStates[0] ? button2 : button1} onClick={() => toggleShow(0)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>01</h1>
                             <div className="FaqTitleContainer">What is the primary focus of Mood Global Services?</div>
-                            <Image src={showStates[0] ? button2 : button1} onClick={() => toggleShow(0)} />
+                            <Image alt="Button" src={showStates[0] ? button2 : button1} onClick={() => toggleShow(0)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">
@@ -60,13 +60,13 @@ function FaqPage() {
                                 <h1>02</h1>
                                 <div className="FaqTitleContainer">What are the benefits of using blockchain technology?</div>
                             </div>
-                            <Image src={showStates[1] ? button2 : button1} onClick={() => toggleShow(1)} />
+                            <Image alt="Button" src={showStates[1] ? button2 : button1} onClick={() => toggleShow(1)} />
                         </div>
                     ) : (
                         <div className="FaqUpperDiv">
                             <h1>02</h1>
                             <div className="FaqTitleContainer">What are the benefits of using blockchain technology?</div>
-                            <Image src={showStates[1] ? button2 : button1} onClick={() => toggleShow(1)} />
+                            <Image alt="Button" src={showStates[1] ? button2 : button1} onClick={() => toggleShow(1)} />
                         </div>
                     )}
                     <div className="FaqLowerDiv">
@@ -81,12 +81,12 @@ function FaqPage() {
                             <h1>03</h1>
                             <div className="FaqTitleContainer">I'm new to blockchain. How can MGS assist my business?</div>
                         </div>
-                        <Image src={showStates[2] ? button2 : button1} onClick={() => toggleShow(2)} />
+                        <Image alt="Button" src={showStates[2] ? button2 : button1} onClick={() => toggleShow(2)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>03</h1>
                             <div className="FaqTitleContainer">I'm new to blockchain. How can MGS assist my business?</div>
-                            <Image src={showStates[2] ? button2 : button1} onClick={() => toggleShow(2)} />
+                            <Image alt="Button" src={showStates[2] ? button2 : button1} onClick={() => toggleShow(2)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">
@@ -99,12 +99,12 @@ function FaqPage() {
                             <h1>04</h1>
                             <div className="FaqTitleContainer">What are Solidity smart contracts?</div>
                         </div>
-                        <Image src={showStates[3] ? button2 : button1} onClick={() => toggleShow(3)} />
+                        <Image alt="Button" src={showStates[3] ? button2 : button1} onClick={() => toggleShow(3)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>04</h1>
                             <div className="FaqTitleContainer">What are Solidity smart contracts?</div>
-                            <Image src={showStates[3] ? button2 : button1} onClick={() => toggleShow(3)} />
+                            <Image alt="Button" src={showStates[3] ? button2 : button1} onClick={() => toggleShow(3)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">
@@ -117,12 +117,12 @@ function FaqPage() {
                             <h1>05</h1>
                             <div className="FaqTitleContainer">How can Mood Global Services help if I want to set up a digital marketplace?</div>
                         </div>
-                        <Image src={showStates[4] ? button2 : button1} onClick={() => toggleShow(4)} />
+                        <Image alt="Button" src={showStates[4] ? button2 : button1} onClick={() => toggleShow(4)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>05</h1>
                             <div className="FaqTitleContainer">How can Mood Global Services help if I want to set up a digital marketplace?</div>
-                            <Image src={showStates[4] ? button2 : button1} onClick={() => toggleShow(4)} />
+                            <Image alt="Button" src={showStates[4] ? button2 : button1} onClick={() => toggleShow(4)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">
@@ -135,12 +135,12 @@ function FaqPage() {
                             <h1>06</h1>
                             <div className="FaqTitleContainer">Can you develop tokens for my brand or business?</div>
                         </div>
-                        <Image src={showStates[5] ? button2 : button1} onClick={() => toggleShow(5)} />
+                        <Image alt="Button" src={showStates[5] ? button2 : button1} onClick={() => toggleShow(5)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>06</h1>
                             <div className="FaqTitleContainer">Can you develop tokens for my brand or business?</div>
-                            <Image src={showStates[5] ? button2 : button1} onClick={() => toggleShow(5)} />
+                            <Image alt="Button" src={showStates[5] ? button2 : button1} onClick={() => toggleShow(5)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">
@@ -154,12 +154,12 @@ function FaqPage() {
                             <div className="FaqTitleContainer">What is tokenization? <span style={{ opacity: '0'}}>...</span>
 </div>
                         </div>
-                        <Image src={showStates[6] ? button2 : button1} onClick={() => toggleShow(6)} />
+                        <Image alt="Button" src={showStates[6] ? button2 : button1} onClick={() => toggleShow(6)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>07</h1>
                             <div className="FaqTitleContainer">What is tokenization?</div>
-                            <Image src={showStates[6] ? button2 : button1} onClick={() => toggleShow(6)} />
+                            <Image alt="Button" src={showStates[6] ? button2 : button1} onClick={() => toggleShow(6)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">
@@ -172,12 +172,12 @@ function FaqPage() {
                             <h1>08</h1>
                             <div className="FaqTitleContainer">How can tokenization benefit my business?</div>
                         </div>
-                        <Image src={showStates[7] ? button2 : button1} onClick={() => toggleShow(7)} />
+                        <Image alt="Button" src={showStates[7] ? button2 : button1} onClick={() => toggleShow(7)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>08</h1>
                             <div className="FaqTitleContainer">How can tokenization benefit my business?</div>
-                            <Image src={showStates[7] ? button2 : button1} onClick={() => toggleShow(7)} />
+                            <Image alt="Button" src={showStates[7] ? button2 : button1} onClick={() => toggleShow(7)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">
@@ -198,12 +198,12 @@ function FaqPage() {
                             <h1>09</h1>
                             <div className="FaqTitleContainer">How can Mood Global Services assist with tokenization?</div>
                         </div>
-                        <Image src={showStates[8] ? button2 : button1} onClick={() => toggleShow(8)} />
+                        <Image alt="Button" src={showStates[8] ? button2 : button1} onClick={() => toggleShow(8)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>09</h1>
                             <div className="FaqTitleContainer">How can Mood Global Services assist with tokenization?</div>
-                            <Image src={showStates[8] ? button2 : button1} onClick={() => toggleShow(8)} />
+                            <Image alt="Button" src={showStates[8] ? button2 : button1} onClick={() => toggleShow(8)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">
@@ -216,12 +216,12 @@ function FaqPage() {
                             <h1>10</h1>
                             <div className="FaqTitleContainer">How can NFTs be applied to a company?</div>
                         </div>
-                        <Image src={showStates[9] ? button2 : button1} onClick={() => toggleShow(9)} />
+                        <Image alt="Button" src={showStates[9] ? button2 : button1} onClick={() => toggleShow(9)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>10</h1>
                             <div className="FaqTitleContainer">How can NFTs be applied to a company?</div>
-                            <Image src={showStates[9] ? button2 : button1} onClick={() => toggleShow(9)} />
+                            <Image alt="Button" src={showStates[9] ? button2 : button1} onClick={() => toggleShow(9)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">
@@ -234,12 +234,12 @@ function FaqPage() {
                             <h1>11</h1>
                             <div className="FaqTitleContainer">Why is an audit important for my blockchain project?</div>
                         </div>
-                        <Image src={showStates[10] ? button2 : button1} onClick={() => toggleShow(10)} />
+                        <Image alt="Button" src={showStates[10] ? button2 : button1} onClick={() => toggleShow(10)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>11</h1>
                             <div className="FaqTitleContainer">Why is an audit important for my blockchain project?</div>
-                            <Image src={showStates[10] ? button2 : button1} onClick={() => toggleShow(10)} />
+                            <Image alt="Button" src={showStates[10] ? button2 : button1} onClick={() => toggleShow(10)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">
@@ -252,12 +252,12 @@ function FaqPage() {
                             <h1>12</h1>
                             <div className="FaqTitleContainer">What do you mean by "Audit "?</div>
                         </div>
-                        <Image src={showStates[11] ? button2 : button1} onClick={() => toggleShow(11)} />
+                        <Image alt="Button" src={showStates[11] ? button2 : button1} onClick={() => toggleShow(11)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>12</h1>
                             <div className="FaqTitleContainer">What do you mean by "Audit "?</div>
-                            <Image src={showStates[11] ? button2 : button1} onClick={() => toggleShow(11)} />
+                            <Image alt="Button" src={showStates[11] ? button2 : button1} onClick={() => toggleShow(11)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">
@@ -270,12 +270,12 @@ function FaqPage() {
                             <h1>13</h1>
                             <div className="FaqTitleContainer">What is MICA, and why should I be concerned about it?</div>
                         </div>
-                        <Image src={showStates[12] ? button2 : button1} onClick={() => toggleShow(12)} />
+                        <Image alt="Button" src={showStates[12] ? button2 : button1} onClick={() => toggleShow(12)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>13</h1>
                             <div className="FaqTitleContainer">What is MICA, and why should I be concerned about it?</div>
-                            <Image src={showStates[12] ? button2 : button1} onClick={() => toggleShow(12)} />
+                            <Image alt="Button" src={showStates[12] ? button2 : button1} onClick={() => toggleShow(12)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">
@@ -288,12 +288,12 @@ function FaqPage() {
                             <h1>14</h1>
                             <div className="FaqTitleContainer">As an entrepreneur, how can blockchain benefit my startup?</div>
                         </div>
-                        <Image src={showStates[13] ? button2 : button1} onClick={() => toggleShow(13)} />
+                        <Image alt="Button" src={showStates[13] ? button2 : button1} onClick={() => toggleShow(13)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>14</h1>
                             <div className="FaqTitleContainer">As an entrepreneur, how can blockchain benefit my startup?</div>
-                            <Image src={showStates[13] ? button2 : button1} onClick={() => toggleShow(13)} />
+                            <Image alt="Button" src={showStates[13] ? button2 : button1} onClick={() => toggleShow(13)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">
@@ -306,12 +306,12 @@ function FaqPage() {
                             <h1>15</h1>
                             <div className="FaqTitleContainer">Do you offer consulting for businesses unfamiliar with blockchain?</div>
                         </div>
-                        <Image src={showStates[14] ? button2 : button1} onClick={() => toggleShow(14)} />
+                        <Image alt="Button" src={showStates[14] ? button2 : button1} onClick={() => toggleShow(14)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>15</h1>
                             <div className="FaqTitleContainer">Do you offer consulting for businesses unfamiliar with blockchain?</div>
-                            <Image src={showStates[14] ? button2 : button1} onClick={() => toggleShow(14)} />
+                            <Image alt="Button" src={showStates[14] ? button2 : button1} onClick={() => toggleShow(14)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">
@@ -324,12 +324,12 @@ function FaqPage() {
                             <h1>16</h1>
                             <div className="FaqTitleContainer">How can Mood Global Services enhance my project with AI?</div>
                         </div>
-                        <Image src={showStates[15] ? button2 : button1} onClick={() => toggleShow(15)} />
+                        <Image alt="Button" src={showStates[15] ? button2 : button1} onClick={() => toggleShow(15)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>16</h1>
                             <div className="FaqTitleContainer">How can Mood Global Services enhance my project with AI?</div>
-                            <Image src={showStates[15] ? button2 : button1} onClick={() => toggleShow(15)} />
+                            <Image alt="Button" src={showStates[15] ? button2 : button1} onClick={() => toggleShow(15)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">
@@ -342,12 +342,12 @@ function FaqPage() {
                             <h1>17</h1>
                             <div className="FaqTitleContainer">Why would I need custom API development?</div>
                         </div>
-                        <Image src={showStates[16] ? button2 : button1} onClick={() => toggleShow(16)} />
+                        <Image alt="Button" src={showStates[16] ? button2 : button1} onClick={() => toggleShow(16)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>17</h1>
                             <div className="FaqTitleContainer">Why would I need custom API development?</div>
-                            <Image src={showStates[16] ? button2 : button1} onClick={() => toggleShow(16)} />
+                            <Image alt="Button" src={showStates[16] ? button2 : button1} onClick={() => toggleShow(16)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">
@@ -360,12 +360,12 @@ function FaqPage() {
                             <h1>18</h1>
                             <div className="FaqTitleContainer">What's included in your database management services?</div>
                         </div>
-                        <Image src={showStates[17] ? button2 : button1} onClick={() => toggleShow(17)} />
+                        <Image alt="Button" src={showStates[17] ? button2 : button1} onClick={() => toggleShow(17)} />
                     </div> :
                         <div className="FaqUpperDiv">
                             <h1>18</h1>
                             <div className="FaqTitleContainer">What's included in your database management services?</div>
-                            <Image src={showStates[17] ? button2 : button1} onClick={() => toggleShow(17)} />
+                            <Image alt="Button" src={showStates[17] ? button2 : button1} onClick={() => toggleShow(17)} />
                         </div>
                     }
                     <div className="FaqLowerDiv">

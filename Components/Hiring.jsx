@@ -59,10 +59,12 @@ const Hiring = () => {
         <div className='hiringContainer'>
             <div className='imageContainer'>
                 <Image
+                    alt='Image Of Amsterdam'
                     id='webAmsterdamImage'
                     src={amsterdam}
                 />
                 <Image
+                    alt='Image Of Amsterdam'
                     id='mobileAmsterdamImage'
                     src={amsterdam2}
                 />
@@ -95,9 +97,9 @@ const Hiring = () => {
                                     className='hiringFeatures'
                                     key={index}>
                                     {feat !== ('Remote' || 'Hybrid' || 'On site') ? (
-                                        <Image src={freeIcon} />
+                                        <Image alt='Free Icon' src={freeIcon} />
                                     ) : (
-                                        <Image src={remIcon} />
+                                        <Image alt='Remote Icon' src={remIcon} />
                                     )}
                                     {feat}
                                 </span>
