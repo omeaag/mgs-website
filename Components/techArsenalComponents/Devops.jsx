@@ -20,8 +20,6 @@ const Devops = () => {
             <Image src={goo}></Image>
             <Image src={gra}></Image>
             <Image src={het}></Image>
-            </div>
-            <div className="ArsenalMiniComponent">
             <Image src={kub}></Image>
             <Image src={pag}></Image>
             <Image src={pro}></Image>

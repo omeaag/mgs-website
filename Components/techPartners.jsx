@@ -90,8 +90,6 @@ const techPartners = () => {
                         <Image src={airdao}></Image>
                         <Image src={polygon}></Image>
                         <Image src={solana}></Image>
-                    </div>
-                    <div className="blockChainIconsLine">
                         <Image src={filecoin}></Image>
                         <Image src={aptos}></Image>
                         <Image src={arbitrum}></Image>
