@@ -237,6 +237,8 @@
 
     .OurSolutionText .textContainer div:first-child {
         padding: 0;
+        min-height: 215px;
+
     }
 
     .OurSolutionText {

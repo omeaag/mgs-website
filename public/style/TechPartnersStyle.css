@@ -32,7 +32,6 @@
     flex-direction: column;
     float: inline-start;
     width: 100%;
-    gap: 20px;
 }
 
 .blockChainIconsLine {
@@ -43,7 +42,7 @@
 }
 
 .blockChainIconsLine img {
-    width: 200px;
+    width: 16.66%;
     height: 70px;
     filter: saturate(0);
     transition: 0.3s ease-in-out;
@@ -121,7 +120,9 @@
 
 .ArsenalMiniComponent {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 30px;
     width: 95%;
 }
 
@@ -135,10 +136,6 @@
     width: 100%;
 }
 
-.mainArsenalChangeComp img {
-    width: 116px;
-    height: 64px;
-}
 
 .techTextParentContainer {
     flex-direction: column;
