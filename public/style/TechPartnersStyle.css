@@ -42,16 +42,12 @@
 }
 
 .blockChainIconsLine img {
-    width: 16.66%;
-    height: 70px;
     filter: saturate(0);
     transition: 0.3s ease-in-out;
 }
 
 .blockChainIconsLine img:hover {
     filter: saturate(1);
-    width: 212.386px;
-    height: 77px;
     transition: 0.2s ease-in-out;
     cursor: pointer;
 }
