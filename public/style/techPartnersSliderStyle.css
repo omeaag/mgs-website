@@ -99,7 +99,8 @@
     }
 
     .blockChainIconsLine {
-        justify-content: space-around;
+        gap: 20px;
+        justify-content: space-between;
     }
 
     .blockChainIcons {
@@ -111,16 +112,10 @@
     }
 
     .blockChainIconsLine img {
-        width: 140.386px;
-        height: 72px;
-        filter: saturate(0);
         transition: 0.3s ease-in-out;
     }
 
     .blockChainIconsLine img:hover {
-        filter: saturate(1);
-        width: 152.386px;
-        height: 77px;
         transition: 0.2s ease-in-out;
         cursor: pointer;
     }
