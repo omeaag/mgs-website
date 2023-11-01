@@ -1,221 +1,114 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .allContainer {
-    display: flex;
-    gap: 0px;
-    align-items: center;
-    margin-bottom: 150px;
+  @apply flex gap-0 items-center mb-[150px];
 }
-
 .hexagonContainer {
-    display: flex;
-    align-items: center;
-    height: 300px;
+  @apply flex items-center h-[300px];
 }
-
 #hexagon {
-    margin-right: -203px;
-    height: 381px;
-    width: 296px;
+  @apply mr-[-203px] h-[381px] w-[296px];
 }
-
 #hexagonImages {
-    height: 160px;
-    width: 160px;
-
+  @apply h-40 w-40;
 }
-
-
 .allRows {
-    display: flex;
-    flex-direction: column;
+  @apply flex flex-col;
 }
-
 .firstRow {
-    display: flex;
-    gap: 7px;
+  @apply flex gap-[7px];
 }
-
 .secondRow {
-    display: flex;
-    gap: 7px;
-    margin-top: -70px;
-    margin-left: -46px
+  @apply flex gap-[7px] mt-[-70px] ml-[-46px];
 }
-
 .thirdRow {
-    display: flex;
-    gap: 7px;
-    margin-top: -70px;
-    margin-left: 100px;
+  @apply flex gap-[7px] mt-[-70px] ml-[100px];
 }
-
 .textContainer {
-    margin-left: 50px;
+  @apply ml-[50px];
 }
-
 .textContainer h1 {
-    font-size: 80px;
-    font-weight: 500;
-    letter-spacing: 3px;
-    line-height: 96px;
-    text-align: left;
-    color: #3C3C3C;
-    font-family: MonumentExtended
+  @apply text-[80px] font-medium tracking-[3px] leading-[96px] text-left text-[#3C3C3C];
+  font-family: MonumentExtended;
 }
-
 .textContainer h2 {
-    font-size: 52px;
-    font-weight: 500;
-    line-height: 65px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: rgba(0, 113, 251, 1);
-    font-family: MonumentExtended
+  @apply text-[52px] font-medium leading-[65px] tracking-[0px] text-left text-[rgba(0,113,251,1)];
+  font-family: MonumentExtended;
 }
 
 /* TABLET BREAKPOINT */
 @media (min-width: 600px) and (max-width: 1024px) {
-    .allContainer {
-        flex-direction: row;
-        margin: 100px 0;
-        gap: 30px;
-    }
-
-    .textContainer {
-        margin: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: flex-start;
-    }
-
-    .textContainer h2 {
-        font-size: 40px;
-        line-height: 60px;
-    }
-
-    .textContainer h1 {
-        font-size: 53px;
-        line-height: 63px;
-    }
-
-
-    .allRows {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-left: -70px;
-    }
-
-    .firstRow {
-        display: flex;
-    }
-
-    .secondRow {
-        display: flex;
-        margin: -55px 0px;
-    }
-
-    .thirdRow {
-        display: flex;
-        margin-top: 0px;
-        margin-left: 15px;
-    }
-
-    #hexagon {
-        width: 182px !important;
-        height: 230px !important ;
-    }
-
-    #hexagonImages {
-        width: 130px !important;
-        height: 139px !important;
-        position: absolute;
-        top: 45px;
-        right: 26px;
-    }
-
-    .hexagonContainer {
-        display: flex;
-        width: 182px !important;
-        height: 230px !important ;
-        position: relative;
-    }
-
+  .allContainer {
+    @apply flex-row gap-[30px] mx-0 my-[100px];
+  }
+  .textContainer {
+    @apply flex flex-col justify-center items-start m-0;
+  }
+  .textContainer h2 {
+    @apply text-[40px] leading-[60px];
+  }
+  .textContainer h1 {
+    @apply text-[53px] leading-[63px];
+  }
+  .allRows {
+    @apply flex flex-col items-center justify-center ml-[-70px];
+  }
+  .firstRow {
+    @apply flex;
+  }
+  .secondRow {
+    @apply flex mt-[-55px] mb-[-55px] mx-0;
+  }
+  .thirdRow {
+    @apply flex ml-[15px] mt-0;
+  }
+  #hexagon {
+    @apply w-[182px] h-[230px];
+  }
+  #hexagonImages {
+    @apply w-[130px] h-[139px] absolute right-[26px] top-[45px];
+  }
+  .hexagonContainer {
+    @apply flex w-[182px] h-[230px] relative;
+  }
 }
 
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
-    .allContainer {
-        flex-direction: column-reverse;
-        gap: 30px;
-        margin-top: 90px;
-    }
-
-    .textContainer {
-        margin: 0;
-    }
-
-    .textContainer h2 {
-        font-size: 30px;
-        font-weight: 500;
-        line-height: 36px;
-        letter-spacing: 0px;
-        text-align: center;
-
-    }
-
-    .textContainer h1 {
-        font-size: 40px;
-        font-weight: 500;
-        line-height: 60px;
-        letter-spacing: 0px;
-        text-align: center;
-        width: 80%;
-        margin: auto;
-    }
-
-
-    .allRows {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .firstRow {
-        display: flex;
-    }
-
-    .secondRow {
-        display: flex;
-        margin: -12px 0;
-    }
-
-    .thirdRow {
-        display: flex;
-        margin-top: 0px;
-        margin: 0;
-
-    }
-
-    #hexagon {
-        width: 141px !important;
-        height: 118px !important;
-    }
-
-    #hexagonImages {
-        width: 66px !important;
-        height: 66px !important;
-        position: absolute;
-        top: 22px;
-        right: 22px;
-    }
-
-    .hexagonContainer {
-        display: flex;
-        width: 108px !important;
-        height: 118px !important;
-        position: relative;
-    }
+  .allContainer {
+    @apply flex-col-reverse gap-[30px] mt-[90px];
+  }
+  .textContainer {
+    @apply m-0;
+  }
+  .textContainer h2 {
+    @apply text-3xl font-medium leading-9 tracking-[0px] text-center;
+  }
+  .textContainer h1 {
+    @apply text-[40px] font-medium leading-[60px] tracking-[0px] text-center w-4/5 m-auto;
+  }
+  .allRows {
+    @apply flex flex-col items-center justify-center;
+  }
+  .firstRow {
+    @apply flex;
+  }
+  .secondRow {
+    @apply flex mx-0 -my-3;
+  }
+  .thirdRow {
+    @apply flex m-0;
+  }
+  #hexagon {
+    @apply w-[141px] h-[118px];
+  }
+  #hexagonImages {
+    @apply w-[66px] h-[66px] absolute right-[22px] top-[22px];
+  }
+  .hexagonContainer {
+    @apply flex w-[108px] h-[118px] relative;
+  }
 }

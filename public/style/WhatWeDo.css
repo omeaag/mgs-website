@@ -1,54 +1,67 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: MonumentExtended;
-
+  @apply box-border [font-family:MonumentExtended] m-0 p-0;
 }
-
 .wwdContainer {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding-right: 0;
+  @apply w-4/5 flex justify-center flex-col m-auto pr-0;
 }
-
-.wwdContainer>div:first-child {
-    display: flex;
-    align-items: center;
-    margin: 100px 0px;
+.wwdContainer > div:first-child {
+  @apply flex items-center mx-0 my-[100px];
 }
-
 .wwdContainer .blueTitle {
-    font-size: 65px;
-    font-weight: 500;
-    line-height: 78px;
-    letter-spacing: 0px;
-    text-align: center;
+  @apply text-[65px] font-medium leading-[78px] tracking-[0px] text-center;
 }
-
 .wwdContainer .WeDoText {
-    margin-bottom: 30px;
-    font-size: 25px;
-    line-height: 50px;
+  @apply text-[25px] leading-[50px] mb-[30px];
 }
-
 .wwdContainer .blueTitle span {
-    color: rgba(0, 113, 251, 1);
+  @apply text-[rgba(0,113,251,1)];
+}
+.blueTitle + .line {
+  @apply grow h-0.5 bg-[rgba(225,225,225,1)] ml-2.5 mr-5 rounded-[5px];
 }
 
-.blueTitle+.line {
-    flex-grow: 1;
-    height: 2px;
-    margin-left: 10px;
-    margin-right: 20px;
-    border-radius: 5px;
-    background-color: rgba(225, 225, 225, 1);
+/* TABLET BREAKPOINT */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .wwdContainer {
+    @apply text-justify w-[89%] p-2.5;
+  }
+  .wwdContainer .blueTitle {
+    @apply text-[40px] leading-[60px] ml-0;
+  }
+  .blueTitle + .line {
+    @apply relative top-2.5;
+  }
+  .wwdContainer .WeDoText {
+    @apply text-[22px] leading-[45px];
+  }
 }
 
-@keyframes animate {
+/* PHONE BREAKPOINT */
+@media (max-width: 599px) {
+  .wwdContainer {
+    @apply w-[88%];
+  }
+  .wwdContainer > div:first-child {
+    @apply mt-[100px] mb-10 mx-0;
+  }
+  .wwdContainer .blueTitle {
+    @apply text-[40px] leading-[60px] ml-0;
+  }
+  .blueTitle + .line {
+    @apply hidden;
+  }
+  .wwdContainer .WeDoText {
+    @apply text-justify text-base leading-[30px];
+  }
+}
+
+
+@keyframes animate1 {
     0% {
         background-position: 200%;
     }
@@ -60,58 +73,5 @@
     100% {
         background-position: -200%;
         background: rgba(0, 113, 251, 1);
-    }
-}
-
-
-/* TABLET BREAKPOINT */
-@media (min-width: 600px) and (max-width: 1024px) {
-    .wwdContainer {
-        text-align: justify;
-        padding: 10px;
-        width: 89%;
-    }
-
-    .wwdContainer .blueTitle {
-        font-size: 40px;
-        line-height: 60px;
-        margin-left: 0;
-    }
-
-    .blueTitle+.line {
-        position: relative;
-        top: 10px;
-    }
-
-    .wwdContainer .WeDoText {
-        font-size: 22px;
-        line-height: 45px;
-    }
-}
-
-/* PHONE BREAKPOINT */
-@media (max-width: 599px) {
-    .wwdContainer {
-        width: 88%;
-    }
-    .wwdContainer>div:first-child{
-        margin: 100px 0 40px 0;
-    }
-
-
-    .wwdContainer .blueTitle {
-        font-size: 40px;
-        line-height: 60px;
-        margin-left: 0;
-    }
-
-    .blueTitle+.line {
-        display: none;
-    }
-
-    .wwdContainer .WeDoText {
-        text-align: justify;
-        font-size: 16px;
-        line-height: 30px;
     }
 }

@@ -1,210 +1,112 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .partnershipAllContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: rgba(0, 113, 251, 1);
-    border-radius: 1.2rem;
-    padding-left: 100px;
-    margin-bottom: 200px;
-    max-height: 500px;
+  @apply flex items-center justify-center bg-[rgba(0,113,251,1)] max-h-[500px] mb-[200px] pl-[100px] rounded-[1.2rem];
 }
-
 .getInTouchContainer {
-    width: 50%;
-    margin: 100px 30px 120px -50px;
-    gap: 30px;
-    display: flex;
-    flex-direction: column;
+  @apply w-6/12 ml-[-50px] gap-[30px] flex flex-col mr-[30px] mt-[100px] mb-[120px];
 }
-
 .getInTouchContainer h1 {
-    color: #FFFFFF;
-    font-family: MonumentExtended;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 60px;
-    letter-spacing: 0px;
-
+  @apply text-white text-[40px] font-medium leading-[60px] tracking-[0px];
+  font-family: MonumentExtended;
 }
-
 .getInTouchContainer h3 {
-    text-align: justify;
-    color: #FFFFFF;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 50px;
-    letter-spacing: 0px;
-    text-align: left;
+  @apply text-justify text-white text-[22px] font-normal leading-[50px] tracking-[0px] text-left;
 }
-
 .formContainer {
-    margin-top: 150px;
-    width: 40%;
-    background-color: #FFFFFF;
-    border-radius: 1.2rem;
-    padding: 44px 32px 44px 32px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: left;
-    gap: 20px;
-    box-shadow: 0px 0px 50px 1px #515458;
+  @apply w-2/5 bg-white flex flex-col justify-center gap-5 shadow-[0px_0px_50px_1px_#515458] mt-[150px] px-8 py-11 rounded-[1.2rem];
+  align-items: left;
 }
-
 .formContainer input {
-    border: 1px solid #BDBDBD;
-    color: #BDBDBD;
-    border-radius: 5px;
-    width: 100%;
-    height: 48px;
-    padding: 10px;
-
+  @apply border text-[#BDBDBD] w-full h-12 p-2.5 rounded-[5px] border-solid border-[#BDBDBD];
 }
-
 .formContainer label {
-    font-size: 12px;
-    color: #515458;
+  @apply text-xs text-[#515458];
 }
-
 .formContainer button {
-    font-size: 16px;
-    color: #fff;
-    background: linear-gradient(90deg, #1293BC -10.29%, #0028FB 25.21%, #6100FF 65.24%, #0073FF 113.66%);
-    border-radius: 42px;
-    width: 218px;
-    height: 64px;
-    padding: 20px 40px 20px 40px;
-    font-family: MonumentExtended;
+  @apply text-base text-white w-[218px] h-16 px-10 py-5 rounded-[42px];
+  background: linear-gradient(
+    90deg,
+    #1293bc -10.29%,
+    #0028fb 25.21%,
+    #6100ff 65.24%,
+    #0073ff 113.66%
+  );
+  font-family: MonumentExtended;
 }
-
 .namesContainer {
-    gap: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  @apply gap-5 flex justify-between items-center;
 }
-
 .groupContainer {
-    display: flex;
-    width: 100%;
-    flex-direction: column;
+  @apply flex w-full flex-col;
 }
-
 .comphoneContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+  @apply flex justify-center items-center gap-5;
 }
-
-
-
 #details {
-    height: 162px;
-    width: 100%;
+  @apply h-[162px] w-full;
 }
-
 #email {
-    width: 100%;
+  @apply w-full;
 }
 
 /* TABLET BREAKPOINT */
 @media (min-width: 600px) and (max-width: 1024px) {
-    .partnershipAllContainer {
-        margin: auto 0px;
-        padding: 20px;
-        margin-bottom: 100px;
-        max-height: 600px;
-    }
-
-    .getInTouchContainer {
-        width: 100%;
-        margin: 0 !important;
-        padding: 20px;
-    }
-
-    .getInTouchContainer h1 {
-        font-size: 30px;
-        line-height: 36px;
-        margin-bottom: 20px;
-        font-weight: 500;
-
-    }
-
-    .getInTouchContainer h3 {
-        font-size: 22px;
-        line-height: 39px;
-    }
-
-    .formContainer {
-        width: 100% !important;
-        margin: 0;
-        padding-bottom: 10px;
-        margin-top: 150px;
-    }
-
-    .namesContainer,
-    .comphoneContainer {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .formContainer input {
-        width: 100%;
-    }
-
-    .formContainer input::placeholder {
-        font-size: 10px;
-    }
-
-    .groupContainer+button {
-        margin-bottom: 10px;
-    }
+  .partnershipAllContainer {
+    @apply max-h-[600px] mb-[100px] mx-0 my-auto p-5;
+  }
+  .getInTouchContainer {
+    @apply w-full m-0 p-5;
+  }
+  .getInTouchContainer h1 {
+    @apply text-3xl leading-9 font-medium mb-5;
+  }
+  .getInTouchContainer h3 {
+    @apply text-[22px] leading-[39px];
+  }
+  .formContainer {
+    @apply w-full mt-[150px] m-0 pb-2.5;
+  }
+  .namesContainer,
+  .comphoneContainer {
+    @apply w-full justify-between;
+  }
+  .formContainer input {
+    @apply w-full;
+  }
+  .formContainer input::placeholder {
+    @apply text-[10px];
+  }
+  .groupContainer + button {
+    @apply mb-2.5;
+  }
 }
 
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
-    .partnershipAllContainer {
-        flex-direction: column;
-        margin: 60px 0;
-        padding: 0px;
-        max-height: 996px;
-        padding-top: 50px;
-    }
-
-    .getInTouchContainer {
-        margin: 0;
-        width: 100%;
-    }
-
-    .getInTouchContainer h1 {
-        font-size: 30px;
-        line-height: 36px;
-        margin-bottom: 20px;
-        width: 88%;
-        margin: auto;
-    }
-
-    .getInTouchContainer h3 {
-        font-size: 16px;
-        line-height: 29px;
-        width: 87%;
-        margin: auto;
-    }
-
-    .formContainer {
-        width: 100vw;
-        margin-top: 30px;
-        box-sizing: border-box;
-    }
-
-    .namesContainer,
-    .comphoneContainer {
-        width: 100%;
-        justify-content: space-between;
-    }
-
-    .formContainer input {
-        width: 100%
-    }
+  .partnershipAllContainer {
+    @apply flex-col max-h-[996px] mx-0 my-[60px] pt-[50px] p-0;
+  }
+  .getInTouchContainer {
+    @apply w-full m-0;
+  }
+  .getInTouchContainer h1 {
+    @apply text-3xl leading-9 w-[88%] mb-5 m-auto;
+  }
+  .getInTouchContainer h3 {
+    @apply text-base leading-[29px] w-[87%] m-auto;
+  }
+  .formContainer {
+    @apply w-screen box-border mt-[30px];
+  }
+  .namesContainer,
+  .comphoneContainer {
+    @apply w-full justify-between;
+  }
+  .formContainer input {
+    @apply w-full;
+  }
 }

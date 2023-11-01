@@ -1,208 +1,88 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  @apply box-border m-0 p-0;
   font-family: MonumentExtended;
 }
-
 .feedbackContainer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 80%;
-  opacity: 0.3;
-  margin: auto;
-  margin-bottom: 40px;
+  @apply flex flex-col items-center w-4/5 opacity-30 mb-10 m-auto;
 }
-
 .feedbackContainer h1 {
-  font-size: 30px;
-  font-weight: 500;
-  text-align: center;
-  padding: 30px;
+  @apply text-3xl font-medium text-center p-[30px];
 }
-
 .feedbackContainer h1 span {
-  color: rgba(0, 113, 251, 1);
+  @apply text-[rgba(0,113,251,1)];
 }
-
 .feedbackContainer .form {
-  display: flex;
-  flex-direction: column;
-  border: 1px solid #a0def3;
-  border-radius: 30px;
-  padding-left: 50px;
-  padding-right: 50px;
-  height: 100%;
+  @apply flex flex-col border h-full px-[50px] rounded-[30px] border-solid border-[#a0def3];
 }
-
 .rate {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 10px;
-  border-bottom: 1px solid #a0def3;
-  margin-bottom: 30px;
-  margin-top: 20px;
+  @apply flex justify-between items-center mt-5 mb-[30px] px-2.5 py-5 border-b-[#a0def3] border-b border-solid;
 }
-
 .rate span {
-  font-size: 12px;
+  @apply text-xs;
 }
-
 .rate button {
-  font-size: 13px !important;
-  border: 1px solid #c7d3d3 !important;
-  border-radius: 50%;
-  background-color: rgba(223, 222, 222, 0.6);
-  color: #000 !important;
-  width: 30px;
-  height: 30px;
-  align-items: center;
-  margin: 10px !important;
-  text-align: center;
+  @apply text-[13px] border bg-[rgba(223,222,222,0.6)] text-black w-[30px] h-[30px] items-center text-center m-2.5 rounded-[50%] border-solid border-[#c7d3d3];
 }
-
 .feedbackContainer .form textarea {
-  padding: 20px 30px;
-  width: 100%;
-  height: 70%;
-  border: 1px solid rgba(223, 222, 222, 0.6);
-  border-radius: 30px;
+  @apply w-full h-[70%] border px-[30px] py-5 rounded-[30px] border-solid border-[rgba(223,222,222,0.6)];
 }
-
 .feedbackContainer .form textarea::placeholder {
-  font-size: 15px;
+  @apply text-[15px];
 }
-
 .form .error {
-  padding: 10px 5px;
-  float: left !important;
+  @apply float-left px-[5px] py-2.5;
 }
-
 .form #submitBtn {
-  border: 1px solid rgba(0, 113, 251, 1);
-  font-size: 15px !important;
-  color: #fff !important;
-  background-color: rgba(0, 113, 251, 1);
-  border-radius: 30px;
-  padding: 15px 30px;
-  transition: 0.4s;
-  margin: 20px 0 !important;
-}
-
-.form #submitBtn:hover {
-  color: rgba(0, 113, 251, 1) !important;
-  background-color: #fff;
+  @apply border text-[15px] text-white bg-[rgba(0,113,251,1)] transition-[0.4s] mx-0 my-5 px-[30px] py-[15px] rounded-[30px] border-solid border-[rgba(0,113,251,1)] hover:text-[rgba(0,113,251,1)] hover:bg-white;
 }
 
 /*Mobile*/
 @media (max-width: 599px) {
   * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    @apply box-border m-0 p-0;
     font-family: MonumentExtended;
   }
-
   .feedbackContainer {
-    opacity: 0.3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin: auto;
-    margin-bottom: 40px;
+    @apply opacity-30 flex flex-col items-center w-full mb-10 m-auto;
   }
-
   .feedbackContainer h1 {
-    font-size: 20.7px;
-    font-weight: bold;
-    text-align: center;
-    padding: 30px;
+    @apply text-[20.7px] font-[bold] text-center p-[30px];
   }
-
   .feedbackContainer h1 span {
-    color: rgba(0, 113, 251, 1);
+    @apply text-[rgba(0,113,251,1)];
   }
-
   .feedbackContainer .form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border: 1px solid #a0def3;
-    border-radius: 30px;
-    height: 100%;
-    padding: 20px;
-    margin: 20px;
+    @apply flex flex-col justify-center items-center border h-full m-5 p-5 rounded-[30px] border-solid border-[#a0def3];
   }
-
   .rate {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    padding: 20px 10px;
-    border-bottom: 1px solid #a0def3;
-    width: 100%;
-    gap: 15px;
+    @apply flex flex-col justify-center items-start w-full gap-[15px] px-2.5 py-5 border-b-[#a0def3] border-b border-solid;
   }
-
   .rate span {
-    margin-left: 10px;
-    font-size: 15px;
+    @apply text-[15px] ml-2.5;
   }
-
   .rate button {
-    font-size: 13px !important;
-    border: 1px solid #c7d3d3 !important;
-    border-radius: 50%;
-    background-color: rgba(223, 222, 222, 0.6);
-    color: #000 !important;
-    width: 20px;
-    height: 20px;
-    align-items: center;
-    margin: 10px !important;
-    text-align: center;
+    @apply text-[13px] border bg-[rgba(223,222,222,0.6)] text-black w-5 h-5 items-center text-center m-2.5 rounded-[50%] border-solid border-[#c7d3d3];
   }
-
   .feedbackContainer .form textarea {
-    padding: 20px 30px;
-    width: 100%;
-    height: 70%;
-    border: 1px solid rgba(223, 222, 222, 0.6);
-    border-radius: 30px;
+    @apply w-full h-[70%] border px-[30px] py-5 rounded-[30px] border-solid border-[rgba(223,222,222,0.6)];
   }
-
   .feedbackContainer .form textarea::placeholder {
-    font-size: 15px;
+    @apply text-[15px];
   }
-
   .form .error {
-    padding: 10px 5px;
-    float: left !important;
+    @apply float-left px-[5px] py-2.5;
   }
-
   .form #submitBtn {
-    border: 1px solid rgba(0, 113, 251, 1);
-    font-size: 15px !important;
-    color: #fff !important;
-    background-color: rgba(0, 113, 251, 1);
-    border-radius: 30px;
-    padding: 15px 30px;
-    transition: 0.4s;
-    margin: 20px 0 !important;
-  }
-
-  .form #submitBtn:hover {
-    color: rgba(0, 113, 251, 1) !important;
-    background-color: #fff;
+    @apply border text-[15px] text-white bg-[rgba(0,113,251,1)] transition-[0.4s] mx-0 my-5 px-[30px] py-[15px] rounded-[30px] border-solid border-[rgba(0,113,251,1)] hover:text-[rgba(0,113,251,1)] hover:bg-white;
   }
 }
-
 @media (min-width: 600px) and (max-width: 1024px) {
   .feedbackContainer {
-    opacity: 0.3;
+    @apply opacity-30;
   }
 }

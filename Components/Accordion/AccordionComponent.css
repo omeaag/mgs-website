@@ -1,190 +1,113 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .acordionComponentContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 100px;
-  margin: 8.75rem 0 11.875rem 0;
+  @apply flex flex-col gap-[100px] mt-[8.75rem] mb-[11.875rem] mx-0;
 }
-
 .sectionContent.open.left-section,
 .sectionContent.open.right-section {
-  border: 1px solid #b2ebff;
-  border-radius: 16px;
-  padding: 20px 10px;
-  margin-top: 30px;
-  box-shadow: 0px 14px 24px 0px rgba(0, 0, 0, 0.04) inset;
-  width: calc(33% - 18px);
+  @apply border shadow-[0px_14px_24px_0px_rgba(0,0,0,0.04)_inset] w-[calc(33%_-_18px)] mt-[30px] px-2.5 py-5 rounded-2xl border-solid border-[#b2ebff];
 }
-
 .accordionSection {
-  width: 85%;
-  display: flex;
-  flex-direction: column;
-  margin: auto;
-  overflow: hidden;
+  @apply w-[85%] flex flex-col overflow-hidden m-auto;
 }
-
 .accordionIndex {
-  display: flex;
-  gap: 30px;
-  flex-wrap: wrap;
+  @apply flex gap-[30px] flex-wrap;
   justify-content: left;
 }
-
 #AccordionTitleImage {
-  width: 150.887px;
-  height: 160px;
+  @apply w-[150.887px] h-40;
 }
-
 .sectionHeader {
-  display: flex;
-  border-bottom: 1px solid rgba(0, 113, 251, 1);
-  justify-content: space-between;
-  cursor: pointer;
+  @apply flex justify-between cursor-pointer border-b-[rgba(0,113,251,1)] border-b border-solid;
 }
-
 .sectionHeader p {
-  padding: 20px;
+  @apply text-[4rem] font-medium leading-[90px] tracking-[0px] text-center p-5;
   font-family: MonumentExtended;
-  font-size: 4rem;
-  font-weight: 500;
-  line-height: 90px;
-  letter-spacing: 0px;
-  text-align: center;
 }
-
 .sectionHeader span {
-  color: rgba(0, 113, 251, 1);
+  @apply text-[rgba(0,113,251,1)];
 }
-
 .sectionContent {
-  margin-top: 100px;
-  width: calc(33% - 16px);
-
-  overflow: hidden;
-  transition: max-height 0.3s ease-in-out;
+  @apply w-[calc(33%_-_16px)] overflow-hidden transition-[max-height] duration-[0.3s] ease-[ease-in-out] mt-[100px];
 }
-
 .sectionContent.open {
-  display: flex;
-  flex-direction: column;
+  @apply flex flex-col;
 }
-
 .sectionContent.close {
-  display: none;
+  @apply hidden;
 }
-
 .accordion-title {
+  @apply text-3xl font-medium leading-[63px] tracking-[0px] text-left flex items-center gap-2.5;
   font-family: MonumentExtended;
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 63px;
-  letter-spacing: 0px;
-  text-align: left;
-  display: flex;
-  align-items: center;
-  gap: 10px;
 }
-
 .accordion-title img {
-  width: 30px;
+  @apply w-[30px];
 }
-
 .accordion-par {
+  @apply text-left text-[22px] font-normal leading-[39px] w-full;
   font-family: MonumentExtended;
-  text-align: left;
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 39px;
-  width: 100%;
 }
-
 @media (min-width: 600px) and (max-width: 1024px) {
   .accordionSection {
-    width: 90%;
+    @apply w-[90%];
   }
   .acordionComponentContainer {
-    margin-bottom: 100px;
+    @apply mb-[100px];
   }
-
   .blockChainnetworkContainer {
-    width: 90%;
+    @apply w-[90%];
   }
   .blockChainIconsLine {
-    justify-content: space-between;
+    @apply justify-between;
   }
   .techArsenalContainer {
-    width: 90%;
+    @apply w-[90%];
   }
   .mainArsenalChangeComp {
-    justify-content: space-between;
+    @apply justify-between;
   }
   .ArsenalMiniComponent {
-    width: 100%;
-    flex-wrap: wrap;
-    gap: 30px;
+    @apply w-full flex-wrap gap-[30px];
   }
-
   .techTextParentContainer {
-    width: 90%;
+    @apply w-[90%];
   }
   .techSliderParentContainer {
-    width: 100%;
+    @apply w-full;
   }
 }
 
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
   .sectionHeader p {
-    font-size: 30px;
-    line-height: normal;
-    text-align: start;
-    padding: 20px 0;
+    @apply text-3xl leading-[normal] text-start px-0 py-5;
   }
   .accordionSection {
-    width: 100%;
+    @apply w-full;
   }
   .accordion-title {
-    font-size: 26px;
-    width: 91%;
-    margin: auto;
+    @apply text-[26px] w-[91%] m-auto;
   }
-
   .accordion-par {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 33px;
-    letter-spacing: 0px;
-    text-align: left;
-    width: 91%;
-    margin: auto;
+    @apply text-lg font-normal leading-[33px] tracking-[0px] text-left w-[91%] m-auto;
   }
-
   .sectionContent.open {
-    display: flex;
-    gap: 0px;
+    @apply flex gap-0;
   }
-
   .sectionContent.open.left-section,
   .sectionContent.open.right-section {
-    border: 1px solid #b2ebff;
-    border-radius: 16px;
-    padding: 60px 10px;
-    margin-top: 30px;
-    box-shadow: 0px 14px 24px 0px rgba(0, 0, 0, 0.04) inset;
-    width: 100%;
+    @apply border shadow-[0px_14px_24px_0px_rgba(0,0,0,0.04)_inset] w-full mt-[30px] px-2.5 py-[60px] rounded-2xl border-solid border-[#b2ebff];
   }
-
   .sectionHeader {
-    align-items: center;
-    margin: 20px 0;
+    @apply items-center mx-0 my-5;
   }
-
   .sectionHeader img {
-    width: 38px;
-    height: 20px;
+    @apply w-[38px] h-5;
   }
-
   .acordionComponentContainer {
-    gap: 0px;
+    @apply gap-0;
   }
 }

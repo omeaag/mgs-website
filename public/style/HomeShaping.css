@@ -1,215 +1,129 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .HomeShapingContainer {
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 200px 0;
-    background: url(../materials/HomeShapingBackground.svg);
-    background-size: cover;
-    background-repeat: no-repeat;
+  @apply justify-center flex flex-col items-center w-full bg-cover bg-no-repeat px-0 py-[200px];
+  background: url(../materials/HomeShapingBackground.svg);
 }
-
 .HomeShapingBottomLine {
-    width: 200px;
-    border: 1px solid #a9a9a9;
+  @apply w-[200px] border border-solid border-[#a9a9a9];
 }
-
 .text-shaping {
-    font-family: MonumentExtended;
-    font-size: 100px;
-    font-weight: 700;
-    line-height: 100px;
-    letter-spacing: 0em;
-    text-align: center;
+  @apply text-[100px] font-bold leading-[100px] tracking-normal text-center;
+  font-family: MonumentExtended;
 }
-
 .text-creativity {
-    font-family: MonumentExtended;
-    font-size: 100px;
-    font-weight: 700;
-    line-height: 100px;
-    letter-spacing: 0em;
-    text-align: center;
-    color: rgba(0, 113, 251, 1);
+  @apply text-[100px] font-bold leading-[100px] tracking-normal text-center text-[rgba(0,113,251,1)];
+  font-family: MonumentExtended;
 }
-
-
-
 .at-mood-global {
-    width: 55%;
-    margin: auto;
-    margin-top: 1.6rem;
-    font-family: MonumentExtended;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 50px;
-    letter-spacing: 0px;
-    text-align: center;
+  @apply w-[55%] text-[26px] font-normal leading-[50px] tracking-[0px] text-center mt-[1.6rem] m-auto;
+  font-family: MonumentExtended;
 }
-
 .HomeShapingbuttons {
-    display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-top: 30px;
-    width: 25%;
-    min-width: 330px;
+  @apply flex justify-center gap-[30px] w-3/12 min-w-[330px] mt-[30px];
 }
-
 .homeshapping-btn {
-    border: 2px solid rgba(0, 113, 251, 1);
-    border-radius: 100px;
-    width: 239px;
-    height: 64px;
-    color: black;
+  @apply w-[239px] h-16 text-[black] rounded-[100px] border-2 border-solid border-[rgba(0,113,251,1)];
 }
-
 .homeshapping-btn.black {
-    background: linear-gradient(90deg, #1293BC -10.29%, #0028FB 25.21%, #6100FF 65.24%, #0073FF 113.66%);
-    color: white;
+  @apply text-[white];
+  background: linear-gradient(
+    90deg,
+    #1293bc -10.29%,
+    #0028fb 25.21%,
+    #6100ff 65.24%,
+    #0073ff 113.66%
+  );
 }
-
 .homeshapping-btn.black:hover {
-    background: linear-gradient(270deg, #1293BC -17.86%, #0028FB 36%, #6100FF 96.72%, #0073FF 170.17%);
+  background: linear-gradient(
+    270deg,
+    #1293bc -17.86%,
+    #0028fb 36%,
+    #6100ff 96.72%,
+    #0073ff 170.17%
+  );
 }
-
 .homeshapping-btn.white:hover {
-    background: linear-gradient(90deg, #1293BC -10.29%, #0028FB 25.21%, #6100FF 65.24%, #0073FF 113.66%);
-    color: white;
+  @apply text-[white];
+  background: linear-gradient(
+    90deg,
+    #1293bc -10.29%,
+    #0028fb 25.21%,
+    #6100ff 65.24%,
+    #0073ff 113.66%
+  );
 }
 
 /* TABLET BREAKPOINT */
 @media (min-width: 600px) and (max-width: 1024px) {
-    .HomeShapingContainer {
-        margin-top: 50px;
-        background-size: cover;
-        text-align: center;
-        padding: 125px 10px;
-    }
-
-    .at-mood-global {
-        margin-top: 1rem;
-        font-size: 22px;
-        line-height: 37px;
-        width: 85%;
-    }
-
-    .HomeShapingbuttons {
-        display: flex;
-        gap: 20px;
-        margin-top: 80px;
-    }
-
-    .homeshapping-btn {
-        border: 2px solid;
-        padding: 16px 30px;
-        font-size: 20px;
-        line-height: 24px;
-        width: 230px;
-        height: 80px;
-    }
-
-    .homeshapping-btn.black {
-        background-color: #1a1a1a;
-        border-color: #0071fb;
-        color: white;
-    }
-
-    .homeshapping-btn.white {
-        border-color: #0071fb;
-    }
-
-    .HomeShapingBottomLine {
-        display: none;
-    }
-
-    .text-shaping,
-    .text-creativity {
-        font-size: 80px;
-        font-weight: 700;
-        line-height: 90px;
-        letter-spacing: 0em;
-        text-align: center;
-
-    }
-
-    .HomeShapingHeaders {
-        margin-bottom: 30px;
-    }
-
-    .HomeShapingbuttons {
-        width: 100%;
-        margin: 40px 0 70px 0;
-    }
-
-    .HomeShapingbuttons button {
-        height: 65px;
-    }
-
+  .HomeShapingContainer {
+    @apply bg-cover text-center mt-[50px] px-2.5 py-[125px];
+  }
+  .at-mood-global {
+    @apply text-[22px] leading-[37px] w-[85%] mt-4;
+  }
+  .HomeShapingbuttons {
+    @apply flex gap-5 mt-20 w-full mt-10 mb-[70px] mx-0;
+  }
+  .homeshapping-btn {
+    @apply text-xl leading-6 w-[230px] h-20 px-[30px] py-4 border-2 border-solid;
+  }
+  .homeshapping-btn.black {
+    @apply bg-[#1a1a1a] text-[white] border-[#0071fb];
+  }
+  .homeshapping-btn.white {
+    @apply border-[#0071fb];
+  }
+  .HomeShapingBottomLine {
+    @apply hidden;
+  }
+  .text-shaping,
+  .text-creativity {
+    @apply text-[80px] font-bold leading-[90px] tracking-normal text-center;
+  }
+  .HomeShapingHeaders {
+    @apply mb-[30px];
+  }
+  .HomeShapingbuttons button {
+    @apply h-[65px];
+  }
 }
 
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
-    .HomeShapingContainer {
-        margin-top: 4rem;
-        background-size: cover;
-        text-align: center;
-    }
-
-    .firsRow {
-        padding: 10px;
-    }
-
-    .HomeShapingParagraph {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100% !important;
-    }
-
-    .text-shaping,
-    .text-creativity {
-        font-size: 44px;
-        font-weight: 700;
-        line-height: 50px;
-        letter-spacing: 0em;
-        text-align: center;
-
-    }
-
-
-    .at-mood-global {
-        margin: 0;
-        margin-top: 1rem;
-        width: 90%;
-        font-size: 16px;
-        line-height: 30px;
-    }
-
-    .HomeShapingbuttons {
-        display: flex;
-        gap: 20px;
-        margin-top: 80px;
-    }
-
-    .homeshapping-btn {
-        border: 2px solid;
-        padding: 16px 30px;
-        height: 60px;
-    }
-
-    .homeshapping-btn.black {
-        background-color: #1a1a1a;
-        border-color: #0071fb;
-        color: white;
-    }
-
-    .homeshapping-btn.white {
-        border-color: #0071fb;
-    }
-
-    .HomeShapingBottomLine {
-        display: none;
-    }
+  .HomeShapingContainer {
+    @apply bg-cover text-center mt-16;
+  }
+  .firsRow {
+    @apply p-2.5;
+  }
+  .HomeShapingParagraph {
+    @apply flex justify-center items-center w-full;
+  }
+  .text-shaping,
+  .text-creativity {
+    @apply text-[44px] font-bold leading-[50px] tracking-normal text-center;
+  }
+  .at-mood-global {
+    @apply w-[90%] text-base leading-[30px] mt-4 m-0;
+  }
+  .HomeShapingbuttons {
+    @apply flex gap-5 mt-20;
+  }
+  .homeshapping-btn {
+    @apply h-[60px] px-[30px] py-4 border-2 border-solid;
+  }
+  .homeshapping-btn.black {
+    @apply bg-[#1a1a1a] text-[white] border-[#0071fb];
+  }
+  .homeshapping-btn.white {
+    @apply border-[#0071fb];
+  }
+  .HomeShapingBottomLine {
+    @apply hidden;
+  }
 }

@@ -1,230 +1,118 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  @apply box-border m-0 p-0;
   font-family: MonumentExtended;
 }
-
 .hiringContainer {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  @apply my-[50px];
 }
-
 .hiringContainer .imageContainer {
-  position: relative;
+  @apply relative;
 }
-
 .imageContainer img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  @apply w-full h-full object-cover;
 }
-
 .hiringContainer .imageContainer .imageText {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateX(-50%) translateY(-50%);
-  font-size: 70px;
-  font-weight: 500;
-  color: #fff;
-  width: 100%;
-  text-align: center;
+  @apply absolute -translate-x-2/4 -translate-y-2/4 text-[70px] font-medium text-white w-full text-center left-2/4 top-2/4;
 }
-
 .hiringContainer .headerSection {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 30px;
-  margin: 100px 0;
+  @apply w-full text-center flex flex-col justify-center items-center gap-[30px] mx-0 my-[100px];
 }
-
 .hiringContainer .headerSection > span {
-  border: 2px solid rgba(0, 113, 251, 1);
-  border-radius: 100px;
-  padding: 20px 50px;
-  font-size: 37px;
-  font-weight: 400;
-  line-height: 63px;
-  letter-spacing: -1px;
+  @apply text-[37px] font-normal leading-[63px] tracking-[-1px] px-[50px] py-5 rounded-[100px] border-2 border-solid border-[rgba(0,113,251,1)];
 }
-
 .hiringContainer .headerSection h1 {
-  line-height: 60px;
-  font-size: 50px;
-  font-weight: 700;
-  letter-spacing: 0px;
-  text-align: center;
+  @apply leading-[60px] text-[50px] font-bold tracking-[0px] text-center;
 }
-
 .hiringContainer .headerSection h1 span {
-  color: rgba(0, 113, 251, 1);
+  @apply text-[rgba(0,113,251,1)];
 }
-
 .hiringContainer .headerSection p {
-  font-size: 22px;
-  font-weight: 400;
-  line-height: 50px;
-  letter-spacing: 0px;
-  text-align: center;
+  @apply text-[22px] font-normal leading-[50px] tracking-[0px] text-center;
 }
-
 .hiringContainer .hiring {
-  width: 90%;
-  margin: auto;
+  @apply w-[90%] m-auto;
 }
-
 .hiringContainer .hiringSection {
-  border-top: 1px solid #b8b4b4fa;
-  display: flex;
-  padding: 45px 0px;
-  align-items: flex-start;
+  @apply flex items-start px-0 py-[45px] border-t-[#b8b4b4fa] border-t border-solid;
 }
-
 .hiringContainer .hiringSection .hiringSectionFirst {
-  width: 100%;
+  @apply w-full;
 }
-
 .hiringContainer .hiringSection .apply {
-  width: 15%;
+  @apply w-[15%];
 }
-
 .hiringSection .hiringTitle {
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 10px;
+  @apply text-3xl font-medium mb-2.5;
 }
-
 .hiringSection #hiringDescription {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 20px;
+  @apply text-xl font-normal mb-5;
 }
-
 .hiringSection .hiringFeatures {
-  border: 2px solid #b3b3b3;
-  border-radius: 100px;
-  padding: 10px 20px;
-  font-size: 28px;
-  margin-right: 20px;
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
+  @apply text-[28px] inline-flex items-center gap-2.5 mr-5 px-5 py-2.5 rounded-[100px] border-2 border-solid border-[#b3b3b3];
 }
-
 .hiringFeatures img {
-  align-items: flex-end;
-  height: 10%;
+  @apply items-end h-[10%];
 }
-
 .hiringSection .apply {
-  font-size: 30px;
-  font-weight: 900;
-  margin-bottom: 10px;
-  width: 100%;
-  float: right;
+  @apply text-3xl font-black w-full float-right mb-2.5;
 }
-
 .hiringSection .apply a img {
-  display: inline-flex;
+  @apply inline-flex;
 }
-
 #viewmore {
-  color: rgba(0, 113, 251, 1) !important;
-  font-size: 35px !important;
-  margin-top: 20px !important;
-  margin-left: 60px !important;
-  display: flex;
-  gap: 12px;
-  align-items: center;
-  visibility: hidden;
+  @apply text-[rgba(0,113,251,1)] text-[35px] flex gap-3 items-center invisible ml-[60px] mt-5;
 }
 
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
   .hiringContainer .imageContainer .imageText {
-    font-size: 40px;
-    line-height: 60px;
-    width: 80%;
+    @apply text-[40px] leading-[60px] w-4/5;
   }
-
   .hiringContainer .headerSection {
-    width: 100%;
-    text-align: center;
-    padding: 0px;
+    @apply w-full text-center p-0;
   }
-
   .hiringContainer .headerSection > span {
-    font-size: 20px;
-    padding: 1px 30px;
+    @apply text-xl px-[30px] py-px;
   }
-
   .hiringContainer .headerSection h1 {
-    font-size: 30px;
-    font-weight: 500;
-    line-height: 36px;
-    letter-spacing: 0px;
-    text-align: center;
+    @apply text-3xl font-medium leading-9 tracking-[0px] text-center;
   }
-
   .hiringContainer .headerSection p {
-    font-size: 22px;
-    line-height: 50px;
-    width: 90%;
+    @apply text-[22px] leading-[50px] w-[90%];
   }
-
   .hiringContainer .hiringSection {
-    flex-direction: column;
+    @apply flex-col;
   }
-
   .hiringContainer .hiringSection:nth-child(1) {
-    width: 100%;
-    align-items: flex-start;
+    @apply w-full items-start;
   }
-
   .hiringSection .apply a {
-    float: left !important;
-    font-size: 30px;
+    @apply float-left text-3xl;
   }
-
   .hiringSection .hiringTitle {
-    text-align: start;
+    @apply text-start;
   }
-
   .hiringSection #hiringDescription {
-    text-align: justify;
+    @apply text-justify;
   }
-
   .hiringSection .hiringFeatures {
-    justify-content: center;
-    margin-bottom: 20px;
-    font-size: 18px !important;
+    @apply justify-center text-lg mb-5;
   }
-
   .hiringSectionFirst {
-    display: flex;
-    align-items: flex-start;
+    @apply flex items-start flex flex-col;
   }
-
   .hiringFeatures img {
-    align-items: flex-end;
-    height: 20px;
+    @apply items-end h-5;
   }
-
-  .hiringSectionFirst {
-    display: flex;
-    flex-direction: column;
-  }
-
   #viewmore {
-    display: none !important;
+    @apply hidden;
   }
-
   .hiringContainer .hiringSection .apply {
-    width: auto;
+    @apply w-auto;
   }
 }

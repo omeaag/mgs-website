@@ -1,552 +1,295 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .applyContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    margin-bottom: 50px;
+  @apply flex flex-col items-center justify-center w-full mb-[50px];
 }
-
 .applyContainer .applyHeader {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    background-image: url(../materials/HomeShapingBackground.svg);
-    background-color: #fff;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    padding: 150px 150px 100px 150px;
+  @apply flex flex-col items-start justify-center bg-[url(../materials/HomeShapingBackground.svg)] bg-white bg-no-repeat bg-cover w-full pt-[150px] pb-[100px] px-[150px];
 }
-
 .applyContainer .applyHeader h1 {
-    font-size: 50px;
-    line-height: 60px;
-    font-weight: 700;
-    margin-bottom: 30px;
-    color: #0071fb;
+  @apply text-[50px] leading-[60px] font-bold text-[#0071fb] mb-[30px];
 }
-
 .applyContainer .applyHeader p {
-    font-size: 26px;
-    line-height: 50px;
-    font-weight: 400;
+  @apply text-[26px] leading-[50px] font-normal;
 }
-
 .applyContainer .applyHeader .mobilViewInfo p {
-    font-size: 26px;
-    line-height: 50px;
+  @apply text-[26px] leading-[50px];
 }
-
 .applyContainer .applyHeader .mobilViewInfo span {
-    font-size: 30px;
-    font-weight: 600;
+  @apply text-3xl font-semibold;
 }
-
 .applyContainer .mobilViewText {
-    padding: 60px 150px;
+  @apply px-[150px] py-[60px];
 }
-
 .applyContainer .mobilViewText p {
-    font-size: 26px;
-    line-height: 50px;
-    margin-bottom: 50px;
+  @apply text-[26px] leading-[50px] mb-[50px];
 }
-
 .applyContainer .applyQualifications {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    padding: 0 150px;
-    margin-bottom: 50px;
+  @apply flex flex-col items-start justify-center mb-[50px] px-[150px] py-0;
 }
-
 .applyContainer .applyQualifications h1 {
-    font-size: 30px;
-    line-height: 36px;
-    margin-bottom: 15px;
-    margin-top: 40px;
-    text-decoration: underline;
-    font-weight: 600;
+  @apply text-3xl leading-9 underline font-semibold mt-10 mb-[15px];
 }
-
 .applyContainer .applyQualifications p {
-    font-size: 20px;
-    line-height: 36px;
-    margin-top: 50px;
+  @apply text-xl leading-9 mt-[50px];
 }
-
 .applyContainer .applyQualifications ul {
-    list-style-type: disc;
-    padding-left: 40px;
+  @apply list-disc pl-10;
 }
-
 .applyContainer .applyQualifications ul li {
-    font-size: 20px;
-    line-height: 40px;
+  @apply text-xl leading-10;
 }
-
 .applyContainer .applyQualifications span {
-    font-weight: 600;
+  @apply font-semibold;
 }
-
 .applyFormContainer {
-    width: 100%;
+  @apply w-full;
 }
-
 .applyFormContainer form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 50px 150px;
+  @apply flex flex-col items-center justify-center px-[150px] py-[50px];
 }
-
-.applyFormContainer form>h1 {
-    font-size: 50px;
-    line-height: 60px;
-    font-weight: 700;
-    color: #0071fb;
+.applyFormContainer form > h1 {
+  @apply text-[50px] leading-[60px] font-bold text-[#0071fb];
 }
-
-.applyFormContainer form>div {
-    width: 100%;
+.applyFormContainer form > div {
+  @apply w-full;
 }
-
 .applyFormContainer .nameInputs h1 {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 500;
-    width: 100%;
-    margin-bottom: 15px;
+  @apply text-3xl leading-9 font-medium w-full mb-[15px];
 }
-
 .applyFormContainer input::placeholder,
 .applyFormContainer select option:first-child {
-    color: rgb(130, 130, 130);
+  @apply text-[rgb(130,130,130)];
 }
-
 .applyFormContainer .nameInputs input {
-    width: calc(33% - 8px);
-    height: 60px;
-    margin-right: 15px;
-    border: 1px solid rgba(189, 189, 189, 1);
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 50px;
-    font-size: 15px;
+  @apply w-[calc(33%_-_8px)] h-[60px] border text-[15px] mr-[15px] mb-[50px] p-[15px] rounded-[5px] border-solid border-[rgba(189,189,189,1)];
 }
-
 .applyFormContainer .nameInputs #last_name {
-    margin-right: 0;
+  @apply mr-0;
 }
-
 .applyFormContainer .birthdayInputs h1 {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 500;
-    width: 100%;
-    margin-bottom: 15px;
+  @apply text-3xl leading-9 font-medium w-full mb-[15px];
 }
-
 .applyFormContainer .birthdayInputs select {
-    width: calc(33% - 8px);
-    height: 60px;
-    margin-right: 15px;
-    border: 1px solid #bdbdbd;
-    border-radius: 5px;
-    padding: 15px;
-    padding-right: 30px;
-    margin-bottom: 50px;
-    font-size: 15px;
-    appearance: none;
-    background: url(../materials/down-arrow.svg);
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: right 10px center;
+  @apply w-[calc(33%_-_8px)] h-[60px] border text-[15px] appearance-none bg-[30px] bg-no-repeat bg-[right_10px_center] mr-[15px] mb-[50px] pr-[30px] p-[15px] rounded-[5px] border-solid border-[#bdbdbd];
+  background: url(../materials/down-arrow.svg);
 }
-
 .applyFormContainer .birthdayInputs #year {
-    margin-right: 0;
+  @apply mr-0;
 }
-
-.applyFormContainer .birthdayInputs select:has(option[value='']:checked) {
-    color: rgb(130, 130, 130);
+.applyFormContainer .birthdayInputs select:has(option[value=""]:checked) {
+  @apply text-[rgb(130,130,130)];
 }
-
 .applyFormContainer .adressInputs input {
-    width: calc(33% - 8px);
-    height: 60px;
-    margin-right: 15px;
-    border: 1px solid #bdbdbd;
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 50px;
-    font-size: 15px;
+  @apply w-[calc(33%_-_8px)] h-[60px] border text-[15px] mr-[15px] mb-[50px] p-[15px] rounded-[5px] border-solid border-[#bdbdbd];
 }
-
 .applyFormContainer .adressInputs #streetAdress {
-    width: 100% !important;
+  @apply w-full;
 }
-
 .applyFormContainer .adressInputs h1 {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 500;
-    width: 100%;
-    margin-bottom: 15px;
+  @apply text-3xl leading-9 font-medium w-full mb-[15px];
 }
-
 .applyFormContainer .adressInputs #zipCode {
-    margin-right: 0;
+  @apply mr-0;
 }
-
 .applyFormContainer .contactInputs {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+  @apply flex items-center flex-wrap gap-2.5;
 }
-
 .applyFormContainer .contactInputs div {
-    width: calc(50% - 6px);
+  @apply w-[calc(50%_-_6px)];
 }
-
 .applyFormContainer .contactInputs input {
-    width: 100%;
-    height: 60px;
-    margin-right: 15px;
-    border: 1px solid #bdbdbd;
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 50px;
-    font-size: 15px;
+  @apply w-full h-[60px] border text-[15px] mr-[15px] mb-[50px] p-[15px] rounded-[5px] border-solid border-[#bdbdbd];
 }
-
 .applyFormContainer .contactInputs h1 {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 500;
-    width: 100%;
-    margin-bottom: 15px;
+  @apply text-3xl leading-9 font-medium w-full mb-[15px];
 }
-
 .applyFormContainer .questionInputs {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 10px;
+  @apply flex items-center flex-wrap gap-2.5;
 }
-
 .applyFormContainer .questionInputs div {
-    width: calc(50% - 6px);
+  @apply w-[calc(50%_-_6px)];
 }
-
 .applyFormContainer .questionInputs select {
-    width: 100%;
-    height: 60px;
-    margin-right: 15px;
-    border: 1px solid #bdbdbd;
-    border-radius: 5px;
-    padding: 15px;
-    padding-right: 30px;
-    margin-bottom: 50px;
-    font-size: 15px;
-    appearance: none;
-    background: url(../materials/down-arrow.svg);
-    background-size: 30px;
-    background-repeat: no-repeat;
-    background-position: right 10px center;
+  @apply w-full h-[60px] border text-[15px] appearance-none bg-[30px] bg-no-repeat bg-[right_10px_center] mr-[15px] mb-[50px] pr-[30px] p-[15px] rounded-[5px] border-solid border-[#bdbdbd];
+  background: url(../materials/down-arrow.svg);
 }
-
 .applyFormContainer .questionInputs h1 {
-    font-size: 29px;
-    line-height: 36px;
-    font-weight: 500;
-    width: 100%;
-    margin-bottom: 15px;
+  @apply text-[29px] leading-9 font-medium w-full mb-[15px];
 }
-
 .applyFormContainer .resumeInputs .resume h1 {
-    font-size: 30px;
-    line-height: 36px;
-    margin-bottom: 15px;
+  @apply text-3xl leading-9 mb-[15px];
 }
-
 .applyFormContainer .resumeInputs .innerResume {
-    text-align: center;
-    border: 1px solid #bdbdbd;
-    border-radius: 5px;
-    padding: 35px;
-    margin-bottom: 50px;
+  @apply text-center border mb-[50px] p-[35px] rounded-[5px] border-solid border-[#bdbdbd];
 }
-
 .applyFormContainer .resumeInputs img {
-    margin: auto;
+  @apply m-auto;
 }
-
 .applyFormContainer .resumeInputs .innerResume h2 {
-    font-size: 30px;
-    line-height: 36px;
+  @apply text-3xl leading-9;
 }
-
 .applyFormContainer .resumeInputs .innerResume h3 {
-    font-size: 18px;
-    line-height: 32px;
-    color: #bdbdbd;
+  @apply text-lg leading-8 text-[#bdbdbd];
 }
-
 .applyFormContainer .resumeInputs .innerResume #fileHere {
-    display: none;
+  @apply hidden;
 }
-
-.applyFormContainer .resumeInputs .fileInput input[type='file'] {
-    display: none;
+.applyFormContainer .resumeInputs .fileInput input[type="file"] {
+  @apply hidden;
 }
-
 .applyFormContainer .resumeInputs .coverLetter h1 {
-    font-size: 30px;
-    line-height: 36px;
-    font-weight: 500;
-    margin-bottom: 15px;
+  @apply text-3xl leading-9 font-medium mb-[15px];
 }
-
 .applyFormContainer .resumeInputs .coverLetter textarea {
-    width: 100%;
-    min-height: 400px !important;
-    resize: vertical !important;
-    margin-right: 15px;
-    border: 1px solid #bdbdbd;
-    border-radius: 5px;
-    padding: 15px;
-    margin-bottom: 50px;
-    font-size: 15px;
-    overflow: auto;
+  @apply w-full min-h-[400px] resize-y border text-[15px] overflow-auto mr-[15px] mb-[50px] p-[15px] rounded-[5px] border-solid border-[#bdbdbd];
 }
-
 .applyFormContainer form #applyBtn {
-    width: 387px;
-    height: 103px;
-    font-size: 36px;
-    line-height: 43px;
-    color: #fff;
-    padding: 30px, 110px, 30px, 110px;
-    border-radius: 100px;
-    background: linear-gradient(90deg,
-            #1293bc -10.29%,
-            #0028fb 25.21%,
-            #6100ff 65.24%,
-            #0073ff 113.66%);
+  @apply w-[387px] h-[103px] text-4xl leading-[43px] text-white pl-[110px] pr-[110px,] py-[30px,] rounded-[100px] hover:relative hover:right-[0.6px] hover:bottom-[0.5px];
+  background: linear-gradient(
+    90deg,
+    #1293bc -10.29%,
+    #0028fb 25.21%,
+    #6100ff 65.24%,
+    #0073ff 113.66%
+  );
 }
-
 .applyFormContainer form #applyBtn:hover {
-    background: linear-gradient(90deg,
-            #6100ff -10.29%,
-            #0028fb 25.21%,
-            #0073ff 65.24%,
-            #1293bc 113.66%);
-    position: relative;
-    bottom: 0.5px;
-    right: 0.6px;
+  background: linear-gradient(
+    90deg,
+    #6100ff -10.29%,
+    #0028fb 25.21%,
+    #0073ff 65.24%,
+    #1293bc 113.66%
+  );
 }
 
 /* ----------------- TABLET BREAKPOINT -------------------- */
 @media (min-width: 600px) and (max-width: 1024px) {
-
-    .applyFormContainer form h1 {
-        margin-top: 40px;
-    }
-
-    .applyContainer .applyHeader>p {
-        display: none;
-    }
-
-    .applyContainer .mobilViewInfo span {
-        font-size: 30px;
-        font-weight: 600;
-    }
-
-    .applyContainer .mobilViewText {
-    padding: 60px 30px;
-    }
-    .applyQualifications{
-        padding: 0 80px !important;
-    }
-
-    .applyFormContainer form{
-        padding: 0 80px !important;
-
-    }
-
-
-    .applyContainer .mobilViewText p {
-        margin: 30px auto;
-        font-size: 19px;
-        line-height: 50px;
-        padding: 0 50px;
-    }
-
-    .applyFormContainer form #applyBtn {
-        font-size: 36px;
-        line-height: 43px;
-        color: #fff;
-        border-radius: 100px;
-        background: linear-gradient(90deg,
-                #1293bc -10.29%,
-                #0028fb 25.21%,
-                #6100ff 65.24%,
-                #0073ff 113.66%);
-        width: 300.17px;
-        height: 89px;
-        padding: 23px, 110px, 23px, 110px;
-    }
-
-    .applyContainer .applyHeader{
-    padding: 150px 50px 100px 70px;
-
-    }
-
+  .applyFormContainer form h1 {
+    @apply mt-10;
+  }
+  .applyContainer .applyHeader > p {
+    @apply hidden;
+  }
+  .applyContainer .mobilViewInfo span {
+    @apply text-3xl font-semibold;
+  }
+  .applyContainer .mobilViewText {
+    @apply px-[30px] py-[60px];
+  }
+  .applyQualifications {
+    @apply px-20 py-0;
+  }
+  .applyFormContainer form {
+    @apply px-20 py-0;
+  }
+  .applyContainer .mobilViewText p {
+    @apply text-[19px] leading-[50px] mx-auto my-[30px] px-[50px] py-0;
+  }
+  .applyFormContainer form #applyBtn {
+    @apply text-4xl leading-[43px] text-white w-[300.17px] h-[89px] pl-[110px] pr-[110px,] py-[23px,] rounded-[100px];
+    background: linear-gradient(
+      90deg,
+      #1293bc -10.29%,
+      #0028fb 25.21%,
+      #6100ff 65.24%,
+      #0073ff 113.66%
+    );
+  }
+  .applyContainer .applyHeader {
+    @apply pl-[70px] pr-[50px] pt-[150px] pb-[100px];
+  }
 }
-
 
 /* ----------------- PHONE BREAKPOINT ----------------- */
 @media (max-width: 599px) {
-    .applyContainer {
-        padding: 10px;
-        width: 100%;
-    }
-
-    .applyContainer .applyHeader {
-        padding: 100px 0px;
-    }
-
-    .applyContainer .applyHeader h1 {
-        font-size: 30px;
-        line-height: 36px;
-    }
-
-    .applyContainer .applyHeader>p {
-        display: none;
-    }
-
-    .applyContainer .applyHeader .mobilViewInfo {
-        display: block;
-    }
-
-    .applyContainer .applyHeader .mobilViewInfo p {
-        font-size: 26px;
-        line-height: 50px;
-    }
-
-    .applyContainer .applyHeader .mobilViewInfo span {
-        font-size: 30px;
-        font-weight: 600;
-    }
-
-    .applyContainer .mobilViewText {
-        display: block;
-        padding: 0px 37px;
-    }
-
-    .applyContainer .mobilViewText p {
-        margin: 30px auto;
-        font-size: 18px;
-        font-weight: 26px;
-    }
-
-    .applyContainer .applyQualifications {
-        padding-right: 0;
-        padding-left: 0;
-    }
-
-    .applyContainer .applyQualifications h1 {
-        font-size: 30px;
-        line-height: 36px;
-    }
-
-    .applyQualifications ul li {
-        font-size: 18px;
-        line-height: 26px;
-    }
-
-    .applyFormContainer {
-        width: 100%;
-        padding: 0 auto;
-    }
-    .applyFormContainer form{
-        padding: 0 37px;
-    }
-
-
-    .applyFormContainer form>div {
-        margin-bottom: 10px;
-        margin-top: 10px;
-    }
-
-    .applyFormContainer form h1 {
-        font-size: 30px;
-        line-height: 36px;
-        margin-bottom: 30px;
-    }
-
-    .applyFormContainer .nameInputs input {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .applyFormContainer .birthdayInputs select {
-        width: calc(33.9% - 10px);
-        margin-right: 10px;
-        margin-bottom: 20px;
-        background-size: 15px;
-    }
-
-    .applyFormContainer .adressInputs input {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .applyFormContainer .contactInputs div {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .applyFormContainer .contactInputs div input {
-        margin-bottom: 0;
-    }
-
-    .applyFormContainer .questionInputs div {
-        width: 100%;
-        margin-bottom: 20px;
-    }
-
-    .applyFormContainer .questionInputs div select {
-        margin-bottom: 0;
-        background-size: 15px;
-    }
-
-    .applyFormContainer form #applyBtn {
-        font-size: 16px;
-        line-height: 19px;
-        color: #fff;
-        border-radius: 100px;
-        background: linear-gradient(90deg,
-                #1293bc -10.29%,
-                #0028fb 25.21%,
-                #6100ff 65.24%,
-                #0073ff 113.66%);
-        width: 134px;
-        height: 51px;
-        padding: 16px, 30px, 16px, 30px;
-    }
-
-    .applyFormContainer .resumeInputs .innerResume h3 {
-        display: none;
-    }
-
-    .applyFormContainer .resumeInputs .innerResume #fileHere {
-        display: block;
-    }
+  .applyContainer {
+    @apply w-full p-2.5;
+  }
+  .applyContainer .applyHeader {
+    @apply px-0 py-[100px];
+  }
+  .applyContainer .applyHeader h1 {
+    @apply text-3xl leading-9;
+  }
+  .applyContainer .applyHeader > p {
+    @apply hidden;
+  }
+  .applyContainer .applyHeader .mobilViewInfo {
+    @apply block;
+  }
+  .applyContainer .applyHeader .mobilViewInfo p {
+    @apply text-[26px] leading-[50px];
+  }
+  .applyContainer .applyHeader .mobilViewInfo span {
+    @apply text-3xl font-semibold;
+  }
+  .applyContainer .mobilViewText {
+    @apply block px-[37px] py-0;
+  }
+  .applyContainer .mobilViewText p {
+    @apply text-lg font-[26px] mx-auto my-[30px];
+  }
+  .applyContainer .applyQualifications {
+    @apply px-0;
+  }
+  .applyContainer .applyQualifications h1 {
+    @apply text-3xl leading-9;
+  }
+  .applyQualifications ul li {
+    @apply text-lg leading-[26px];
+  }
+  .applyFormContainer {
+    @apply w-full px-[auto] py-0;
+  }
+  .applyFormContainer form {
+    @apply px-[37px] py-0;
+  }
+  .applyFormContainer form > div {
+    @apply my-2.5;
+  }
+  .applyFormContainer form h1 {
+    @apply text-3xl leading-9 mb-[30px];
+  }
+  .applyFormContainer .nameInputs input {
+    @apply w-full mb-5;
+  }
+  .applyFormContainer .birthdayInputs select {
+    @apply w-[calc(33.9%_-_10px)] bg-[15px] mr-2.5 mb-5;
+  }
+  .applyFormContainer .adressInputs input {
+    @apply w-full mb-5;
+  }
+  .applyFormContainer .contactInputs div {
+    @apply w-full mb-5;
+  }
+  .applyFormContainer .contactInputs div input {
+    @apply mb-0;
+  }
+  .applyFormContainer .questionInputs div {
+    @apply w-full mb-5;
+  }
+  .applyFormContainer .questionInputs div select {
+    @apply bg-[15px] mb-0;
+  }
+  .applyFormContainer form #applyBtn {
+    @apply text-base leading-[19px] text-white w-[134px] h-[51px] pl-[30px] pr-[30px,] py-[16px,] rounded-[100px];
+    background: linear-gradient(
+      90deg,
+      #1293bc -10.29%,
+      #0028fb 25.21%,
+      #6100ff 65.24%,
+      #0073ff 113.66%
+    );
+  }
+  .applyFormContainer .resumeInputs .innerResume h3 {
+    @apply hidden;
+  }
+  .applyFormContainer .resumeInputs .innerResume #fileHere {
+    @apply block;
+  }
 }

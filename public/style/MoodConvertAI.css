@@ -1,492 +1,231 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .moodConvertAllContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
+	@apply flex flex-col items-center justify-center w-full;
 }
-
 .bigBackground {
-    width: 100%;
-    background-image: url("../materials/moodConverAIImages/background.svg");
-
+	@apply w-full bg-[url("../materials/moodConverAIImages/background.svg")];
 }
-
-
 .smallBackground {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url("../materials/moodConverAIImages/Frame\ 1261152487.svg");
-    width: 100%;
-    background-size: 100%;
-    background-repeat: no-repeat;
+	@apply flex items-center justify-center bg-[url("../materials/moodConverAIImages/Frame1261152487.svg")] w-full bg-[100%] bg-no-repeat;
 }
-
-
 .moodConvertAIContainer {
-    margin: 160px 0;
-    gap: 6px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+	@apply gap-1.5 flex flex-col items-center justify-center text-center mx-0 my-40;
 }
-
 .moodConvertAIContainer h1 {
-    font-size: 120px;
+	@apply text-[120px];
 }
-
 .moodConvertAIContainer span {
-    font-weight: bold;
+	@apply font-[bold];
 }
-
 .moodConvertAIContainer h2 {
-    width: 70%;
-    font-size: 120px;
+	@apply w-[70%] text-[120px];
 }
-
 #aiTextBlue {
-    color: #0071FB;
+	@apply text-[#0071FB];
 }
-
 .moodConvertAIContainer h3 {
-    color: #1A1A1A;
-    font-size: 60px;
-    font-family: MonumentExtended;
-    font-weight: 100;
-    text-align: center;
+	@apply text-[#1A1A1A] text-6xl font-thin text-center;
+	font-family: MonumentExtended;
 }
-
 .AIformContainer {
-    margin: auto;
-    background-color: #FFFFFF;
-    border-radius: 1.2rem;
-    padding: 3% 7%;
-    opacity: 0.3;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 650px;
-    border: 1px solid rgba(0, 113, 251, 1);
-    width: 75%;
+	@apply bg-white opacity-30 flex flex-col items-center gap-[650px] border w-9/12 m-auto px-[7%] py-[3%] rounded-[1.2rem] border-solid border-[rgba(0,113,251,1)];
 }
-
 .underForm {
-    gap: 20px;
-    display: flex;
-    flex-direction: column;
+	@apply gap-5 flex flex-col;
 }
-
 .AIformContainer h4 {
-    font-size: 30px;
-    font-family: MonumentExtended;
+	@apply text-3xl;
+	font-family: MonumentExtended;
 }
-
 .groupCont,
 .cardContainer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    align-items: center;
+	@apply flex justify-between w-full items-center;
 }
-
 .groupCont {
-    gap: 20px
+	@apply gap-5;
 }
-
 .cardContainer {
-    padding: 16px 28px 16px 28px;
-    border: 1px solid #B9B9B9;
-    border-radius: 12px;
-    gap: 20px;
+	@apply border gap-5 px-7 py-4 rounded-xl border-solid border-[#B9B9B9];
 }
-
 .cardContainer h6 {
-    color: #B9B9B9;
-    font-size: 18px;
-    font-family: MonumentExtended;
+	@apply text-[#B9B9B9] text-lg;
+	font-family: MonumentExtended;
 }
-
 .cardContainer h5 {
-    color: #999999;
-    font-size: 20px;
-    font-family: MonumentExtended;
-    color: black;
+	@apply text-[#999999] text-xl text-[black];
+	font-family: MonumentExtended;
 }
-
 .textContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 6px
+	@apply flex flex-col gap-1.5;
 }
-
 .inputArea {
-    border: 1px solid #BDBDBD;
-    color: #BDBDBD;
-    border-radius: 20px;
-    padding: 10px;
-    height: 80px;
-    width: 100%;
-    padding-left: 30px;
+	@apply border text-[#BDBDBD] h-20 w-full pl-[30px] p-2.5 rounded-[20px] border-solid border-[#BDBDBD];
 }
-
 .bottomCont {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+	@apply flex relative justify-center items-center;
 }
-
 .sendButton {
-    position: absolute;
-    right: 20px;
-    bottom: 27px;
+	@apply absolute right-5 bottom-[27px];
 }
-
 .checkbox {
-    width: 24px;
-    height: 24px;
+	@apply w-6 h-6;
 }
-
 
 /*Mobile*/
 @media (max-width: 599px) {
-    .moodConvertAllContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        background-image: url("../materials/moodConverAIImages/Frame\ 1261152487.svg");
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: top !important;
-    }
-
-
-    .smallBackground {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url("../materials/moodConverAIImages/Frame\ 1261152487.svg");
-        width: 100%;
-        background-size: 20px 15px;
-        background-repeat: no-repeat;
-    }
-
-
-    .moodConvertAIContainer {
-        margin: 160px 0;
-        gap: 6px;
-        display: flex;
-        text-align: center;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-
-    .moodConvertAIContainer h1 {
-        font-size: 60px;
-    }
-
-    .moodConvertAIContainer h2 {
-        font-size: 33px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: 50px;
-    }
-
-    .moodConvertAIContainer span {
-        font-weight: bold;
-    }
-
-    #aiTextBlue {
-        color: #0071FB;
-    }
-
-    .moodConvertAIContainer h3 {
-        color: #1A1A1A;
-        font-size: 30px;
-        font-family: MonumentExtended;
-        font-weight: 100;
-        text-align: center;
-    }
-
-    .moodConvertAIContainer img {
-        width: 84.798px;
-        height: 90px;
-        flex-shrink: 0;
-    }
-
-    .AIformContainer {
-        margin: auto;
-        background-color: #FFFFFF;
-        border-radius: 1.2rem;
-        padding: 3% 7%;
-        display: flex;
-        opacity: 0.3;
-        flex-direction: column;
-        align-items: center;
-        gap: 0px;
-        border: 1px solid rgba(0, 113, 251, 1);
-        width: 95%;
-    }
-
-    .underForm {
-        gap: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .AIformContainer h4 {
-        font-size: 26px;
-        text-align: center;
-        font-family: MonumentExtended;
-    }
-
-    .groupCont,
-    .cardContainer {
-        display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        width: 100%;
-        align-items: center;
-    }
-
-    .groupCont {
-        gap: 20px
-    }
-
-    .cardContainer {
-        text-align: start;
-        padding: 16px 28px 16px 28px;
-        border: 1px solid #B9B9B9;
-        border-radius: 12px;
-        gap: 10px;
-    }
-
-    .cardContainer h6 {
-        color: #B9B9B9;
-        font-size: 14px;
-        font-family: MonumentExtended;
-    }
-
-    .cardContainer h5 {
-        color: #999999;
-        font-size: 19px;
-        font-family: MonumentExtended;
-        color: black;
-    }
-
-    .textContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 6px
-    }
-
-    .inputArea {
-        border: 1px solid #BDBDBD;
-        color: #BDBDBD;
-        border-radius: 20px;
-        padding: 10px;
-        height: 80px;
-        width: 100%;
-        padding-left: 30px;
-    }
-
-    .bottomCont {
-        display: flex;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sendButton {
-        position: absolute;
-        right: 20px;
-        bottom: 27px;
-    }
-
-    .checkbox {
-        width: 24px;
-        height: 24px;
-        visibility: hidden;
-    }
-
-    #backEndPrompt,
-    #uiuxPrompt {
-        visibility: hidden;
-    }
+	.moodConvertAllContainer {
+		@apply flex flex-col items-center justify-center w-full bg-[url("../materials/moodConverAIImages/Frame1261152487.svg")] bg-[100%] bg-no-repeat bg-top;
+	}
+	.smallBackground {
+		@apply flex items-center justify-center bg-[url("../materials/moodConverAIImages/Frame1261152487.svg")] w-full bg-[20px_15px] bg-no-repeat;
+	}
+	.moodConvertAIContainer {
+		@apply gap-1.5 flex text-center flex-col items-center justify-center mx-0 my-40;
+	}
+	.moodConvertAIContainer h1 {
+		@apply text-6xl;
+	}
+	.moodConvertAIContainer h2 {
+		@apply text-[33px] not-italic font-medium leading-[50px];
+	}
+	.moodConvertAIContainer span {
+		@apply font-[bold];
+	}
+	#aiTextBlue {
+		@apply text-[#0071FB];
+	}
+	.moodConvertAIContainer h3 {
+		@apply text-[#1A1A1A] text-3xl font-thin text-center;
+		font-family: MonumentExtended;
+	}
+	.moodConvertAIContainer img {
+		@apply w-[84.798px] h-[90px] shrink-0;
+	}
+	.AIformContainer {
+		@apply bg-white flex opacity-30 flex-col items-center gap-0 border w-[95%] m-auto px-[7%] py-[3%] rounded-[1.2rem] border-solid border-[rgba(0,113,251,1)];
+	}
+	.underForm {
+		@apply gap-5 flex flex-col;
+	}
+	.AIformContainer h4 {
+		@apply text-[26px] text-center;
+		font-family: MonumentExtended;
+	}
+	.groupCont,
+	.cardContainer {
+		@apply flex justify-between flex-col w-full items-center;
+	}
+	.groupCont {
+		@apply gap-5;
+	}
+	.cardContainer {
+		@apply text-start border gap-2.5 px-7 py-4 rounded-xl border-solid border-[#B9B9B9];
+	}
+	.cardContainer h6 {
+		@apply text-[#B9B9B9] text-sm;
+		font-family: MonumentExtended;
+	}
+	.cardContainer h5 {
+		@apply text-[#999999] text-[19px] text-[black];
+		font-family: MonumentExtended;
+	}
+	.textContainer {
+		@apply flex flex-col gap-1.5;
+	}
+	.inputArea {
+		@apply border text-[#BDBDBD] h-20 w-full pl-[30px] p-2.5 rounded-[20px] border-solid border-[#BDBDBD];
+	}
+	.bottomCont {
+		@apply flex relative justify-center items-center;
+	}
+	.sendButton {
+		@apply absolute right-5 bottom-[27px];
+	}
+	.checkbox {
+		@apply w-6 h-6 invisible;
+	}
+	#backEndPrompt,
+	#uiuxPrompt {
+		@apply invisible;
+	}
 }
 
 /*Tablet*/
 @media (min-width: 600px) and (max-width: 1024px) {
-    .moodConvertAllContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        background-image: url("../materials/moodConverAIImages/background.svg");
-        background-size: 100%;
-        background-repeat: no-repeat;
-        background-position: top;
-    }
-
-
-    .smallBackground {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-image: url("../materials/moodConverAIImages/Frame\ 1261152487.svg");
-        width: 100%;
-        background-size: 20px 15px;
-        background-repeat: no-repeat;
-    }
-
-
-    .moodConvertAIContainer {
-        margin: 160px 0;
-        gap: 6px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
-
-    .moodConvertAIContainer h1 {
-        font-size: 98px;
-    }
-
-    .moodConvertAIContainer h2 {
-width: 80%;
-font-size: 70px;
-font-weight: 500;
-line-height: 80px;
-letter-spacing: 0px;
-text-align: center;
-    }
-
-    .moodConvertAIContainer span {
-        font-weight: bold;
-    }
-
-    #aiTextBlue {
-        color: #0071FB;
-    }
-
-    .moodConvertAIContainer h3 {
-        color: #1A1A1A;
-        font-size: 40px;
-        font-family: MonumentExtended;
-        font-weight: 100;
-        text-align: center;
-    }
-
-    .moodConvertAIContainer img {
-        width: 84.798px;
-        height: 90px;
-        flex-shrink: 0;
-    }
-
-    .AIformContainer {
-        opacity: 0.3;
-        margin: auto;
-        background-color: #FFFFFF;
-        border-radius: 1.2rem;
-        padding: 3% 7%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: end;
-        gap: 0px;
-        border: 1px solid rgba(0, 113, 251, 1);
-        width: 95%;
-        height: 625px;
-    }
-
-    .underForm {
-        gap: 20px;
-        display: flex;
-        flex-direction: column;
-    }
-
-    .AIformContainer h4 {
-        font-size: 26px;
-        text-align: center;
-        font-family: MonumentExtended;
-        margin-bottom: 150px;
-    }
-
-    .groupCont,
-    .cardContainer {
-        display: flex;
-        justify-content: space-between;
-        width: 100%;
-        align-items: center;
-    }
-
-    .groupCont {
-        gap: 20px
-    }
-
-    .cardContainer {
-        text-align: start;
-        height: 125px;
-        padding: 16px 28px 16px 28px;
-        border: 1px solid #B9B9B9;
-        border-radius: 12px;
-        gap: 10px;
-    }
-
-    .cardContainer h6 {
-        color: #B9B9B9;
-        font-size: 14px;
-        font-family: MonumentExtended;
-    }
-
-    .cardContainer h5 {
-        color: #999999;
-        font-size: 19px;
-        font-family: MonumentExtended;
-        color: black;
-    }
-
-    .textContainer {
-        display: flex;
-        flex-direction: column;
-        gap: 6px
-    }
-
-    .inputArea {
-        border: 1px solid #BDBDBD;
-        color: #BDBDBD;
-        border-radius: 20px;
-        padding: 10px;
-        height: 80px;
-        width: 100%;
-        padding-left: 30px;
-    }
-
-    .bottomCont {
-        display: flex;
-        position: relative;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .sendButton {
-        position: absolute;
-        right: 20px;
-        bottom: 27px;
-    }
-
-    .checkbox {
-        width: 24px;
-        height: 24px;
-        visibility: hidden;
-    }
+	.moodConvertAllContainer {
+		@apply flex flex-col items-center justify-center w-full bg-[url("../materials/moodConverAIImages/background.svg")] bg-[100%] bg-no-repeat bg-top;
+	}
+	.smallBackground {
+		@apply flex items-center justify-center bg-[url("../materials/moodConverAIImages/Frame1261152487.svg")] w-full bg-[20px_15px] bg-no-repeat;
+	}
+	.moodConvertAIContainer {
+		@apply gap-1.5 flex flex-col items-center justify-center text-center mx-0 my-40;
+	}
+	.moodConvertAIContainer h1 {
+		@apply text-[98px];
+	}
+	.moodConvertAIContainer h2 {
+		@apply w-4/5 text-[70px] font-medium leading-[80px] tracking-[0px] text-center;
+	}
+	.moodConvertAIContainer span {
+		@apply font-[bold];
+	}
+	#aiTextBlue {
+		@apply text-[#0071FB];
+	}
+	.moodConvertAIContainer h3 {
+		@apply text-[#1A1A1A] text-[40px] font-thin text-center;
+		font-family: MonumentExtended;
+	}
+	.moodConvertAIContainer img {
+		@apply w-[84.798px] h-[90px] shrink-0;
+	}
+	.AIformContainer {
+		@apply opacity-30 bg-white flex flex-col items-center gap-0 border w-[95%] h-[625px] m-auto px-[7%] py-[3%] rounded-[1.2rem] border-solid border-[rgba(0,113,251,1)];
+		justify-content: end;
+	}
+	.underForm {
+		@apply gap-5 flex flex-col;
+	}
+	.AIformContainer h4 {
+		@apply text-[26px] text-center mb-[150px];
+		font-family: MonumentExtended;
+	}
+	.groupCont,
+	.cardContainer {
+		@apply flex justify-between w-full items-center;
+	}
+	.groupCont {
+		@apply gap-5;
+	}
+	.cardContainer {
+		@apply text-start h-[125px] border gap-2.5 px-7 py-4 rounded-xl border-solid border-[#B9B9B9];
+	}
+	.cardContainer h6 {
+		@apply text-[#B9B9B9] text-sm;
+		font-family: MonumentExtended;
+	}
+	.cardContainer h5 {
+		@apply text-[#999999] text-[19px] text-[black];
+		font-family: MonumentExtended;
+	}
+	.textContainer {
+		@apply flex flex-col gap-1.5;
+	}
+	.inputArea {
+		@apply border text-[#BDBDBD] h-20 w-full pl-[30px] p-2.5 rounded-[20px] border-solid border-[#BDBDBD];
+	}
+	.bottomCont {
+		@apply flex relative justify-center items-center;
+	}
+	.sendButton {
+		@apply absolute right-5 bottom-[27px];
+	}
+	.checkbox {
+		@apply w-6 h-6 invisible;
+	}
 }
