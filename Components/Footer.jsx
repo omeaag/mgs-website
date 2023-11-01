@@ -53,7 +53,6 @@ const Footer = () => {
             </div>
             <div className="hqFooter">
               <strong>HEADQUARTERS:</strong>
-<<<<<<< HEAD
               <h5>
                 <Image alt="Netherland" src={netherland} />
                 &nbsp;&nbsp;Amsterdam, Netherlands
@@ -70,12 +69,6 @@ const Footer = () => {
                 <Image alt="Phone" src={phone} />
                 &nbsp;&nbsp; +31-6-19565119
               </h5>
-=======
-              <h5><Image alt="Flag Of Netherlands" src={netherland}/>&nbsp;&nbsp;Amsterdam, Netherlands</h5>
-              <h5><Image alt="Flag Of European Union" src={europe}/>&nbsp;&nbsp; KVK: 85502081</h5>
-              <h5><Image alt="Mail Icon" src={mail}/>&nbsp;&nbsp; info@moodglobalservices.com</h5>
-              <h5><Image alt="Phone Icon" src={phone}/>&nbsp;&nbsp; +31-6-19565119</h5>
->>>>>>> c4f9c010e7516a8fd1c048d20850dbc46729bcac
             </div>
           </div>
         </div>
