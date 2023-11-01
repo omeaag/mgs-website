@@ -1,364 +1,359 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: MonumentExtended;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: MonumentExtended;
 }
 
 .OurSolitionContainer {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 .OurSolitionContainer .titleContainer {
-    margin: 100px 0px;
-    display: flex;
-    align-items: center;
+  margin: 100px 0px;
+  display: flex;
+  align-items: center;
 }
 
 .titleContainer .OurSolutionTitle {
-    font-size: 65px;
-    font-weight: 500;
-    line-height: 78px;
-    letter-spacing: 0px;
-    text-align: center;
+  font-size: 65px;
+  font-weight: 500;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: center;
 }
 
 .OurSolutionTitle span {
-    color: rgba(0, 113, 251, 1);
+  color: rgba(0, 113, 251, 1);
 }
 
 .OurSolitionContainer .line {
-    flex-grow: 1;
-    height: 2px;
-    margin-left: 20px;
-    margin-right: 20px;
-    border-radius: 5px;
-    background: rgba(225, 225, 225, 1);
+  flex-grow: 1;
+  height: 2px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 5px;
+  background: rgba(225, 225, 225, 1);
 }
 
 @keyframes animate {
-    0% {
-        background-position: 150%;
-    }
+  0% {
+    background-position: 150%;
+  }
 
-    95% {
-        background-position: -150%;
-    }
+  95% {
+    background-position: -150%;
+  }
 
-    100% {
-        background-position: -150%;
-    }
+  100% {
+    background-position: -150%;
+  }
 }
 
-
-
 .OurSolutionText .cardContainer {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  margin-bottom: 50px;
 }
 
 .cardContainer .card h2 {
-    margin-top: 10px;
-    text-align: center;
-    color: gray;
-    font-size: 20px;
+  margin-top: 10px;
+  text-align: center;
+  color: gray;
+  font-size: 20px;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .cardContainer .card :hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .blackHeader {
-    color: black !important;
+  color: black !important;
 }
 
 .OurSolutionText .textContainer div:first-child {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-right: 30px;
 }
 
 .OurSolutionText .textContainer img {
-    width: 100%;
-    object-fit: cover;
+  width: 100%;
+  object-fit: cover;
 }
 
 .OurSolutionText .textContainer div {
-    width: 50%;
+  width: 50%;
 }
 
 .OurSolutionText .textContainer {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    gap: 140px;
-    padding-bottom: 100px;
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  gap: 140px;
+  padding-bottom: 100px;
 }
 
 .OurSolutionText .textContainer {
-    display: flex;
-    align-items: center;
-    height: 40%;
+  display: flex;
+  align-items: center;
+  height: 40%;
 }
 
 .OurSolutionText .textContainer h3 {
-    margin-bottom: 20px;
-    font-size: 40px;
-    font-weight: 500;
+  margin-bottom: 20px;
+  font-size: 40px;
+  font-weight: 500;
 }
 
 .OurSolutionText .textContainer p {
-    font-size: 25px;
+  font-size: 25px;
 }
 
 .textContainer .paginationButtons {
-    display: none;
+  display: none;
 }
 
 .ourSolutionAllCardContainer {
-    display: flex;
+  display: flex;
 }
 
 .dashedLine {
-    display: flex;
-    align-items: center;
-    padding-bottom: 33%;
+  display: flex;
+  align-items: center;
+  padding-bottom: 33%;
 }
 
 .ourSolutionAllCardContainer:last-child .dashedLine {
-    display: none;
+  display: none;
 }
-
 
 /* -------------------------------- TABLET BREAKPOINT -------------------------------- */
 @media (min-width: 600px) and (max-width: 1024px) {
-    .OurSolitionContainer {
-        padding: 0;
-        width: 89%;
-    }
+  .OurSolitionContainer {
+    padding: 0;
+    width: 89%;
+  }
 
-    .OurSolutionText .textContainer {
-        flex-direction: row;
-        gap: 0;
-        padding: 0;
-    }
+  .OurSolutionText .textContainer {
+    flex-direction: row;
+    gap: 0;
+    padding: 0;
+  }
 
-    .OurSolitionContainer .titleContainer {
-        width: 100%;
-    }
+  .OurSolitionContainer .titleContainer {
+    width: 100%;
+  }
 
-    .titleContainer .OurSolutionTitle {
-        font-size: 40px;
-        line-height: 60px;
-    }
+  .titleContainer .OurSolutionTitle {
+    font-size: 40px;
+    line-height: 60px;
+  }
 
-    .OurSolutionText .textContainer div:first-child {
-        padding: 0;
-    }
+  .OurSolutionText .textContainer div:first-child {
+    padding: 0;
+  }
 
-    .OurSolutionText .textContainer p {
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 35px;
-        letter-spacing: 0px;
-        text-align: left;
-    }
+  .OurSolutionText .textContainer p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
 
-    .OurSolutionText .cardContainer {
-        margin-bottom: 30px;
-    }
+  .OurSolutionText .cardContainer {
+    margin-bottom: 30px;
+  }
 
-    .OurSolutionText .textContainer img{
-        object-fit: unset;
-    }
+  .OurSolutionText .textContainer img {
+    object-fit: unset;
+  }
 
-    .cardContainer .card h2 {
-        font-size: 22px;
-        line-height: 27px;
-    }
+  .cardContainer .card h2 {
+    font-size: 22px;
+    line-height: 27px;
+  }
 
-    .cardContainer .card img {
-        height: 100px;
-        width: 100px;
-    }
+  .cardContainer .card img {
+    height: 100px;
+    width: 100px;
+  }
 
-    .textContainer {
-        min-height: 600px;
-    }
+  .textContainer {
+    min-height: 600px;
+  }
 
-    .textContainer div {
-        width: 50%;
-    }
+  .textContainer div {
+    width: 50%;
+  }
 
-    .textContainer img {
-        height: 490px;
-    }
+  .textContainer img {
+    height: 490px;
+  }
 
-    .textContainer h3 {
-        font-size: 30px;
-        line-height: 53px;
-    }
+  .textContainer h3 {
+    font-size: 30px;
+    line-height: 53px;
+  }
 
-    .textContainer p {
-        font-size: 22px;
-        line-height: 35px;
-    }
+  .textContainer p {
+    font-size: 22px;
+    line-height: 35px;
+  }
 
-    .textContainer .paginationButtons {
-        display: none;
-    }
+  .textContainer .paginationButtons {
+    display: none;
+  }
 }
 
 /* -------------------------------- PHONE BREAKPOINT -------------------------------- */
 @media (max-width: 599px) {
-    .OurSolitionContainer {
-        margin: auto;
-        width: 88%;
-        flex-direction: column;
-    }
+  .OurSolitionContainer {
+    margin: auto;
+    width: 88%;
+    flex-direction: column;
+  }
 
-    .OurSolitionContainer .titleContainer {
-        margin: 100px 0 40px 0;
-    }
+  .OurSolitionContainer .titleContainer {
+    margin: 100px 0 40px 0;
+  }
 
-    .OurSolutionText .textContainer div:first-child {
-        padding: 0;
-    }
+  .OurSolutionText .textContainer div:first-child {
+    padding: 0;
+  }
 
-    .OurSolutionText {
-        padding: 0;
-    }
+  .OurSolutionText {
+    padding: 0;
+  }
 
-    .titleContainer .OurSolutionTitle {
-        font-size: 40px;
-        line-height: 60px;
-        margin-left: 0px;
-    }
+  .titleContainer .OurSolutionTitle {
+    font-size: 40px;
+    line-height: 60px;
+    margin-left: 0px;
+  }
 
-    .line {
-        display: none;
-    }
+  .line {
+    display: none;
+  }
 
-    .dashedLine {
-        display: none;
-    }
+  .dashedLine {
+    display: none;
+  }
 
-    .ourSolutionAllCardContainer {
-        width: 100%;
-    }
+  .ourSolutionAllCardContainer {
+    width: 100%;
+  }
 
-    .OurSolutionText .cardContainer {
-        flex-direction: column;
-        justify-content: center;
-    }
+  .OurSolutionText .cardContainer {
+    flex-direction: column;
+    justify-content: center;
+  }
 
-    .OurSolutionText .card {
-        display: flex;
-        align-items: center;
-        justify-content: start;
-        gap: 20px;
-        width: 100%;
-    }
+  .OurSolutionText .card {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+    width: 100%;
+  }
 
-    .OurSolutionText .card img,
-    .OurSolutionText .card h2 {
-        display: none;
-    }
+  .OurSolutionText .card img,
+  .OurSolutionText .card h2 {
+    display: none;
+  }
 
-    .OurSolutionText .card h2 {
-        font-size: 18px;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin: 0;
-    }
+  .OurSolutionText .card h2 {
+    font-size: 18px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+  }
 
-    .card img.showImg,
-    .card h2.blackHeader {
-        display: flex;
-        height: 100%;
-    }
+  .card img.showImg,
+  .card h2.blackHeader {
+    display: flex;
+    height: 100%;
+  }
 
-    .card img.showImg {
-        height: 100px;
-        width: 100px;
-    }
+  .card img.showImg {
+    height: 100px;
+    width: 100px;
+  }
 
-    .card h2.blackHeader {
-        font-size: 20px;
-        line-height: 36px;
-    }
+  .card h2.blackHeader {
+    font-size: 20px;
+    line-height: 36px;
+  }
 
-    .OurSolutionText .textContainer {
-        display: flex;
-        flex-direction: column-reverse;
-        align-items: center;
-        position: relative;
-        margin-bottom: 70px;
-        padding: 0;
-    }
+  .OurSolutionText .textContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    position: relative;
+    margin-bottom: 70px;
+    padding: 0;
+  }
 
-    .OurSolutionText .textContainer div {
-        width: 100%;
-        height: 100%;
-    }
+  .OurSolutionText .textContainer div {
+    width: 100%;
+    height: 100%;
+  }
 
+  .OurSolutionText .textContainer h3 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
 
-    .OurSolutionText .textContainer h3 {
-        font-size: 30px;
-        font-weight: 500;
-        line-height: 36px;
-        letter-spacing: 0px;
-        text-align: left;
-    }
+  .OurSolutionText .textContainer img {
+    height: 290px;
+    width: 360px;
+  }
 
-    .OurSolutionText .textContainer img {
-        height: 290px;
-        width: 360px;
-    }
+  .OurSolutionText .textContainer p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    letter-spacing: 0px;
 
-    .OurSolutionText .textContainer p {
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 30px;
-        letter-spacing: 0px;
+    text-align: justify;
+  }
 
-        text-align: justify;
-    }
+  .paginationButtons {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .paginationButtons {
-        display: block;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+  .paginationButtons button {
+    width: 10px;
+    height: 10px;
+    background-color: #d9d9d9;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
 
-    }
-
-    .paginationButtons button {
-        width: 10px;
-        height: 10px;
-        background-color: #d9d9d9;
-        border-radius: 50%;
-        margin-right: 20px;
-    }
-
-    .paginationButtons button.blueBtn {
-        width: 15px;
-        height: 15px;
-        background-color: #0071fb;
-    }
+  .paginationButtons button.blueBtn {
+    width: 15px;
+    height: 15px;
+    background-color: #0071fb;
+  }
 }

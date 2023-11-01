@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Build your project with MGS",
+  "name_for_model": "todo",
+  "description_for_human": "Determine your projects software requirements and we generate a preventive for you",
+  "description_for_model": "Help the user with managing a TODO list. You can add, remove and view your TODOs.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "http://localhost:3000/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "http://localhost:3333/mood.png",
+  "contact_email": "info@moodglobalservices.com",
+  "legal_info_url": "http://www.moodglobalservices.com"
+}

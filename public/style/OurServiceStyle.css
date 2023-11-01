@@ -1,365 +1,353 @@
 .mainServiceContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: MonumentExtended;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: MonumentExtended;
 }
 
 .blueServiceContainer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 113, 251, 1);
-    border-radius: 1.2rem;
-    margin-top: 120px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 113, 251, 1);
+  border-radius: 1.2rem;
+  margin-top: 120px;
 }
 
 .blueContentContainer {
-    gap: 60px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 80%;
+  gap: 60px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 80%;
 }
 
 .headServiceText {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    height: 20%;
-    width: 100%;
-    text-align: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 20%;
+  width: 100%;
+  text-align: center;
 }
 
 .headServiceText h1 {
-    font-size: 65px;
-    font-weight: 500;
-    line-height: 78px;
-    letter-spacing: 0px;
-    text-align: center;
-    margin: 100px 0 50px 0;
+  font-size: 65px;
+  font-weight: 500;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 100px 0 50px 0;
 }
 
 .headServiceText h6 {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 50px;
-    letter-spacing: 0px;
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    }
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0px;
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
 
 .serviceBoxContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    gap: 20px;
-    padding-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  gap: 20px;
+  padding-bottom: 150px;
 }
 
 .serviceBoxContainer h4,
 .serviceBoxContainer h3 {
-    font-size: 23.5px;
-    margin: 0.7rem 0rem;
-    transition: 0.7s ease;
-    display: flex;
-    align-items: center;
+  font-size: 23.5px;
+  margin: 0.7rem 0rem;
+  transition: 0.7s ease;
+  display: flex;
+  align-items: center;
 }
 
-
-#flag{
-    display: block;
-    width: 25px;
+#flag {
+  display: block;
+  width: 25px;
 }
 
 .serviceBoxContainer h3 {
-    font-size: 36px;
-    margin: 0.7rem 0rem;
-    transition: 0.7s ease;
+  font-size: 36px;
+  margin: 0.7rem 0rem;
+  transition: 0.7s ease;
 }
 
 .serviceTContainer,
 .serviceBContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  height: 50%;
 }
 
-.tLeftService{
-    border: 1px solid rgba(155, 255, 28, 1);
+.tLeftService {
+  border: 1px solid rgba(155, 255, 28, 1);
 }
-.bLeftService{
-    border: 1px solid rgba(185, 173, 255, 1);
+.bLeftService {
+  border: 1px solid rgba(185, 173, 255, 1);
 }
-.tRightService{
-    border: 1px solid rgba(255, 199, 0, 1);
+.tRightService {
+  border: 1px solid rgba(255, 199, 0, 1);
 }
-.bRightService{
-    border: 1px solid rgba(0, 240, 255, 1);
+.bRightService {
+  border: 1px solid rgba(0, 240, 255, 1);
 }
 .tLeftService,
 .bLeftService,
 .tRightService,
 .bRightService {
-    display: flex;
-    text-align: start;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    justify-content: space-between;
-    padding: 40px 60px;
-    border-radius: 20px;
+  display: flex;
+  text-align: start;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  justify-content: space-between;
+  padding: 40px 60px;
+  border-radius: 20px;
 }
 
 .textImageCont {
-    display: flex;
-    position: relative;
+  display: flex;
+  position: relative;
 }
 
 .textImageCont img {
-    margin: 7px;
-    display: none;
+  margin: 7px;
+  display: none;
 }
 
 .textImageCont:hover img {
-    display: block;
-    transition: 0.5s ease;
+  display: block;
+  transition: 0.5s ease;
 }
-
-
 
 .lineClass1,
 .lineClass2,
 .lineClass3,
 .lineClass4 {
-    width: 100%;
-    background-color: rgba(22, 103, 202, 1);
-    height: 4px;
-    border-radius: 50px;
+  width: 100%;
+  background-color: rgba(22, 103, 202, 1);
+  height: 4px;
+  border-radius: 50px;
 }
 
 .tLeftService:hover button {
-    width: 100%;
+  width: 100%;
 }
 
 .bLeftService:hover button {
-    width: 100%;
+  width: 100%;
 }
 .tRightService:hover button {
-    width: 100%;
+  width: 100%;
 }
 .bRightService:hover button {
-    width: 100%;
+  width: 100%;
 }
 
 .lineClass1 button {
-    width: 0px;
-    background-color: rgba(155, 255, 28, 1);
-    ;
-    height: 4px;
-    border-radius: 50px;
-    color: rgba(0, 113, 251, 0);
-    transition: 0.5s ease;
+  width: 0px;
+  background-color: rgba(155, 255, 28, 1);
+  height: 4px;
+  border-radius: 50px;
+  color: rgba(0, 113, 251, 0);
+  transition: 0.5s ease;
 }
 
 .lineClass2 button {
-    width: 0px;
-    background-color: rgba(185, 173, 255, 1);
-    height: 4px;
-    border-radius: 50px;
-    color: rgba(0, 113, 251, 0);
-    transition: 0.5s ease;
+  width: 0px;
+  background-color: rgba(185, 173, 255, 1);
+  height: 4px;
+  border-radius: 50px;
+  color: rgba(0, 113, 251, 0);
+  transition: 0.5s ease;
 }
 .lineClass3 button {
-    width: 0px;
-    background-color: rgba(255, 199, 0, 1);
-    height: 4px;
-    border-radius: 50px;
-    color: rgba(0, 113, 251, 0);
-    transition: 0.5s ease;
+  width: 0px;
+  background-color: rgba(255, 199, 0, 1);
+  height: 4px;
+  border-radius: 50px;
+  color: rgba(0, 113, 251, 0);
+  transition: 0.5s ease;
 }
 .lineClass4 button {
-    width: 0px;
-    background-color: rgba(0, 240, 255, 1);
-    height: 4px;
-    border-radius: 50px;
-    color: rgba(0, 113, 251, 0);
-    transition: 0.5s ease;
+  width: 0px;
+  background-color: rgba(0, 240, 255, 1);
+  height: 4px;
+  border-radius: 50px;
+  color: rgba(0, 113, 251, 0);
+  transition: 0.5s ease;
 }
 
 .tLeftService h4:hover {
-    transform: translateX(1rem);
-    color: rgb(155, 255, 28);
-    transition: 0.5s ease;
-    cursor: default;
+  transform: translateX(1rem);
+  color: rgb(155, 255, 28);
+  transition: 0.5s ease;
+  cursor: default;
 }
 
 .tRightService h4:hover {
-    transform: translateX(1rem);
-    color: rgb(255, 199, 0);
-    transition: 0.5s ease;
-    cursor: default;
+  transform: translateX(1rem);
+  color: rgb(255, 199, 0);
+  transition: 0.5s ease;
+  cursor: default;
 }
 
 .bLeftService h4:hover {
-    transform: translateX(1rem);
-    color: rgb(90, 192, 157);
-    transition: 0.5s ease;
-    cursor: default;
+  transform: translateX(1rem);
+  color: rgb(90, 192, 157);
+  transition: 0.5s ease;
+  cursor: default;
 }
 
 .bRightService h4:hover {
-    transform: translateX(1rem);
-    color: rgb(0, 240, 255);
-    transition: 0.5s ease;
-    cursor: default;
+  transform: translateX(1rem);
+  color: rgb(0, 240, 255);
+  transition: 0.5s ease;
+  cursor: default;
 }
-
-
 
 /* -------------------- TABLET BREAKPOINT --------------------  */
 @media (min-width: 600px) and (max-width: 1024px) {
-    .mainServiceContainer {
-        height: 100%;
-    }
+  .mainServiceContainer {
+    height: 100%;
+  }
 
-    .blueServiceContainer {
-        border-radius: 40px;
-    }
+  .blueServiceContainer {
+    border-radius: 40px;
+  }
 
-    .headServiceText h1 {
-        font-size: 40px;
-        line-height: 60px;
-        font-weight: 500;
-        margin: 100px 0 50px 0;
-    }
+  .headServiceText h1 {
+    font-size: 40px;
+    line-height: 60px;
+    font-weight: 500;
+    margin: 100px 0 50px 0;
+  }
 
-    br {
-        display: none;
-    }
+  br {
+    display: none;
+  }
 
-    .headServiceText h6 {
-        font-size: 22px;
-        line-height: 36px;
-        padding: 0 10px;
-        width: 76.5%;
-    }
+  .headServiceText h6 {
+    font-size: 22px;
+    line-height: 36px;
+    padding: 0 10px;
+    width: 76.5%;
+  }
 
-    .serviceBoxContainer h3 {
-        font-size: 1.2rem;
-        margin: 0.5rem 0;
-    }
+  .serviceBoxContainer h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
 
-    .serviceBoxContainer {
-        width: 90%;
-        gap: 20px;
-    }
+  .serviceBoxContainer {
+    width: 90%;
+    gap: 20px;
+  }
 
-    .serviceTContainer,
-    .serviceBContainer {
-        width: 100%;
-    }
+  .serviceTContainer,
+  .serviceBContainer {
+    width: 100%;
+  }
 
-    .tLeftService,
-    .tRightService,
-    .bLeftService,
-    .bRightService {
-        width: 100%;
-        margin: 0;
-        padding: 30px;
-    }
+  .tLeftService,
+  .tRightService,
+  .bLeftService,
+  .bRightService {
+    width: 100%;
+    margin: 0;
+    padding: 30px;
+  }
 
-    .serviceBoxContainer h3 {
-        font-size: 30px;
-        line-height: 60px;
-    }
+  .serviceBoxContainer h3 {
+    font-size: 30px;
+    line-height: 60px;
+  }
 
-    .serviceBoxContainer h4 {
-        font-size: 25px;
-        line-height: 33px;
-    }
+  .serviceBoxContainer h4 {
+    font-size: 25px;
+    line-height: 33px;
+  }
 
-    .tLeftService button,
-    .bLeftService button,
-    .tRightService button,
-    .bRightService button {
-        width: 100%;
-    }
+  .tLeftService button,
+  .bLeftService button,
+  .tRightService button,
+  .bRightService button {
+    width: 100%;
+  }
 }
 
 /* --------------------  PHONE BREAKPOINT --------------------  */
 @media (max-width: 599px) {
+  .blueServiceContainer {
+    border-radius: 40px;
+  }
 
+  .headServiceText h1 {
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 500;
+    margin-top: 50px;
+  }
 
-    .blueServiceContainer {
-        border-radius: 40px;
-    }
+  br {
+    display: none;
+  }
 
-    .headServiceText h1 {
-        font-size: 30px;
-        line-height: 50px;
-        font-weight: 500;
-        margin-top: 50px;
-    }
+  .headServiceText h6 {
+    text-align: center;
+    font-size: 16px;
+    line-height: 36px;
+    margin-top: 20px;
+    padding: 0 10px;
+    width: 93%;
+  }
 
-    br {
-        display: none;
-    }
+  .serviceBoxContainer h3 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
 
-    .headServiceText h6 {
-        text-align: center;
-        font-size: 16px;
-        line-height: 36px;
-        margin-top: 20px;
-        padding: 0 10px;
-        width: 93%;
-    }
+  .serviceBoxContainer {
+    width: 100%;
+    gap: 20px;
+    flex-direction: column;
+  }
 
-    .serviceBoxContainer h3 {
-        font-size: 1.2rem;
-        margin: 0.5rem 0;
-    }
+  .serviceTContainer,
+  .serviceBContainer {
+    flex-direction: column;
+    width: 100%;
+  }
 
-    .serviceBoxContainer {
-        width: 100%;
-        gap: 20px;
-        flex-direction: column;
-    }
+  .tLeftService,
+  .tRightService,
+  .bLeftService,
+  .bRightService {
+    width: 93%;
+    margin: auto;
+    padding: 15px;
+  }
 
-    .serviceTContainer,
-    .serviceBContainer {
-        flex-direction: column;
-        width: 100%;
-    }
+  .serviceBoxContainer h3 {
+    font-size: 30px;
+    line-height: 90px;
+  }
 
-    .tLeftService,
-    .tRightService,
-    .bLeftService,
-    .bRightService {
-        width: 93%;
-        margin: auto;
-        padding: 15px;
-    }
-
-
-    .serviceBoxContainer h3 {
-        font-size: 30px;
-        line-height: 90px;
-    }
-
-    .serviceBoxContainer h4 {
-font-size: 28px;
-font-weight: 500;
-line-height: 34px;
-letter-spacing: 0px;
-text-align: left;
-
-    }
-
-
+  .serviceBoxContainer h4 {
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 34px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
 }

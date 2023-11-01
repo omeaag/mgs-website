@@ -1,689 +1,681 @@
 .headerContainer-5 {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    justify-content: start;
-    margin: 100px 0 30px 0;
-    align-items: center;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: flex-start;
+  margin: 100px 0 30px 0;
+  align-items: center;
 }
 
 .line {
-    flex-grow: 1;
-    height: 2px;
-    margin-left: 50px;
-    margin-right: 20px;
-    border-radius: 5px;
-    background: rgba(225, 225, 225, 1);
-    text-align: center;
+  flex-grow: 1;
+  height: 2px;
+  margin-left: 50px;
+  margin-right: 20px;
+  border-radius: 5px;
+  background: rgba(225, 225, 225, 1);
+  text-align: center;
 }
 
 .headerContainer-5 h1 {
-
-    height: 90px;
-    font-family: MonumentExtended;
-    font-size: 4.375rem;
-    font-weight: 300;
-    line-height: 90px;
-    letter-spacing: 0px;
-    text-align: start;
+  height: 90px;
+  font-family: MonumentExtended;
+  font-size: 4.375rem;
+  font-weight: 300;
+  line-height: 90px;
+  letter-spacing: 0px;
+  text-align: start;
 }
 
 .whatPeopleContainer h1 {
-    font-family: MonumentExtended;
-    font-size: 4.375rem;
-    display: flex;
+  font-family: MonumentExtended;
+  font-size: 4.375rem;
+  display: flex;
 }
 
 .headerContainer-5 h1 span {
-    color: rgba(0, 113, 251, 1);
+  color: rgba(0, 113, 251, 1);
 }
 
 .headerContainerp {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    font-family: MonumentExtended;
-    font-size: 1.5625rem;
-    font-weight: 400;
-    line-height: 50px;
-    letter-spacing: 0px;
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 50px;
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  font-family: MonumentExtended;
+  font-size: 1.5625rem;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0px;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
 }
 
 .whatPeoplePersonBackground {
-    width: 100%;
-    background-image: url("../materials/ourPortfolioImages/Polygon\ 7.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
+  width: 100%;
+  background-image: url("../materials/ourPortfolioImages/Polygon\ 7.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .whatPeopleContainer {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 240px;
-    gap: 60px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 240px;
+  gap: 60px;
 }
 
 .clutchContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 70px;
-    font-family: MonumentExtended;
-    font-size: 65px;
-    font-weight: 500;
-    line-height: 78px;
-    letter-spacing: 0px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+  font-family: MonumentExtended;
+  font-size: 65px;
+  font-weight: 500;
+  line-height: 78px;
+  letter-spacing: 0px;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .infoContainer {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
 }
 
-
 .galleryContainer {
-    width: 85%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px
+  width: 85%;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
 }
 
 .swiper-wrapper {
-    height: 500px;
+  height: 500px;
 }
 
 .swiper-pagination {
-    position: absolute;
-    right: 10px !important;
+  position: absolute;
+  right: 10px !important;
 }
 
 .swiper-pagination-bullet,
 .swiper-pagination-bullet-active {
-    height: 15px;
-    width: 15px;
+  height: 15px;
+  width: 15px;
 }
 
 .swiper-slide .swiper-slide-active .swiper-slide-active {
-    display: flex !important;
-    justify-content: center !important;
-    align-items: center !important;
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
 }
 
 .sliderContent {
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: start;
-    height: 100%;
-    border: 1px solid rgba(202, 220, 227, 1);
-    border-radius: 7px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  height: 100%;
+  border: 1px solid rgba(202, 220, 227, 1);
+  border-radius: 7px;
 }
 
 .sliderContent h4 {
-    font-family: MonumentExtended;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 60px;
-    letter-spacing: 0px;
-    text-align: left;
+  font-family: MonumentExtended;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 60px;
+  letter-spacing: 0px;
+  text-align: left;
 }
 
 .sliderContent p {
-    font-family: MonumentExtended;
-    font-size: 32px;
-    font-weight: 400;
-    line-height: 38px;
-    letter-spacing: 0px;
-    text-align: left;
-    color: rgba(26, 26, 26, 1);
-    opacity: 60%;
+  font-family: MonumentExtended;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 38px;
+  letter-spacing: 0px;
+  text-align: left;
+  color: rgba(26, 26, 26, 1);
+  opacity: 60%;
 }
 
 .slideLink {
-    display: flex;
-    gap: 10px;
-    color: rgba(26, 26, 26, 1);
-    opacity: 60%;
-
+  display: flex;
+  gap: 10px;
+  color: rgba(26, 26, 26, 1);
+  opacity: 60%;
 }
 
 .personContainer {
-    display: flex;
-    align-items: center;
-    margin: auto;
-    width: 90%;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    margin-top: 100px;
-    margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  width: 90%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
 .personSlider {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 50px;
-
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
 
 .personSlider h2 {
-    font-size: 40px;
-    font-family: MonumentExtended;
+  font-size: 40px;
+  font-family: MonumentExtended;
 }
 
 .personSlider p {
-font-size: 26px;
-font-weight: 400;
-line-height: 50px;
-letter-spacing: 0px;
+  font-size: 26px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0px;
 
-    font-family: MonumentExtended;
-    text-align: center;
-    width: 80%;
+  font-family: MonumentExtended;
+  text-align: center;
+  width: 80%;
 }
 
-
 .build30 {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    width: 70%;
-    margin: auto;
-    gap: 30px;
-    padding-top: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 70%;
+  margin: auto;
+  gap: 30px;
+  padding-top: 150px;
 }
 
 .build {
-    width: 555px;
-    height: 180px;
-    top: 5693px;
-    left: 308px;
-    font-family: MonumentExtended;
-    font-size: 4.375rem;
-    font-weight: 500;
-    line-height: 90px;
-    letter-spacing: 0px;
-    text-align: left;
-
+  width: 555px;
+  height: 180px;
+  top: 5693px;
+  left: 308px;
+  font-family: MonumentExtended;
+  font-size: 4.375rem;
+  font-weight: 500;
+  line-height: 90px;
+  letter-spacing: 0px;
+  text-align: left;
 }
 
 .plus30 {
-    text-align: center;
-    align-items: center;
-    font-size: 15rem;
-    font-weight: 900;
-    display: flex;
-    top: 5700px;
-    left: 1055.94140625px;
-    color: rgba(0, 113, 251, 1);
-    font-family: MonumentExtended;
+  text-align: center;
+  align-items: center;
+  font-size: 15rem;
+  font-weight: 900;
+  display: flex;
+  top: 5700px;
+  left: 1055.94140625px;
+  color: rgba(0, 113, 251, 1);
+  font-family: MonumentExtended;
 }
 
 .ourPortfolioContainer {
-    gap: 70px;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 200px;
+  gap: 70px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 200px;
 }
 
 #iconamoon_settings {
-    position: absolute;
-    top: 1250px;
-    left: 200px;
+  position: absolute;
+  top: 1250px;
+  left: 200px;
 }
 
 #iconoir_design {
-    position: absolute;
-    top: 1800px;
-    left: 350px;
+  position: absolute;
+  top: 1800px;
+  left: 350px;
 }
 
 #iconoir_dev_laptop {
-    position: absolute;
-    top: 1350px;
-    right: 150px;
+  position: absolute;
+  top: 1350px;
+  right: 150px;
 }
 
 #iconoir_dev_phone {
-    position: absolute;
-    top: 1150px;
-    left: 900px;
+  position: absolute;
+  top: 1150px;
+  left: 900px;
 }
 
 #streamline_interface {
-    position: absolute;
-    top: 1650px;
-    right: 400px;
+  position: absolute;
+  top: 1650px;
+  right: 400px;
 }
-
 
 /* ------------------------ TABLET BREAKPOINT ------------------------ */
 @media (min-width: 600px) and (max-width: 1024px) {
-    .ourPortfolioContainer {
-        margin: 30px 50px;
-        gap: 55px;
-    }
+  .ourPortfolioContainer {
+    margin: 30px 50px;
+    gap: 55px;
+  }
 
-    .headerContainer-5 {
-        margin: 30px 0px 0 0 ;
-        width: 100%;
-    }
+  .headerContainer-5 {
+    margin: 30px 0px 0 0;
+    width: 100%;
+  }
 
-    .headerContainer-5 h1 {
-        font-size: 40px;
-        line-height: 60px;
-        min-width: unset;
-        text-align: start;
-        display: flex;
-        gap: 10px;
-        align-items: center;
-        height: auto;
-    }
+  .headerContainer-5 h1 {
+    font-size: 40px;
+    line-height: 60px;
+    min-width: unset;
+    text-align: start;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    height: auto;
+  }
 
-    .headerContainerp {
-        width: 100%;
-        font-size: 22px;
-        line-height: 45px;
-    }
+  .headerContainerp {
+    width: 100%;
+    font-size: 22px;
+    line-height: 45px;
+  }
 
-    .galleryContainer {
-        width: 100%;
-        align-items: center;
-        margin-left: 0;
-    }
+  .galleryContainer {
+    width: 100%;
+    align-items: center;
+    margin-left: 0;
+  }
 
-    .prev-button,
-    .next-button {
-        margin: 10px;
-    }
+  .prev-button,
+  .next-button {
+    margin: 10px;
+  }
 
-    .swiper-wrapper {
-        height: 380px;
-        width: 100%;
-    }
+  .swiper-wrapper {
+    height: 380px;
+    width: 100%;
+  }
 
-    .swiper-pagination {
-        display: none;
-    }
+  .swiper-pagination {
+    display: none;
+  }
 
-    .build30 {
-        width: 95%;
-        padding: 20px 0;
-        margin: auto;
-    }
+  .build30 {
+    width: 95%;
+    padding: 20px 0;
+    margin: auto;
+  }
 
-    .personContainer {
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-        padding: 0;
-        padding-bottom: 60px;
-    }
+  .personContainer {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0;
+    padding-bottom: 60px;
+  }
 
-    #iconamoon_settings {
-        position: absolute;
-        top: 900px;
-        left: 60px;
-        width: 35px;
-        height: 35px;
-    }
+  #iconamoon_settings {
+    position: absolute;
+    top: 900px;
+    left: 60px;
+    width: 35px;
+    height: 35px;
+  }
 
-    #iconoir_design {
-        position: absolute;
-        top: 920px;
-        left: 500px;
-        width: 35px;
-        height: 35px;
-    }
+  #iconoir_design {
+    position: absolute;
+    top: 920px;
+    left: 500px;
+    width: 35px;
+    height: 35px;
+  }
 
-    #iconoir_dev_laptop {
-        position: absolute;
-        top: 900px;
-        right: 60px;
-        width: 35px;
-        height: 35px;
-    }
+  #iconoir_dev_laptop {
+    position: absolute;
+    top: 900px;
+    right: 60px;
+    width: 35px;
+    height: 35px;
+  }
 
-    #iconoir_dev_phone {
-        position: absolute;
-        top: 1300px;
-        left: 100px;
-        width: 35px;
-        height: 35px;
-    }
+  #iconoir_dev_phone {
+    position: absolute;
+    top: 1300px;
+    left: 100px;
+    width: 35px;
+    height: 35px;
+  }
 
-    #streamline_interface {
-        position: absolute;
-        top: 1300px;
-        right: 400px;
-        width: 35px;
-        height: 35px;
-    }
+  #streamline_interface {
+    position: absolute;
+    top: 1300px;
+    right: 400px;
+    width: 35px;
+    height: 35px;
+  }
 
-    .sliderContent h4 {
-        font-size: 30px;
-        font-weight: 500;
-        line-height: 36px;
-    }
+  .sliderContent h4 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 36px;
+  }
 
-    .sliderContent p {
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 39px;
-    }
+  .sliderContent p {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 39px;
+  }
 
-    .slideLink {
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 39px;
-        width: 103%;
-    }
+  .slideLink {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 39px;
+    width: 103%;
+  }
 
-    .whatPeopleContainer {
-        width: 100%;
-        margin: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-    }
+  .whatPeopleContainer {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
 
-    .whatPeopleContainer h1 {
-        margin-top: 200px;
-        font-size: 40px;
-        line-height: 60px;
-    }
+  .whatPeopleContainer h1 {
+    margin-top: 200px;
+    font-size: 40px;
+    line-height: 60px;
+  }
 
-    .personSlider {
-        gap: 10px;
-        height: 100%;
-        width: 100%;
-    }
+  .personSlider {
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+  }
 
-    .personSlider h2 {
-        font-size: 30px;
-        line-height: 60px;
-        font-family: MonumentExtended;
-    }
+  .personSlider h2 {
+    font-size: 30px;
+    line-height: 60px;
+    font-family: MonumentExtended;
+  }
 
-    .personSlider p {
-        font-size: 22px;
-        line-height: 37px;
-        font-family: MonumentExtended;
-        text-align: center;
-        width: 80%;
-    }
+  .personSlider p {
+    font-size: 22px;
+    line-height: 37px;
+    font-family: MonumentExtended;
+    text-align: center;
+    width: 80%;
+  }
 
-    .clutchContainer {
-        font-size: 40px;
-        font-weight: 500;
-        line-height: 60px;
-        gap: 30px;
-        margin-top: 70px;
-        margin-bottom: 30px;
-    }
-    .clutchContainer img {
-        width: 172.55px
-    }
-
+  .clutchContainer {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 60px;
+    gap: 30px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  .clutchContainer img {
+    width: 172.55px;
+  }
 }
 
 /* ------------------------ PHONE BREAKPOINT ------------------------ */
 @media (max-width: 599px) {
-    .ourPortfolioContainer {
-        margin: 10px;
-        padding: 10px;
-        gap: 10px;
-    }
+  .ourPortfolioContainer {
+    margin: 10px;
+    padding: 10px;
+    gap: 10px;
+  }
 
-    .sliderContent h4 {
-        font-size: 22px;
-        font-weight: 500;
-        line-height: 26px;
-    }
+  .sliderContent h4 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 26px;
+  }
 
-    .sliderContent p {
-        font-size: 18px;
-        font-weight: 400;
-        line-height: 29px;
-    }
+  .sliderContent p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 29px;
+  }
 
-    .sliderContent {
-        height: 300px;
-    }
+  .sliderContent {
+    height: 300px;
+  }
 
-    .slideLink {
-        font-size: 18px;
-        font-weight: 500;
-        line-height: 22px;
-    }
+  .slideLink {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 22px;
+  }
 
-    .headerContainer-5 {
-        width: 100%;
-        margin-top: 60px;
-        margin-bottom: 0;
-    }
+  .headerContainer-5 {
+    width: 100%;
+    margin-top: 60px;
+    margin-bottom: 0;
+  }
 
-    .headerContainer-5 h1 {
-        width: 100%;
-        font-size: 40px;
-        line-height: 60px;
-        text-align: start;
-        height: auto;
-    }
+  .headerContainer-5 h1 {
+    width: 100%;
+    font-size: 40px;
+    line-height: 60px;
+    text-align: start;
+    height: auto;
+  }
 
-    .clutchContainer {
-        font-size: 40px;
-        font-weight: 500;
-        line-height: 60px;
-        gap: 30px;
-        margin-top: 70px;
-        margin-bottom: 30px;
-    }
-    .clutchContainer img {
-        width: 172.55px
-    }
+  .clutchContainer {
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 60px;
+    gap: 30px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+  }
+  .clutchContainer img {
+    width: 172.55px;
+  }
 
-    .headerContainer-5>img {
-        display: none;
-    }
+  .headerContainer-5 > img {
+    display: none;
+  }
 
-    .headerContainerp {
-        text-align: justify;
-        width: 100%;
-        font-size: 16px;
-        line-height: 30px;
-        margin: 20px 0;
-    }
+  .headerContainerp {
+    text-align: justify;
+    width: 100%;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px 0;
+  }
 
-    .galleryContainer {
-        margin: 20px 0;
-        width: 105%;
-        align-items: center;
-    }
+  .galleryContainer {
+    margin: 20px 0;
+    width: 105%;
+    align-items: center;
+  }
 
-    .swiper-wrapper {
-        height: 100%;
-        width: 100%;
-    }
+  .swiper-wrapper {
+    height: 100%;
+    width: 100%;
+  }
 
-    .personContainer {
-        width: 100%;
-        margin-top: 20px;
-        margin-bottom: 20px;
-    }
+  .personContainer {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
 
-    .personSlider h2 {
-        font-size: 2rem;
-        line-height: 2.5rem;
-        text-align: center;
-    }
+  .personSlider h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    text-align: center;
+  }
 
-    .personSlider p {
-        font-size: 1rem;
-        line-height: 1.5;
-        width: 100%;
-        text-align: center;
-    }
+  .personSlider p {
+    font-size: 1rem;
+    line-height: 1.5;
+    width: 100%;
+    text-align: center;
+  }
 
-    .build30 {
-        padding-top: 20px;
-        flex-direction: column-reverse;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-    }
+  .build30 {
+    padding-top: 20px;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
 
-    .plus30 {
-        font-size: 120px !important;
-    }
+  .plus30 {
+    font-size: 120px !important;
+  }
 
-    .build {
-        font-size: 40px;
-        line-height: 60px;
-        text-align: center;
-        width: 100%;
-    }
+  .build {
+    font-size: 40px;
+    line-height: 60px;
+    text-align: center;
+    width: 100%;
+  }
 
-    #iconamoon_settings {
-        position: absolute;
-        top: 700px;
-        left: 15px;
-        width: 35px;
-        height: 35px;
-    }
+  #iconamoon_settings {
+    position: absolute;
+    top: 700px;
+    left: 15px;
+    width: 35px;
+    height: 35px;
+  }
 
-    #iconoir_design {
-        position: absolute;
-        top: 920px;
-        left: unset;
-        right: 15px;
-        width: 35px;
-        height: 35px;
-    }
+  #iconoir_design {
+    position: absolute;
+    top: 920px;
+    left: unset;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+  }
 
-    #iconoir_dev_laptop {
-        position: absolute;
-        top: 1200px;
-        right: unset;
-        left: 15px;
-        width: 35px;
-        height: 35px;
-    }
+  #iconoir_dev_laptop {
+    position: absolute;
+    top: 1200px;
+    right: unset;
+    left: 15px;
+    width: 35px;
+    height: 35px;
+  }
 
-    #iconoir_dev_phone {
-        position: absolute;
-        top: 720px;
-        left: 335px;
-        width: 35px;
-        height: 35px;
-    }
+  #iconoir_dev_phone {
+    position: absolute;
+    top: 720px;
+    left: 335px;
+    width: 35px;
+    height: 35px;
+  }
 
-    .swiper-pagination {
-        display: none;
-    }
+  .swiper-pagination {
+    display: none;
+  }
 
-    #streamline_interface {
-        position: absolute;
-        top: 1200px;
-        left: unset;
-        right: 50px;
-        width: 35px;
-        height: 35px;
-    }
+  #streamline_interface {
+    position: absolute;
+    top: 1200px;
+    left: unset;
+    right: 50px;
+    width: 35px;
+    height: 35px;
+  }
 
-    .whatPeoplePersonBackground{
-        margin-top: 80px;
-    }
+  .whatPeoplePersonBackground {
+    margin-top: 80px;
+  }
 
-    .whatPeopleContainer {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        margin: 0;
-    }
+  .whatPeopleContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin: 0;
+  }
 
-    .whatPeopleContainer h1 img {
-        height: 36px;
-    }
+  .whatPeopleContainer h1 img {
+    height: 36px;
+  }
 
-    .personContainer {
-        padding-left: 0;
-    }
+  .personContainer {
+    padding-left: 0;
+  }
 
-    .personSlider {
-        gap: 10px;
-        height: 100%;
-        width: 100%;
-    }
+  .personSlider {
+    gap: 10px;
+    height: 100%;
+    width: 100%;
+  }
 
-    .personSlider h2 {
-        font-size: 26px;
-        line-height: 60px;
-        font-family: MonumentExtended;
-    }
+  .personSlider h2 {
+    font-size: 26px;
+    line-height: 60px;
+    font-family: MonumentExtended;
+  }
 
-    .personSlider p {
-        font-size: 16px;
-        line-height: 37px;
-        font-family: MonumentExtended;
-        text-align: center;
-        width: 100%;
-    }
+  .personSlider p {
+    font-size: 16px;
+    line-height: 37px;
+    font-family: MonumentExtended;
+    text-align: center;
+    width: 100%;
+  }
 
-    .prev-button,
-    .next-button {
-        height: 80px;
-        width: auto;
-    }
+  .prev-button,
+  .next-button {
+    height: 80px;
+    width: auto;
+  }
 
-    #sendButtonImage{
-        height: 30px;
-        width: 30px;
-    }
+  #sendButtonImage {
+    height: 30px;
+    width: 30px;
+  }
 
-    .next-button img,
-    .prev-button img {
-        height: 60px;
-        width: 60px;
-    }
+  .next-button img,
+  .prev-button img {
+    height: 60px;
+    width: 60px;
+  }
 
-    .personSlider img {
-        width: 100px;
-    }
+  .personSlider img {
+    width: 100px;
+  }
 
-    .whatPeopleContainer h1 {
-        font-size: 40px;
-        line-height: 60px;
-        width: 100%;
-        text-align: center;
-        justify-items: center;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 10px
-    }
+  .whatPeopleContainer h1 {
+    font-size: 40px;
+    line-height: 60px;
+    width: 100%;
+    text-align: center;
+    justify-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
 
-    .whatPeopleContainer {
-        width: 100%;
-        padding: 0px;
-        padding-top: 80px;
-    }
+  .whatPeopleContainer {
+    width: 100%;
+    padding: 0px;
+    padding-top: 80px;
+  }
 }
