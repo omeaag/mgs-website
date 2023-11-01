@@ -56,12 +56,11 @@ const Hiring = () => {
     setVisibleJobs(newVisibleJobs)
   }
 
-<<<<<<< HEAD
   return (
     <div className="hiringContainer">
       <div className="imageContainer">
-        <Image id="webAmsterdamImage" src={amsterdam} />
-        <Image id="mobileAmsterdamImage" src={amsterdam2} />
+        <Image alt='webAmsterdamImage' id="webAmsterdamImage" src={amsterdam} />
+        <Image alt="mobileAmsterdamImage" id="mobileAmsterdamImage" src={amsterdam2} />
         <p className="imageText">
           Started in Amsterdam <br /> enhancing and emplifying connections{" "}
           <br /> across the globe.
@@ -87,32 +86,13 @@ const Hiring = () => {
               {job.features.map((feat, index) => (
                 <span className="hiringFeatures" key={index}>
                   {feat !== ("Remote" || "Hybrid" || "On site") ? (
-                    <Image src={freeIcon} />
+                    <Image alt="freeIcon" src={freeIcon} />
                   ) : (
-                    <Image src={remIcon} />
+                    <Image alt="remIcon" src={remIcon} />
                   )}
                   {feat}
                 </span>
               ))}
-=======
-    return (
-        <div className='hiringContainer'>
-            <div className='imageContainer'>
-                <Image
-                    alt='Image Of Amsterdam'
-                    id='webAmsterdamImage'
-                    src={amsterdam}
-                />
-                <Image
-                    alt='Image Of Amsterdam'
-                    id='mobileAmsterdamImage'
-                    src={amsterdam2}
-                />
-                <p className='imageText'>
-                    Started in Amsterdam <br /> enhancing and emplifying connections <br /> across
-                    the globe.
-                </p>
->>>>>>> c4f9c010e7516a8fd1c048d20850dbc46729bcac
             </div>
             <div key={job.navigate} className="apply">
               <Link href={job.navigate}>
@@ -122,7 +102,6 @@ const Hiring = () => {
                 </span>
               </Link>
             </div>
-<<<<<<< HEAD
           </div>
         ))}
       </div>
@@ -137,58 +116,5 @@ const Hiring = () => {
     </div>
   )
 }
-=======
-            <div className='hiring'>
-                {jobs.map((job, index) => (
-                    <div
-                        className='hiringSection'
-                        key={index}>
-                        <div className='hiringSectionFirst'>
-                            <h1 className='hiringTitle'>{job.title}</h1>
-                            <p id='hiringDescription'>{job.description}</p>
-                            {job.features.map((feat, index) => (
-                                <span
-                                    className='hiringFeatures'
-                                    key={index}>
-                                    {feat !== ('Remote' || 'Hybrid' || 'On site') ? (
-                                        <Image alt='Free Icon' src={freeIcon} />
-                                    ) : (
-                                        <Image alt='Remote Icon' src={remIcon} />
-                                    )}
-                                    {feat}
-                                </span>
-                            ))}
-                        </div>
-                        <div
-                            key={job.navigate}
-                            className='apply'>
-                            <Link href={job.navigate}>
-                                Apply
-                                <span>
-                                    <Image
-                                        src={apply}
-                                        alt='apply'
-                                    />
-                                </span>
-                            </Link>
-                        </div>
-                    </div>
-                ))}
-            </div>
-            {visibleJobs < advertisement.length && (
-                <button id='viewmore' /*onClick={viewMoreJobs}*/>
-                    View More
-                    <span>
-                        <Image
-                            src={view}
-                            alt='view more'
-                        />
-                    </span>
-                </button>
-            )}
-        </div>
-    );
-};
->>>>>>> c4f9c010e7516a8fd1c048d20850dbc46729bcac
 
 export default Hiring

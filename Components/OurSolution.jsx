@@ -84,7 +84,6 @@ const OurSolution = () => {
     setImageSources(newImageSources)
   }, [blueCubeIndex])
 
-<<<<<<< HEAD
   return (
     <div className="OurSolitionContainer">
       <div className="titleContainer">
@@ -113,64 +112,6 @@ const OurSolution = () => {
               <div className="dashedLine">
                 <Image alt="solution line" src={solutionLine} />
               </div>
-=======
-    return (
-        <div className='OurSolitionContainer'>
-            <div className='titleContainer'>
-                <h1 className='OurSolutionTitle'>
-                    Our <span>Solution</span>
-                </h1>
-                <div className='line'></div>
-            </div>
-            <div className='OurSolutionText'>
-                <div className='cardContainer'>
-                    {imageSources.map((imageSource, index) => (
-                        <div className='ourSolutionAllCardContainer'>
-                            <div
-                                className={`card`}
-                                key={index}>
-                                <Image
-                                    alt='Blue Cube'
-                                    src={imageSource.src}
-                                    onClick={() => handleImageClick(index)}
-                                    className={`${imageSource.src === Bluecube ? 'showImg' : ''}`}
-                                />
-                                <h2
-                                    dangerouslySetInnerHTML={{ __html: headerList[index].header }}
-                                    className={imageSource.src === Bluecube ? 'blackHeader' : ''}
-                                    onClick={() => handleImageClick(index)}
-                                />
-                            </div>
-                            <div className='dashedLine'>
-                                <Image alt='Solution Line' src={solutionLine} />
-                            </div>
-                        </div>
-                    ))}
-                </div>
-                <div className='textContainer'>
-                    <div>
-                        <h3 dangerouslySetInnerHTML={{ __html: divList[currentIndex].title }} />
-                        <p>{divList[currentIndex].content}</p>
-                    </div>
-                    <div>
-                        <Image alt='Current Image' src={divList[currentIndex].image}></Image>
-                    </div>
-                </div>
-                <div className='paginationButtons'>
-                    <button
-                        onClick={() => handleImageClick(0)}
-                        className={`${currentIndex === 0 ? 'blueBtn' : ''}`}></button>
-                    <button
-                        onClick={() => handleImageClick(1)}
-                        className={`${currentIndex === 1 ? 'blueBtn' : ''}`}></button>
-                    <button
-                        onClick={() => handleImageClick(2)}
-                        className={`${currentIndex === 2 ? 'blueBtn' : ''}`}></button>
-                    <button
-                        onClick={() => handleImageClick(3)}
-                        className={`${currentIndex === 3 ? 'blueBtn' : ''}`}></button>
-                </div>
->>>>>>> c4f9c010e7516a8fd1c048d20850dbc46729bcac
             </div>
           ))}
         </div>
