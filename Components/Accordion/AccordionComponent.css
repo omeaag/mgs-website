@@ -120,6 +120,8 @@
   }
   .ArsenalMiniComponent {
     width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
   }
 
   .techTextParentContainer {

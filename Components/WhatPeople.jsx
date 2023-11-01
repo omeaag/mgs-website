@@ -140,6 +140,7 @@ function WhatPeople() {
             ))}
           </Swiper>
 
+<<<<<<< HEAD
           <button
             aria-label="Next"
             onClick={() => {
@@ -159,6 +160,68 @@ function WhatPeople() {
         <div className="clutchContainer">
           <p>We are on trusted platforms</p>
           <Image src={clutchco1} alt="clutchco1"></Image>
+=======
+                <div className='personContainer'>
+                    <button
+                        onClick={() => {
+                            (currentSlide2 > 0 && setCurrentSlide2(currentSlide2 - 1));
+                            goPrev()
+                        }}
+                        className='prev-button'>
+                        <Image
+                            src={currentSlide2 == !1 ? LeftArrow : LeftArrowBlue}
+                            alt="Left Arrow"
+                            width={100}
+                            height={100}
+                        />
+                    </button>
+                    <Swiper
+                        className='mySwiper'
+                        pagination={true}
+                        modules={[Pagination]}
+                        ref={swiper}
+                        spaceBetween={20}
+                        slidesPerView={1}
+                        navigation={{
+                            prevEl: '.prev-button',
+                            nextEl: '.next-button',
+                        }}>
+                        {people.map((person) => (
+                            <SwiperSlide key={person.id}>
+                                <div className='personSlider'>
+                                    <img
+                                        src={person.image.src}
+                                        alt={person.name}
+                                    />
+                                    <h2>{person.name}</h2>
+                                    <p>{person.description}</p>
+                                </div>
+                            </SwiperSlide>
+                        ))}
+                    </Swiper>
+
+                    <button
+                        onClick={() => {
+                            (currentSlide2 < 2 && setCurrentSlide2(currentSlide2 + 1));
+                            goNext()
+                        }}
+                        className='next-button'>
+                        <Image
+                            src={currentSlide2 == 2 ? RightArrow : RightArrowBlue}
+                            alt="Right Arrow"
+                            width={100}
+                            height={100}
+                        />
+                    </button>
+                </div>
+                <div className="clutchContainer">
+                    <p>We are on trusted platforms</p>
+                    <Image
+                        src={clutchco1}
+                        alt="clutchco1"></Image>
+                </div>
+            </div>
+>>>>>>> c4f9c010e7516a8fd1c048d20850dbc46729bcac
         </div>
       </div>
     </div>

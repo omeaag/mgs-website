@@ -84,20 +84,18 @@ const techPartners = () => {
                 </div>
                 <div className="blockChainIcons">
                     <div className="blockChainIconsLine">
-                        <Image src={bitcoin}></Image>
-                        <Image src={etherum}></Image>
-                        <Image src={binance}></Image>
-                        <Image src={airdao}></Image>
-                        <Image src={polygon}></Image>
-                        <Image src={solana}></Image>
-                    </div>
-                    <div className="blockChainIconsLine">
-                        <Image src={filecoin}></Image>
-                        <Image src={aptos}></Image>
-                        <Image src={arbitrum}></Image>
-                        <Image src={avalanche}></Image>
-                        <Image src={optimism}></Image>
-                        <Image src={cosmos}></Image>
+                        <Image alt="Logo Of Bitcoin" src={bitcoin}></Image>
+                        <Image alt="Logo Of Etherium" src={etherum}></Image>
+                        <Image alt="Logo Of Binance" src={binance}></Image>
+                        <Image alt="Logo Of Airdao" src={airdao}></Image>
+                        <Image alt="Logo Of Polygon" src={polygon}></Image>
+                        <Image alt="Logo Of Solana" src={solana}></Image>
+                        <Image alt="Logo Of Filecoin" src={filecoin}></Image>
+                        <Image alt="Logo Of Aptos" src={aptos}></Image>
+                        <Image alt="Logo Of Arbitrum" src={arbitrum}></Image>
+                        <Image alt="Logo Of Avalanche" src={avalanche}></Image>
+                        <Image alt="Logo Of Optimism" src={optimism}></Image>
+                        <Image alt="Logo Of Cosmos" src={cosmos}></Image>
                     </div>
                 </div>
             </div>
@@ -105,27 +103,27 @@ const techPartners = () => {
                 <h1><span>Tech</span> Arsenal</h1>
                 <div className="techArsenalButtonContainer">
                     <div className="techArsenalButton" onClick={setBlockchain}>
-                        <Image src={blockchain}></Image>
+                        <Image alt="Blockchain Logo" src={blockchain}></Image>
                         <button>Blockchain</button>
                     </div>
                     <div className="techArsenalButton" onClick={setBackend}>
-                        <Image src={gear}></Image>
+                        <Image alt="Gear Logo Representing Backend" src={gear}></Image>
                         <button>Backend</button>
                     </div>
                     <div className="techArsenalButton" onClick={setFrontend}>
-                        <Image src={code}></Image>
+                        <Image alt="Code Logo Representing Frontend" src={code}></Image>
                         <button>Frontend</button>
                     </div>
                     <div className="techArsenalButton" onClick={setDevops}>
-                        <Image src={devops}></Image>
+                        <Image alt="Devops Icon" src={devops}></Image>
                         <button>DevOps</button>
                     </div>
                     <div className="techArsenalButton" onClick={setDatabase}>
-                        <Image src={database}></Image>
+                        <Image alt="Database Icon" src={database}></Image>
                         <button>Databases & storage</button>
                     </div>
                     <div className="techArsenalButton" onClick={setUiux}>
-                        <Image src={ui}></Image>
+                        <Image alt="UI UX Icon" src={ui}></Image>
                         <button>UI/UX Design</button>
                     </div>
                 </div>
@@ -144,6 +142,7 @@ const techPartners = () => {
                 <div className="techPartnersLeftButtonContainer">
                     {/* Previous button */}
                     <Image
+                        alt="Left Button"
                         id="techLeftButtonID"
                         src={techPartnersButton}
                         onClick={sliderChangerPrevious} // Call the sliderChangerPrevious function on click
@@ -155,6 +154,7 @@ const techPartners = () => {
                 </div>
                 <div className="techPartnersRightButtonContainer">
                     <Image
+                        alt="Right Button"
                         id="techRightButtonID"
                         src={techPartnersButton}
                         onClick={sliderChangerNext} // Call the sliderChangerNext function on click

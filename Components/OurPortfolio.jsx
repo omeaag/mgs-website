@@ -148,8 +148,13 @@ function OurPortfolio() {
           className="prev-button"
         >
           <Image
+<<<<<<< HEAD
             src={currentSlide == !1 ? LeftArrow : LeftArrowBlue}
             alt="Sol Ok"
+=======
+            src={currentSlide ==!1 ? LeftArrow : LeftArrowBlue}
+            alt="Left Arrow"
+>>>>>>> c4f9c010e7516a8fd1c048d20850dbc46729bcac
             width={50}
             height={50}
           />
@@ -162,6 +167,7 @@ function OurPortfolio() {
           <SwiperSlide>
             <div className="sliderContent">
               <h4>Nex Decentralized Exchange Decentralized Exchange</h4>
+<<<<<<< HEAD
               <p>
                 Nexlabs.io, welcome! <br /> Nexlabs: decentralised trading
                 platform
@@ -169,11 +175,16 @@ function OurPortfolio() {
               <p className="slideLink">
                 <Image src={sliderlogo} /> https://www.nexlabs.io
               </p>
+=======
+              <p>Nexlabs.io, welcome! <br /> Nexlabs: decentralised trading platform</p>
+              <p className="slideLink"><Image alt="NexLabs Logo" src={sliderlogo} /> https://www.nexlabs.io</p>
+>>>>>>> c4f9c010e7516a8fd1c048d20850dbc46729bcac
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="sliderContent">
               <h4>The NFT Shoppe NFT's MarketPlace</h4>
+<<<<<<< HEAD
               <p>
                 React App, welcome! <br /> Web site created using
                 create-react-app
@@ -182,6 +193,10 @@ function OurPortfolio() {
                 <Image src={sliderlogo2} />
                 https://nft-wall-arts.vercel.app/home
               </p>
+=======
+              <p>React App, welcome! <br /> Web site created using create-react-app</p>
+              <p className="slideLink"><Image alt="Nft Wall Art Logo" src={sliderlogo2} />https://nft-wall-arts.vercel.app/home</p>
+>>>>>>> c4f9c010e7516a8fd1c048d20850dbc46729bcac
             </div>
           </SwiperSlide>
           <SwiperSlide>
@@ -213,8 +228,13 @@ function OurPortfolio() {
           className="next-button"
         >
           <Image
+<<<<<<< HEAD
             src={currentSlide == 2 ? RightArrow : RightArrowBlue}
             alt="Sag Ok"
+=======
+            src={currentSlide ==2 ? RightArrow : RightArrowBlue}
+            alt="Right Arrow"
+>>>>>>> c4f9c010e7516a8fd1c048d20850dbc46729bcac
             width={50}
             height={50}
           />
@@ -234,6 +254,7 @@ function OurPortfolio() {
           </h1>
         </div>
 
+<<<<<<< HEAD
         <div className="personContainer">
           <button
             aria-label="Previous"
@@ -250,6 +271,22 @@ function OurPortfolio() {
               height={100}
             />
           </button>
+=======
+        <div className='personContainer'>
+        <button
+          onClick={() => {
+            (currentSlide2 > 0 && setCurrentSlide2(currentSlide2 - 1));
+            goPrev()
+          }}
+          className='prev-button'>
+          <Image
+            src={currentSlide2 ==!1 ? LeftArrow : LeftArrowBlue}
+            alt="Left Arrow"
+            width={100}
+            height={100}
+          />
+        </button>
+>>>>>>> c4f9c010e7516a8fd1c048d20850dbc46729bcac
           <Swiper
             className="mySwiper"
             pagination={true}
@@ -279,6 +316,7 @@ function OurPortfolio() {
           </Swiper>
 
           <button
+<<<<<<< HEAD
             aria-label="Next"
             onClick={() => {
               currentSlide2 < 2 && setCurrentSlide2(currentSlide2 + 1)
@@ -293,6 +331,20 @@ function OurPortfolio() {
               height={100}
             />
           </button>
+=======
+          onClick={() => {
+            (currentSlide2 < 2 && setCurrentSlide2(currentSlide2 + 1));
+            goNext() 
+          }}
+          className='next-button'>
+          <Image
+            src={currentSlide2 ==2 ? RightArrow : RightArrowBlue}
+            alt="Right Arrow"
+            width={100}
+            height={100}
+          />
+        </button>
+>>>>>>> c4f9c010e7516a8fd1c048d20850dbc46729bcac
         </div>
         <div className="clutchContainer">
           <p>We are on trusted platforms</p>

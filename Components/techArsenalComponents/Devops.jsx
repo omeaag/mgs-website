@@ -14,19 +14,17 @@ const Devops = () => {
     return(
         <div className="ArsenalMiniComponentDEV">
             <div className="ArsenalMiniComponent">
-            <Image src={aws}></Image>
-            <Image src={ans}></Image>
-            <Image src={dig}></Image>
-            <Image src={goo}></Image>
-            <Image src={gra}></Image>
-            <Image src={het}></Image>
-            </div>
-            <div className="ArsenalMiniComponent">
-            <Image src={kub}></Image>
-            <Image src={pag}></Image>
-            <Image src={pro}></Image>
-            <Image src={hel}></Image>
-            <Image src={ter}></Image>
+            <Image src={aws} alt="Logo of Amazon Web Services"></Image>
+            <Image src={ans} alt="Logo of Ansible"></Image>
+            <Image src={dig} alt="Logo of Digital Ocean"></Image>
+            <Image src={goo} alt="Logo of Google Cloud"></Image>
+            <Image src={gra} alt="Logo of Grafana"></Image>
+            <Image src={het} alt="Logo of Hetzner"></Image>
+            <Image src={kub} alt="Logo of Kubernetes"></Image>
+            <Image src={pag} alt="Logo of PagerDuty"></Image>
+            <Image src={pro} alt="Logo of Prometheus"></Image>
+            <Image src={hel} alt="Logo of Helm"></Image>
+            <Image src={ter} alt="Logo of Terraform"></Image>
             </div>
         </div>
     );

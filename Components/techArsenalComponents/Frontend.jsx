@@ -6,10 +6,10 @@ import nat from "../../public/materials/TechPartnersImages/mgsServciesIcons/fron
 const Frontend = () => {
     return(
         <div className="ArsenalMiniComponent">
-            <Image src={Nex}></Image>
-            <Image src={rea}></Image>
-            <Image src={Gat}></Image>
-            <Image src={nat}></Image>
+            <Image src={Nex} alt="Logo of NextJS"></Image>
+            <Image src={rea} alt="Logo of React"></Image>
+            <Image src={Gat} alt="Logo of Gatsby"></Image>
+            <Image src={nat} alt="Logo of React Native"></Image>
         </div>
     );
 };
