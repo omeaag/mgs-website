@@ -85,67 +85,44 @@ const OurSolution = () => {
   }, [blueCubeIndex])
 
   return (
-    <div className="OurSolitionContainer">
-      <div className="titleContainer">
-        <h1 className="OurSolutionTitle">
-          Our <span>Solution</span>
-        </h1>
-        <div className="line"></div>
-      </div>
-      <div className="OurSolutionText">
-        <div className="cardContainer">
-          {imageSources.map((imageSource, index) => (
-            <div className="ourSolutionAllCardContainer" key={index}>
-              <div className={`card`} key={index}>
-                <Image
-                  alt="cube"
-                  src={imageSource.src}
-                  onClick={() => handleImageClick(index)}
-                  className={`${imageSource.src === Bluecube ? "showImg" : ""}`}
-                />
-                <h2
-                  dangerouslySetInnerHTML={{ __html: headerList[index].header }}
-                  className={imageSource.src === Bluecube ? "blackHeader" : ""}
-                  onClick={() => handleImageClick(index)}
-                />
-              </div>
-              <div className="dashedLine">
-                <Image alt="solution line" src={solutionLine} />
-              </div>
-            </div>
-          ))}
-        </div>
-        <div className="textContainer">
-          <div>
-            <h3
-              dangerouslySetInnerHTML={{ __html: divList[currentIndex].title }}
-            />
-            <p>{divList[currentIndex].content}</p>
-          </div>
-          <div>
-            <Image src={divList[currentIndex].image} alt="frame" />
-          </div>
-        </div>
-        <div className="paginationButtons">
-          <button
-            onClick={() => handleImageClick(0)}
-            className={`${currentIndex === 0 ? "blueBtn" : ""}`}
-          ></button>
-          <button
-            onClick={() => handleImageClick(1)}
-            className={`${currentIndex === 1 ? "blueBtn" : ""}`}
-          ></button>
-          <button
-            onClick={() => handleImageClick(2)}
-            className={`${currentIndex === 2 ? "blueBtn" : ""}`}
-          ></button>
-          <button
-            onClick={() => handleImageClick(3)}
-            className={`${currentIndex === 3 ? "blueBtn" : ""}`}
-          ></button>
-        </div>
-      </div>
-    </div>
+		<div className="OurSolitionContainer">
+			<div className="titleContainer">
+				<h1 className="OurSolutionTitle">
+					Our <span>Solution</span>
+				</h1>
+				<div className="line"></div>
+			</div>
+			<div className="OurSolutionText">
+				<div className="cardContainer">
+					{imageSources.map((imageSource, index) => (
+						<div className="ourSolutionAllCardContainer" key={index}>
+							<div className={`card`} key={index}>
+								<Image alt="cube" src={imageSource.src} onClick={() => handleImageClick(index)} className={`${imageSource.src === Bluecube ? 'showImg' : ''}`} />
+								<h2 dangerouslySetInnerHTML={{ __html: headerList[index].header }} className={imageSource.src === Bluecube ? 'blackHeader' : ''} onClick={() => handleImageClick(index)} />
+							</div>
+							<div className="dashedLine">
+								<Image alt="solution line" src={solutionLine} />
+							</div>
+						</div>
+					))}
+				</div>
+				<div className="textContainer">
+					<div>
+						<h3 dangerouslySetInnerHTML={{ __html: divList[currentIndex].title }} />
+						<p>{divList[currentIndex].content}</p>
+					</div>
+					<div>
+						<Image src={divList[currentIndex].image} alt="frame" />
+					</div>
+				</div>
+				<div className="paginationButtons">
+					<button aria-label="text 1" onClick={() => handleImageClick(0)} className={`${currentIndex === 0 ? 'blueBtn' : ''}`}></button>
+					<button aria-label="text 2" onClick={() => handleImageClick(1)} className={`${currentIndex === 1 ? 'blueBtn' : ''}`}></button>
+					<button aria-label="text 3" onClick={() => handleImageClick(2)} className={`${currentIndex === 2 ? 'blueBtn' : ''}`}></button>
+					<button aria-label="text 4" onClick={() => handleImageClick(3)} className={`${currentIndex === 3 ? 'blueBtn' : ''}`}></button>
+				</div>
+			</div>
+		</div>
   )
 }
 

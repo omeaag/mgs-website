@@ -76,93 +76,102 @@ const techPartners = () => {
         setcurrentArsenal(5);
     }
     return (
-        <div className="techParentContainer">
-            <div className="blockChainnetworkContainer">
-                <div>
-                    <h1><span>Blockchain Network</span></h1>
-                    <h1>We Support</h1>
-                </div>
-                <div className="blockChainIcons">
-                    <div className="blockChainIconsLine">
-                        <Image alt="Logo Of Bitcoin" src={bitcoin}></Image>
-                        <Image alt="Logo Of Etherium" src={etherum}></Image>
-                        <Image alt="Logo Of Binance" src={binance}></Image>
-                        <Image alt="Logo Of Airdao" src={airdao}></Image>
-                        <Image alt="Logo Of Polygon" src={polygon}></Image>
-                        <Image alt="Logo Of Solana" src={solana}></Image>
-                        <Image alt="Logo Of Filecoin" src={filecoin}></Image>
-                        <Image alt="Logo Of Aptos" src={aptos}></Image>
-                        <Image alt="Logo Of Arbitrum" src={arbitrum}></Image>
-                        <Image alt="Logo Of Avalanche" src={avalanche}></Image>
-                        <Image alt="Logo Of Optimism" src={optimism}></Image>
-                        <Image alt="Logo Of Cosmos" src={cosmos}></Image>
-                    </div>
-                </div>
-            </div>
-            <div className="techArsenalContainer">
-                <h1><span>Tech</span> Arsenal</h1>
-                <div className="techArsenalButtonContainer">
-                    <div className="techArsenalButton" onClick={setBlockchain}>
-                        <Image alt="Blockchain Logo" src={blockchain}></Image>
-                        <button>Blockchain</button>
-                    </div>
-                    <div className="techArsenalButton" onClick={setBackend}>
-                        <Image alt="Gear Logo Representing Backend" src={gear}></Image>
-                        <button>Backend</button>
-                    </div>
-                    <div className="techArsenalButton" onClick={setFrontend}>
-                        <Image alt="Code Logo Representing Frontend" src={code}></Image>
-                        <button>Frontend</button>
-                    </div>
-                    <div className="techArsenalButton" onClick={setDevops}>
-                        <Image alt="Devops Icon" src={devops}></Image>
-                        <button>DevOps</button>
-                    </div>
-                    <div className="techArsenalButton" onClick={setDatabase}>
-                        <Image alt="Database Icon" src={database}></Image>
-                        <button>Databases & storage</button>
-                    </div>
-                    <div className="techArsenalButton" onClick={setUiux}>
-                        <Image alt="UI UX Icon" src={ui}></Image>
-                        <button>UI/UX Design</button>
-                    </div>
-                </div>
-                <div className="arsenalChangeComponent">
-                    <div className="mainArsenalChangeComp">
-                        {/* Render the current component based on the state */}
-                        {React.createElement(arsenalArray[currentArsenal])}
-                    </div>
-                </div>
-            </div>
-            <div className="techTextParentContainer">
-                <h1>Technology <span>Partners</span> </h1>
-                <p>Mood Global Services Hub empowers startups and third parties to envision and realize their ideas, providing fundamental infrastructure and services to support entrepreneurs and established entities. </p>
-            </div>
-            <div className="techSliderParentContainer">
-                <div className="techPartnersLeftButtonContainer">
-                    {/* Previous button */}
-                    <Image
-                        alt="Left Button"
-                        id="techLeftButtonID"
-                        src={techPartnersButton}
-                        onClick={sliderChangerPrevious} // Call the sliderChangerPrevious function on click
-                    />
-                </div>
-                <div className={`techPartnerComponentContainer component-transition`}>
-                    {/* Render the current component based on the state */}
-                    {React.createElement(sliderArrayList[currentComponentIndex])}
-                </div>
-                <div className="techPartnersRightButtonContainer">
-                    <Image
-                        alt="Right Button"
-                        id="techRightButtonID"
-                        src={techPartnersButton}
-                        onClick={sliderChangerNext} // Call the sliderChangerNext function on click
-                    />
-                </div>
-            </div>
-        </div>
-    );
+			<div className="techParentContainer">
+				<div className="blockChainnetworkContainer">
+					<div>
+						<h1>
+							<span>Blockchain Network</span>
+						</h1>
+						<h1>We Support</h1>
+					</div>
+					<div className="blockChainIcons">
+						<div className="blockChainIconsLine">
+							<Image alt="Logo Of Bitcoin" src={bitcoin}></Image>
+							<Image alt="Logo Of Etherium" src={etherum}></Image>
+							<Image alt="Logo Of Binance" src={binance}></Image>
+							<Image alt="Logo Of Airdao" src={airdao}></Image>
+							<Image alt="Logo Of Polygon" src={polygon}></Image>
+							<Image alt="Logo Of Solana" src={solana}></Image>
+							<Image alt="Logo Of Filecoin" src={filecoin}></Image>
+							<Image alt="Logo Of Aptos" src={aptos}></Image>
+							<Image alt="Logo Of Arbitrum" src={arbitrum}></Image>
+							<Image alt="Logo Of Avalanche" src={avalanche}></Image>
+							<Image alt="Logo Of Optimism" src={optimism}></Image>
+							<Image alt="Logo Of Cosmos" src={cosmos}></Image>
+						</div>
+					</div>
+				</div>
+				<div className="techArsenalContainer">
+					<h1>
+						<span>Tech</span> Arsenal
+					</h1>
+					<div className="techArsenalButtonContainer">
+						<div className="techArsenalButton" onClick={setBlockchain}>
+							<Image alt="Blockchain Logo" src={blockchain}></Image>
+							<button aria-label="Blockchain">Blockchain</button>
+						</div>
+						<div className="techArsenalButton" onClick={setBackend}>
+							<Image alt="Gear Logo Representing Backend" src={gear}></Image>
+							<button aria-label="Backend">Backend</button>
+						</div>
+						<div className="techArsenalButton" onClick={setFrontend}>
+							<Image alt="Code Logo Representing Frontend" src={code}></Image>
+							<button aria-label="Frontend">Frontend</button>
+						</div>
+						<div className="techArsenalButton" onClick={setDevops}>
+							<Image alt="Devops Icon" src={devops}></Image>
+							<button aria-label="DevOps">DevOps</button>
+						</div>
+						<div className="techArsenalButton" onClick={setDatabase}>
+							<Image alt="Database Icon" src={database}></Image>
+							<button aria-label="Databases & storage">Databases & storage</button>
+						</div>
+						<div className="techArsenalButton" onClick={setUiux}>
+							<Image alt="UI UX Icon" src={ui}></Image>
+							<button aria-label="UI/UX Design">UI/UX Design</button>
+						</div>
+					</div>
+					<div className="arsenalChangeComponent">
+						<div className="mainArsenalChangeComp">
+							{/* Render the current component based on the state */}
+							{React.createElement(arsenalArray[currentArsenal])}
+						</div>
+					</div>
+				</div>
+				<div className="techTextParentContainer">
+					<h1>
+						Technology <span>Partners</span>{' '}
+					</h1>
+					<p>
+						Mood Global Services Hub empowers startups and third parties to envision and realize their ideas, providing fundamental infrastructure and services to support entrepreneurs and
+						established entities.{' '}
+					</p>
+				</div>
+				<div className="techSliderParentContainer">
+					<div className="techPartnersLeftButtonContainer">
+						{/* Previous button */}
+						<Image
+							alt="Left Button"
+							id="techLeftButtonID"
+							src={techPartnersButton}
+							onClick={sliderChangerPrevious} // Call the sliderChangerPrevious function on click
+						/>
+					</div>
+					<div className={`techPartnerComponentContainer component-transition`}>
+						{/* Render the current component based on the state */}
+						{React.createElement(sliderArrayList[currentComponentIndex])}
+					</div>
+					<div className="techPartnersRightButtonContainer">
+						<Image
+							alt="Right Button"
+							id="techRightButtonID"
+							src={techPartnersButton}
+							onClick={sliderChangerNext} // Call the sliderChangerNext function on click
+						/>
+					</div>
+				</div>
+			</div>
+		)
 };
 
 export default techPartners;

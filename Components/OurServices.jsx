@@ -9,9 +9,10 @@ import orangeHere from "../public/materials/orangeHere.svg"
 import turkuazHere from "../public/materials/turkuazHere.svg"
 import europe from "../public/materials/europe.svg"
 import { useState, useEffect } from "react"
+import dynamic from 'next/dynamic'
 
 const OurServices = () => {
-  const [isMobileOn, setIsMobileOn] = useState(false)
+  const [ isMobileOn, setIsMobileOn ] = useState(false);
   useEffect(() => {
     const updateWindowDimensions = () => {
       if (window.innerWidth < 600) {
@@ -24,6 +25,8 @@ const OurServices = () => {
     window.addEventListener("resize", updateWindowDimensions)
     return () => window.removeEventListener("resize", updateWindowDimensions)
   }, [])
+
+
 
   return (
     <div className="mainServiceContainer">
@@ -233,7 +236,7 @@ const OurServices = () => {
                 </div>
               </div>
             </div>
-          ) : (
+          ) :(
             <div className="serviceBoxContainer">
               <div className="serviceTContainer">
                 <div className="tLeftService">

@@ -33,34 +33,33 @@ export default function HomeShapingFuture() {
   })
 
   return (
-    <div className="HomeShapingContainer">
-      <div className="HomeShapingHeaders">
-        <div className="firstRow">
-          <p className="text-shaping">Think</p>
-          <div className="text-creativity">
-            <SlotMachineWrapper>
-              {transitions((style, word) => (
-                <WordWrapper style={style}>{word}</WordWrapper>
-              ))}
-            </SlotMachineWrapper>
-          </div>
-        </div>
-        <p className="text-shaping">Think Mood</p>
-      </div>
+		<div className="HomeShapingContainer">
+			<div className="HomeShapingHeaders">
+				<div className="firstRow">
+					<p className="text-shaping">Think</p>
+					<div className="text-creativity">
+						<SlotMachineWrapper>
+							{transitions((style, word) => (
+								<WordWrapper style={style}>{word}</WordWrapper>
+							))}
+						</SlotMachineWrapper>
+					</div>
+				</div>
+				<p className="text-shaping">Think Mood</p>
+			</div>
 
-      <div className="HomeShapingBottomLine"></div>
+			<div className="HomeShapingBottomLine"></div>
 
-      <div className="HomeShapingParagraph">
-        <p className="at-mood-global">
-          At Mood Global Services, we craft digital infrastructures that enhance
-          communication and fuel business growth.
-        </p>
-      </div>
+			<div className="HomeShapingParagraph">
+				<p className="at-mood-global">At Mood Global Services, we craft digital infrastructures that enhance communication and fuel business growth.</p>
+			</div>
 
-      <div className="HomeShapingbuttons">
-        <button className="homeshapping-btn black">Get Started</button>
-        <button className="homeshapping-btn white">Learn More</button>
-      </div>
-    </div>
+			<div className="HomeShapingbuttons">
+				<button aria-label="Get Started" className="homeshapping-btn black">
+					Get Started
+				</button>
+				<button className="homeshapping-btn white">Learn More</button>
+			</div>
+		</div>
   )
 }
