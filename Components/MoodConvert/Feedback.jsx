@@ -19,52 +19,39 @@ const Feedback = () => {
         validationSchema: schema,
     });
     return (
-        <div className='feedbackContainer'>
-            <h1>
-                Leave Some Feedback For <br />
-                <span>Make Our All Better</span>
-            </h1>
+			<div className="feedbackContainer">
+				<h1>
+					Leave Some Feedback For <br />
+					<span>Make Our All Better</span>
+				</h1>
 
-            <form
-                onSubmit={formik.handleSubmit}
-                className='form'>
-                <div className='rate'>
-                    <span>Extremely Poor</span>
-                    <div className='rateButtonContainer'>
-                        <button>1</button>
-                        <button>2</button>
-                        <button>3</button>
-                        <button>4</button>
-                        <button>5</button>
-                        <button>6</button>
-                        <button>7</button>
-                        <button>8</button>
-                        <button>9</button>
-                        <button>10</button>
-                    </div>
-                    <span>Exteremly Good</span>
-                </div>
-                <textarea
-                    name='message'
-                    cols='30'
-                    rows='10'
-                    value={formik.values.message}
-                    onChange={formik.handleChange}
-                    onBlur={formik.handleBlur}
-                    placeholder='Write Your Feedback Here'></textarea>
-                {formik.errors.message && formik.touched.message && (
-                    <div className='error'>{formik.errors.message}</div>
-                )}
-                <div>
-                    <button
-                        id='submitBtn'
-                        type='submit'>
-                        Submit Feedback
-                    </button>
-                </div>
-            </form>
-        </div>
-    );
+				<form onSubmit={formik.handleSubmit} className="form">
+					<div className="rate">
+						<span>Extremely Poor</span>
+						<div className="rateButtonContainer">
+							<button aria-label="1">1</button>
+							<button aria-label="2">2</button>
+							<button aria-label="3">3</button>
+							<button aria-label="4">4</button>
+							<button aria-label="5">5</button>
+							<button aria-label="6">6</button>
+							<button aria-label="7">7</button>
+							<button aria-label="8">8</button>
+							<button aria-label="9">9</button>
+							<button aria-label="10">10</button>
+						</div>
+						<span>Exteremly Good</span>
+					</div>
+					<textarea name="message" cols="30" rows="10" value={formik.values.message} onChange={formik.handleChange} onBlur={formik.handleBlur} placeholder="Write Your Feedback Here"></textarea>
+					{formik.errors.message && formik.touched.message && <div className="error">{formik.errors.message}</div>}
+					<div>
+						<button aria-label="Submit Feedback" id="submitBtn" type="submit">
+							Submit Feedback
+						</button>
+					</div>
+				</form>
+			</div>
+		)
 };
 
 export default Feedback;

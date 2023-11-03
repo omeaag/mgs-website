@@ -347,7 +347,7 @@ const page = () => {
                                 rows=''></textarea>
                         </div>
                     </div>
-                    <button id='applyBtn'>Apply Now</button>
+                    <button aria-label="Apply Now" id='applyBtn'>Apply Now</button>
                 </form>
             </div>
         </div>

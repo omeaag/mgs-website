@@ -18,7 +18,7 @@ function CareersHeader() {
           <div className="mobilCareersHeaderImageContainer">
             <Image alt="world map" className="floatImage" src={worldMap} />
           </div>
-          <div className="careersHeaderPar">
+          <div className="careersHeaderPar my-9">
             <p>
               Uncover a realm of innovation with our adept ensemble, where each
               challenge unraveled leads to a hallmark solution. Your venture

@@ -86,220 +86,176 @@ function OurPortfolio() {
   const [currentSlide2, setCurrentSlide2] = useState(0)
 
   useEffect(() => {
-    const updateWindowDimensions = () => {
-      if (window.innerWidth < 600) {
-        setSlidesPerView(1)
-        setSlideGap(0)
-      } else if (window.innerWidth >= 600) {
-        setSlidesPerView(2)
-        setSlideGap(24)
-      }
-    }
-    updateWindowDimensions()
-    window.addEventListener("resize", updateWindowDimensions)
-    return () => window.removeEventListener("resize", updateWindowDimensions)
-  }, [])
+		const updateWindowDimensions = () => {
+			const newSlidesPerView = window.innerWidth < 600 ? 1 : 2
+			const newSlideGap = window.innerWidth < 600 ? 0 : 24
+
+			if (slidesPerView !== newSlidesPerView || slideGap !== newSlideGap) {
+				setSlidesPerView(newSlidesPerView)
+				setSlideGap(newSlideGap)
+			}
+		}
+
+		updateWindowDimensions()
+
+		const resizeListener = () => {
+			updateWindowDimensions()
+		}
+
+		window.addEventListener('resize', resizeListener)
+
+		return () => {
+			window.removeEventListener('resize', resizeListener)
+		}
+  }, [slidesPerView, slideGap])
+
 
   return (
-    <div className="ourPortfolioContainer">
-      <div>
-        <Image alt="iconoir_design" id="iconoir_design" src={iconoir_design} />
-        <Image
-          alt="iconoir_dev_laptop"
-          id="iconoir_dev_laptop"
-          src={iconoir_dev_laptop}
-        />
-        <Image
-          alt="iconoir_dev_phone"
-          id="iconoir_dev_phone"
-          src={iconoir_dev_phone}
-        />
-        <Image
-          alt="iconamoon_settings"
-          id="iconamoon_settings"
-          src={iconamoon_settings}
-        />
-        <Image
-          alt="streamline_interface"
-          id="streamline_interface"
-          src={streamline_interface}
-        />
-      </div>
+		<div className="ourPortfolioContainer">
+			<div>
+				<Image alt="iconoir_design" id="iconoir_design" src={iconoir_design} />
+				<Image alt="iconoir_dev_laptop" id="iconoir_dev_laptop" src={iconoir_dev_laptop} />
+				<Image alt="iconoir_dev_phone" id="iconoir_dev_phone" src={iconoir_dev_phone} />
+				<Image alt="iconamoon_settings" id="iconamoon_settings" src={iconamoon_settings} />
+				<Image alt="streamline_interface" id="streamline_interface" src={streamline_interface} />
+			</div>
 
-      <div className="headerContainer-5">
-        <h1>
-          Our <span>Portfolio</span>
-        </h1>
-        <div className="line"></div>
-      </div>
-      <p className="headerContainerp">
-        Dive into our portfolio to see how we've enabled businesses to flourish
-        digitally. From blockchain solutions to innovative app development, our
-        projects reflect our dedication and commitment to tailored strategies
-        and technological advancement.
-      </p>
-      <div className="galleryContainer">
-        <button
-          aria-label="Previous"
-          onClick={() => {
-            currentSlide > 0 && setCurrentSlide(currentSlide - 1)
-            goPrev1()
-          }}
-          className="prev-button"
-        >
-          <Image
-            src={currentSlide == !1 ? LeftArrow : LeftArrowBlue}
-            alt="Sol Ok"
-            width={50}
-            height={50}
-          />
-        </button>
-        <Swiper
-          ref={swiper1}
-          spaceBetween={slideGap}
-          slidesPerView={slidesPerView}
-        >
-          <SwiperSlide>
-            <div className="sliderContent">
-              <h4>Nex Decentralized Exchange Decentralized Exchange</h4>
-              <p>
-                Nexlabs.io, welcome! <br /> Nexlabs: decentralised trading
-                platform
-              </p>
-              <p className="slideLink">
-                <Image alt="sliderlogo" src={sliderlogo} /> https://www.nexlabs.io
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="sliderContent">
-              <h4>The NFT Shoppe NFT's MarketPlace</h4>
-              <p>
-                React App, welcome! <br /> Web site created using
-                create-react-app
-              </p>
-              <p className="slideLink">
-                <Image alt="sliderlogo2" src={sliderlogo2} />
-                https://nft-wall-arts.vercel.app/home
-              </p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="sliderContent">
-              <h4>Wedge Finance E-Commerce Solutions On Blockchain</h4>
-              <p>
-                Wedge Finance Provide Frictionless Decentralised Finance
-                transactions in a block chain Environment{" "}
-              </p>
-              <p className="slideLink">https://wedge-token.vercel.app/</p>
-            </div>
-          </SwiperSlide>
-          <SwiperSlide>
-            <div className="sliderContent">
-              <h4>CBD Platform Real World Asset Tokenization E-Commerce</h4>
-              <p>
-                Real World Asset TokenizationE-commerce Crypto payments Ramp
-              </p>
-              <p className="slideLink">https://cbdplatform.xyz/</p>
-            </div>
-          </SwiperSlide>
-        </Swiper>
-        <button
-          aria-label="Next"
-          onClick={() => {
-            currentSlide < 2 && setCurrentSlide(currentSlide + 1)
-            goNext1()
-          }}
-          className="next-button"
-        >
-          <Image
-            src={currentSlide == 2 ? RightArrow : RightArrowBlue}
-            alt="Sag Ok"
-            width={50}
-            height={50}
-          />
-        </button>
-      </div>
+			<div className="headerContainer-5">
+				<h1>
+					Our <span>Portfolio</span>
+				</h1>
+				<div className="line"></div>
+			</div>
+			<p className="headerContainerp">
+				Dive into our portfolio to see how we've enabled businesses to flourish digitally. From blockchain solutions to innovative app development, our projects reflect our dedication and
+				commitment to tailored strategies and technological advancement.
+			</p>
+			<div className="galleryContainer">
+				<button
+					aria-label="Previous"
+					onClick={() => {
+						currentSlide > 0 && setCurrentSlide(currentSlide - 1)
+						goPrev1()
+					}}
+					className="prev-button"
+				>
+					<Image src={currentSlide == !1 ? LeftArrow : LeftArrowBlue} alt="Sol Ok" width={50} height={50} />
+				</button>
+				<Swiper ref={swiper1} slidesPerView={slidesPerView} spaceBetween={slideGap}>
+					<SwiperSlide>
+						<div className="sliderContent">
+							<h4>Nex Decentralized Exchange Decentralized Exchange</h4>
+							<p>
+								Nexlabs.io, welcome! <br /> Nexlabs: decentralised trading platform
+							</p>
+							<p className="slideLink">
+								<Image alt="sliderlogo" src={sliderlogo} /> https://www.nexlabs.io
+							</p>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide>
+						<div className="sliderContent">
+							<h4>The NFT Shoppe NFT's MarketPlace</h4>
+							<p>
+								React App, welcome! <br /> Web site created using create-react-app
+							</p>
+							<p className="slideLink">
+								<Image alt="sliderlogo2" src={sliderlogo2} />
+								https://nft-wall-arts.vercel.app/home
+							</p>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide>
+						<div className="sliderContent">
+							<h4>Wedge Finance E-Commerce Solutions On Blockchain</h4>
+							<p>Wedge Finance Provide Frictionless Decentralised Finance transactions in a block chain Environment </p>
+							<p className="slideLink">https://wedge-token.vercel.app/</p>
+						</div>
+					</SwiperSlide>
+					<SwiperSlide>
+						<div className="sliderContent">
+							<h4>CBD Platform Real World Asset Tokenization E-Commerce</h4>
+							<p>Real World Asset TokenizationE-commerce Crypto payments Ramp</p>
+							<p className="slideLink">https://cbdplatform.xyz/</p>
+						</div>
+					</SwiperSlide>
+				</Swiper>
+				<button
+					aria-label="Next"
+					onClick={() => {
+						currentSlide < 2 && setCurrentSlide(currentSlide + 1)
+						goNext1()
+					}}
+					className="next-button"
+				>
+					<Image src={currentSlide == 2 ? RightArrow : RightArrowBlue} alt="Sag Ok" width={50} height={50} />
+				</button>
+			</div>
 
-      <div className="build30">
-        <h2 className="build">Builders and Projects Helped</h2>
-        <h2 className="plus30">22+</h2>
-      </div>
-      <div className="whatPeoplePersonBackground">
-        <div className="whatPeopleContainer">
-          <h1>
-            What People&nbsp;
-            <Image alt="Heart" id="heart" src={Heart} />
-            &nbsp;to say about us!{" "}
-          </h1>
-        </div>
+			<div className="build30">
+				<h2 className="build">Builders and Projects Helped</h2>
+				<h2 className="plus30">22+</h2>
+			</div>
+			<div className="whatPeoplePersonBackground">
+				<div className="whatPeopleContainer">
+					<h1>
+						What People&nbsp;
+						<Image alt="Heart" id="heart" src={Heart} />
+						&nbsp;to say about us!{' '}
+					</h1>
+				</div>
 
-        <div className="personContainer">
-          <button
-            aria-label="Previous"
-            onClick={() => {
-              currentSlide2 > 0 && setCurrentSlide2(currentSlide2 - 1)
-              goPrev()
-            }}
-            className="prev-button"
-          >
-            <Image
-              src={currentSlide2 == !1 ? LeftArrow : LeftArrowBlue}
-              alt="Sol Ok"
-              width={100}
-              height={100}
-            />
-          </button>
-          <Swiper
-            className="mySwiper"
-            pagination={true}
-            modules={[Pagination]}
-            ref={swiper}
-            spaceBetween={20}
-            slidesPerView={1}
-            navigation={{
-              prevEl: ".prev-button",
-              nextEl: ".next-button",
-            }}
-          >
-            {people.map((person) => (
-              <SwiperSlide key={person.id}>
-                <div className="personSlider">
-                  <Image
-                    src={person.image.src}
-                    alt={person.name}
-                    width={200}
-                    height={200}
-                  />
-                  <h2>{person.name}</h2>
-                  <p>{person.description}</p>
-                </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+				<div className="personContainer">
+					<button
+						aria-label="Previous"
+						onClick={() => {
+							currentSlide2 > 0 && setCurrentSlide2(currentSlide2 - 1)
+							goPrev()
+						}}
+						className="prev-button"
+					>
+						<Image src={currentSlide2 == !1 ? LeftArrow : LeftArrowBlue} alt="Sol Ok" width={100} height={100} />
+					</button>
+					<Swiper
+						className="mySwiper"
+						pagination={true}
+						modules={[Pagination]}
+						ref={swiper}
+						spaceBetween={20}
+						slidesPerView={1}
+						navigation={{
+							prevEl: '.prev-button',
+							nextEl: '.next-button',
+						}}
+					>
+						{people.map((person) => (
+							<SwiperSlide key={person.id}>
+								<div className="personSlider">
+									<Image src={person.image.src} alt={person.name} width={200} height={200} />
+									<h2>{person.name}</h2>
+									<p>{person.description}</p>
+								</div>
+							</SwiperSlide>
+						))}
+					</Swiper>
 
-          <button
-            aria-label="Next"
-            onClick={() => {
-              currentSlide2 < 2 && setCurrentSlide2(currentSlide2 + 1)
-              goNext()
-            }}
-            className="next-button"
-          >
-            <Image
-              src={currentSlide2 == 2 ? RightArrow : RightArrowBlue}
-              alt="Sag Ok"
-              width={100}
-              height={100}
-            />
-          </button>
-        </div>
-        <div className="clutchContainer">
-          <p>We are on trusted platforms</p>
-          <Image src={clutchco1} alt="clutchco1" />
-        </div>
-      </div>
-    </div>
+					<button
+						aria-label="Next"
+						onClick={() => {
+							currentSlide2 < 2 && setCurrentSlide2(currentSlide2 + 1)
+							goNext()
+						}}
+						className="next-button"
+					>
+						<Image src={currentSlide2 == 2 ? RightArrow : RightArrowBlue} alt="Sag Ok" width={100} height={100} />
+					</button>
+				</div>
+				<div className="clutchContainer">
+					<p>We are on trusted platforms</p>
+					<Image src={clutchco1} alt="clutchco1" />
+				</div>
+			</div>
+		</div>
   )
 }
 

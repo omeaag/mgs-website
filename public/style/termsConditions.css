@@ -7,16 +7,13 @@
   @apply flex flex-col w-full m-auto;
 }
 .termsConditionsHeader {
-  @apply h-[60vh] flex flex-col justify-center gap-[50px] w-full bg-cover bg-no-repeat pl-[20%];
-  background: url("../materials/HomeShapingBackground.svg");
+  @apply h-[60vh] flex flex-col justify-center gap-[50px] w-full [background:url("../materials/HomeShapingBackground.svg")] bg-cover bg-no-repeat pl-[20%];
 }
 .termsConditionsHeader h1 {
-  @apply text-[50px] font-bold leading-[60px] tracking-[0px] text-left text-[rgba(0,113,251,1)];
-  font-family: MonumentExtended;
+  @apply text-[50px] font-bold leading-[60px] tracking-[0px] text-left [font-family:MonumentExtended] text-[rgba(0,113,251,1)];
 }
 .termsConditionsHeader p {
-  @apply text-[26px] font-normal leading-[50px] tracking-[0px] text-left;
-  font-family: MonumentExtended;
+  @apply [font-family:MonumentExtended] text-[26px] font-normal leading-[50px] tracking-[0px] text-left;
 }
 .termsConditionsText {
   @apply w-3/5 gap-[50px] mt-[70px] mb-[200px] mx-auto;
@@ -26,12 +23,10 @@
 }
 .termsConditionsText,
 .termsConditionsTitle {
-  @apply flex flex-col text-[22px] font-normal leading-[39px] tracking-[0px] text-justify;
-  font-family: MonumentExtended;
+  @apply flex flex-col [font-family:MonumentExtended] text-[22px] font-normal leading-[39px] tracking-[0px] text-justify;
 }
 .termsConditionsTitle h2 {
-  @apply text-3xl font-semibold leading-9 tracking-[0px] text-left;
-  font-family: MonumentExtended;
+  @apply [font-family:MonumentExtended] text-3xl font-semibold leading-9 tracking-[0px] text-left;
 }
 #PrivacySecondHeader {
   @apply text-3xl not-italic font-medium leading-[normal] capitalize;
@@ -89,11 +84,9 @@ u strong {
   @apply w-4/5 text-[40px] font-medium leading-[150%] capitalize text-left;
 }
 .FaqLowerDiv {
-  @apply w-[79%] text-[color:var(--text-txt-secondary,rgba(60,60,67,0.85))] text-[22px] not-italic font-normal leading-[39px];
-  font-feature-settings: "clig" off, "liga" off;
+  @apply w-[79%] text-[color:var(--text-txt-secondary,rgba(60,60,67,0.85))] [font-feature-settings:"clig"_off,"liga"_off] [font-family:Neue_Montreal] text-[22px] not-italic font-normal leading-[39px];
 
   /* MGS/Paragraph/Para 3 */
-  font-family: Neue Montreal;
 
   /* 177.273% */
 }
