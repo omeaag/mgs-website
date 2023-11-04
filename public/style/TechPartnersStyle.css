@@ -99,46 +99,6 @@
 
 /* TABLET BREAKPOINT */
 @media (min-width: 600px) and (max-width: 1024px) {
-  .servicesHeaderSmallTextContainer {
-    @apply w-full;
-  }
-  .servicesHeaderSmallTextContainer p {
-    @apply text-[22px];
-  }
-  .accordion-title {
-    @apply text-[26px] font-medium leading-[31px] mb-5;
-  }
-  .accordion-par {
-    @apply text-lg font-normal leading-[33px] tracking-[0px] text-left text-left text-lg leading-[35px] w-full;
-  }
-  .servicesTop {
-    @apply mx-0 my-[100px];
-  }
-  .servicesHeaderSmallTextContainer p br {
-    @apply hidden;
-  }
-  .ourServicesTextContainer h1 {
-    @apply text-[40px] leading-[60px];
-  }
-  .serviceTextHeaderContainer {
-    @apply w-6/12 ml-[30px] mr-0 my-0;
-  }
-  .servicesImageContainer img {
-    @apply w-6/12;
-  }
-  .sectionHeader {
-    @apply items-center;
-  }
-  .sectionHeader p {
-    @apply text-[40px] leading-[60px];
-  }
-  .sectionHeader img {
-    @apply w-[38px] h-5;
-  }
-  .sectionContent.open.left-section,
-  .sectionContent.open.right-section {
-    @apply border shadow-[0px_14px_24px_0px_rgba(0,0,0,0.04)_inset] mt-[30px] px-2.5 py-5 rounded-2xl border-solid border-[#B2EBFF];
-  }
   .techTextParentContainer h1 {
     @apply text-[40px] font-medium leading-[60px];
   }

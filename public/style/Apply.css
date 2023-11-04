@@ -184,6 +184,18 @@
   .applyQualifications {
     @apply px-20 py-0;
   }
+
+  .applyFormContainer .resumeInputs img {
+    @apply max-w-[50%];
+  }
+
+  .applyFormContainer .resumeInputs .innerResume h2 {
+    @apply text-2xl leading-9;
+  }
+
+  #filehere{
+    @apply text-xl leading-9;
+  }
   .applyFormContainer form {
     @apply px-20 py-0;
   }
@@ -249,6 +261,19 @@
   .applyFormContainer form {
     @apply px-[37px] py-0;
   }
+
+  .applyFormContainer .resumeInputs img {
+    @apply max-w-[50%];
+  }
+
+  .applyFormContainer .resumeInputs .innerResume h2 {
+    @apply text-2xl leading-9;
+  }
+
+  #filehere{
+    @apply text-xl leading-9;
+  }
+  
   .applyFormContainer form > div {
     @apply my-2.5;
   }

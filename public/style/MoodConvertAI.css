@@ -22,15 +22,19 @@
 	@apply font-[bold];
 }
 .moodConvertAIContainer h2 {
-	@apply w-[70%] text-[120px];
+	@apply text-[120px] font-bold leading-[110px] w-[70%] leading-[150px]  tracking-[0px] text-center;
+	
+
+  font-family: MonumentExtended;
 }
 #aiTextBlue {
-	@apply text-[#0071FB];
-}
-.moodConvertAIContainer h3 {
-	@apply text-[#1A1A1A] text-6xl font-thin text-center;
+	@apply text-[120px] font-bold leading-[110px] tracking-[0px] text-[#0071fb] text-center;
 	font-family: MonumentExtended;
-}
+  }
+
+  .moodConvertAIContainer h3 {
+	@apply text-6xl font-normal leading-[90px] tracking-[0px] text-center;
+  }
 .AIformContainer {
 	@apply bg-white opacity-30 flex flex-col items-center gap-[650px] border w-9/12 m-auto px-[7%] py-[3%] rounded-[1.2rem] border-solid border-[rgba(0,113,251,1)];
 }
@@ -90,18 +94,19 @@
 		@apply text-6xl;
 	}
 	.moodConvertAIContainer h2 {
-		@apply text-[33px] not-italic font-medium leading-[50px];
-	}
+		@apply text-[42px] font-medium leading-[50px] w-[90%] tracking-[0px] text-center;
+}
 	.moodConvertAIContainer span {
 		@apply font-[bold];
 	}
 	#aiTextBlue {
-		@apply text-[#0071FB];
-	}
+		@apply text-[42px] font-bold leading-[50px] tracking-[0px] text-center text-[#0071fb];
+}
 	.moodConvertAIContainer h3 {
-		@apply text-[#1A1A1A] text-3xl font-thin text-center;
+		@apply text-3xl font-normal leading-[50px] tracking-[0px] text-center;
 		font-family: MonumentExtended;
-	}
+}
+	
 	.moodConvertAIContainer img {
 		@apply w-[84.798px] h-[90px] shrink-0;
 	}
@@ -164,23 +169,26 @@
 	}
 	.moodConvertAIContainer {
 		@apply gap-1.5 flex flex-col items-center justify-center text-center mx-0 my-40;
-	}
+	  }
 	.moodConvertAIContainer h1 {
 		@apply text-[98px];
 	}
-	.moodConvertAIContainer h2 {
-		@apply w-4/5 text-[70px] font-medium leading-[80px] tracking-[0px] text-center;
-	}
+
+		.moodConvertAIContainer h2 {
+			@apply w-4/5 text-[70px] font-medium leading-[80px] tracking-[0] text-center;
+			font-family: MonumentExtended;
+		  }
 	.moodConvertAIContainer span {
 		@apply font-[bold];
 	}
 	#aiTextBlue {
-		@apply text-[#0071FB];
-	}
-	.moodConvertAIContainer h3 {
-		@apply text-[#1A1A1A] text-[40px] font-thin text-center;
+		@apply text-[70px] font-bold leading-[80px] tracking-[0px] text-center text-[#0071fb];
 		font-family: MonumentExtended;
 	}
+	.moodConvertAIContainer h3 {
+		@apply text-[40px] font-normal leading-[80px] tracking-[0px] text-center;
+		font-family:MonumentExtended;
+}
 	.moodConvertAIContainer img {
 		@apply w-[84.798px] h-[90px] shrink-0;
 	}

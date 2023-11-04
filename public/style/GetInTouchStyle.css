@@ -91,10 +91,10 @@
     @apply flex-col max-h-[996px] mx-0 my-[60px] pt-[50px] p-0;
   }
   .getInTouchContainer {
-    @apply w-full m-0;
+    @apply w-full m-0 gap-4;
   }
   .getInTouchContainer h1 {
-    @apply text-3xl leading-9 w-[88%] mb-5 m-auto;
+    @apply text-3xl leading-9 w-[88%] m-auto;
   }
   .getInTouchContainer h3 {
     @apply text-base leading-[29px] w-[87%] m-auto;
