@@ -114,8 +114,7 @@
   @apply w-[calc(50%_-_6px)];
 }
 .applyFormContainer .questionInputs select {
-  @apply w-full h-[60px] border text-[15px] appearance-none bg-[30px] bg-no-repeat bg-[right_10px_center] mr-[15px] mb-[50px] pr-[30px] p-[15px] rounded-[5px] border-solid border-[#bdbdbd];
-  background: url(../materials/down-arrow.svg);
+  @apply w-full h-[60px] border text-[15px] appearance-none bg-no-repeat bg-cover mr-[15px] mb-[50px] pr-[30px] p-[15px] rounded-[5px] border-solid border-[#bdbdbd];
 }
 .applyFormContainer .questionInputs h1 {
   @apply text-[29px] leading-9 font-medium w-full mb-[15px];
