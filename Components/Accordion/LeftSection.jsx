@@ -1,6 +1,7 @@
 import Image from "next/image";
 
 function LeftSection({ item, displayContent }) {
+  console.log(item.img);
   return (
     <div
       className={`sectionContent ${
@@ -9,7 +10,7 @@ function LeftSection({ item, displayContent }) {
     >
       <Image alt={item.title} id="AccordionTitleImage" width={377} src={item.image} />
       <div id={item.title} className="sectionTitle">
-        <p className="accordion-title">{item.title} <Image alt={item.title} src={item.img}/></p>
+        <p className="accordion-title">{item.title} {(item.img != undefined) && <Image alt={item.title} src={item.img}/>}</p>
         <p className="accordion-par">{item.paragraph}</p>
       </div>
     </div>

@@ -109,7 +109,7 @@
     @apply mx-0 my-[50px];
   }
   .blockChainnetworkContainer {
-    @apply w-[88%];
+    @apply w-[90%];
   }
   .techTextParentContainer {
     @apply w-full p-8;

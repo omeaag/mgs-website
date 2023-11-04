@@ -101,7 +101,8 @@
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
   .careersHeaderContainer {
-    @apply bg-none h-auto bg-no-repeat bg-[100%] justify-center;
+      background: url(/_next/static/media/bluePinkBackground.db02b1bc.svg);
+    @apply h-auto bg-no-repeat bg-cover justify-center;
   }
   .mobilCareersHeaderImageContainer {
     @apply flex justify-center h-full mb-[50px];
@@ -118,9 +119,7 @@
   .careersHeaderImageContainer {
     @apply hidden;
   }
-  .careersHeaderContainer {
-    background: url(/_next/static/media/bluePinkBackground.db02b1bc.svg);
-  }
+  
   .careersHeaderAllContent {
     @apply flex flex-col w-full h-full justify-end;
   }
@@ -136,7 +135,7 @@
     @apply hidden;
   }
   .careersHeaderPar p {
-    @apply text-[22px] font-normal leading-[39px] tracking-[0px] text-center w-[90%] m-auto;
+    @apply text-[22px] font-normal leading-[39px] tracking-[0px] text-center w-[90%] mb-[100px] mx-auto;;
   }
   .careersHeaderImageContainer img {
     @apply w-full;

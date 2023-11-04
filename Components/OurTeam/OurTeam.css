@@ -42,7 +42,7 @@
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
   .MemberCardComponent {
-    @apply w-full;
+    @apply w-full !important;
   }
   .memberName {
     @apply text-2xl font-medium leading-[30px] tracking-[0px];

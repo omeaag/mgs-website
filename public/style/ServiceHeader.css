@@ -4,8 +4,9 @@
   @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
 */
 .mainServiceBackgroundContainer {
-  @apply overflow-x-hidden flex items-center flex-col justify-center bg-no-repeat bg-[bottom_left] bg-cover w-full;
-  background: url(../materials/bluePinkBackground.svg);
+  @apply flex flex-col items-center justify-center overflow-x-hidden;
+  background: url(/_next/static/media/bluePinkBackground.db02b1bc.svg) no-repeat
+    bottom left / cover;
 }
 .serviceTextHeaderContainer {
   @apply flex justify-center flex-col mx-[200px] my-[100px];
@@ -14,7 +15,10 @@
   @apply leading-[10rem];
 }
 .ourServicesTextContainer h1 {
-  @apply text-[rgba(0,113,251,1)] text-[50px] font-[bold];
+  @apply text-[rgba(0,113,251,1)] text-[50px] leading-[10rem] font-bold tracking-[0px];
+
+  font-family: MonumentExtended;
+
 }
 .servicesHeaderSmallTextContainer p {
   @apply text-[26px];
@@ -36,10 +40,55 @@
   }
 }
 
+/* TABLET BREAKPOINT */
+@media (min-width: 600px) and (max-width: 1024px) {
+  .servicesHeaderSmallTextContainer {
+    @apply w-full;
+  }
+  .servicesHeaderSmallTextContainer p {
+    @apply text-[22px];
+  }
+  .accordion-title {
+    @apply text-[26px] font-medium leading-[31px] mb-5;
+  }
+  .accordion-par {
+    @apply text-lg font-normal leading-[33px] tracking-[0px] text-left text-left text-lg leading-[35px] w-full;
+  }
+  .servicesTop {
+    @apply mx-0 my-[100px];
+  }
+  .servicesHeaderSmallTextContainer p br {
+    @apply hidden;
+  }
+  .ourServicesTextContainer h1 {
+    @apply text-[40px] font-bold leading-[60px] tracking-[0px];
+  }
+  .serviceTextHeaderContainer {
+    @apply w-6/12 ml-[30px] mr-0 my-0;
+  }
+  .servicesImageContainer img {
+    @apply w-6/12;
+  }
+  .sectionHeader {
+    @apply items-center;
+  }
+  .sectionHeader p {
+    @apply text-[40px] leading-[60px];
+  }
+  .sectionHeader img {
+    @apply w-[38px] h-5;
+  }
+  .sectionContent.open.left-section,
+  .sectionContent.open.right-section {
+    @apply border shadow-[0px_14px_24px_0px_rgba(0,0,0,0.04)_inset] mt-[30px] px-2.5 py-5 rounded-2xl border-solid border-[#B2EBFF];
+  }
+}
+
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
   .ourServicesTextContainer h1 {
     @apply text-3xl font-bold leading-9 tracking-wider text-center;
+    font-family: MonumentExtended;
   }
   .servicesHeaderSmallTextContainer {
     @apply w-[81.7%] m-auto;

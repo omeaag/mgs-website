@@ -108,6 +108,6 @@
     @apply w-[38px] h-5;
   }
   .acordionComponentContainer {
-    @apply gap-0;
+    @apply gap-0 mx-5 my-[70px];
   }
 }
