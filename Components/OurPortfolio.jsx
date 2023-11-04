@@ -3,6 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react"
 import { EffectFade, Pagination, Navigation } from "swiper/modules"
 import SwiperCore from "swiper"
 import { useEffect, useState } from "react"
+import Link from "next/link"
 import "swiper/swiper-bundle.css"
 import "swiper/css/pagination"
 import "swiper/css"
@@ -30,62 +31,62 @@ import sliderlogo2 from "../public/materials/ourPortfolioImages/sliderlogo2.svg"
 import clutchco1 from "../public/materials/ourPortfolioImages/clutchco1.svg"
 
 function OurPortfolio() {
-  SwiperCore.use([Navigation])
+	SwiperCore.use([Navigation])
 
-  const people = [
-    {
-      id: 1,
-      name: "Jessica Muller",
-      description:
-        "Research published by the Statista Research Department found global spending on blockchain solutions accelerated from 4.5 billion to 6.6 billion in 2021.By 2024...",
-      image: pp1,
-    },
-    {
-      id: 2,
-      name: "Millan Jovanovi",
-      description:
-        "Research published by the Statista Research Department found global spending on blockchain solutions accelerated from 4.5 billion to 6.6 billion in 2021.By 2024...",
-      image: pp2,
-    },
-    {
-      id: 3,
-      name: "Elinor Denney",
-      description:
-        "Research published by the Statista Research Department found global spending on blockchain solutions accelerated from 4.5 billion to 6.6 billion in 2021.By 2024...",
-      image: pp3,
-    },
-  ]
+	const people = [
+		{
+			id: 1,
+			name: "Jessica Muller",
+			description:
+				"Research published by the Statista Research Department found global spending on blockchain solutions accelerated from 4.5 billion to 6.6 billion in 2021.By 2024...",
+			image: pp1,
+		},
+		{
+			id: 2,
+			name: "Millan Jovanovi",
+			description:
+				"Research published by the Statista Research Department found global spending on blockchain solutions accelerated from 4.5 billion to 6.6 billion in 2021.By 2024...",
+			image: pp2,
+		},
+		{
+			id: 3,
+			name: "Elinor Denney",
+			description:
+				"Research published by the Statista Research Department found global spending on blockchain solutions accelerated from 4.5 billion to 6.6 billion in 2021.By 2024...",
+			image: pp3,
+		},
+	]
 
-  const swiper = useRef(null)
-  const goNext = () => {
-    if (swiper.current && swiper.current.swiper) {
-      swiper.current.swiper.slideNext()
-    }
-  }
-  const goPrev = () => {
-    if (swiper.current && swiper.current.swiper) {
-      swiper.current.swiper.slidePrev()
-    }
-  }
+	const swiper = useRef(null)
+	const goNext = () => {
+		if (swiper.current && swiper.current.swiper) {
+			swiper.current.swiper.slideNext()
+		}
+	}
+	const goPrev = () => {
+		if (swiper.current && swiper.current.swiper) {
+			swiper.current.swiper.slidePrev()
+		}
+	}
 
-  const swiper1 = useRef(null)
-  const goNext1 = () => {
-    if (swiper1.current && swiper1.current.swiper) {
-      swiper1.current.swiper.slideNext()
-    }
-  }
-  const goPrev1 = () => {
-    if (swiper1.current && swiper1.current.swiper) {
-      swiper1.current.swiper.slidePrev()
-    }
-  }
+	const swiper1 = useRef(null)
+	const goNext1 = () => {
+		if (swiper1.current && swiper1.current.swiper) {
+			swiper1.current.swiper.slideNext()
+		}
+	}
+	const goPrev1 = () => {
+		if (swiper1.current && swiper1.current.swiper) {
+			swiper1.current.swiper.slidePrev()
+		}
+	}
 
-  const [slidesPerView, setSlidesPerView] = useState(2)
-  const [slideGap, setSlideGap] = useState(24)
-  const [currentSlide, setCurrentSlide] = useState(0)
-  const [currentSlide2, setCurrentSlide2] = useState(0)
+	const [slidesPerView, setSlidesPerView] = useState(2)
+	const [slideGap, setSlideGap] = useState(24)
+	const [currentSlide, setCurrentSlide] = useState(0)
+	const [currentSlide2, setCurrentSlide2] = useState(0)
 
-  useEffect(() => {
+	useEffect(() => {
 		const updateWindowDimensions = () => {
 			const newSlidesPerView = window.innerWidth < 600 ? 1 : 2
 			const newSlideGap = window.innerWidth < 600 ? 0 : 24
@@ -107,10 +108,10 @@ function OurPortfolio() {
 		return () => {
 			window.removeEventListener('resize', resizeListener)
 		}
-  }, [slidesPerView, slideGap])
+	}, [slidesPerView, slideGap])
 
 
-  return (
+	return (
 		<div className="ourPortfolioContainer">
 			<div>
 				<Image alt="iconoir_design" id="iconoir_design" src={iconoir_design} />
@@ -252,11 +253,14 @@ function OurPortfolio() {
 				</div>
 				<div className="clutchContainer">
 					<p>We are on trusted platforms</p>
-					<Image src={clutchco1} alt="clutchco1" />
+					<Link href="https://clutch.co/profile/mood-global-services-bv#highlights">
+						<Image src={clutchco1} alt="clutchco1" />
+					</Link>
+
 				</div>
 			</div>
 		</div>
-  )
+	)
 }
 
 export default OurPortfolio
