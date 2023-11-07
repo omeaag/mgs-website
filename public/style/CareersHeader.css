@@ -4,41 +4,45 @@
   @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
 */
 .careersHeaderContainer {
-  @apply overflow-x-hidden flex items-center h-screen bg-no-repeat bg-[100%] bg-cover justify-center;
+  @apply overflow-x-hidden flex items-center h-screen bg-no-repeat mt-[100px] bg-[100%] justify-center;
   background: url(../materials/bluePinkBackground.svg);
+  background-size: cover;
 }
 .careersBiggestHeader p {
-  @apply text-[rgba(0,113,251,1)] text-[3.4rem] font-bold leading-[4.5rem] tracking-normal text-left;
+  @apply text-[rgba(0,113,251,1)] text-[50px] font-bold leading-[60px] tracking-[0px] text-left;
+
   font-family: MonumentExtended;
 }
 .careersSmallHeader p {
-  @apply text-5xl font-normal leading-[4rem] tracking-[0px] text-left w-[90%];
+  @apply text-[40px] font-medium leading-[60px] tracking-[0px] text-left;
   font-family: MonumentExtended;
 }
 .careersHeaderPar {
-  @apply text-[2.3rem] font-normal leading-[3rem] tracking-[1px] text-left tracking-[-1px];
+  @apply text-[26px] font-normal leading-[50px] tracking-[0px] text-left;
   font-family: MonumentExtended;
 }
 .careersHeaderAllContent {
-  @apply flex w-full h-full justify-end;
+  @apply flex w-[100%] ml-[200px] h-screen justify-start;
 }
 .careersHeaderAllText {
-  @apply flex absolute w-6/12 flex-col mt-[11.2rem] left-44;
+  @apply flex w-[35%] mt-[100px]  flex-col ;
 }
 .careersSmallHeader {
   @apply mt-[1.563rem] mb-10 mx-0;
 }
 .careersHeaderImageContainer {
-  @apply flex justify-end h-full;
-}
-.careersHeaderImageContainer img {
-  @apply w-[68%];
+  @apply h-screen ;
 }
 #mobileAmsterdamImage {
   @apply hidden;
 }
 .mobilCareersHeaderImageContainer {
   @apply hidden;
+}
+
+.careersHeaderImageContainer img{
+  @apply absolute right-0;
+  ;
 }
 
 /* TABLET BREAKPOINT */
@@ -82,19 +86,19 @@
     @apply pb-[7px];
   }
   .careersHeaderImageContainer {
-    @apply h-[600px] overflow-hidden;
+    @apply h-[600px] w-full relative overflow-hidden;
   }
   .careersHeaderImageContainer img {
-    @apply h-[250px] w-full object-fill;
+    @apply h-[250px] object-fill -translate-y-2/4 top-2/4;
   }
   .careersHeaderAllContent {
-    @apply h-2/5 mt-[125px];
+    @apply h-2/5 mt-[125px] ml-[75px] ;
   }
   .careersHeaderContainer {
     @apply h-full;
   }
   .careersHeaderAllText {
-    @apply mt-0 left-16;
+    @apply mt-0 w-[100%];
   }
 }
 
@@ -121,7 +125,7 @@
   }
   
   .careersHeaderAllContent {
-    @apply flex flex-col w-full h-full justify-end;
+    @apply flex m-0 flex-col w-full h-full justify-end;
   }
   .careersHeaderAllText {
     @apply flex items-center w-full flex-col gap-5 mt-[95px];

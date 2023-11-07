@@ -22,7 +22,7 @@
   @apply text-[rgba(0,113,251,1)];
 }
 .headerContainerp {
-  @apply w-4/5 text-center text-[1.5625rem] font-normal leading-[50px] tracking-[0px] text-left mb-[50px] m-auto;
+  @apply w-4/5 text-[1.5625rem] font-normal leading-[50px] tracking-[0px] text-left mb-[50px] m-auto;
   font-family: MonumentExtended;
 }
 .whatPeoplePersonBackground {
