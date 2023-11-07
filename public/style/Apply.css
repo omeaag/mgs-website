@@ -74,8 +74,8 @@
   @apply text-3xl leading-9 font-medium w-full mb-[15px];
 }
 .applyFormContainer .birthdayInputs select {
-  @apply w-[calc(33%_-_8px)] h-[60px] border text-[15px] appearance-none bg-[30px] bg-no-repeat bg-[right_10px_center] mr-[15px] mb-[50px] pr-[30px] p-[15px] rounded-[5px] border-solid border-[#bdbdbd];
-  background: url(../materials/down-arrow.svg);
+  @apply w-[calc(33%_-_8px)] h-[60px] border text-[15px] !bg-auto appearance-none mr-[15px] mb-[50px] pr-[30px] p-[15px] rounded-[5px] border-solid border-[#bdbdbd];
+  background: url(../materials/down-arrow.svg) no-repeat 97% center;
 }
 .applyFormContainer .birthdayInputs #year {
   @apply mr-0;
@@ -272,7 +272,7 @@
   #filehere{
     @apply text-xl leading-9;
   }
-  
+
   .applyFormContainer form > div {
     @apply my-2.5;
   }

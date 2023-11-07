@@ -4,7 +4,7 @@
   @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
 */
 .headerContainer-5 {
-  @apply w-4/5 flex justify-start items-center mt-[100px] mb-[30px] mx-0 m-auto;
+  @apply w-4/5 flex justify-start items-center mt-[100px] mx-0 m-auto;
 }
 .line {
   @apply grow h-0.5 text-center ml-[50px] mr-5 rounded-[5px];
@@ -94,7 +94,7 @@
   font-family: MonumentExtended;
 }
 .ourPortfolioContainer {
-  @apply gap-[70px] relative flex flex-col justify-center items-center mb-[200px];
+  @apply gap-[30px] relative flex flex-col justify-center items-center mb-[200px];
 }
 #iconamoon_settings {
   @apply absolute left-[200px] top-[1250px];
