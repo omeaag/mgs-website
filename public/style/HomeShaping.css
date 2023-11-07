@@ -4,8 +4,9 @@
   @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
 */
 .HomeShapingContainer {
-  @apply justify-center flex flex-col items-center w-full bg-cover bg-no-repeat px-0 py-[200px];
+  @apply justify-center flex flex-col items-center w-full bg-no-repeat px-0 py-[200px];
   background: url(../materials/HomeShapingBackground.svg);
+  background-size: cover;
 }
 .HomeShapingBottomLine {
   @apply w-[200px] border border-solid border-[#a9a9a9];
