@@ -25,13 +25,16 @@
   @apply flex w-[100%] ml-[200px] h-screen justify-start;
 }
 .careersHeaderAllText {
-  @apply flex w-[35%] mt-[100px]  flex-col ;
+  @apply flex w-1/2 mt-[100px]  flex-col ;
 }
 .careersSmallHeader {
   @apply mt-[1.563rem] mb-10 mx-0;
 }
 .careersHeaderImageContainer {
-  @apply h-screen ;
+  @apply flex h-full w-1/2;
+}
+.careersHeaderImageContainer img {
+  @apply -translate-y-[20%]  translate-x-[13%] scale-[120%];
 }
 #mobileAmsterdamImage {
   @apply hidden;
@@ -40,10 +43,8 @@
   @apply hidden;
 }
 
-.careersHeaderImageContainer img{
-  @apply absolute right-0;
-  ;
-}
+
+
 
 /* TABLET BREAKPOINT */
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -85,20 +86,20 @@
   .hiringSectionFirst .hiringFeatures img {
     @apply pb-[7px];
   }
-  .careersHeaderImageContainer {
-    @apply h-[600px] w-full relative overflow-hidden;
-  }
-  .careersHeaderImageContainer img {
-    @apply h-[250px] object-fill -translate-y-2/4 top-2/4;
-  }
+ .careersHeaderImageContainer {
+  @apply flex  !items-center !h-auto !w-1/2;
+}
+.careersHeaderImageContainer img {
+  @apply  translate-x-[13%] scale-[120%] ;
+}
   .careersHeaderAllContent {
-    @apply h-2/5 mt-[125px] ml-[75px] ;
+    @apply h-2/5 mt-[125px] ml-[75px];
   }
   .careersHeaderContainer {
     @apply h-full;
   }
   .careersHeaderAllText {
-    @apply mt-0 w-[100%];
+    @apply mt-0 w-[50%];
   }
 }
 
@@ -123,7 +124,7 @@
   .careersHeaderImageContainer {
     @apply hidden;
   }
-  
+
   .careersHeaderAllContent {
     @apply flex m-0 flex-col w-full h-full justify-end;
   }
