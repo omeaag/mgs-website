@@ -283,7 +283,7 @@
     @apply w-full mb-5;
   }
   .applyFormContainer .birthdayInputs select {
-    @apply w-[calc(33.9%_-_10px)] bg-[15px] mr-2.5 mb-5;
+    @apply w-[calc(33.9%_-_10px)] bg-[15px] mr-2.5 mb-5 bg-none;
   }
   .applyFormContainer .adressInputs input {
     @apply w-full mb-5;
