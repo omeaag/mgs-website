@@ -20,8 +20,8 @@
   @apply w-2/5 bg-white flex flex-col justify-center gap-5 shadow-[0px_0px_50px_1px_#515458] mt-[150px] px-8 py-11 rounded-[1.2rem];
   align-items: left;
 }
-.formContainer input {
-  @apply border text-[#BDBDBD] w-full h-12 p-2.5 rounded-[5px] border-solid border-[#BDBDBD];
+.formContainer input, .formContainer textarea {
+  @apply border w-full h-12 p-2.5 rounded-[5px] border-solid border-[#BDBDBD];
 }
 .formContainer label {
   @apply text-xs text-[#515458];

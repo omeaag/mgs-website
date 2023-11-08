@@ -156,7 +156,7 @@ const GetInTouch: React.FC = () => {
 			</div>
 			<div className="groupContainer">
 				<label htmlFor="details">Details</label>
-				<input placeholder="Tell us your needs" type="text" id="details" />
+				<textarea placeholder="Tell us your needs" id="details" />
 			</div>
 			<button type="submit">Let's Build Together</button>
 		</form>

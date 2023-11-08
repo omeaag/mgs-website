@@ -147,7 +147,7 @@
   @apply w-full min-h-[400px] resize-y border text-[15px] overflow-auto mr-[15px] mb-[50px] p-[15px] rounded-[5px] border-solid border-[#bdbdbd];
 }
 .applyFormContainer form #applyBtn {
-  @apply w-[387px] h-[103px] text-4xl leading-[43px] text-white pl-[110px] pr-[110px,] py-[30px,] rounded-[100px] hover:relative hover:right-[0.6px] hover:bottom-[0.5px];
+  @apply w-[310px] h-[83px] text-3xl leading-[43px] text-white rounded-[100px] hover:relative hover:right-[0.6px] hover:bottom-[0.5px];
   background: linear-gradient(
     90deg,
     #1293bc -10.29%,
@@ -202,7 +202,7 @@
     @apply text-[19px] leading-[50px] mx-auto my-[30px] px-[50px] py-0;
   }
   .applyFormContainer form #applyBtn {
-    @apply text-4xl leading-[43px] text-white w-[300.17px] h-[89px] pl-[110px] pr-[110px,] py-[23px,] rounded-[100px];
+    @apply text-3xl leading-[43px] text-white w-[300.17px] h-[89px] rounded-[100px];
     background: linear-gradient(
       90deg,
       #1293bc -10.29%,
@@ -301,7 +301,7 @@
     @apply bg-[15px] mb-0;
   }
   .applyFormContainer form #applyBtn {
-    @apply text-base leading-[19px] text-white w-[134px] h-[51px] pl-[30px] pr-[30px,] py-[16px,] rounded-[100px];
+    @apply text-base leading-[19px] text-white w-[134px] h-[51px] rounded-[100px];
     background: linear-gradient(
       90deg,
       #1293bc -10.29%,
