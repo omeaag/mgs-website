@@ -209,10 +209,6 @@ function OurPortfolio() {
 				<div className="personContainer">
 					<button
 						aria-label="Previous"
-						onClick={() => {
-							currentSlide2 > 0 && setCurrentSlide2(currentSlide2 - 1)
-							goPrev()
-						}}
 						className="prev-button"
 					>
 						<Image src={currentSlide2 == !1 ? LeftArrow : LeftArrowBlue} alt="Sol Ok" width={100} height={100} />
@@ -242,10 +238,6 @@ function OurPortfolio() {
 
 					<button
 						aria-label="Next"
-						onClick={() => {
-							currentSlide2 < 2 && setCurrentSlide2(currentSlide2 + 1)
-							goNext()
-						}}
 						className="next-button"
 					>
 						<Image src={currentSlide2 == 2 ? RightArrow : RightArrowBlue} alt="Sag Ok" width={100} height={100} />
@@ -256,7 +248,6 @@ function OurPortfolio() {
 					<Link href="https://clutch.co/profile/mood-global-services-bv#highlights">
 						<Image src={clutchco1} alt="clutchco1" />
 					</Link>
-
 				</div>
 			</div>
 		</div>

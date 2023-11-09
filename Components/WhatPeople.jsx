@@ -8,6 +8,7 @@ import "swiper/css/pagination"
 import "swiper/css"
 import "swiper/css/effect-fade"
 import Image from "next/image"
+import Link from "next/link"
 import { useRef } from "react"
 // import styles from "../public/style/OurPortfolioStyle.css"
 // import Script from "next/script"
@@ -99,10 +100,6 @@ function WhatPeople() {
         <div className="personContainer">
           <button
             aria-label="Previous"
-            onClick={() => {
-              currentSlide2 > 0 && setCurrentSlide2(currentSlide2 - 1)
-              goPrev()
-            }}
             className="prev-button"
           >
             <Image
@@ -130,8 +127,8 @@ function WhatPeople() {
                   <Image
                     src={person.image.src}
                     alt={person.name}
-                    width={40}
-                    height={40}
+                    width={200}
+                    height={200}
                   />
                   <h2>{person.name}</h2>
                   <p>{person.description}</p>
@@ -142,10 +139,6 @@ function WhatPeople() {
 
           <button
             aria-label="Next"
-            onClick={() => {
-              currentSlide2 < 2 && setCurrentSlide2(currentSlide2 + 1)
-              goNext()
-            }}
             className="next-button"
           >
             <Image
@@ -157,9 +150,11 @@ function WhatPeople() {
           </button>
         </div>
         <div className="clutchContainer">
-          <p>We are on trusted platforms</p>
-          <Image src={clutchco1} alt="clutchco1"></Image>
-        </div>
+					<p>We are on trusted platforms</p>
+					<Link href="https://clutch.co/profile/mood-global-services-bv#highlights">
+						<Image src={clutchco1} alt="clutchco1" />
+					</Link>
+				</div>
       </div>
     </div>
   )
