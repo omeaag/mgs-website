@@ -272,7 +272,7 @@
     @apply absolute w-[35px] h-[35px] left-[unset] right-[50px] top-[1200px];
   }
   .whatPeoplePersonBackground {
-    @apply mt-20;
+    @apply mt-20 bg-center;
   }
   .whatPeopleContainer {
     @apply flex flex-col items-center gap-[30px] m-0 w-full pt-20 p-0;

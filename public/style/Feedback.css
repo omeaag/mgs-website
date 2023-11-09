@@ -52,6 +52,7 @@
   }
   .feedbackContainer h1 {
     @apply text-[20.7px] font-[bold] text-center p-[30px];
+    font-family: MonumentExtended;
   }
   .feedbackContainer h1 span {
     @apply text-[rgba(0,113,251,1)];
