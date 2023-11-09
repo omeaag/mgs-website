@@ -147,7 +147,7 @@
   @apply w-full min-h-[400px] resize-y border text-[15px] overflow-auto mr-[15px] mb-[50px] p-[15px] rounded-[5px] border-solid border-[#bdbdbd];
 }
 .applyFormContainer form #applyBtn {
-  @apply w-[310px] h-[83px] text-3xl leading-[43px] text-white rounded-[100px] hover:relative hover:right-[0.6px] hover:bottom-[0.5px];
+  @apply w-[280px] h-[75px] text-3xl leading-[43px] text-white rounded-[100px] hover:relative hover:right-[0.6px] hover:bottom-[0.5px];
   background: linear-gradient(
     90deg,
     #1293bc -10.29%,
