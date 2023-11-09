@@ -60,7 +60,7 @@
   .blockChainnetworkContainer {
     @apply w-[90%];
   }
-  
+
   .techArsenalContainer {
     @apply w-[90%];
   }
@@ -74,7 +74,7 @@
     @apply w-[90%];
   }
   .techSliderParentContainer {
-    @apply w-full;
+    @apply w-full flex items-center justify-center ;
   }
 }
 
