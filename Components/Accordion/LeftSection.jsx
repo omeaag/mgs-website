@@ -1,7 +1,6 @@
 import Image from "next/image";
 
 function LeftSection({ item, displayContent }) {
-  console.log(item.img);
   return (
     <div
       className={`sectionContent ${

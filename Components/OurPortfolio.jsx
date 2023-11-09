@@ -256,7 +256,6 @@ function OurPortfolio() {
 					<Link href="https://clutch.co/profile/mood-global-services-bv#highlights">
 						<Image src={clutchco1} alt="clutchco1" />
 					</Link>
-
 				</div>
 			</div>
 		</div>
