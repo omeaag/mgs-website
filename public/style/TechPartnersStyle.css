@@ -153,4 +153,7 @@
     @apply mx-5 my-[70px];
   }
 
+  .techPartnersRightButtonContainer, .techPartnersLeftButtonContainer {
+    @apply mt-[50px];
+  }
 }
