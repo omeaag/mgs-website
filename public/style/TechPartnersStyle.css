@@ -20,12 +20,16 @@
   float: inline-start;
 }
 .blockChainIconsLine {
-  @apply flex justify-between flex-wrap;
+  @apply flex gap-x-20 gap-y-14 flex-wrap;
 
   /* Allow items to wrap to the next line */
 }
 .blockChainIconsLine img {
   @apply saturate-0 transition-[0.3s] duration-[ease-in-out] hover:saturate-100 hover:transition-[0.2s] hover:duration-[ease-in-out] hover:cursor-pointer;
+}
+
+.blockChainIconsLine img:first-child {
+  @apply  ml-2;
 }
 .techArsenalContainer {
   @apply flex flex-col text-left w-4/5 justify-center mb-[100px];
@@ -145,6 +149,9 @@
   .techArsenalContainer h1 {
     @apply text-[40px] font-medium leading-[60px] tracking-[0px] text-left;
   }
+  .blockChainIconsLine img:first-child {
+  @apply  ml-0;
+}
 }
 
 /* PHONE BREAKPOINT */
@@ -156,4 +163,8 @@
   .techPartnersRightButtonContainer, .techPartnersLeftButtonContainer {
     @apply mt-[50px];
   }
+
+  .blockChainIconsLine img:first-child {
+  @apply  ml-0;
+}
 }

@@ -31,11 +31,11 @@
   @apply ml-[50px];
 }
 .textContainer h1 {
-  @apply text-[80px] font-medium tracking-[3px] leading-[96px] text-left text-[#3C3C3C];
+  @apply text-[65px] font-medium tracking-[3px] leading-[96px] text-left text-[#3C3C3C];
   font-family: MonumentExtended;
 }
 .textContainer h2 {
-  @apply text-[52px] font-medium leading-[65px] tracking-[0px] text-left text-[rgba(0,113,251,1)];
+  @apply text-[50px] font-medium leading-[65px] tracking-[0px] text-left text-[rgba(0,113,251,1)];
   font-family: MonumentExtended;
 }
 

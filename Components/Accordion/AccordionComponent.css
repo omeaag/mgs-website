@@ -60,9 +60,7 @@
   .blockChainnetworkContainer {
     @apply w-[90%];
   }
-  .blockChainIconsLine {
-    @apply justify-between;
-  }
+  
   .techArsenalContainer {
     @apply w-[90%];
   }
