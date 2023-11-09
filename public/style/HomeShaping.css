@@ -97,7 +97,7 @@
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
   .HomeShapingContainer {
-    @apply bg-cover text-center mt-16;
+    @apply bg-cover text-center py-[175px];
   }
   .firsRow {
     @apply p-2.5;
