@@ -1,378 +1,362 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .techParentContainer {
-    height: auto;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    gap: 50px;
+  @apply h-auto w-full flex justify-between items-center flex-col gap-[50px];
 }
-
 .blockChainnetworkContainer {
-    flex-direction: column;
-    display: flex;
-    width: 80%;
-    text-align: left;
-    gap: 50px;
+  @apply flex-col flex w-4/5 text-left gap-[50px];
 }
-
 .blockChainnetworkContainer h1 {
-    font-size: 65px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1;
+  @apply text-[65px] not-italic font-medium leading-none;
 }
-
 .blockChainnetworkContainer span {
-    color: #0071FB;
+  @apply text-[#0071FB];
 }
-
 .blockChainIcons {
-    display: flex;
-    flex-direction: column;
-    float: inline-start;
-    width: 100%;
+  @apply flex flex-col w-full;
+  float: inline-start;
 }
-
 .blockChainIconsLine {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    /* Allow items to wrap to the next line */
-}
+  @apply flex gap-x-20 gap-y-14 flex-wrap;
 
+  /* Allow items to wrap to the next line */
+}
+.TechComponentContainer {
+  @apply flex flex-row h-full justify-center items-center justify-around;
+}
+.TechComponentContainerText {
+  @apply flex flex-col h-[90%] w-[43%] gap-[30px];
+}
+.TechComponentContainerText h1 {
+  @apply text-[50px] not-italic font-bold leading-[normal] capitalize;
+}
+.TechComponentContainerText h3 {
+  @apply text-[22px] not-italic font-normal leading-[50px];
+  /* 227.273% */
+}
+.TechComponentContainerText a {
+  @apply text-[35px] text-[rgba(0,113,251,1)] mt-12;
+}
+.TechComponentContainerImage {
+  @apply flex flex-col justify-center items-center h-full w-[70%] shrink-0 opacity-100 rounded-[57px];
+  background: linear-gradient(
+    180deg,
+    #baeaff6b 0%,
+    rgba(255, 255, 255, 0) 43.01%
+  );
+}
+#webNextButton {
+  @apply flex;
+}
+#mobileNextButton {
+  @apply hidden;
+}
+.mobileImageButtonContainer{
+  @apply w-[45%] items-center justify-center flex;
+}
 .blockChainIconsLine img {
-    width: 16.66%;
-    height: 70px;
-    filter: saturate(0);
-    transition: 0.3s ease-in-out;
+  @apply saturate-0 transition-[0.3s] duration-[ease-in-out] hover:saturate-100 hover:transition-[0.2s] hover:duration-[ease-in-out] hover:cursor-pointer;
 }
 
-.blockChainIconsLine img:hover {
-    filter: saturate(1);
-    width: 212.386px;
-    height: 77px;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
+.blockChainIconsLine img:first-child {
+  @apply  ml-2;
 }
-
 .techArsenalContainer {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    width: 80%;
-    justify-content: center;
-    margin-bottom: 100px;
+  @apply flex flex-col text-left w-4/5 justify-center mb-[100px];
 }
-
 .techArsenalContainer h1 {
-    font-size: 65px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    margin-bottom: 40px;
+  @apply text-[65px] not-italic font-medium leading-[normal] mb-10;
 }
-
 .techArsenalContainer span {
-    color: #0071FB;
+  @apply text-[#0071FB];
 }
-
 .techArsenalButtonContainer {
-    display: flex;
-    cursor: pointer;
-    flex-direction: row;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 60px;
-    border-bottom: 2px solid gray;
-    height: 55px;
+  @apply flex cursor-pointer flex-row w-full justify-between h-[55px] mb-[60px] border-b-2 border-b-[gray] border-solid;
 }
-
 .techArsenalButton {
-    height: 57px;
-    display: flex;
-    width: 15%;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
+  @apply h-[57px] flex w-[15%] flex-row items-center justify-center hover:transition-[0.2s] hover:duration-[ease-in-out] hover:text-[#0071FB] hover:border-b-[7px] hover:border-b-[gray] hover:border-solid hover:border-[#0071FB];
 }
-
 .techArsenalButton img {
-    width: 20px;
+  @apply w-5;
 }
-
 .techArsenalButton button {
-    font-size: 21px;
-    padding: 0 0px 0 5px;
-    transition: 0.8s ease-in-out;
+  @apply text-[21px] transition-[0.8s] duration-[ease-in-out] pl-[5px] pr-0 py-0;
 }
-
-.techArsenalButton:hover {
-    transition: 0.2s ease-in-out;
-    border-bottom: 7px solid gray;
-    border-color: #0071FB;
-    color: #0071FB;
-}
-
 .arsenalChangeComponent {
-    display: flex;
+  @apply flex;
 }
-
 .ArsenalMiniComponent {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: left;
-    gap: 30px;
-    width: 95%;
+  @apply flex flex-wrap gap-[30px] w-[95%];
+  justify-content: left;
 }
-
 .ArsenalMiniComponentDEV {
-    width: 95%;
+  @apply w-[95%];
 }
-
 .mainArsenalChangeComp {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
+  @apply flex justify-around w-full;
 }
-
-
 .techTextParentContainer {
-    flex-direction: column;
-    height: 25%;
-    display: flex;
-    width: 80%;
-    text-align: left;
+  @apply flex-col h-1/4 flex w-4/5 text-left;
 }
-
 .techTextParentContainer h1 {
-    font-size: 65px;
-    color: black;
-    margin-bottom: 30px;
+  @apply text-[65px] text-[black] mb-[30px];
 }
-
 .techTextParentContainer span {
-    color: rgba(0, 113, 251, 1);
+  @apply text-[rgba(0,113,251,1)];
 }
-
 .techTextParentContainer p {
-    font-size: 22px;
-    line-height: 50px;
+  @apply text-[22px] leading-[50px];
 }
-
 .techSliderParentContainer {
-    margin-top: 100px;
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    align-items: center;
+  @apply flex flex-row w-[90%] items-center mt-[100px];
 }
-
 .techSliderParentContainer .techPartnersLeftButtonContainer,
 .techSliderParentContainer .techPartnersRightButtonContainer {
-    height: 100%;
-    width: 5%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @apply h-full w-[5%] flex justify-center items-center;
 }
-
 .techPartnersLeftButtonContainer img,
 .techPartnersRightButtonContainer img {
-    transition: 0.5s ease;
+  @apply transition-[0.5s] duration-[ease];
 }
-
 .techPartnersRightButtonContainer img {
-    transform: scaleX(-1);
+  @apply -scale-x-100;
 }
-
 .techPartnersLeftButtonContainer img:hover,
 .techPartnersRightButtonContainer img:hover {
-    cursor: pointer;
-    transition: 0.5s ease;
-    width: 3.5rem;
-    filter: saturate(9000%) hue-rotate(30deg);
-    /* Adjust values to make it more blue */
+  @apply cursor-pointer transition-[0.5s] duration-[ease] w-14 saturate-[9000%] hue-rotate-30;
 
+  /* Adjust values to make it more blue */
 }
-
 .techSliderParentContainer .techPartnerComponentContainer {
-    height: 100%;
-    width: 90%;
+  @apply h-full w-[90%];
 }
-
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.TechComponentContainer {
+  @apply flex flex-row h-full justify-center items-center justify-around;
+}
+.TechComponentContainerText {
+  @apply flex flex-col h-[90%] w-[43%] gap-[30px];
+}
+.TechComponentContainerText h1 {
+  @apply text-[50px] not-italic font-bold leading-[normal] capitalize;
+}
+.TechComponentContainerText h3 {
+  @apply text-[22px] not-italic font-normal leading-[50px];
+  /* 227.273% */
+}
+.TechComponentContainerText a {
+  @apply text-[35px] text-[rgba(0,113,251,1)] mt-12;
+}
+.TechComponentContainerImage {
+  @apply flex flex-col justify-center items-center h-full w-[70%] shrink-0 opacity-100 rounded-[57px];
+  background: linear-gradient(
+    180deg,
+    #baeaff6b 0%,
+    rgba(255, 255, 255, 0) 43.01%
+  );
+}
+#webNextButton {
+  @apply flex;
+}
+#mobileNextButton {
+  @apply hidden;
+}
+.mobileImageButtonContainer{
+  @apply w-[45%] items-center justify-center flex;
+}
 /* TABLET BREAKPOINT */
 @media (min-width: 600px) and (max-width: 1024px) {
-
-    .servicesHeaderSmallTextContainer {
-        width: 100% !important;
-      }
-
-    .servicesHeaderSmallTextContainer p {
-        font-size: 22px !important;
-    }
-
-    .accordion-title {
-        font-size: 26px !important;
-        font-weight: 500 !important;
-        line-height: 31px !important;
-        margin-bottom: 20px;
-    }
-
-    .accordion-par {
-        font-size: 18px !important;
-        font-weight: 400;
-        line-height: 33px !important;
-        letter-spacing: 0px;
-        text-align: left;
-    }
-
-    .servicesTop{
-        margin: 100px 0;
-    }
-
-    .servicesHeaderSmallTextContainer p br {
-        display: none;
-    }
-
-    .ourServicesTextContainer h1 {
-        font-size: 40px !important;
-        line-height: 60px;
-    }
-
-    .serviceTextHeaderContainer {
-        margin: 0 0px 0 30px !important;
-        width: 50%;
-    }
-
-    .servicesImageContainer img {
-        width: 50%;
-    }
-
-    .sectionHeader {
-        align-items: center;
-    }
-
-    .sectionHeader p {
-        font-size: 40px !important;
-        line-height: 60px !important;
-    }
-
-    .sectionHeader img {
-        width: 38px;
-        height: 20px;
-    }
-
-    .sectionContent.open.left-section,
-    .sectionContent.open.right-section {
-        border: 1px solid #B2EBFF;
-        border-radius: 16px;
-        padding: 20px 10px;
-        margin-top: 30px;
-        box-shadow: 0px 14px 24px 0px rgba(0, 0, 0, 0.04) inset;
-    }
-
-    .accordion-par {
-        text-align: left;
-        font-size: 18px !important;
-        line-height: 35px !important;
-        width: 100% !important;
-    }
-
-    .techTextParentContainer h1 {
-        font-size: 40px !important;
-        font-weight: 500 !important;
-        line-height: 60px !important;
-    }
-
-    .techTextParentContainer p {
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 45px;
-        margin-top: 20px;
-    }
-
-    .techTextParentContainer p br {
-        display: none;
-    }
-    .TechComponentContainerText{
-        justify-content: center;
-        width: 50% !important;
-    }
-
-    .TechComponentContainerText h1 {
-        font-size: 40px !important;
-        font-weight: 500;
-        line-height: 60px !important;
-    }
-
-    .TechComponentContainerText h3 {
-        font-size: 18px !important;
-        font-weight: 400;
-        line-height: 30px !important;
-    }
-
-    .TechComponentContainerText h3 br {
-        display: none;
-    }
-
-    .TechComponentContainerText a {
-        font-size: 20px !important;
-        font-weight: 500;
-        line-height: 50px;
-        margin-top: 1rem !important;
-    }
-
-    .textContainer h2 {
-        font-size: 40px !important;
-        line-height: 60px !important;
-    }
-
-    .textContainer h1 {
-        font-size: 53px !important;
-        line-height: 64px !important;
-    }
-
-    .blockChainIconsLine {
-        justify-content: center;
-    }
-
-    .blockChainIcons {
-        display: flex;
-        flex-direction: column;
-        float: inline-start;
-        width: 100%;
-    }
-
-    .acordionComponentContainer {
-        gap: 20px !important;
-    }
-
-    .blockChainnetworkContainer h1 {
-        font-size: 40px;
-        font-weight: 500;
-        line-height: 60px;
-        letter-spacing: 0px;
-        text-align: left;
-    }
-    .techArsenalContainer h1 {
-        font-size: 40px;
-        font-weight: 500;
-        line-height: 60px;
-        letter-spacing: 0px;
-        text-align: left;
-    }
+  .techTextParentContainer h1 {
+    @apply text-[40px] font-medium leading-[60px];
+  }
+  .techTextParentContainer p {
+    @apply text-[22px] font-normal leading-[45px] mt-5;
+  }
+  .techTextParentContainer p br {
+    @apply hidden;
+  }
+  .TechComponentContainerText {
+    @apply justify-center w-6/12;
+  }
+  .TechComponentContainerText h1 {
+    @apply text-[40px] font-medium leading-[60px];
+  }
+  .TechComponentContainerText h3 {
+    @apply text-lg font-normal leading-[30px];
+  }
+  .TechComponentContainerText h3 br {
+    @apply hidden;
+  }
+  .TechComponentContainerText a {
+    @apply text-xl font-medium leading-[50px] mt-4;
+  }
+  .textContainer h2 {
+    @apply text-[40px] leading-[60px];
+  }
+  .textContainer h1 {
+    @apply text-[53px] leading-[64px];
+  }
+  .blockChainIconsLine {
+    @apply justify-center;
+  }
+  .blockChainIcons {
+    @apply flex flex-col w-full;
+    float: inline-start;
+  }
+  .acordionComponentContainer {
+    @apply gap-5;
+  }
+  .blockChainnetworkContainer h1 {
+    @apply text-[40px] font-medium leading-[60px] tracking-[0px] text-left;
+  }
+  .techArsenalContainer h1 {
+    @apply text-[40px] font-medium leading-[60px] tracking-[0px] text-left;
+  }
+  .blockChainIconsLine img:first-child {
+  @apply  ml-0;
+}
 }
 
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
+  .acordionComponentContainer {
+    @apply mx-5 my-[70px];
+  }
 
-   
+  .techPartnersRightButtonContainer, .techPartnersLeftButtonContainer {
+    @apply mt-[50px];
+  }
 
-    .acordionComponentContainer {
-        margin: 70px 20px !important;
-    }
-
-
-    
+  .blockChainIconsLine img:first-child {
+  @apply  ml-0;
 }
+
+.mobileImageButtonContainer{
+  @apply flex items-center justify-center w-[100%]
+}
+#webNextButton {
+  @apply hidden;
+}
+#mobileNextButton {
+  @apply flex;
+}
+.TechComponentContainerText h1 {
+  @apply text-3xl;
+}
+.TechComponentContainerText h3 {
+  @apply text-base font-normal leading-[30px] tracking-normal text-left;
+}
+.TechComponentContainer {
+  @apply flex-col;
+}
+.TechComponentContainerText {
+  @apply w-[90%];
+}
+.TechComponentContainerText br {
+  @apply hidden;
+}
+.TechComponentContainerText a {
+  @apply text-lg mt-2.5;
+}
+.techSliderParentContainer {
+  @apply gap-2.5 w-full mt-0;
+}
+.TechComponentContainerImage {
+  @apply w-[75%] mt-5;
+}
+.blockChainIconsLine {
+  @apply gap-5 justify-between;
+}
+.blockChainIcons {
+  @apply flex flex-col w-full h-[unset];
+  float: inline-start;
+}
+.blockChainIconsLine img {
+  @apply transition-[0.3s] duration-[ease-in-out] hover:transition-[0.2s] hover:duration-[ease-in-out] hover:cursor-pointer;
+}
+.blockChainnetworkContainer h1 {
+  @apply text-[40px] font-medium leading-[60px] tracking-[0px] text-left;
+}
+.techArsenalContainer h1 {
+  @apply text-[40px] text-[40px];
+}
+.techArsenalContainer {
+  @apply flex flex-col text-left w-[86%] justify-center mb-0;
+}
+.techArsenalContainer span {
+  @apply text-[#0071FB];
+}
+.techArsenalButtonContainer div:nth-child(4),
+.techArsenalButtonContainer div:nth-child(5),
+.techArsenalButtonContainer div:nth-child(6) {
+  @apply hidden;
+}
+.techArsenalButtonContainer {
+  @apply flex cursor-pointer flex-row w-full justify-between h-[35px] mb-[30px];
+}
+.techArsenalButton {
+  @apply flex w-[33.3%] flex-row items-center justify-center h-[37px];
+}
+.techArsenalButton img {
+  @apply w-5;
+}
+.techArsenalButton button {
+  @apply text-lg;
+}
+.arsenalChangeComponent {
+  @apply flex;
+}
+.ArsenalMiniComponent {
+  @apply flex flex-wrap w-[85%] gap-5;
+  justify-content: left;
+}
+.ArsenalMiniComponentDEV {
+  @apply w-[95%];
+}
+.mainArsenalChangeComp {
+  @apply flex justify-around w-full;
+}
+.techSliderParentContainer .techPartnerComponentContainer {
+  @apply mx-0 my-[50px];
+}
+.blockChainnetworkContainer {
+  @apply w-[90%];
+}
+.techTextParentContainer {
+  @apply w-full p-8;
+}
+.techTextParentContainer br {
+  @apply hidden;
+}
+.techTextParentContainer h1 {
+  @apply text-[35px] flex gap-2.5 mb-[50px];
+}
+.techTextParentContainer span {
+  @apply text-[35px];
+}
+.techTextParentContainer p {
+  @apply text-lg leading-[35px];
+}
+
+.TechComponentContainerImage img{
+  @apply !h-[305px];
+}
+
+.techPartnersLeftButtonContainer,
+.techPartnersRightButtonContainer {
+@apply  translate-y-40;
+}
+
+.mirrorTracker{
+@apply mb-44;
+}
+
+}
+

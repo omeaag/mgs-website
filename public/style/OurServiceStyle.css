@@ -1,365 +1,189 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .mainServiceContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: MonumentExtended;
+  @apply flex justify-center items-center;
+  font-family: MonumentExtended;
 }
-
 .blueServiceContainer {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 113, 251, 1);
-    border-radius: 1.2rem;
-    margin-top: 120px;
+  @apply flex justify-center w-full h-full bg-[rgba(0,113,251,1)] mt-[120px] rounded-[1.2rem];
 }
-
 .blueContentContainer {
-    gap: 60px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    height: 80%;
+  @apply gap-[60px] flex justify-center flex-col items-center h-4/5;
 }
-
 .headServiceText {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    height: 20%;
-    width: 100%;
-    text-align: center;
+  @apply text-[white] flex flex-col h-1/5 w-full text-center;
 }
-
 .headServiceText h1 {
-    font-size: 65px;
-    font-weight: 500;
-    line-height: 78px;
-    letter-spacing: 0px;
-    text-align: center;
-    margin: 100px 0 50px 0;
+  @apply text-[65px] font-medium leading-[78px] tracking-[0px] text-center mt-[100px] mb-[50px] mx-0;
 }
-
 .headServiceText h6 {
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 50px;
-    letter-spacing: 0px;
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    }
-
-.serviceBoxContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    gap: 20px;
-    padding-bottom: 150px;
+  @apply text-[22px] font-normal leading-[50px] tracking-[0px] text-center w-3/5 m-auto;
 }
-
+.serviceBoxContainer {
+  @apply flex justify-center items-center text-[white] gap-5 pb-[150px];
+}
 .serviceBoxContainer h4,
 .serviceBoxContainer h3 {
-    font-size: 23.5px;
-    margin: 0.7rem 0rem;
-    transition: 0.7s ease;
-    display: flex;
-    align-items: center;
+  @apply text-[23.5px] transition-[0.7s] duration-[ease] flex items-center mx-0 my-[0.7rem];
 }
-
-
-#flag{
-    display: block;
-    width: 25px;
+#flag {
+  @apply block w-[25px];
 }
-
 .serviceBoxContainer h3 {
-    font-size: 36px;
-    margin: 0.7rem 0rem;
-    transition: 0.7s ease;
+  @apply text-4xl transition-[0.7s] duration-[ease] mx-0 my-[0.7rem];
 }
-
 .serviceTContainer,
 .serviceBContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    height: 50%;
+  @apply flex flex-col gap-5 h-3/6;
 }
-
-.tLeftService{
-    border: 1px solid rgba(155, 255, 28, 1);
+.tLeftService {
+  @apply border border-solid border-[rgba(155,255,28,1)];
 }
-.bLeftService{
-    border: 1px solid rgba(185, 173, 255, 1);
+.bLeftService {
+  @apply border border-solid border-[rgba(185,173,255,1)];
 }
-.tRightService{
-    border: 1px solid rgba(255, 199, 0, 1);
+.tRightService {
+  @apply border border-solid border-[rgba(255,199,0,1)];
 }
-.bRightService{
-    border: 1px solid rgba(0, 240, 255, 1);
+.bRightService {
+  @apply border border-solid border-[rgba(0,240,255,1)];
 }
 .tLeftService,
 .bLeftService,
 .tRightService,
 .bRightService {
-    display: flex;
-    text-align: start;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-    justify-content: space-between;
-    padding: 40px 60px;
-    border-radius: 20px;
+  @apply flex text-start flex-col h-full w-full justify-between px-[60px] py-10 rounded-[20px];
 }
-
 .textImageCont {
-    display: flex;
-    position: relative;
+  @apply flex relative;
 }
-
 .textImageCont img {
-    margin: 7px;
-    display: none;
+  @apply hidden m-[7px];
 }
-
 .textImageCont:hover img {
-    display: block;
-    transition: 0.5s ease;
+  @apply block transition-[0.5s] duration-[ease];
 }
-
-
-
 .lineClass1,
 .lineClass2,
 .lineClass3,
 .lineClass4 {
-    width: 100%;
-    background-color: rgba(22, 103, 202, 1);
-    height: 4px;
-    border-radius: 50px;
+  @apply w-full bg-[rgba(22,103,202,1)] h-1 rounded-[50px];
 }
-
 .tLeftService:hover button {
-    width: 100%;
+  @apply w-full;
 }
-
 .bLeftService:hover button {
-    width: 100%;
+  @apply w-full;
 }
 .tRightService:hover button {
-    width: 100%;
+  @apply w-full;
 }
 .bRightService:hover button {
-    width: 100%;
+  @apply w-full;
 }
-
 .lineClass1 button {
-    width: 0px;
-    background-color: rgba(155, 255, 28, 1);
-    ;
-    height: 4px;
-    border-radius: 50px;
-    color: rgba(0, 113, 251, 0);
-    transition: 0.5s ease;
+  @apply w-0 bg-[rgba(155,255,28,1)] h-1 text-[rgba(0,113,251,0)] transition-[0.5s] duration-[ease] rounded-[50px];
 }
-
 .lineClass2 button {
-    width: 0px;
-    background-color: rgba(185, 173, 255, 1);
-    height: 4px;
-    border-radius: 50px;
-    color: rgba(0, 113, 251, 0);
-    transition: 0.5s ease;
+  @apply w-0 bg-[rgba(185,173,255,1)] h-1 text-[rgba(0,113,251,0)] transition-[0.5s] duration-[ease] rounded-[50px];
 }
 .lineClass3 button {
-    width: 0px;
-    background-color: rgba(255, 199, 0, 1);
-    height: 4px;
-    border-radius: 50px;
-    color: rgba(0, 113, 251, 0);
-    transition: 0.5s ease;
+  @apply w-0 bg-[rgba(255,199,0,1)] h-1 text-[rgba(0,113,251,0)] transition-[0.5s] duration-[ease] rounded-[50px];
 }
 .lineClass4 button {
-    width: 0px;
-    background-color: rgba(0, 240, 255, 1);
-    height: 4px;
-    border-radius: 50px;
-    color: rgba(0, 113, 251, 0);
-    transition: 0.5s ease;
+  @apply w-0 bg-[rgba(0,240,255,1)] h-1 text-[rgba(0,113,251,0)] transition-[0.5s] duration-[ease] rounded-[50px];
 }
-
 .tLeftService h4:hover {
-    transform: translateX(1rem);
-    color: rgb(155, 255, 28);
-    transition: 0.5s ease;
-    cursor: default;
+  @apply translate-x-4 text-[rgb(155,255,28)] transition-[0.5s] duration-[ease] cursor-default;
 }
-
 .tRightService h4:hover {
-    transform: translateX(1rem);
-    color: rgb(255, 199, 0);
-    transition: 0.5s ease;
-    cursor: default;
+  @apply translate-x-4 text-[rgb(255,199,0)] transition-[0.5s] duration-[ease] cursor-default;
 }
-
 .bLeftService h4:hover {
-    transform: translateX(1rem);
-    color: rgb(90, 192, 157);
-    transition: 0.5s ease;
-    cursor: default;
+  @apply translate-x-4 text-[rgb(90,192,157)] transition-[0.5s] duration-[ease] cursor-default;
 }
-
 .bRightService h4:hover {
-    transform: translateX(1rem);
-    color: rgb(0, 240, 255);
-    transition: 0.5s ease;
-    cursor: default;
+  @apply translate-x-4 text-[rgb(0,240,255)] transition-[0.5s] duration-[ease] cursor-default;
 }
-
-
 
 /* -------------------- TABLET BREAKPOINT --------------------  */
 @media (min-width: 600px) and (max-width: 1024px) {
-    .mainServiceContainer {
-        height: 100%;
-    }
-
-    .blueServiceContainer {
-        border-radius: 40px;
-    }
-
-    .headServiceText h1 {
-        font-size: 40px;
-        line-height: 60px;
-        font-weight: 500;
-        margin: 100px 0 50px 0;
-    }
-
-    br {
-        display: none;
-    }
-
-    .headServiceText h6 {
-        font-size: 22px;
-        line-height: 36px;
-        padding: 0 10px;
-        width: 76.5%;
-    }
-
-    .serviceBoxContainer h3 {
-        font-size: 1.2rem;
-        margin: 0.5rem 0;
-    }
-
-    .serviceBoxContainer {
-        width: 90%;
-        gap: 20px;
-    }
-
-    .serviceTContainer,
-    .serviceBContainer {
-        width: 100%;
-    }
-
-    .tLeftService,
-    .tRightService,
-    .bLeftService,
-    .bRightService {
-        width: 100%;
-        margin: 0;
-        padding: 30px;
-    }
-
-    .serviceBoxContainer h3 {
-        font-size: 30px;
-        line-height: 60px;
-    }
-
-    .serviceBoxContainer h4 {
-        font-size: 25px;
-        line-height: 33px;
-    }
-
-    .tLeftService button,
-    .bLeftService button,
-    .tRightService button,
-    .bRightService button {
-        width: 100%;
-    }
+  .mainServiceContainer {
+    @apply h-full;
+  }
+  .blueServiceContainer {
+    @apply rounded-[40px];
+  }
+  .headServiceText h1 {
+    @apply text-[40px] leading-[60px] font-medium mt-[100px] mb-[50px] mx-0;
+  }
+  br {
+    @apply hidden;
+  }
+  .headServiceText h6 {
+    @apply text-[22px] leading-9 w-[76.5%] px-2.5 py-0;
+  }
+  .serviceBoxContainer h3 {
+    @apply text-[1.2rem] mx-0 my-2 text-3xl leading-[60px];
+  }
+  .serviceBoxContainer {
+    @apply w-[90%] gap-5;
+  }
+  .serviceTContainer,
+  .serviceBContainer {
+    @apply w-full;
+  }
+  .tLeftService,
+  .tRightService,
+  .bLeftService,
+  .bRightService {
+    @apply w-full m-0 p-[30px];
+  }
+  .serviceBoxContainer h4 {
+    @apply text-[25px] leading-[33px];
+  }
+  .tLeftService button,
+  .bLeftService button,
+  .tRightService button,
+  .bRightService button {
+    @apply w-full;
+  }
 }
 
 /* --------------------  PHONE BREAKPOINT --------------------  */
 @media (max-width: 599px) {
-
-
-    .blueServiceContainer {
-        border-radius: 40px;
-    }
-
-    .headServiceText h1 {
-        font-size: 30px;
-        line-height: 50px;
-        font-weight: 500;
-        margin-top: 50px;
-    }
-
-    br {
-        display: none;
-    }
-
-    .headServiceText h6 {
-        text-align: center;
-        font-size: 16px;
-        line-height: 36px;
-        margin-top: 20px;
-        padding: 0 10px;
-        width: 93%;
-    }
-
-    .serviceBoxContainer h3 {
-        font-size: 1.2rem;
-        margin: 0.5rem 0;
-    }
-
-    .serviceBoxContainer {
-        width: 100%;
-        gap: 20px;
-        flex-direction: column;
-    }
-
-    .serviceTContainer,
-    .serviceBContainer {
-        flex-direction: column;
-        width: 100%;
-    }
-
-    .tLeftService,
-    .tRightService,
-    .bLeftService,
-    .bRightService {
-        width: 93%;
-        margin: auto;
-        padding: 15px;
-    }
-
-
-    .serviceBoxContainer h3 {
-        font-size: 30px;
-        line-height: 90px;
-    }
-
-    .serviceBoxContainer h4 {
-font-size: 28px;
-font-weight: 500;
-line-height: 34px;
-letter-spacing: 0px;
-text-align: left;
-
-    }
-
-
+  .blueServiceContainer {
+    @apply rounded-[40px];
+  }
+  .headServiceText h1 {
+    @apply text-3xl leading-[50px] font-medium mt-[50px];
+  }
+  br {
+    @apply hidden;
+  }
+  .headServiceText h6 {
+    @apply text-center text-base leading-9 w-[93%] mt-5 px-2.5 py-0;
+  }
+  .serviceBoxContainer h3 {
+    @apply text-[1.2rem] mx-0 my-2 text-3xl leading-[90px];
+  }
+  .serviceBoxContainer {
+    @apply w-full gap-5 flex-col;
+  }
+  .serviceTContainer,
+  .serviceBContainer {
+    @apply flex-col w-full;
+  }
+  .tLeftService,
+  .tRightService,
+  .bLeftService,
+  .bRightService {
+    @apply w-[93%] m-auto p-[15px];
+  }
+  .serviceBoxContainer h4 {
+    @apply text-[28px] font-medium leading-[34px] tracking-[0px] text-left;
+  }
 }

@@ -315,7 +315,7 @@ const page = () => {
                         <div className='resume'>
                             <h1>Upload Your Resume</h1>
                             <div className='innerResume'>
-                                <Image src={upload_Icon} />
+                                <Image alt='uploadIcon' src={upload_Icon} />
                                 <h2>Browse Files</h2>
                                 <h3>Drag and drop your file here</h3>
                                 <h3 id='fileHere'>Upload File here</h3>
@@ -337,7 +337,7 @@ const page = () => {
                                 rows=''></textarea>
                         </div>
                     </div>
-                    <button id='applyBtn'>Apply Now</button>
+                    <button aria-label='Apply Now' id='applyBtn'>Apply Now</button>
                 </form>
             </div>
         </div>

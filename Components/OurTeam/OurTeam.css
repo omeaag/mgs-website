@@ -1,98 +1,56 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .MemberCardContainer {
-	font-family: MonumentExtended;
-	display: flex;
-	width: 96%;
-	justify-content: center;
-	margin: 5.5rem auto 7rem auto;
-	flex-wrap: wrap;
+  @apply flex w-[96%] justify-center flex-wrap mt-[5.5rem] mb-28 mx-auto;
+  font-family: MonumentExtended;
 }
-
 .MemberCardComponent {
-	width: 270px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	margin-bottom: 3.5rem;
+  @apply w-[270px] flex flex-col items-center mb-14;
 }
-
 .icons {
-	margin-top: 2rem;
-	display: flex;
-	gap: 1.8rem;
+  @apply flex gap-[1.8rem] mt-8;
 }
-
 .icons img {
-	width: 25px;
-	height: 25px;
+  @apply w-[25px] h-[25px];
 }
-
 .memberName {
-	display: flex;
-	align-items: center;
-	gap: 5px;
-	color: rgba(0, 113, 251, 1);
-	margin-top: 1rem;
-	font-size: 30px;
-	font-weight: 500;
-	line-height: 36px;
-	letter-spacing: 0px;
-	text-align: left;
+  @apply flex items-center gap-[5px] text-[rgba(0,113,251,1)] text-3xl font-medium leading-9 tracking-[0px] text-left mt-4;
 }
-
 .MemberCardContainer .MemberCardComponent {
-	width: calc(25%);
-	margin-right: 0;
+  @apply w-[calc(25%)] mr-0;
 }
 
 /* TABLET BREAKPOINT */
 @media (min-width: 600px) and (max-width: 1024px) {
-	.MemberCardContainer {
-		justify-content: space-between;
-	}
-	.memberName {
-		font-size: 23px;
-		font-weight: 500;
-		line-height: 30px;
-		letter-spacing: 0px;
-		text-align: left;
-	}
-	.memberName p {
-		font-size: 18px;
-		font-weight: 400;
-		line-height: 22px;
-		letter-spacing: 0px;
-	}
-	.MemberCardContainer {
-		width: 95% !important;
-	}
-	.MemberCardContainer .MemberCardComponent {
-		width: calc(34.5% - 1.5rem);
-		margin-right: 0 !important;
-		align-items: center;
-	}
+  .MemberCardContainer {
+    @apply justify-between w-[95%];
+  }
+  .memberName {
+    @apply text-[23px] font-medium leading-[30px] tracking-[0px] text-left;
+  }
+  .memberName p {
+    @apply text-lg font-normal leading-[22px] tracking-[0px];
+  }
+  .MemberCardContainer .MemberCardComponent {
+    @apply w-[calc(34.5%_-_1.5rem)] items-center mr-0;
+  }
 }
 
 /* PHONE BREAKPOINT */
 @media (max-width: 599px) {
-	.MemberCardComponent {
-		width: 100% !important;
-	}
-
-	.memberName {
-		font-size: 24px;
-		font-weight: 500;
-		line-height: 30px;
-		letter-spacing: 0px;
-	}
-	.memberName p {
-		font-size: 18px;
-		font-weight: 400;
-		line-height: 22px;
-		letter-spacing: 0px;
-	}
-
-	.icons img {
-		width: 25px;
-		height: 25px;
-	}
+  .MemberCardComponent {
+    @apply w-full !important;
+  }
+  .memberName {
+    @apply text-2xl font-medium leading-[30px] tracking-[0px];
+  }
+  .memberName p {
+    @apply text-lg font-normal leading-[22px] tracking-[0px];
+  }
+  .icons img {
+    @apply w-[25px] h-[25px];
+  }
 }

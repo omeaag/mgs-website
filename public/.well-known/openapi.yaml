@@ -1,0 +1,73 @@
+openapi: 4  #template says 3.0.1
+info:
+   title: MGS Plugin
+   description: A plugin that allow the user to build their software project and receive a preventive.
+   version: 'v1'
+   servers:
+      - url: http://localhost:3000
+    paths:
+      /api/get-preventive-overview:
+        get:
+          operationId: getPreventiveOverview
+          summary: Return a preventive for the software items.
+          responses:
+            "200":
+              description: OK
+              content: 
+                application/json:
+                  schema: 
+                  $ref: '#/components/schemas/getPreventiveResponse'
+     /api/create-preventive-item:
+        post:
+          operationId: addPreventiveItem
+          summary: add an item to the software project
+          requestBody:
+            required: true
+            content: 
+              application/json:
+                schema: 
+                $ref: '#/components/schemas/addPreventiveItemRequest'
+          responses:
+            "200":
+              description: OK
+    /api/delete-preventive-item:
+      post:
+        operationId: deletePreventiveItem
+        summary: remove an item form the software project
+        requestBody: 
+          required: true
+          content: 
+            application/json:
+              schema:
+              $ref: '#/components/schemas/deletePreventiveItemRequest'
+components: 
+  schemas:
+    deletePreventiveItemRequest:
+      type: object
+      required: 
+      -preventiveItem
+      properties:
+        preventiveItem:
+          type: string
+          description: The project item item to remove from the project list
+    addPreventiveItemRequest:
+      type: ojbect
+      required: 
+      -preventiveItem
+      properties:
+        -preventiveItem:
+          type: string
+          description: The preventive item to add to the project list
+    getPreventiveResponse:
+      type: object
+      properties:
+        preventive: 
+          type: array
+          items: 
+            type: object  
+          description: The items in the preventive list
+  
+
+
+
+              

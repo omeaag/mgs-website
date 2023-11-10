@@ -2,6 +2,7 @@
 import '../../../public/style/Apply.css';
 import Image from 'next/image';
 import upload_Icon from '../../../public/materials/upload-icon.svg';
+import downArrow from '../../../public/materials/down-arrow.svg'
 import {useState, useEffect} from 'react';
 
 
@@ -297,7 +298,7 @@ const page = () => {
                             <select
                                 name=''
                                 id=''>
-                                <option value=''>Please Select</option>
+                                <option value=''>Please Select </option>
                                 <option value=''>Social Media</option>
                                 <option value=''>Linkedin</option>
                                 <option value=''>Friend</option>
@@ -323,7 +324,7 @@ const page = () => {
                         <div className='resume'>
                             <h1>Upload Your Resume</h1>
                             <div className='innerResume'>
-                                <Image src={upload_Icon} />
+                                <Image alt='uploadIcon' src={upload_Icon} />
                                 <h2>Browse Files</h2>
                                 <h3>Drag and drop your file here</h3>
                                 <h3 id='fileHere'>Upload File here</h3>

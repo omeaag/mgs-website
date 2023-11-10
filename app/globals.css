@@ -39,6 +39,7 @@
 }
 
 .Navbar a {
+  text-decoration: none;
   font-size: 18px;
   font-weight: 400;
   line-height: 22px;
@@ -66,13 +67,7 @@
 }
 .dropdownContainer .leftFooter h6{
   text-align: center;
-  margin-top: 10px;
-
-}
-.dropdownContainer .leftFooter h6{
-  text-align: center;
-  margin-top: 10px;
-
+  margin-top: 40px;
 }
 
 

@@ -1,189 +1,108 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .privacyPolicyAllContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: auto;
+  @apply flex flex-col w-full m-auto;
 }
-
 .privacyPolicyHeader {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 50px;
-    padding-left: 20%;
-    width: 100%;
-    background: url("../materials/HomeShapingBackground.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  @apply h-[60vh] flex flex-col justify-center gap-[50px] w-full bg-cover bg-no-repeat pl-[20%];
+  background: url("../materials/HomeShapingBackground.svg");
 }
-
 .privacyPolicyHeader h1 {
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 60px;
-    letter-spacing: 0px;
-    text-align: left;
-    font-family: MonumentExtended;
-    color: rgba(0, 113, 251, 1);
-    ;
+  @apply text-[50px] font-bold leading-[60px] tracking-[0px] text-left text-[rgba(0,113,251,1)];
+  font-family: MonumentExtended;
 }
-
 .privacyPolicyHeader p {
-    font-family: MonumentExtended;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 50px;
-    letter-spacing: 0px;
-    text-align: left;
+  @apply text-[26px] font-normal leading-[50px] tracking-[0px] text-left;
+  font-family: MonumentExtended;
 }
-
 .privacyPolicyText {
-    margin: 70px auto 200px auto;
-    width: 60%;
-    gap: 50px;
+  @apply w-3/5 gap-[50px] mt-[70px] mb-[200px] mx-auto;
 }
-
 .privacyPolicyTitle {
-    gap: 30px
+  @apply gap-[30px];
 }
-
 .privacyPolicyText,
 .privacyPolicyTitle {
-    display: flex;
-    flex-direction: column;
-    font-family: MonumentExtended;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 39px;
-    letter-spacing: 0px;
-    text-align: justify;
-
+  @apply flex flex-col text-[22px] font-normal leading-[39px] tracking-[0px] text-justify;
+  font-family: MonumentExtended;
 }
-
 .privacyPolicyTitle h2 {
-    font-family: MonumentExtended;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 36px;
-    letter-spacing: 0px;
-    text-align: left;
+  @apply text-3xl font-semibold leading-9 tracking-[0px] text-left;
+  font-family: MonumentExtended;
 }
-
 #PrivacySecondHeader {
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: capitalize;
+  @apply text-3xl not-italic font-medium leading-[normal] capitalize;
 }
-
 .paragraphs {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  @apply flex flex-col gap-[50px];
 }
-
 @media (min-width: 600px) and (max-width: 1024px) {
-    .privacyPolicyText {
-        width: 80%;
-    }
-
-    .privacyPolicyHeader {
-        padding-left: 10%;
-        height: 55vh;
-    }
-
-    #PrivacySecondHeader {
-        font-size: 26px;
-    }
+  .privacyPolicyText {
+    @apply w-4/5;
+  }
+  .privacyPolicyHeader {
+    @apply h-[55vh] pl-[10%];
+  }
+  #PrivacySecondHeader {
+    @apply text-[26px];
+  }
 }
 
 /* Add these styles for unordered lists and list items */
 ul {
-    list-style-type: disc;
-    /* or 'circle' or 'square' based on your preference */
-    margin-left: 20px;
-    /* Adjust the margin as needed */
-}
+  @apply list-disc ml-5;
 
+  /* or 'circle' or 'square' based on your preference */
+
+  /* Adjust the margin as needed */
+}
 li {
-    margin-bottom: 10px;
-    /* Adjust the margin as needed */
+  @apply mb-2.5;
+
+  /* Adjust the margin as needed */
 }
 
 /* Add these styles for ordered lists and list items */
 ol {
-    list-style-type: decimal;
-    /* or 'lower-roman' or 'upper-alpha', etc. based on your preference */
-    margin-left: 20px;
-    /* Adjust the margin as needed */
-}
+  @apply list-decimal ml-5;
 
+  /* or 'lower-roman' or 'upper-alpha', etc. based on your preference */
+
+  /* Adjust the margin as needed */
+}
 u strong {
-    font-size: 26px;
-    font-style: italic;
-    font-weight: 500;
-    line-height: normal;
-    text-decoration-line: underline;
-    text-transform: capitalize;
+  @apply text-[26px] italic font-medium leading-[normal] underline capitalize;
 }
-
 @media (max-width: 599px) {
-    .privacyPolicyText {
-        width: 90%;
-    }
-
-    #PrivacySecondHeader{
-        width: 90%;
-        margin:auto;
-    }    
-
-    .privacyPolicyHeader {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .privacyPolicyHeader h1 {
-        font-size: 30px;
-        margin: auto;
-        width: 90%;
-    }
-
-    .privacyPolicyHeader h1,
-    .privacyPolicyHeader p {
-        margin: 0 auto;
-        width: 90%;
-    }
-
-    .privacyPolicyHeader p {
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 50px;
-        letter-spacing: 0px;
-        text-align: left;
-    }
-
-    .privacyPolicyHeader {
-        padding: 0;
-
-    }
-
-    .privacyPolicyTitle h2 {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-
-    #accordionimage {
-        width: 26px;
-        height: 14px;
-    }
-
-    .paragraphs {
-        flex-direction: column;
-        gap: 20px;
-        display: none;
-    }
+  .privacyPolicyText {
+    @apply w-[90%];
+  }
+  #PrivacySecondHeader {
+    @apply w-[90%] m-auto;
+  }
+  .privacyPolicyHeader {
+    @apply flex flex-col p-0;
+  }
+  .privacyPolicyHeader h1 {
+    @apply text-3xl w-[90%] m-auto;
+  }
+  .privacyPolicyHeader h1,
+  .privacyPolicyHeader p {
+    @apply w-[90%] mx-auto my-0;
+  }
+  .privacyPolicyHeader p {
+    @apply text-[22px] font-normal leading-[50px] tracking-[0px] text-left;
+  }
+  .privacyPolicyTitle h2 {
+    @apply flex items-center justify-between;
+  }
+  #accordionimage {
+    @apply w-[26px] h-3.5;
+  }
+  .paragraphs {
+    @apply flex-col gap-5 hidden;
+  }
 }

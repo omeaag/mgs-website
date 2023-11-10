@@ -1,318 +1,167 @@
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
 .termsConditionsAllContainer {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: auto;
+  @apply flex flex-col w-full m-auto;
 }
-
 .termsConditionsHeader {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 50px;
-    padding-left: 20%;
-    width: 100%;
-    background: url("../materials/HomeShapingBackground.svg");
-    background-size: cover;
-    background-repeat: no-repeat;
+  @apply h-[60vh] flex flex-col justify-center gap-[50px] w-full [background:url("../materials/HomeShapingBackground.svg")] bg-cover bg-no-repeat pl-[20%];
 }
-
 .termsConditionsHeader h1 {
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 60px;
-    letter-spacing: 0px;
-    text-align: left;
-    font-family: MonumentExtended;
-    color: rgba(0, 113, 251, 1);
-    ;
+  @apply text-[50px] font-bold leading-[60px] tracking-[0px] text-left [font-family:MonumentExtended] text-[rgba(0,113,251,1)];
 }
-
-
 .termsConditionsHeader p {
-    font-family: MonumentExtended;
-    font-size: 26px;
-    font-weight: 400;
-    line-height: 50px;
-    letter-spacing: 0px;
-    text-align: left;
+  @apply [font-family:MonumentExtended] text-[26px] font-normal leading-[50px] tracking-[0px] text-left;
 }
-
 .termsConditionsText {
-    margin: 70px auto 200px auto;
-    width: 60%;
-    gap: 50px;
+  @apply w-3/5 gap-[50px] mt-[70px] mb-[200px] mx-auto;
 }
-
 .termsConditionsTitle {
-    gap: 30px
+  @apply gap-[30px];
 }
-
 .termsConditionsText,
 .termsConditionsTitle {
-    display: flex;
-    flex-direction: column;
-    font-family: MonumentExtended;
-    font-size: 22px;
-    font-weight: 400;
-    line-height: 39px;
-    letter-spacing: 0px;
-    text-align: justify;
-
+  @apply flex flex-col [font-family:MonumentExtended] text-[22px] font-normal leading-[39px] tracking-[0px] text-justify;
 }
-
 .termsConditionsTitle h2 {
-    font-family: MonumentExtended;
-    font-size: 30px;
-    font-weight: 600;
-    line-height: 36px;
-    letter-spacing: 0px;
-    text-align: left;
+  @apply [font-family:MonumentExtended] text-3xl font-semibold leading-9 tracking-[0px] text-left;
 }
-
 #PrivacySecondHeader {
-    font-size: 30px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    text-transform: capitalize;
+  @apply text-3xl not-italic font-medium leading-[normal] capitalize;
 }
-
-
 .paragraphs {
-    display: flex;
-    flex-direction: column;
-    gap: 50px;
+  @apply flex flex-col gap-[50px];
 }
-
 @media (min-width: 600px) and (max-width: 1024px) {
-    .termsConditionsText {
-        width: 80%;
-    }
-
-    .termsConditionsHeader {
-        padding-left: 10%;
-        height: 40vh;
-    }
-
-    #PrivacySecondHeader {
-        font-size: 26px;
-    }
+  .termsConditionsText {
+    @apply w-4/5;
+  }
+  .termsConditionsHeader {
+    @apply h-[40vh] pl-[10%];
+  }
+  #PrivacySecondHeader {
+    @apply text-[26px];
+  }
 }
 
 /* Add these styles for unordered lists and list items */
 ul {
-    list-style-type: disc;
-    /* or 'circle' or 'square' based on your preference */
-    margin-left: 20px;
-    /* Adjust the margin as needed */
-}
+  @apply list-disc ml-5;
 
+  /* or 'circle' or 'square' based on your preference */
+
+  /* Adjust the margin as needed */
+}
 li {
-    margin-bottom: 10px;
-    /* Adjust the margin as needed */
+  @apply mb-2.5;
+
+  /* Adjust the margin as needed */
 }
 
 /* Add these styles for ordered lists and list items */
 ol {
-    list-style-type: decimal;
-    /* or 'lower-roman' or 'upper-alpha', etc. based on your preference */
-    margin-left: 20px;
-    /* Adjust the margin as needed */
-}
+  @apply list-decimal ml-5;
 
+  /* or 'lower-roman' or 'upper-alpha', etc. based on your preference */
+
+  /* Adjust the margin as needed */
+}
 u strong {
-    font-size: 26px;
-    font-style: italic;
-    font-weight: 500;
-    line-height: normal;
-    text-decoration-line: underline;
-    text-transform: capitalize;
-
+  @apply text-[26px] italic font-medium leading-[normal] underline capitalize;
 }
-
 .FaqContainer {
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-    align-items: center;
-    justify-content: center;
-
+  @apply flex flex-col gap-6 items-center justify-center;
 }
-
 .FaqUpperDiv {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    gap: 52px;
-    width: 100%;
-
-    align-items: center;
+  @apply flex justify-between flex-row gap-[52px] w-full items-center;
 }
-
 .FaqUpperDiv img {
-    cursor: pointer;
+  @apply cursor-pointer;
 }
-
 .FaqTitleContainer {
-    width: 80%;
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 150%;
-    text-transform: capitalize;
-    text-align: left;
+  @apply w-4/5 text-[40px] font-medium leading-[150%] capitalize text-left;
 }
-
 .FaqLowerDiv {
-    width: 79%;
-    color: var(--text-txt-secondary, rgba(60, 60, 67, 0.85));
-    font-feature-settings: 'clig' off, 'liga' off;
+  @apply w-[79%] text-[color:var(--text-txt-secondary,rgba(60,60,67,0.85))] [font-feature-settings:"clig"_off,"liga"_off] [font-family:Neue_Montreal] text-[22px] not-italic font-normal leading-[39px];
 
-    /* MGS/Paragraph/Para 3 */
-    font-family: Neue Montreal;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 39px;
-    /* 177.273% */
+  /* MGS/Paragraph/Para 3 */
+
+  /* 177.273% */
 }
-
 .FaqContainer h1 {
-    font-size: 50px;
-    font-weight: 700;
-    color: var(--text-txt-tertiary, rgba(60, 60, 67, 0.50));
-    margin-top: 9.5px;
+  @apply text-[50px] font-bold text-[color:var(--text-txt-tertiary,rgba(60,60,67,0.5))] mt-[9.5px];
 }
-
 .FaqContainer h2 {
-    font-size: 40px;
-    font-weight: 500;
-    line-height: 150%;
-    text-transform: capitalize;
-    text-align: left;
+  @apply text-[40px] font-medium leading-[150%] capitalize text-left;
 }
-
-
 @media (max-width: 599px) {
-    .termsConditionsText {
-        width: 90%;
-    }
-
-    .termsConditionsHeader {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .termsConditionsHeader h1 {
-        font-size: 30px;
-        margin: auto;
-        width: 90%;
-    }
-
-    .termsConditionsHeader h1,
-    .termsConditionsHeader p {
-        margin: 0 auto;
-        width: 90%;
-    }
-
-    .termsConditionsHeader h5 {
-        margin: 0 auto;
-        width: 90%;
-        font-size: 26px;
-    }
-
-    .termsConditionsHeader p {
-        font-size: 22px;
-        font-weight: 400;
-        line-height: 50px;
-        letter-spacing: 0px;
-        text-align: left;
-    }
-
-    .termsConditionsHeader {
-        padding: 0;
-        height: 40vh;
-    }
-
-    .termsConditionsTitle h2 {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    #accordionimage {
-        width: 26px;
-        height: 14px;
-    }
-
-    .paragraphs {
-        flex-direction: column;
-        gap: 20px;
-        display: none;
-    }
-
-    .FaqTitleContainer,
-    .FaqContainer h1 {
-        font-size: 30px;
-    }
-
-    .FaqUpperDiv img {
-        display: flex;
-        width: 32px;
-        height: 32px;
-        justify-content: center;
-        align-items: start;
-        gap: 10px;
-    }
-
-    .FaqTitleContainer {
-        width: 100%;
-
-    }
-
-    .FaqLowerDiv {
-        font-size: 18px;
-    }
-
-    .FaqUpperDiv h1 {
-        order: -1;
-    }
-
-    .mobileLeft {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .FaqUpperDivMobile {
-        display: flex;
-        justify-content: space-between;
-    }
-    .FaqLowerDiv{
-        width: 100%;
-    }
+  .termsConditionsText {
+    @apply w-[90%];
+  }
+  .termsConditionsHeader {
+    @apply flex flex-col h-[40vh] p-0;
+  }
+  .termsConditionsHeader h1 {
+    @apply text-3xl w-[90%] m-auto;
+  }
+  .termsConditionsHeader h1,
+  .termsConditionsHeader p {
+    @apply w-[90%] mx-auto my-0;
+  }
+  .termsConditionsHeader h5 {
+    @apply w-[90%] text-[26px] mx-auto my-0;
+  }
+  .termsConditionsHeader p {
+    @apply text-[22px] font-normal leading-[50px] tracking-[0px] text-left;
+  }
+  .termsConditionsTitle h2 {
+    @apply flex items-center justify-between;
+  }
+  #accordionimage {
+    @apply w-[26px] h-3.5;
+  }
+  .paragraphs {
+    @apply flex-col gap-5 hidden;
+  }
+  .FaqTitleContainer,
+  .FaqContainer h1 {
+    @apply text-3xl;
+  }
+  .FaqUpperDiv img {
+    @apply flex w-8 h-8 justify-center items-start gap-2.5;
+  }
+  .FaqTitleContainer {
+    @apply w-full;
+  }
+  .FaqLowerDiv {
+    @apply text-lg w-full;
+  }
+  .FaqUpperDiv h1 {
+    @apply -order-1;
+  }
+  .mobileLeft {
+    @apply flex flex-col;
+  }
+  .FaqUpperDivMobile {
+    @apply flex justify-between;
+  }
 }
-
-
 
 /*Tablet*/
 @media (min-width: 600px) and (max-width: 1024px) {
-    .FaqLowerDiv {
-        font-size: 18px;
-    }
-
-    .FaqTitleContainer,
-    .FaqContainer h1 {
-        font-size: 30px;
-    }
-
-
-    .termsConditionsHeader h1 {
-        font-size: 40px;
-    }
-
-    .termsConditionsHeader p {
-        font-size: 22px;
-
-    }
+  .FaqLowerDiv {
+    @apply text-lg;
+  }
+  .FaqTitleContainer,
+  .FaqContainer h1 {
+    @apply text-3xl;
+  }
+  .termsConditionsHeader h1 {
+    @apply text-[40px];
+  }
+  .termsConditionsHeader p {
+    @apply text-[22px];
+  }
 }
