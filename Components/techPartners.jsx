@@ -16,7 +16,6 @@ import '../public/style/TechPartnersStyle.css'
 import nexLabsImage from "../public/materials/TechPartnersImages/nexLabsImage.svg"
 import mirrorTrackerImage from "../public/materials/TechPartnersImages/mirrorTrackerImage.gif"
 import Image from "next/image";
-import '../public/style/TechPartnersSliderStyle.css';
 import bitcoin from '../public/materials/TechPartnersImages/mgsServciesIcons/bitcoin.svg'
 import etherum from '../public/materials/TechPartnersImages/mgsServciesIcons/etherum.svg'
 import binance from '../public/materials/TechPartnersImages/mgsServciesIcons/binance.svg'
@@ -191,13 +190,13 @@ const techPartners = () => {
 								<button
 									aria-label="Next"
 									onClick={() => {
-										currentSlide < 2 && setCurrentSlide(currentSlide + 1)
+										currentSlide < 1 && setCurrentSlide(currentSlide + 1)
 										goNext1()
 									}}
 									className="next-button"
 									id="mobileNextButton"
 								>
-									<Image src={currentSlide == 2 ? RightArrow : RightArrowBlue} alt="Sag Ok" width={50} height={50} />
+									<Image src={currentSlide == 1 ? RightArrow : RightArrowBlue} alt="Sag Ok" width={50} height={50} />
 								</button>
 							</div>
 						</div>
@@ -226,13 +225,13 @@ const techPartners = () => {
 								<button
 									aria-label="Next"
 									onClick={() => {
-										currentSlide < 2 && setCurrentSlide(currentSlide + 1)
+										currentSlide < 1 && setCurrentSlide(currentSlide + 1)
 										goNext1()
 									}}
 									className="next-button"
 									id="mobileNextButton"
 								>
-									<Image src={currentSlide == 2 ? RightArrow : RightArrowBlue} alt="Sag Ok" width={50} height={50} />
+									<Image src={currentSlide == 1 ? RightArrow : RightArrowBlue} alt="Sag Ok" width={50} height={50} />
 								</button>
 							</div>
 
@@ -242,13 +241,13 @@ const techPartners = () => {
 				<button
 					aria-label="Next"
 					onClick={() => {
-						currentSlide < 2 && setCurrentSlide(currentSlide + 1)
+						currentSlide < 1 && setCurrentSlide(currentSlide + 1)
 						goNext1()
 					}}
 					className="next-button"
 					id="webNextButton"
 				>
-					<Image src={currentSlide == 2 ? RightArrow : RightArrowBlue} alt="Sag Ok" width={50} height={50} />
+					<Image src={currentSlide == 1 ? RightArrow : RightArrowBlue} alt="Sag Ok" width={50} height={50} />
 				</button>
 			</div>
 
