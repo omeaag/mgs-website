@@ -20,26 +20,45 @@
   @apply text-[35px] text-[rgba(0,113,251,1)] mt-12;
 }
 .TechComponentContainerImage {
-  @apply flex flex-col justify-center items-center h-full w-[45%] shrink-0 opacity-100 rounded-[57px];
+  @apply flex flex-col justify-center items-center h-full w-[70%] shrink-0 opacity-100 rounded-[57px];
   background: linear-gradient(
     180deg,
     #baeaff6b 0%,
     rgba(255, 255, 255, 0) 43.01%
   );
 }
+#webNextButton {
+  @apply flex;
+}
+#mobileNextButton {
+  @apply hidden;
+}
+.mobileImageButtonContainer{
+  @apply w-[45%] items-center justify-center flex;
+}
 @media (max-width: 599px) {
   /*NEX LABS*/
+
+  .mobileImageButtonContainer{
+    @apply flex items-center justify-center w-[100%]
+  }
+  #webNextButton {
+    @apply hidden;
+  }
+  #mobileNextButton {
+    @apply flex;
+  }
   .TechComponentContainerText h1 {
     @apply text-3xl;
   }
   .TechComponentContainerText h3 {
-    @apply leading-[25px] text-base;;
+    @apply text-base font-normal leading-[30px] tracking-normal text-left;
   }
   .TechComponentContainer {
     @apply flex-col;
   }
   .TechComponentContainerText {
-    @apply w-full h-auto justify-end;
+    @apply w-[90%];
   }
   .TechComponentContainerText br {
     @apply hidden;
@@ -51,7 +70,7 @@
     @apply gap-2.5 w-full mt-0;
   }
   .TechComponentContainerImage {
-    @apply w-full mt-5 pt-[50px];
+    @apply w-[75%] mt-5;
   }
   .blockChainIconsLine {
     @apply gap-5 justify-between;

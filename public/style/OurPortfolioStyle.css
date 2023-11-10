@@ -26,10 +26,10 @@
   font-family: MonumentExtended;
 }
 .whatPeoplePersonBackground {
-  @apply w-full bg-[url("../materials/ourPortfolioImages/Polygon7.png")] bg-[100%] bg-no-repeat;
+  @apply w-full bg-[url("../materials/ourPortfolioImages/Polygon7.png")] bg-center bg-no-repeat mt-[100px];
 }
 .whatPeopleContainer {
-  @apply w-full flex flex-col items-center gap-[60px] mt-60;
+  @apply w-full flex flex-col items-center gap-[60px] mt-[25rem];
 }
 .clutchContainer {
   @apply flex flex-col gap-[70px] text-[65px] font-medium leading-[78px] tracking-[0px] text-center justify-center items-center;
@@ -230,7 +230,7 @@
     @apply text-justify w-full text-base leading-[30px] mx-0 my-5;
   }
   .galleryContainer {
-    @apply w-[105%] items-center mx-0 my-5;
+    @apply w-[100%] items-center mx-0 my-5;
   }
   .swiper-wrapper {
     @apply h-full w-full;
