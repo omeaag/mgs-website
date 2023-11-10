@@ -145,7 +145,7 @@ function OurTeam() {
         },
         {
             image: member15,
-            member_name: 'Ionut Goucan',
+            member_name: 'Ionut Gaucan',
             img:flag3,
             member_position: 'Blockchain Advisor',
             twitter_link: 'https://twitter.com/ionutgaucanREAL',

@@ -13,7 +13,7 @@
 .careersBiggestHeader p {
   font-family: MonumentExtended;
   color: rgba(0, 113, 251, 1);
-  font-size: 3.4rem;
+  font-size: 50px;
   font-weight: 700;
   line-height: 4.5rem;
   letter-spacing: 0em;
@@ -23,7 +23,7 @@
 
 .careersSmallHeader p {
   font-family: MonumentExtended;
-  font-size: 3rem;
+  font-size: 40px;
   font-weight: 400;
   line-height: 4rem;
   letter-spacing: 0px;
@@ -33,7 +33,7 @@
 
 .careersHeaderPar {
   font-family: MonumentExtended;
-  font-size: 2.3rem;
+  font-size: 26px;
   font-weight: 400;
   line-height: 3rem;
   letter-spacing: 1px;
@@ -69,6 +69,7 @@
 
 .careersHeaderImageContainer img {
   width: 68%;
+  padding-top: 100px;
 }
 
 #mobileAmsterdamImage {
@@ -151,25 +152,29 @@
     padding-bottom: 7px;
   }
 
-  .careersHeaderImageContainer{
+  .careersHeaderImageContainer {
     height: 600px;
     overflow: hidden;
   }
 
-  .careersHeaderImageContainer img{
+  .careersHeaderImageContainer img {
     height: 250px;
     width: 100%;
     object-fit: fill;
+    padding-top: 0px;
+
   }
 
   .careersHeaderAllContent {
     height: 40%;
     margin-top: 125px;
   }
-  .careersHeaderContainer{
+
+  .careersHeaderContainer {
     height: 100%;
   }
-  .careersHeaderAllText{
+
+  .careersHeaderAllText {
     margin-top: 0px;
     left: 4rem;
   }
