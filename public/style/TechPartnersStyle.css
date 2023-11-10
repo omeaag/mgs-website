@@ -24,6 +24,39 @@
 
   /* Allow items to wrap to the next line */
 }
+.TechComponentContainer {
+  @apply flex flex-row h-full justify-center items-center justify-around;
+}
+.TechComponentContainerText {
+  @apply flex flex-col h-[90%] w-[43%] gap-[30px];
+}
+.TechComponentContainerText h1 {
+  @apply text-[50px] not-italic font-bold leading-[normal] capitalize;
+}
+.TechComponentContainerText h3 {
+  @apply text-[22px] not-italic font-normal leading-[50px];
+  /* 227.273% */
+}
+.TechComponentContainerText a {
+  @apply text-[35px] text-[rgba(0,113,251,1)] mt-12;
+}
+.TechComponentContainerImage {
+  @apply flex flex-col justify-center items-center h-full w-[70%] shrink-0 opacity-100 rounded-[57px];
+  background: linear-gradient(
+    180deg,
+    #baeaff6b 0%,
+    rgba(255, 255, 255, 0) 43.01%
+  );
+}
+#webNextButton {
+  @apply flex;
+}
+#mobileNextButton {
+  @apply hidden;
+}
+.mobileImageButtonContainer{
+  @apply w-[45%] items-center justify-center flex;
+}
 .blockChainIconsLine img {
   @apply saturate-0 transition-[0.3s] duration-[ease-in-out] hover:saturate-100 hover:transition-[0.2s] hover:duration-[ease-in-out] hover:cursor-pointer;
 }
@@ -100,7 +133,44 @@
 .techSliderParentContainer .techPartnerComponentContainer {
   @apply h-full w-[90%];
 }
-
+/*
+  Based on TailwindCSS recommendations,
+  consider using classes instead of the `@apply` directive
+  @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
+*/
+.TechComponentContainer {
+  @apply flex flex-row h-full justify-center items-center justify-around;
+}
+.TechComponentContainerText {
+  @apply flex flex-col h-[90%] w-[43%] gap-[30px];
+}
+.TechComponentContainerText h1 {
+  @apply text-[50px] not-italic font-bold leading-[normal] capitalize;
+}
+.TechComponentContainerText h3 {
+  @apply text-[22px] not-italic font-normal leading-[50px];
+  /* 227.273% */
+}
+.TechComponentContainerText a {
+  @apply text-[35px] text-[rgba(0,113,251,1)] mt-12;
+}
+.TechComponentContainerImage {
+  @apply flex flex-col justify-center items-center h-full w-[70%] shrink-0 opacity-100 rounded-[57px];
+  background: linear-gradient(
+    180deg,
+    #baeaff6b 0%,
+    rgba(255, 255, 255, 0) 43.01%
+  );
+}
+#webNextButton {
+  @apply flex;
+}
+#mobileNextButton {
+  @apply hidden;
+}
+.mobileImageButtonContainer{
+  @apply w-[45%] items-center justify-center flex;
+}
 /* TABLET BREAKPOINT */
 @media (min-width: 600px) and (max-width: 1024px) {
   .techTextParentContainer h1 {
@@ -167,4 +237,126 @@
   .blockChainIconsLine img:first-child {
   @apply  ml-0;
 }
+
+.mobileImageButtonContainer{
+  @apply flex items-center justify-center w-[100%]
 }
+#webNextButton {
+  @apply hidden;
+}
+#mobileNextButton {
+  @apply flex;
+}
+.TechComponentContainerText h1 {
+  @apply text-3xl;
+}
+.TechComponentContainerText h3 {
+  @apply text-base font-normal leading-[30px] tracking-normal text-left;
+}
+.TechComponentContainer {
+  @apply flex-col;
+}
+.TechComponentContainerText {
+  @apply w-[90%];
+}
+.TechComponentContainerText br {
+  @apply hidden;
+}
+.TechComponentContainerText a {
+  @apply text-lg mt-2.5;
+}
+.techSliderParentContainer {
+  @apply gap-2.5 w-full mt-0;
+}
+.TechComponentContainerImage {
+  @apply w-[75%] mt-5;
+}
+.blockChainIconsLine {
+  @apply gap-5 justify-between;
+}
+.blockChainIcons {
+  @apply flex flex-col w-full h-[unset];
+  float: inline-start;
+}
+.blockChainIconsLine img {
+  @apply transition-[0.3s] duration-[ease-in-out] hover:transition-[0.2s] hover:duration-[ease-in-out] hover:cursor-pointer;
+}
+.blockChainnetworkContainer h1 {
+  @apply text-[40px] font-medium leading-[60px] tracking-[0px] text-left;
+}
+.techArsenalContainer h1 {
+  @apply text-[40px] text-[40px];
+}
+.techArsenalContainer {
+  @apply flex flex-col text-left w-[86%] justify-center mb-0;
+}
+.techArsenalContainer span {
+  @apply text-[#0071FB];
+}
+.techArsenalButtonContainer div:nth-child(4),
+.techArsenalButtonContainer div:nth-child(5),
+.techArsenalButtonContainer div:nth-child(6) {
+  @apply hidden;
+}
+.techArsenalButtonContainer {
+  @apply flex cursor-pointer flex-row w-full justify-between h-[35px] mb-[30px];
+}
+.techArsenalButton {
+  @apply flex w-[33.3%] flex-row items-center justify-center h-[37px];
+}
+.techArsenalButton img {
+  @apply w-5;
+}
+.techArsenalButton button {
+  @apply text-lg;
+}
+.arsenalChangeComponent {
+  @apply flex;
+}
+.ArsenalMiniComponent {
+  @apply flex flex-wrap w-[85%] gap-5;
+  justify-content: left;
+}
+.ArsenalMiniComponentDEV {
+  @apply w-[95%];
+}
+.mainArsenalChangeComp {
+  @apply flex justify-around w-full;
+}
+.techSliderParentContainer .techPartnerComponentContainer {
+  @apply mx-0 my-[50px];
+}
+.blockChainnetworkContainer {
+  @apply w-[90%];
+}
+.techTextParentContainer {
+  @apply w-full p-8;
+}
+.techTextParentContainer br {
+  @apply hidden;
+}
+.techTextParentContainer h1 {
+  @apply text-[35px] flex gap-2.5 mb-[50px];
+}
+.techTextParentContainer span {
+  @apply text-[35px];
+}
+.techTextParentContainer p {
+  @apply text-lg leading-[35px];
+}
+
+.TechComponentContainerImage img{
+  @apply !h-[305px];
+}
+
+.techPartnersLeftButtonContainer,
+.techPartnersRightButtonContainer {
+@apply  translate-y-40;
+}
+
+.mirrorTracker{
+@apply mb-44;
+}
+
+}
+

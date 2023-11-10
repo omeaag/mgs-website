@@ -306,4 +306,5 @@
   .whatPeopleContainer h1 {
     @apply text-[40px] leading-[60px] w-full text-center justify-items-center flex flex-col items-center gap-2.5;
   }
+  
 }
