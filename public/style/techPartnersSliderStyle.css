@@ -39,7 +39,7 @@
     @apply flex-col;
   }
   .TechComponentContainerText {
-    @apply w-full h-[554px] justify-end;
+    @apply w-full h-auto justify-end;
   }
   .TechComponentContainerText br {
     @apply hidden;
@@ -133,7 +133,11 @@
 
   .techPartnersLeftButtonContainer,
 .techPartnersRightButtonContainer {
-  @apply  translate-y-80;
+  @apply  translate-y-40;
+}
+
+.mirrorTracker{
+  @apply mb-44;
 }
 
 }
