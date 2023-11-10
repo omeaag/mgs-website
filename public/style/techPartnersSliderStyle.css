@@ -145,4 +145,18 @@
   .techTextParentContainer p {
     @apply text-lg leading-[35px];
   }
+
+  .TechComponentContainerImage img{
+    @apply !h-[305px];
+  }
+
+  .techPartnersLeftButtonContainer,
+.techPartnersRightButtonContainer {
+  @apply  translate-y-40;
+}
+
+.mirrorTracker{
+  @apply mb-44;
+}
+
 }
