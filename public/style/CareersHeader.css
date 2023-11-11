@@ -34,7 +34,7 @@
   @apply flex h-full w-1/2;
 }
 .careersHeaderImageContainer img {
-  @apply -translate-y-[20%]  translate-x-[13%] scale-[120%];
+  @apply -translate-y-[10%]  translate-x-[10%] scale-[120%];
 }
 #mobileAmsterdamImage {
   @apply hidden;
