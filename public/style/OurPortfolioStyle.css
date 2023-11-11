@@ -97,19 +97,19 @@
   @apply gap-[30px] relative flex flex-col justify-center items-center mb-[200px];
 }
 #iconamoon_settings {
-  @apply absolute left-[200px] top-[1250px];
+  @apply absolute left-[17%] top-[35%];
 }
 #iconoir_design {
-  @apply absolute left-[350px] top-[1800px];
+  @apply absolute left-[13%] top-[52%];
 }
 #iconoir_dev_laptop {
-  @apply absolute right-[150px] top-[1350px];
+  @apply absolute right-[10%] top-[45%];
 }
 #iconoir_dev_phone {
-  @apply absolute left-[900px] top-[1150px];
+  @apply absolute left-[50%] top-[37%];
 }
 #streamline_interface {
-  @apply absolute right-[400px] top-[1650px];
+  @apply absolute right-[20%] top-[50%];
 }
 
 /* ------------------------ TABLET BREAKPOINT ------------------------ */

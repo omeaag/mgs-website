@@ -15,19 +15,50 @@ import { useState } from "react"
 export default function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
 
+  const [activeButton, setActiveButton] = useState(window.location.pathname.split('/')[1] || 'home');
+  const handleButtonClick = (buttonName) => {
+    setActiveButton(buttonName);
+  };
+
   const toggleMobileMenu = () => {
     setMobileMenuOpen(!isMobileMenuOpen)
   }
 
   return (
     <div className="HeaderContainer">
+      <div className="headerInnerContainer">
       <Image id="mgsLogo" src={mgsLogo} alt="mgs-icon" />
       <div className={`Navbar open`}>
-        <Link href="/">Home</Link>
-        <Link href="/services">Services</Link>
-        <Link href="/mood-convert">MoodConvert</Link>
-        <Link href="/careers">Careers</Link>
+      <Link href="/" passHref 
+            className={activeButton === 'home' ? 'active' : ''}
+            onClick={() => handleButtonClick('home')}
+          >
+            Home
+         
+        </Link>
+        <Link href="/services" passHref 
+            className={activeButton === 'services' ? 'active' : ''}
+            onClick={() => handleButtonClick('services')}
+          >
+            Services
+     
+        </Link>
+        <Link href="/mood-convert" passHref 
+            className={activeButton === 'mood-convert' ? 'active' : ''}
+            onClick={() => handleButtonClick('mood-convert')}
+          >
+            MoodConvert
+
+        </Link>
+        <Link href="/careers" passHref 
+            className={activeButton === 'careers' ? 'active' : ''}
+            onClick={() => handleButtonClick('careers')}
+          >
+            Careers
+
+        </Link>
       </div>
+
       <button
         area-label="menu-button"
         id="dropdownBtn"
@@ -93,6 +124,7 @@ export default function Header() {
           <Image id="instaIcon" src={instaIcon} alt="insta-logo" />
         </Link>
       </div>
+    </div>
     </div>
   )
 }

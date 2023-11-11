@@ -17,18 +17,28 @@
 }
 
 /* 0 - Header */
+.Navbar .active {
+  color: rgba(0,113,251,1) ;
+}
 .HeaderContainer {
-  position: fixed;
-  top: 0;
-  width: 100%;
+width: 100%;
+top: 0;
+position: fixed;
+z-index: 2;
+background-color: white;
+
+}
+
+.headerInnerContainer{
+
+  width: 85%;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-between;
+  margin: auto;
   display: flex;
   background-color: white;
   padding: 20px 0px;
-  z-index: 2;
 }
-
 
 #mgsLogo{
   width: 139px;
@@ -179,6 +189,7 @@
     align-items: center;
     justify-content: space-around;
   }
+
 
   .Navbar {
     display: flex;
