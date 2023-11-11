@@ -7,10 +7,10 @@
 	@apply flex flex-col items-center justify-center w-full;
 }
 .bigBackground {
-	@apply w-full bg-[url("../materials/moodConverAIImages/background.svg")];
+	@apply w-full bg-cover bg-[url("../materials/moodConverAIImages/background.svg")];
 }
 .smallBackground {
-	@apply flex items-center justify-center bg-[url("../materials/moodConverAIImages/Frame1261152487.svg")] w-full bg-[100%] bg-no-repeat;
+	@apply flex items-center justify-center bg-[url("../materials/moodConverAIImages/Frame1261152487.svg")] w-full bg-center bg-no-repeat;
 }
 .moodConvertAIContainer {
 	@apply gap-1.5 flex flex-col items-center justify-center text-center mx-0 my-40;
@@ -22,7 +22,7 @@
 	@apply font-[bold];
 }
 .moodConvertAIContainer h2 {
-	@apply text-[120px] font-bold leading-[110px] w-[70%] leading-[150px]  tracking-[0px] text-center;
+	@apply text-[120px] font-bold leading-[110px] w-[100%] leading-[150px]  tracking-[0px] text-center;
 	
 
   font-family: MonumentExtended;
@@ -173,7 +173,9 @@
 	.moodConvertAIContainer h1 {
 		@apply text-[98px];
 	}
-
+	.moodConvertAIContainer h2 br{
+		@apply hidden;
+	}
 		.moodConvertAIContainer h2 {
 			@apply w-4/5 text-[70px] font-medium leading-[80px] tracking-[0] text-center;
 			font-family: MonumentExtended;

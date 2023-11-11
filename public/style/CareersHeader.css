@@ -22,7 +22,7 @@
   font-family: MonumentExtended;
 }
 .careersHeaderAllContent {
-  @apply flex w-[100%] ml-[200px] h-screen justify-start;
+  @apply flex w-[80%] h-screen justify-start;
 }
 .careersHeaderAllText {
   @apply flex w-1/2 mt-[100px]  flex-col ;

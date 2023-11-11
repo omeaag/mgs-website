@@ -75,7 +75,7 @@ u strong {
   @apply flex flex-col gap-6 items-center justify-center;
 }
 .FaqUpperDiv {
-  @apply flex justify-between flex-row gap-[52px] w-full items-center;
+  @apply flex justify-between flex-row gap-[52px] w-full items-start;
 }
 .FaqUpperDiv img {
   @apply cursor-pointer;

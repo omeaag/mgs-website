@@ -27,6 +27,7 @@ import pp1 from "../public/materials/ourPortfolioImages/pp1.svg"
 import pp2 from "../public/materials/ourPortfolioImages/pp2.svg"
 import pp3 from "../public/materials/ourPortfolioImages/pp3.svg"
 import clutchco1 from "../public/materials/ourPortfolioImages/clutchco1.svg"
+import { set } from "firebase/database"
 
 function WhatPeople() {
   SwiperCore.use([Navigation])
@@ -101,12 +102,17 @@ function WhatPeople() {
           <button
             aria-label="Previous"
             className="prev-button"
+            onClick={() => {
+              currentSlide2 > 0 && setCurrentSlide2(currentSlide2 - 1);
+              console.log(currentSlide2);
+            }}
           >
             <Image
               src={currentSlide2 == !1 ? LeftArrow : LeftArrowBlue}
               alt="Sol Ok"
               width={100}
               height={100}
+              
             />
           </button>
           <Swiper
@@ -140,6 +146,7 @@ function WhatPeople() {
           <button
             aria-label="Next"
             className="next-button"
+            
           >
             <Image
               src={currentSlide2 == 2 ? RightArrow : RightArrowBlue}
