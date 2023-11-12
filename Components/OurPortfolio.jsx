@@ -140,10 +140,10 @@ function OurPortfolio() {
 					}}
 					className="prev-button"
 				>
-					<Image src={currentSlide == !1 ? LeftArrow : LeftArrowBlue} alt="Sol Ok" width={50} height={50} />
+					<Image src={currentSlide  !== 0 ? LeftArrowBlue : LeftArrow} alt="Sol Ok" width={50} height={50} />
 				</button>
 				<Swiper ref={swiper1} slidesPerView={slidesPerView} spaceBetween={slideGap}>
-					<SwiperSlide>
+					<SwiperSlide >
 						<div className="sliderContent">
 							<h4>Nex Decentralized Exchange Decentralized Exchange</h4>
 							<p>
@@ -207,10 +207,7 @@ function OurPortfolio() {
 				</div>
 
 				<div className="personContainer">
-					<button
-						aria-label="Previous"
-						className="prev-button"
-					>
+					<button aria-label="Previous" className="prev-button">
 						<Image src={currentSlide2 == !1 ? LeftArrow : LeftArrowBlue} alt="Sol Ok" width={100} height={100} />
 					</button>
 					<Swiper
@@ -236,10 +233,7 @@ function OurPortfolio() {
 						))}
 					</Swiper>
 
-					<button
-						aria-label="Next"
-						className="next-button"
-					>
+					<button aria-label="Next" className="next-button">
 						<Image src={currentSlide2 == 2 ? RightArrow : RightArrowBlue} alt="Sag Ok" width={100} height={100} />
 					</button>
 				</div>
