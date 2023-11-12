@@ -20,6 +20,7 @@ export default function Header() {
     console.log(pathname);
 
   },[pathname])
+   
 
   const [activeButton, setActiveButton] = useState(pathname.split('/')[1] || 'home');
   const handleButtonClick = (buttonName) => {
