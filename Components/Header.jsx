@@ -10,12 +10,18 @@ import instaIcon from "../public/materials/headerInstaLogo.svg"
 import mgsLogo from "../public/materials/logo.svg"
 import menu from "../public/materials/menu.svg"
 import close from "../public/materials/closeBtn.svg"
-import { useState } from "react"
+import { useState, useEffect } from "react"
+import { usePathname } from 'next/navigation'
 
 export default function Header() {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const pathname = usePathname();
+  useEffect(()=>{
+    console.log(pathname);
 
-  const [activeButton, setActiveButton] = useState(window.location.pathname.split('/')[1] || 'home');
+  },[pathname])
+
+  const [activeButton, setActiveButton] = useState(pathname.split('/')[1] || 'home');
   const handleButtonClick = (buttonName) => {
     setActiveButton(buttonName);
   };
