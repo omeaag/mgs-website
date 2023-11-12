@@ -9,7 +9,7 @@
     bottom left / cover;
 }
 .serviceTextHeaderContainer {
-  @apply flex justify-center flex-col mx-[200px] my-[100px];
+  @apply flex justify-center flex-col w-[50%] ml-[6%] my-[100px];
 }
 .ourServicesTextContainer {
   @apply leading-[10rem];
@@ -30,7 +30,7 @@
   @apply flex items-center justify-between w-full;
 }
 .servicesImageContainer {
-  @apply h-3/5 flex;
+  @apply h-3/5 gap-[100px] justify-between flex;
 }
 
 /*Desktop*/
