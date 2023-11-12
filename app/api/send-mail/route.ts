@@ -1,6 +1,6 @@
 // Import necessary modules
-import { NextResponse, NextRequest } from "next/server"
-import sgMail from "@sendgrid/mail"
+import { NextResponse, NextRequest } from 'next/server'
+import sgMail from '@sendgrid/mail'
 
 // Set SendGrid API Key
 sgMail.setApiKey(process.env.SENDGRID!)
@@ -9,15 +9,23 @@ export async function POST(req: NextRequest) {
   try {
     // Parse the request body
     const body = await req.json()
-    const { email, phone, query } = body
+    const { email, phone, query, first, last, company } = body
+    console.log(body, 'body')
 
     // Define the email message
     const msg = {
-      to: "info@moodglobalservices.com",
-      from: "info@moodglobalservices.com", // Replace with your verified sender
+      to: 'info@moodglobalservices.com',
+      from: 'info@moodglobalservices.com', // Replace with your verified sender
       replyTo: email,
-      subject: "New Query Received",
-      html: `<div><h1>Query</h1><p>${query}</p><h1>Email</h1><p>${email}</p><h1>Phone</h1><p>${phone}</p></div>`,
+      subject: 'New Query Received',
+      // html: `<div><p>Request: ${query}</p><p>Email: ${email}</p><p>Phone: ${phone}</p><p>Company: ${company}</p><p>Name: ${first} ${last}</p></div>`,
+      html: `<div>
+        <p>Request: ${query}</p>
+        <p>Email: ${email}</p>
+        <p>Phone: ${phone}</p>
+        <p>Company: ${company}</p>
+        <p>Name (First, Last): ${first} ${last}</p>
+        </div>`,
     }
 
     // Send the email
@@ -29,26 +37,26 @@ export async function POST(req: NextRequest) {
       {
         status: 200,
         headers: {
-          "Access-Control-Allow-Origin": "*", // Adjust the allowed origin as needed
-          "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization",
+          'Access-Control-Allow-Origin': '*', // Adjust the allowed origin as needed
+          'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type, Authorization',
         },
-      }
+      },
     )
   } catch (error) {
-    console.error("Error sending email:", error)
+    console.error('Error sending email:', error)
 
     // Return an error response
     return NextResponse.json(
-      { success: false, error: "Error sending email" },
+      { success: false, error: 'Error sending email' },
       {
         status: 500,
         headers: {
-          "Access-Control-Allow-Origin": "*", // Adjust the allowed origin as needed
-          "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-          "Access-Control-Allow-Headers": "Content-Type, Authorization",
+          'Access-Control-Allow-Origin': '*', // Adjust the allowed origin as needed
+          'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+          'Access-Control-Allow-Headers': 'Content-Type, Authorization',
         },
-      }
+      },
     )
   }
 }
@@ -59,10 +67,10 @@ export async function OPTIONS() {
     {
       status: 200,
       headers: {
-        "Access-Control-Allow-Origin": "*", // Adjust the allowed origin as needed
-        "Access-Control-Allow-Methods": "GET, POST, PUT, DELETE, OPTIONS",
-        "Access-Control-Allow-Headers": "Content-Type, Authorization",
+        'Access-Control-Allow-Origin': '*', // Adjust the allowed origin as needed
+        'Access-Control-Allow-Methods': 'GET, POST, PUT, DELETE, OPTIONS',
+        'Access-Control-Allow-Headers': 'Content-Type, Authorization',
       },
-    }
+    },
   )
 }

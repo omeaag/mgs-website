@@ -1,5 +1,5 @@
 'use client'
-import React, { useState, ChangeEvent, FormEvent } from 'react'
+import React, { useState, ChangeEvent, FormEvent, useEffect } from 'react'
 import { collection, query, where, getDocs, setDoc, doc, updateDoc } from 'firebase/firestore'
 import { db } from '@/Components/Firebase/firebaseConfig'
 import { useGoogleReCaptcha } from 'react-google-recaptcha-v3'
@@ -13,8 +13,16 @@ export interface FormData {
 	company: string
 }
 
+async function Sleep() {
+	return new Promise((resolve) => setTimeout(resolve, 2000))
+}
+
 const GetInTouch: React.FC = () => {
 	const { executeRecaptcha } = useGoogleReCaptcha()
+
+	const [emailHasError, setEmailHasError] = useState(false)
+	const [formHasError, setFormHasError] = useState(false)
+
 	const [formData, setFormData] = useState<FormData>({
 		email: '',
 		phone: '',
@@ -23,6 +31,10 @@ const GetInTouch: React.FC = () => {
 		last: '',
 		company: '',
 	})
+
+	// useEffect(() => {
+	// 	console.log(formData, 'formData'), [formData]
+	// })
 
 	const handleSubmit = async (e: FormEvent) => {
 		e.preventDefault()
@@ -55,11 +67,28 @@ const GetInTouch: React.FC = () => {
 			phoneQuerySnapshot.forEach((doc) => mergedDocs.set(doc.id, doc))
 
 			const { query: formQuery, ...restOfFormData } = formData
-			console.log(formQuery, 'formquery')
+			// console.log(formQuery, 'formquery')
 
 			if (mergedDocs.size === 0) {
 				// No existing document with the same email or phone, create a new one with query1
 				// console.log('Creating new document')
+
+				if (!formQuery) {
+					setFormHasError(true)
+					alert('Please enter a all required fields')
+					await Sleep()
+					setFormHasError(false)
+					return
+				}
+
+				if (!formData.email) {
+					setEmailHasError(true)
+					alert('Please enter a valid email')
+					await Sleep()
+					setEmailHasError(false)
+					return
+				}
+
 				await setDoc(doc(usersCollection), {
 					...restOfFormData,
 					query1: formQuery,
@@ -95,7 +124,7 @@ const GetInTouch: React.FC = () => {
 						updateData = { query3: formQuery }
 					}
 					// If query1, query2, and query3 all exist, do not update
-					console.log('updateData', updateData)
+					// console.log('updateData', updateData)
 					if (Object.keys(updateData).length > 0) {
 						console.log('Updating document', doc.id)
 						await updateDoc(doc.ref, updateData)
@@ -126,37 +155,43 @@ const GetInTouch: React.FC = () => {
 		})
 	}
 
+	// testaa
+
 	return (
-		<form onSubmit={handleSubmit} className="formContainer">
+		<form id="mgsFirebaseForm" onSubmit={handleSubmit} className="formContainer">
 			<div className="namesContainer">
 				<div className="groupContainer">
 					<label htmlFor="fname">First Name</label>
-					<input onChange={handleChange} name="first" placeholder="Enter first name" type="text" id="fname" />
+					<input onChange={handleChange} className="" name="first" placeholder="Enter first name" type="text" id="fname" />
 				</div>
 				<div className="groupContainer">
 					<label htmlFor="lname">Last Name</label>
-					<input onChange={handleChange} name="last" placeholder="Enter last name" type="text" id="lname" required />
+					<input onChange={handleChange} className="" name="last" placeholder="Enter last name" type="text" id="lname" required />
 				</div>
 			</div>
 
 			<div className="groupContainer">
-				<label htmlFor="email">Email</label>
-				<input name="email" onChange={handleChange} placeholder="Enter email adress" type="email" id="email" required />
+				<label htmlFor="email">
+					Email <span className="text-red-500">*</span>
+				</label>
+				<input name="email" onChange={handleChange} className={`${emailHasError && !formData.email ? 'border-red-500' : ' '} `} placeholder="Enter email adress" type="email" id="email" required />
 			</div>
 
 			<div className="comphoneContainer">
 				<div className="groupContainer">
 					<label htmlFor="company">Company</label>
-					<input onChange={handleChange} name="company" placeholder="Enter company name" type="text" id="company" />
+					<input name="company" onChange={handleChange} className="" placeholder="Enter company name" type="text" id="company" />
 				</div>
 				<div className="groupContainer">
 					<label htmlFor="phone">Phone</label>
-					<input name="phone" onChange={handleChange} placeholder="Enter phone number" type="tel" id="phone" required />
+					<input name="phone" onChange={handleChange} className="" placeholder="Enter phone number" type="tel" id="phone" required />
 				</div>
 			</div>
 			<div className="groupContainer">
-				<label htmlFor="details">Details</label>
-				<textarea placeholder="Tell us your needs" id="details" />
+				<label htmlFor="details">
+					Details <span className="text-red-500">*</span>
+				</label>
+				<input name="query" onChange={handleChange} className={`${formHasError && !formData.query ? 'border-red-500' : ' '} `} placeholder="Tell us your needs" type="text" id="details" />
 			</div>
 			<button type="submit">Let's Build Together</button>
 		</form>
