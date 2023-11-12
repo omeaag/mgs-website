@@ -86,6 +86,9 @@ function WhatPeople() {
     window.addEventListener("resize", updateWindowDimensions)
     return () => window.removeEventListener("resize", updateWindowDimensions)
   }, [])
+  useEffect(() => {
+    console.log(currentSlide2);
+  }, [currentSlide2]);
 
   return (
     <div className="ourPortfolioContainer">
@@ -103,16 +106,17 @@ function WhatPeople() {
             aria-label="Previous"
             className="prev-button"
             onClick={() => {
-              currentSlide2 > 0 && setCurrentSlide2(currentSlide2 - 1);
-              console.log(currentSlide2);
+              if (currentSlide2 > 0) {
+                setCurrentSlide2(currentSlide2 - 1);
+                console.log(currentSlide2);
+              }
             }}
           >
             <Image
-              src={currentSlide2 == !1 ? LeftArrow : LeftArrowBlue}
-              alt="Sol Ok"
+              src={currentSlide2 == 0 ? LeftArrow : LeftArrowBlue}
+              alt="Left Arrow"
               width={100}
               height={100}
-              
             />
           </button>
           <Swiper
@@ -146,22 +150,27 @@ function WhatPeople() {
           <button
             aria-label="Next"
             className="next-button"
-            
+            onClick={() => {
+              if (currentSlide2 < people.length - 1) {
+                setCurrentSlide2(currentSlide2 + 1);
+                console.log(currentSlide2);
+              }
+            }}
           >
             <Image
-              src={currentSlide2 == 2 ? RightArrow : RightArrowBlue}
-              alt="Sag Ok"
+              src={currentSlide2 == people.length - 1 ? RightArrow : RightArrowBlue}
+              alt="Right Arrow"
               width={100}
               height={100}
             />
           </button>
         </div>
         <div className="clutchContainer">
-					<p>We are on trusted platforms</p>
-					<Link href="https://clutch.co/profile/mood-global-services-bv#highlights">
-						<Image src={clutchco1} alt="clutchco1" />
-					</Link>
-				</div>
+          <p>We are on trusted platforms</p>
+          <Link href="https://clutch.co/profile/mood-global-services-bv#highlights">
+            <Image src={clutchco1} alt="clutchco1" />
+          </Link>
+        </div>
       </div>
     </div>
   )
