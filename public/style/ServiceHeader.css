@@ -97,7 +97,7 @@
     @apply hidden;
   }
   .serviceTextHeaderContainer {
-    @apply gap-[30px] mx-0 my-[180px];
+    @apply gap-[30px] w-[100%] mx-0 my-[180px];
   }
   .servicesTop {
     @apply bg-no-repeat bg-contain;
