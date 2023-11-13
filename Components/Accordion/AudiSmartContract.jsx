@@ -47,7 +47,7 @@ function AudiSmartContract() {
     <div className="accordionSection">
       <div id="audit" onClick={() => setDisplay(!display)} className="sectionHeader">
         <p>
-          Audi Smart <span>Contract</span>
+          Audit Smart <span>Contract</span>
         </p>
         {display === true ? (
           <Image alt="accordion-up" src={accordionUp} />
