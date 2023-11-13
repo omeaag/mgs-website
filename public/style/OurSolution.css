@@ -149,7 +149,7 @@
     @apply flex-col justify-center;
   }
   .OurSolutionText .card {
-    @apply flex items-center justify-start gap-5 w-full;
+    @apply flex items-center justify-start flex-row gap-5 w-full;
   }
   .OurSolutionText .card img,
   .OurSolutionText .card h2 {
