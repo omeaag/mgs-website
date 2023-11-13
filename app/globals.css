@@ -241,6 +241,15 @@ background-color: white;
     justify-content: space-between;
     flex-wrap: wrap;
   }
+  .headerInnerContainer {
+    padding: 30px 20px;
+    font-size: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 
   .HeaderContainer .open {
     display: none;
