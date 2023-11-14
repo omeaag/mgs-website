@@ -3,6 +3,11 @@
   consider using classes instead of the `@apply` directive
   @see https://tailwindcss.com/docs/reusing-styles#avoiding-premature-abstraction
 */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 .HomeShapingContainer {
   @apply justify-center flex flex-col items-center w-full bg-no-repeat px-0 py-[200px];
   background: url(../materials/HomeShapingBackground.svg);
